@@ -1,0 +1,74 @@
+\section{The OAL Framework for Mission Trust}
+
+The authors' \OAL{} framework is a three-dimensional classification and design instrument. It can be used to locate a published mechanism, specify a required assurance case, or identify an unprotected transition. The dimensions are intentionally orthogonal. An object says \emph{what is judged}; an assurance layer says \emph{which claim is sought}; and a lifecycle stage says \emph{when the claim is needed}. A mechanism may occupy several cells, but it should not collapse the axes. Figure~\ref{fig:oal} presents the whole framework.
+
+\begin{figure}[H]
+\centering\resizebox{\textwidth}{!}{\input{figures/oal-framework}}
+\caption{The authors' OAL framework. The cross-cutting plane carries mechanisms and versioned governance artifacts across all object, assurance, and lifecycle cells; it is not an additional mission object.\label{fig:oal}}
+\end{figure}
+
+\subsection{Dimension I: Four Trust Objects}
+
+An \emph{entity} is a principal capable of holding authority or responsibility: an operator, organization, mission service, software agent, or autonomous decision-making principal. A \emph{platform/device} is an executing physical or virtual endpoint: vehicle, sensor, gateway, compute module, secure element, software image, or hosted model instance. This distinction matters because an authorized entity can control a compromised device, while a device with valid attestation can execute a legitimate but unsuitable policy. An autonomous vehicle may occupy both categories under different claims: as a delegated principal for action and as an endpoint whose hardware and software state are measured.
+
+A \emph{link/path} is a time-varying channel or end-to-end route, including its media, intermediate nodes, security associations, and quality state. It is not reducible to a physical radio or acoustic hop. A data product may traverse a UUV acoustic hop, a USV gateway, a satellite backhaul, and a cloud broker; confidentiality, freshness, availability, and routing integrity depend on the composed path. A \emph{data product} is an immutable version of raw observation, feature set, track, map, fused estimate, model output, command, alert, provenance record, or audit artifact. Treating versions as immutable avoids silent overwriting and permits provenance to express transformation.
+
+\begin{table}[H]
+\caption{Four OAL trust objects, evidence, failure examples, and mission questions.\label{tab:objects}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\small
+\begin{tabularx}{\fulllength}{@{}p{25mm}YYY@{}}
+\toprule
+\textbf{Object} & \textbf{Representative evidence} & \textbf{Illustrative failure or attack} & \textbf{Mission question}\\
+\midrule
+Entity & Credential chain, organizational role, delegation, authorization, prior accountable actions & Credential theft, insider misuse, collusion, obsolete authority & Who requests, endorses, or consumes the resource, and under which authority?\\
+Platform/device & Secure boot measurement, firmware/software version, sensor self-test, configuration, energy and health state & Capture, malware, unsafe configuration, stale reference value, sensor drift & Which endpoint executes, and is its measured state adequate for this use?\\
+Link/path & Authentication state, route, delay, loss, signal indicators, neighbor changes, medium and gateway state & Jamming, wormhole, selective forwarding, eavesdropping, benign fading & Through which changing path did evidence pass, and what security and quality properties held?\\
+Data product & Signature, timestamp, location, provenance graph, quality metadata, version, calibration and cross-source residuals & False injection, replay, poisoning, misregistration, unauthorized transformation & Where did this version come from, was it altered, and is it timely and suitable?\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+Policies, models, smart contracts, and ledger state do not create a fifth object category. They are versioned artifacts hosted on devices or represented as data products, while the principals who authorize them remain entities. Keeping four operational objects prevents an ontology from expanding whenever a new mechanism is introduced. At the same time, the assurance plane makes these artifacts first-class subjects of versioning, access control, threat analysis, and audit.
+
+\subsection{Dimension II: Four Assurance Layers}
+
+The first layer, \emph{observation validity}, asks whether evidence about the external world is credible. Relevant controls include calibration records, sensor diagnostics, geometry, physical bounds, environmental models, independent modalities, and temporal continuity. Multi-view and multi-sensor fusion can expose disagreement and express uncertainty \citep{holzinger2022information,liu2022trusted,qian2025review}; it can also amplify correlated error or poisoned inputs. Observation assurance must document independence assumptions and cannot be replaced by a content hash.
+
+The second layer, \emph{commitment and provenance integrity}, binds an item to a producer, time, place, transformation, and immutable version. Digital signatures, authenticated channels, secure timestamps, content identifiers, and W3C PROV relations support this layer \citep{w3c2013provdm,w3c2013provo,hu2020survey,pan2023data,singh2019decision}. Provenance should cover model inference and human or automated decisions, not only raw acquisition. Decision provenance can connect inputs, policy versions, intermediate transformations, and outputs, making later review possible. The guarantee remains conditional on key custody, clock assumptions, instrumentation completeness, and trustworthy capture of events.
+
+The third layer, \emph{ledger and governance consistency}, concerns a shared state among administrative parties. It covers member admission, endorsement, record ordering, validation, version coordination, revocation, dispute handling, and reconciliation. Hyperledger Fabric illustrates an execute--order--validate architecture with identity-aware channels and endorsement policies \citep{androulaki2018hyperledger,hyperledger2026fabric}; other permissioned designs can satisfy similar functions. This layer is about authorized agreement under a declared fault model. It does not add semantic truth to endorsed data.
+
+The fourth layer, \emph{mission-use suitability}, converts assurance evidence into a bounded relying decision. Freshness, relevance, uncertainty, risk class, legal and organizational policy, available alternatives, and consequence severity are considered. A consumer may accept a low-resolution image for broad situational awareness but require corroborated, current, and accurately georegistered evidence for autonomous maneuver. Suitability must therefore be expressed as a purpose-specific authorization or confidence condition, not a universal trust badge.
+
+\subsection{Dimension III: Six Lifecycle Stages}
+
+The lifecycle dimension prevents security from ending at admission. Table~\ref{tab:lifecycle} shows how objects and assurance questions evolve from credentialing to recovery. Evidence can age, dependencies can change, and an initially valid decision can require reassessment.
+
+\begin{table}[H]
+\caption{Mission lifecycle and representative OAL assurance tasks.\label{tab:lifecycle}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\small
+\begin{tabularx}{\fulllength}{@{}p{30mm}YYp{38mm}@{}}
+\toprule
+\textbf{Stage} & \textbf{Primary questions} & \textbf{Evidence and controls} & \textbf{Ledger-relevant state}\\
+\midrule
+Admission and authentication & Is the entity authorized, and is the joining endpoint in an acceptable measured state? & Credentials, delegation, attestation, configuration baseline, least privilege & Membership, role, attestation-result commitment, policy version\\
+Sensing and collection & Does an observation plausibly reflect its stated time, place, modality, and calibration? & Sensor self-test, secure time/location, quality metadata, corroboration & Acquisition commitment and data identifier\\
+Transmission and relay & Which path carried the item, and did quality or security conditions change? & Mutual authentication, route and link telemetry, delay/loss context, custody transfer & Signed relay events or batch roots\\
+Processing, fusion, and sharing & Which inputs, code, model, parameters, and policies produced this version? & Provenance graph, reproducible transformation identifier, access and usage control & Version, endorsement, access decision, model/policy commitment\\
+Decision and action & Is the product fit for the specific mission consequence now? & Uncertainty, freshness, risk policy, alternatives, human review or fail-safe & Decision rationale commitment and responsible principal\\
+Audit, revocation, and recovery & What failed, who was affected, what must be invalidated, and how is operation restored? & Incident evidence, credential and model revocation, rollback, re-attestation, after-action review & Revocation state, dispute outcome, reconciled log, recovery version\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+Lifecycle continuity is especially difficult during partitions. If a UUV cannot contact a central policy engine, it still needs a local authorization envelope: named resources, permitted actions, risk limit, evidence freshness, expiry, and fail-safe behavior. Local actions are signed and sequenced; reconnecting nodes later disclose commitments and selected evidence. The design must distinguish \emph{continued operation under delegated authority} from \emph{fresh global authorization}. A ledger can make the difference auditable but cannot remove it.
+
+\subsection{The Assurance and Governance Plane}
+
+The cross-cutting plane contains identity and authorization, remote attestation, provenance capture, trust inference, policy/model/contract version management, ledger state, and consortium governance. Each component is itself attackable. Identity authorities can be compromised; reference values can be wrong; provenance instrumentation can omit transformations; a trust model can drift or be poisoned; a smart contract can encode an unsafe rule; validators can collude; and governance can deadlock. The plane must therefore be observed through the same OAL lens. For example, a model is a data product with provenance and validation evidence, a deployed instance is hosted on a device, its approval is an entity action, and its use is constrained by lifecycle stage and mission context.
+
+OAL is useful as both a diagnostic and a specification template. A study that reports blockchain throughput but leaves the observation, endpoint, and mission layers unspecified occupies a narrow set of cells. An attestation protocol that measures firmware but does not address disconnected freshness covers a device claim at admission but not necessarily at decision time. A mature mission-assurance design should identify every high-consequence dependency path, state the claim at each cell, and expose which evidence is absent or stale.

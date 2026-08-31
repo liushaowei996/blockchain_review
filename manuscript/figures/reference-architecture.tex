@@ -1,0 +1,16 @@
+\begin{tikzpicture}[font=\small,>=Latex]
+\tikzset{box/.style={draw,rounded corners,minimum width=29mm,minimum height=10mm,align=center},link/.style={<->,thick}}
+\node[box,fill=blue!10] (uav) at (0,2.5) {UAV swarm\\radio/optical sensing};
+\node[box,fill=cyan!12] (sat) at (4.1,2.5) {Satellite / HAPS\\support link};
+\node[box,fill=green!12] (shore) at (8.2,2.5) {Shore / cloud\\mission services};
+\node[box,fill=teal!12] (usv) at (2.05,.6) {USV / buoy gateway\\edge validator/cache};
+\node[box,fill=teal!12] (edge) at (6.15,.6) {Consortium edge\\policy and ledger peers};
+\node[box,fill=blue!8] (uuv) at (0,-1.35) {UUV / AUV group\\acoustic/optical links};
+\node[box,fill=gray!12] (store) at (4.1,-1.35) {Off-chain evidence store\\encrypted mission data};
+\node[box,fill=orange!10] (audit) at (8.2,-1.35) {Auditor / operator\\revocation and recovery};
+\draw[link] (uav)--node[left]{relay}(usv); \draw[link] (uuv)--node[left]{gateway}(usv);
+\draw[link] (uav)--(sat); \draw[link] (sat)--(shore); \draw[link] (usv)--(edge); \draw[link] (edge)--(shore);
+\draw[link] (usv)--(store); \draw[link] (edge)--(store); \draw[link] (edge)--(audit);
+\draw[very thick,dashed,purple!70,rounded corners] (-1.75,3.25) rectangle (9.95,-2.1);
+\node[fill=white,text=purple!75,font=\bfseries] at (4.1,3.25) {Cross-cutting assurance and governance plane};
+\end{tikzpicture}

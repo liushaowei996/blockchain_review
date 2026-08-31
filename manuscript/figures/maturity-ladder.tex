@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,>=Latex]
+\foreach \i/\name/\desc in {0/Concept/argument,1/Analysis/formal model,2/Simulation/controlled study,3/Prototype/testbed,4/Field trial/operational setting,5/Deployment/sustained use}{
+  \node[draw=blue!65,fill=blue!12,rounded corners,minimum width=25mm,minimum height=13mm,text width=22mm,align=center]
+    (m\i) at ({2.65*\i},{.42*\i}) {\textbf{\name}\\\scriptsize \desc};
+}
+\draw[->,very thick] (-1.3,-1.1)--(14.6,-1.1) node[right,align=left]{stronger ecological\\evidence};
+\foreach \i in {0,...,4}{\pgfmathtruncatemacro{\j}{\i+1}\draw[->,blue!65] (m\i.east)--(m\j.west);}
+\end{tikzpicture}

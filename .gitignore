@@ -1,0 +1,10 @@
+# Lawfully acquired reference full texts; never include publisher PDFs in Git.
+literature/fulltext/
+
+# Local working data and installed dependencies.
+tmp/
+node_modules/
+
+# Python caches.
+__pycache__/
+*.py[cod]

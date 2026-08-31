@@ -1,0 +1,60 @@
+\section{Blockchain-Assisted Assurance and Its Limits}
+
+\subsection{The Decision to Use a Ledger}
+
+Blockchain is justified by a governance problem before it is justified by a data problem. A permissioned ledger is plausible when multiple independently administered parties must coordinate shared state, no single party should control history, records require accountable endorsement, and intermittent participants must reconcile after disconnection. A conventional authenticated database is usually preferable when one trusted organization controls membership and audit, when a hard real-time loop cannot wait for distributed confirmation, or when there is no meaningful cross-organizational dispute. This test narrows the design space and avoids adding consensus overhead merely because unmanned nodes are distributed.
+
+The relevant ledger is normally permissioned. Open, computation-intensive participation is poorly aligned with constrained vehicles, sensitive mission metadata, and accountable membership. Full peers and ordering services belong on capable shore, edge, or selected USV nodes; UAVs and UUVs can act as clients or light verifiers. Hyperledger Fabric provides one representative architecture with identities, endorsement policies, channels, ordering, and validation \citep{androulaki2018hyperledger,hyperledger2026fabric}. The OAL framework is ledger-neutral: Byzantine-fault-tolerant replicas, crash-fault-tolerant ordering, or another shared-state service may be selected if the stated threat, availability, and governance assumptions match. Consensus surveys show that throughput, finality, membership, energy, and fault tolerance involve trade-offs rather than a single ranking \citep{wang2019survey,lashkari2021comprehensive,zhang2020analysis}.
+
+\begin{figure}[H]
+\centering\resizebox{0.92\textwidth}{!}{\input{figures/blockchain-boundary}}
+\caption{Blockchain boundary in mission trust. The left column lists plausible support; the right column lists claims a ledger does not establish on its own.\label{fig:blockchain-boundary}}
+\end{figure}
+
+\subsection{On-Chain and Off-Chain Partitioning}
+
+Raw video, sonar, point clouds, high-rate telemetry, detailed attestation evidence, and fine-grained location should remain off chain, encrypted and subject to data-use policy. The ledger records small, verifiable references: content identifiers or Merkle roots, producer and custodian identifiers, coarse timestamps or time ranges, schema and policy versions, attestation-result commitments, endorsement decisions, revocations, and audit outcomes. The relation is bidirectional. An off-chain object must be verifiably bound to its commitment, and a consumer must be able to determine which ledger state and authorization applied when it was created and used.
+
+On-chain hashes are integrity commitments, not privacy mechanisms. A hash can leak equality, support dictionary attacks on predictable values, and bind sensitive metadata to a durable public-to-members record. Encryption, access control, selective disclosure, retention, key destruction, aggregation, and metadata minimization remain necessary. Similarly, deleting an off-chain object does not erase its on-chain metadata. Privacy design must account for traffic analysis, membership visibility, timing, and the linkage of vehicle identifiers across missions. General IoT and blockchain reviews identify privacy and storage tension \citep{reyna2018blockchain,li2020survey,nguyen2020blockchain}; maritime governance adds commercial and jurisdictional concerns \citep{li2021survey,farah2024survey,zhou2020key}.
+
+\subsection{Four Design Patterns}
+
+Table~\ref{tab:blockchain-patterns} organizes recurring ledger uses by OAL claim, assumptions, and limits. These patterns are the authors' synthesis of UAV, IoT, provenance, and attestation work rather than standardized solutions.
+
+\begin{table}[H]
+\caption{Blockchain design patterns for cross-domain mission assurance.\label{tab:blockchain-patterns}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\scriptsize
+\begin{tabularx}{\fulllength}{@{}p{30mm}p{35mm}p{40mm}YY@{}}
+\toprule
+\textbf{Pattern} & \textbf{On-chain record} & \textbf{Assurance supported} & \textbf{Necessary assumptions} & \textbf{What remains unresolved}\\
+\midrule
+Membership and authority registry & Organization, role, credential status, delegation and revocation version & Cross-party identity and policy-state consistency & Governed issuer set, protected keys, bounded offline credentials & Real intent, endpoint integrity, emergency authority conflict\\
+Attestation anchor & Evidence digest, verifier identity, result, reference-value and policy version & Accountable device-state appraisal and freshness history & Trustworthy measurement root and verifier; adequate coverage & Sensor truth, unmeasured runtime behavior, compromised verifier\\
+Provenance commitment & Data/version identifier, transformation and custody roots, endorsement & Tamper-evident lineage and accountable processing & Complete instrumentation, secure time and keys, retrievable off-chain evidence & Semantic correctness, biased models, confidentiality of metadata\\
+Partition-aware audit and reconciliation & Signed sequence range, batch root, local policy/model version, reconnect event & Detection of omission, duplication, conflicting logs, and stale authority & Secure local append state, retained evidence, eventual reachability & Missed real-time deadline, events never captured, physical truth\\
+Policy/model coordination & Approved artifact identifier, activation/rollback time, authorized endorsers & Shared knowledge of active rule or model version & Clear governance and deterministic validation of identifiers & Safety and performance of the approved artifact\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+The membership pattern generalizes UAV identity and authentication proposals \citep{han2022identity,tan2022blockchain,karmakar2024blockchain}. Its key question is not whether a public key appears on a chain, but which organization may issue which role, under which policy version, and how offline parties learn of revocation. Short-lived credentials, bounded delegation, and risk-specific offline envelopes reduce but do not eliminate the stale-revocation problem.
+
+The attestation pattern links RATS evidence appraisal to shared audit. An attester produces evidence; a verifier evaluates it under an appraisal policy; a relying party uses a result \citep{birkholz2023remote}. Recording a commitment to the result and policy can make later reliance accountable and can coordinate verifier outputs among organizations. Attestation architectures for blockchain and edge systems illustrate this intersection \citep{hardjono2021towards,ott2023universal,figueiredo2022arcadian,baciu2025secure}. The ledger should not store sensitive measurement detail by default, and the result's validity interval must reflect disconnection and device state change.
+
+The provenance pattern links W3C-compatible derivation to shared commitments. IoT provenance proposals use blockchain to protect provenance records or bind large off-chain collections \citep{hang2019design,honarpajooh2021iot,khan2020iot,rahman2020secure}. For mission data, each derived product should identify immutable inputs, transformation code or model, parameters, responsible entity, and output version. Provenance supports explanation and accountability, including for AI artifacts \citep{kale2023provenance}; it does not make a biased transformation correct. Consumers still appraise observation validity and mission suitability.
+
+The partition-aware pattern is especially relevant to underwater missions. A disconnected node or gateway keeps a signed, monotonically sequenced local log, periodically commits a batch root, and discloses inclusion evidence after reconnecting. Consortium peers validate membership and authority at event time, sequence continuity, duplicates, and policy/model versions. Competing logs can be flagged for governance. This resembles store-carry-forward accountability more than online transaction processing. The CAP trade-off is inescapable: under a partition, a system cannot simultaneously provide unrestricted availability and immediate global consistency \citep{brewer2000towards}. The mission must specify which local actions remain available and how uncertainty is represented.
+
+\subsection{Governance, Revocation, and Recovery}
+
+Permissioned consensus relocates trust; it does not remove it. A consortium must define member eligibility, validator distribution, endorsement thresholds, emergency powers, software upgrade, key rotation, data jurisdiction, dispute resolution, incident disclosure, and exit. If one operator controls all validators and governance, the ledger provides at most internal tamper resistance and engineering convenience; it does not create multi-party independence. Conversely, requiring every organization to endorse every event can destroy availability. Governance policy must be threat- and mission-specific.
+
+Revocation is temporal. A credential revoked at 12:00 may have authorized a disconnected UUV at 11:55; a gateway may learn the change at 12:30. Audit needs event time, receipt time, local policy version, credential validity evidence, and reconciliation time. Recovery also extends beyond identities. Compromised models, data products, and provenance descendants may require invalidation; devices require re-attestation; mission decisions may require human review. A ledger can preserve the dependency identifiers needed to compute the affected set, while the OAL graph explains why a simple credential-state flip is insufficient.
+
+\subsection{Real-Time and Safety Boundaries}
+
+Hard control loops should not wait for ledger finality. Vehicle stabilization, collision avoidance, emergency surfacing, and other deadline-bound safety functions require local verified control and deterministic timing. A ledger can distribute approved policy or software versions before operation and record summaries afterward. It may support slower supervisory decisions, cross-party authorization, data release, and after-action audit. This separation also protects availability: loss of the ledger service should degrade audit freshness and cross-organizational coordination, not disable fundamental platform safety.
+
+Figure~\ref{fig:blockchain-boundary} is therefore a claim discipline. Blockchain may strengthen who agreed to what, under which version, and in which order. It cannot alone establish that the world matched the record, that every endpoint was secure, that a network stayed connected, that a deadline was met, or that the consortium's rules were legitimate. Any paper that claims more must supply independent physical, endpoint, timing, privacy, and governance evidence.

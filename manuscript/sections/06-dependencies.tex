@@ -1,0 +1,74 @@
+\section{Evidence Dependencies, Threat Propagation, and Dynamic Reasoning}
+
+\subsection{A Typed Object-Dependency Graph}
+
+OAL classifies claims; a dependency graph explains how they interact. Let $G_t=(V_t,E_t)$ be a time-indexed directed multigraph whose vertices are versioned instances of the four object types. Edges carry typed relations: an entity \textit{controls} a platform; a platform \textit{hosts} a sensor, model, or gateway; a platform \textit{observes} a data product; a link \textit{transmits} it; an activity \textit{transforms} inputs into a new product; an entity or service \textit{endorses} it; a ledger transaction \textit{records} a commitment; and a mission function \textit{consumes} it. Time and version qualifiers are essential. ``UAV-7 hosts model M'' is insufficient if the decision depended on model version 4.2 before a rollback.
+
+\begin{figure}[H]
+\centering\resizebox{\textwidth}{!}{\input{figures/dependency-threat}}
+\caption{Simplified object dependency and attack-propagation path. Red dashed arrows describe a possible causal path, not proof that every anomaly is malicious.\label{fig:dependency}}
+\end{figure}
+
+The graph unifies evidence and threat reasoning. Evidence can support a local claim and propagate conditionally: a fresh attestation supports the integrity of the platform that generated a product; verified provenance supports the relation between an input and transformation; independent observations support physical plausibility. An attack can traverse the same relations in the opposite epistemic direction. Stolen entity credentials authorize access to a device, device compromise corrupts observations or gateway functions, a manipulated path delays or substitutes a product, and a mission consumer acts on the result. Figure~\ref{fig:dependency} gives one illustrative chain. The graph does not imply simple multiplication of trust scores. Dependencies can be correlated, defensive evidence can be incomplete, and path effects can be non-monotonic.
+
+\subsection{A Unified Threat-Analysis Sentence}
+
+Every scenario should be expressible as: \emph{an attacker with capability $C$ acts on object $O$, propagates through relations $P$, creates mission impact $I$, and is constrained or detected by controls $K$ under assumptions $A$}. This grammar connects threat catalogs to assurance cases. It also exposes missing controls. Table~\ref{tab:threats} applies the grammar to common public scenarios without specifying tactical exploitation procedures.
+
+\begin{table}[H]
+\caption{Object-centered threat, degradation, and evidence-absence analysis.\label{tab:threats}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\scriptsize
+\begin{tabularx}{\fulllength}{@{}p{24mm}p{29mm}p{34mm}YY@{}}
+\toprule
+\textbf{Class and initial object} & \textbf{Capability or condition} & \textbf{Propagation path} & \textbf{Mission impact} & \textbf{Controls and residual uncertainty}\\
+\midrule
+Malicious/entity & Stolen or misused credential & controls device $\rightarrow$ endorses product $\rightarrow$ record accepted & Unauthorized tasking or false accountability & Short-lived delegation, multi-party approval, behavioral evidence, rapid revocation; valid credentials can still mask insider intent\\
+Malicious/device & Capture, malware, or model replacement & hosts sensor/model $\rightarrow$ observes/transforms data & Consistent but false products across many consumers & Attestation, key protection, diversity, provenance, quarantine; measured components may omit sensors or runtime behavior\\
+Malicious/link & Jamming, wormhole, selective forwarding, replay & transmits/custodies data $\rightarrow$ delays or substitutes version & Loss of availability, stale situational picture, biased fusion & Link context, authenticated sequence, path diversity, freshness policy; attribution remains uncertain\\
+Malicious/data & False-data injection, poisoning, semantic manipulation & transformed / endorsed / recorded product $\rightarrow$ consumed decision & Incorrect classification, route, or resource allocation & Physical plausibility, independent modality, robust fusion, lineage; independence assumptions can fail\\
+Benign environment & Fading, multipath, weather, occlusion, low energy & degrades link or observation evidence without hostile action & Delay, disagreement, reduced coverage & Environment-aware baselines, graceful degradation, explicit ``benign-degraded'' hypothesis; models may be incomplete\\
+Evidence absence & Disconnection, failed verifier, missing lineage, stale clock & prevents appraisal across several relations & Unsafe overconfidence or unnecessary isolation & Unknown state, bounded authority, conservative policy, later reconciliation; absence is not proof of compromise\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+Three-way interpretation is a minimum, not a full classifier. \emph{Malicious} means that evidence supports intentional or adversarial manipulation. \emph{Benign-degraded} means that an environmental or operational explanation is supported. \emph{Unknown} means evidence cannot justify either conclusion. A recovery state is useful after remediation because newly attested software does not instantly restore confidence in cached data, keys, neighbors, or prior decisions. Policies should map these states to bounded actions---continue, reduce privilege, request corroboration, isolate, return, or escalate to a human---rather than convert them into moral labels for entire platforms.
+
+\subsection{The CTG Reasoning Loop}
+
+We use CTG-Trust only as a name for the authors' context--temporal--graph reasoning loop shown in Figure~\ref{fig:ctg}. It is not presented as a novel estimator. First, evidence events are captured with source, subject, time, context, value, and lineage. Second, evidence reliability is appraised: a device self-report and an independent verifier do not carry the same evidential relationship. Third, object state is inferred using an appropriate published method. Fourth, dependencies are traversed to identify downstream claims and shared causes. Fifth, uncertainty is made explicit. Sixth, a mission policy chooses an action. Seventh, the decision, relevant versions, and evidence commitment are recorded for accountable review. Eighth, operational outcomes and later verification update the evidence base.
+
+\begin{figure}[H]
+\centering\resizebox{0.86\textwidth}{!}{\input{figures/evidence-loop}}
+\caption{CTG as an author-proposed reasoning loop. The figure defines information flow and accountability, not an unvalidated scoring algorithm.\label{fig:ctg}}
+\end{figure}
+
+Evidence reuse requires special care. A gateway's report can influence device reputation, link assessment, data quality, and a final fused decision; treating each derived value as independent counts the same evidence repeatedly. The dependency graph should retain parent identifiers and common causes so that an implementation can discount correlation or avoid duplicate use. Recommendations also require provenance. A high reputation value from ten pseudonyms is not ten independent observations, and ledger persistence does not remove a Sybil or collusion problem unless membership and organizational independence are enforced.
+
+\subsection{Trust Methods and Appropriate Claims}
+
+The literature offers several method families, summarized in Table~\ref{tab:trust-methods}. None is universally superior because each expresses a different claim under different assumptions. The comparison is qualitative and should guide future validation, not be read as benchmark evidence.
+
+\begin{table}[H]
+\caption{Trust-inference families and their role in CTG.\label{tab:trust-methods}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\small
+\begin{tabularx}{\fulllength}{@{}p{30mm}p{40mm}YYY@{}}
+\toprule
+\textbf{Family} & \textbf{Useful representation} & \textbf{Strength} & \textbf{Critical assumption/risk} & \textbf{Representative sources}\\
+\midrule
+Weighted multi-attribute score & Context-weighted evidence features & Interpretable and implementable at constrained edges & Weights and thresholds can be arbitrary or task-insensitive & \citep{ahmed2019trust,aaqib2023iot}\\
+Bayesian/reputation & Evidence-updated belief or behavior propensity & Natural sequential updating & Priors, stationarity, and evidence independence may be unjustified & \citep{mui2003computational,kamvar2003eigentrust}\\
+Subjective logic & Belief, disbelief, uncertainty, and base rate & Makes ignorance visible and supports opinion combination & Dependence and source identity must be handled explicitly & \citep{jsang2016subjective}\\
+State-space/Markov & Latent state with temporal transitions & Represents persistence and recovery & State meanings and transition parameters need mission data & \citep{arifeen2020hidden}\\
+Rule/tree/fuzzy methods & Human-readable rules or learned partitions & Can combine heterogeneous evidence & Coverage gaps and abrupt boundaries; calibration often unclear & \citep{jiang2020dynamic,zhu2024design}\\
+Machine/deep learning & Learned anomaly or multi-view representation & Captures nonlinear patterns & Shift, poisoning, explainability, and overconfidence & \citep{shafique2021detecting,dang2022deep,liu2022trusted}\\
+Graph-based propagation & Relational evidence over dependencies & Connects local evidence to downstream exposure & Correlation, cycles, and collusion can amplify error & \citep{kamvar2003eigentrust,bellini2020blockchain}\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+Equation~\eqref{eq:trust} can sit above any of these methods if its meaning remains modest. A score must state the event whose probability or degree it represents, its context, horizon, calibration evidence, and decision loss. Without such information, two decimal places create precision without assurance. For this reason the framework does not specify Beta parameters, hidden-state transitions, scoring thresholds, message schemas, or performance targets. Those are empirical design choices for future studies.

@@ -1,0 +1,73 @@
+\documentclass[blockchains,review,submit,moreauthors]{Definitions/mdpi}
+
+\usetikzlibrary{arrows.meta,positioning,calc,fit,shapes.geometric}
+% Compatibility shim for MiKTeX installations whose LaTeX kernel predates the
+% tagging socket used by the current marginnote package. It is inert in the
+% submission PDF and is ignored when the current kernel defines the command.
+\providecommand\UseTaggingSocket[1]{}
+\makeatletter
+\@ifundefined{insert@pcolumn}{\let\insert@pcolumn\insert@column}{}
+\makeatother
+\setlength{\headheight}{20pt}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcommand{\OAL}{\textit{Object--Assurance--Lifecycle} (OAL)}
+\newcommand{\CDUTP}{Cross-Domain Unmanned Trust Profile (CDUTP)}
+
+\firstpage{1}
+\makeatletter\setcounter{page}{\@firstpage}\makeatother
+\pubvolume{1}\issuenum{1}\articlenumber{0}\pubyear{2026}\copyrightyear{2026}
+\datereceived{}\daterevised{}\dateaccepted{}\datepublished{}
+
+\Title{Blockchain-Assisted Mission Trust in Air--Surface--Underwater Unmanned Systems: A Cross-Layer Review and Object--Assurance--Lifecycle Framework}
+\Author{Anonymous Author(s)}
+\AuthorNames{Anonymous Author(s)}
+\address{Author affiliations withheld for double-anonymous review}
+\corres{Correspondence details withheld for double-anonymous review}
+
+\abstract{Air--surface--underwater missions combine unmanned aerial vehicles, unmanned surface vehicles, and unmanned underwater vehicles across heterogeneous links, intermittent connectivity, and multiple administrative domains. Security studies usually examine one platform, network, or ledger mechanism at a time, leaving a gap between trustworthy observations and defensible mission decisions. This narrative review synthesizes literature on cross-domain cooperation, unmanned-system security, trust and reputation, provenance, remote attestation, zero trust, and permissioned blockchains. It proposes the Object--Assurance--Lifecycle (OAL) framework, which relates four trust objects (entity, platform/device, link/path, and data product) to four assurance layers (observation validity, commitment and provenance integrity, ledger and governance consistency, and mission-use suitability) across six mission stages. An object-dependency graph and a context--temporal--graph reasoning loop explain how evidence and attacks propagate without treating missing or degraded evidence as proof of malice. The review also defines a strict blockchain boundary: distributed ledgers can coordinate membership, commitments, versions, audit, and post-partition reconciliation, but cannot establish physical truth, secure compromised endpoints, remove partitions, guarantee hard real-time control, or replace governance. An evidence-maturity ladder and a proposed Cross-Domain Unmanned Trust Profile turn the synthesis into a testable research and standardization agenda.}
+\keyword{mission trust; unmanned systems; UAV--USV--UUV cooperation; blockchain; data provenance; remote attestation; zero trust; maritime autonomy}
+
+\begin{document}
+
+\input{sections/01-introduction}
+\input{sections/02-scope}
+\input{sections/03-context}
+\input{sections/04-landscapes}
+\input{sections/05-oal}
+\input{sections/06-dependencies}
+\input{sections/07-blockchain}
+\input{sections/08-evaluation}
+\input{sections/09-discussion}
+\input{sections/10-limitations}
+\input{sections/11-conclusions}
+
+\vspace{6pt}
+\supplementary{The following supporting information accompanies the submission: Table S1, the internal evidence matrix (CSV); Table S2, the lawful full-text acquisition manifest (CSV); and the editable vector source for Figures 1--7 (TikZ/LaTeX).}
+\authorcontributions{Author contribution details are withheld for double-anonymous review and will be supplied after peer review using the CRediT taxonomy. All authors will confirm that they have read and agreed to the published version of the manuscript.}
+\funding{Funding information is withheld for double-anonymous review and will be supplied after peer review.}
+\institutionalreview{Not applicable.}
+\informedconsent{Not applicable.}
+\dataavailability{No new empirical data were created or analyzed in this review. The supplementary evidence inventory records the sources and analytical categories used to organize the narrative synthesis; detailed fields marked as pending require lawful full-text verification before final submission.}
+\acknowledgments{During the preparation of this manuscript, the authors used OpenAI Codex (GPT-5 family, accessed 6 August 2026) to assist with literature organization, drafting, citation-consistency checking, vector-figure preparation, and LaTeX formatting. The authors reviewed and edited the output and take full responsibility for the content of this publication.}
+\conflictsofinterest{The authors declare no conflicts of interest.}
+
+\abbreviations{Abbreviations}{%
+\begin{tabular}{@{}ll}
+AUV & Autonomous underwater vehicle\\
+CDUTP & Cross-Domain Unmanned Trust Profile\\
+CTG & Context--temporal--graph\\
+DLT & Distributed ledger technology\\
+OAL & Object--Assurance--Lifecycle\\
+RATS & Remote ATtestation procedureS\\
+UAS & Unmanned aerial system\\
+UAV & Unmanned aerial vehicle\\
+USV & Unmanned surface vehicle\\
+UUV & Unmanned underwater vehicle\\
+ZTA & Zero trust architecture
+\end{tabular}}
+
+\begin{adjustwidth}{-\extralength}{0cm}
+\reftitle{References}
+\bibliography{references}
+\end{adjustwidth}
+\end{document}

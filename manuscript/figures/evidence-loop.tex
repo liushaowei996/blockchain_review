@@ -1,0 +1,9 @@
+\begin{tikzpicture}[font=\small,>=Latex]
+\def\R{30mm}
+\foreach \i/\name in {0/Evidence capture,1/Reliability appraisal,2/Object-state inference,3/Dependency propagation,4/Uncertainty expression,5/Policy action,6/On-ledger audit,7/Operational feedback}{
+  \node[draw,rounded corners,fill=blue!7,minimum width=28mm,minimum height=8mm,align=center] (n\i) at ({90-45*\i}:\R) {\name};
+}
+\foreach \i in {0,...,6}{\pgfmathtruncatemacro{\j}{\i+1}\draw[->,thick] (n\i)--(n\j);}
+\draw[->,thick] (n7)--(n0);
+\node[draw=purple!70,fill=purple!6,circle,minimum size=19mm,align=center] at (0,0) {Context\\time\\mission};
+\end{tikzpicture}

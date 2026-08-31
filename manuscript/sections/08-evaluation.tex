@@ -1,0 +1,56 @@
+\section{Evaluation Practices and Evidence Maturity}
+
+The literature spans conceptual architectures, analytical models, simulations, prototypes, datasets, and a smaller number of domain demonstrations. These forms answer different questions. A security analysis can expose protocol assumptions but not acoustic-channel realism; a network simulation can explore scale but not organizational governance; a blockchain prototype can measure transaction latency while accepting fabricated sensor inputs; a field trial can demonstrate integration at modest scale without testing adversarial behavior. Comparing claims without identifying their evidence level produces false equivalence.
+
+\subsection{An Evidence-Maturity Ladder}
+
+Figure~\ref{fig:maturity} proposes a six-level ladder for claims about cross-domain mission trust. It is an ordering of ecological evidence, not a single quality score. Strong mathematical analysis at level 2 can be more informative about a security property than a poorly controlled field demonstration at level 4. Advancement means that additional classes of assumption are exposed and tested. A claim should name the level actually reached and avoid language belonging to a higher level.
+
+\begin{figure}[H]
+\centering\resizebox{0.91\textwidth}{!}{\input{figures/maturity-ladder}}
+\caption{Authors' evidence-maturity ladder. Progress requires preserving lower-level clarity while adding implementation, environmental, organizational, and longitudinal evidence.\label{fig:maturity}}
+\end{figure}
+
+At level 0, a work offers a use case, taxonomy, or architecture with traceable reasoning. Many blockchain opportunity papers properly occupy this level; their value is conceptual, not proof of feasibility. Level 1 adds mathematical, formal, or security analysis with explicit adversary and system assumptions. Level 2 uses simulation or recorded data to test behavior under controlled variation. Level 3 integrates an implementation in a prototype or testbed and reports configurations, code, and workload. Level 4 conducts trials in representative air, surface, or underwater conditions with realistic communications and operational participants. Level 5 demonstrates sustained multi-party operation, including governance changes, credential and software rotation, failures, audits, and recovery. A ledger throughput test cannot alone move a complete mission-trust claim beyond level 3, because the observation and mission-use layers remain untested.
+
+\subsection{Datasets, Simulators, and Testbeds}
+
+No public artifact identified here directly covers UAV--USV--UUV motion, heterogeneous links, device attestation, provenance, adaptive trust, consortium governance, and mission outcomes in one benchmark. Existing resources can nevertheless form a modular validation stack. CICIoT2023, TON\_IoT, and Edge-IIoTset offer large-scale or heterogeneous IoT attack telemetry \citep{neto2023ciciot2023,alsaedi2020ton,ferrag2022edge}; they do not encode ocean physics or vehicle dependencies. SeaDronesSee provides real maritime UAV imagery and metadata for detection tasks \citep{varga2022seadronessee}; it is not a cybersecurity dataset. GNSS spoofing studies provide real or realistic signals and detection methods \citep{semanjski2020use,rado2024recent}, but they represent one attack and platform context.
+
+AirSim supports high-fidelity visual and physical simulation for autonomous vehicles \citep{shah2018airsim}. UUV Simulator integrates underwater robots with Gazebo/ROS \citep{manhaes2016uuv}, while Aqua-Sim NG provides ns-3-based underwater network modeling \citep{martin2017aqua}. General ns-3 design work illustrates the value of open, composable network simulation, although any acoustic, radio, and mobility model must be validated for the intended scenario. These tools can be coupled through timestamped event interfaces, but coupling is itself an experimental contribution: time synchronization, shared geometry, link abstraction, and reproducibility need documentation.
+
+\begin{table}[H]
+\caption{Evaluation resources, the OAL cells they can exercise, and transfer limits.\label{tab:evaluation}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\scriptsize
+\begin{tabularx}{\fulllength}{@{}p{33mm}p{34mm}p{40mm}YY@{}}
+\toprule
+\textbf{Resource/practice} & \textbf{Primary evidence} & \textbf{OAL use} & \textbf{Important metrics} & \textbf{Transfer limitation}\\
+\midrule
+CICIoT2023, TON\_IoT, Edge-IIoTset & Network, host, sensor, and attack telemetry & Device/link anomaly and uncertainty methods & Detection by class, calibration, false isolation, delay, missingness sensitivity & Generic IoT topology; no cross-media maritime mission\\
+SeaDronesSee and GNSS records & Maritime imagery, metadata, navigation anomalies & Observation validity, data-product quality, spoofing context & Detection error, geolocation error, uncertainty calibration, robustness to weather/viewpoint & Limited security labels; not a ledger or underwater benchmark\\
+AirSim & UAV/vehicle physics, sensors, controllable scenarios & Air-domain observation and mission use & Mission success, safety constraint violations, sensor/model shift & Does not natively reproduce acoustic networks or consortium governance\\
+UUV Simulator & ROS/Gazebo underwater vehicles and intervention & Underwater motion, sensing, control, integration & Localization, energy, mission completion, failure recovery & Simulated hydrodynamics and sensors require field validation\\
+Aqua-Sim NG/ns-3 & Underwater-network protocols and channels & Link/path evidence, delay, loss, routing and partition & Delivery, latency distribution, energy, path churn, outage duration & Network abstraction does not establish observation truth\\
+Permissioned-ledger testbed & Peers, ordering, endorsement, contracts, failures & Ledger/governance consistency and audit & Commit/finality latency, throughput, resource use, recovery, fork/conflict handling & Synthetic transactions may ignore real evidence sizes and duty cycles\\
+Cross-domain field exercise & Physical platforms, operators, weather, real links & Integrated lifecycle and mission-use suitability & Consequence-weighted mission outcomes, false quarantine, recovery time, audit completeness & Costly and scenario-specific; adversarial coverage and repeatability limited\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+\subsection{Metrics that Respect the Assurance Chain}
+
+Evaluation should report at least five metric families. First, \emph{inference quality}: discrimination where labels exist, calibration or interval coverage, uncertainty under missing evidence, detection and recovery delay, and performance under distribution shift. Accuracy alone is inadequate because a rare false isolation can remove a critical relay. Second, \emph{mission effect}: task completion, time, coverage, safety-constraint violations, decision regret, and resource allocation under adversarial and benign degradation. Third, \emph{network cost}: bytes per evidence event, delay distribution rather than only mean delay, energy, storage growth, duty cycle, and partition duration. Fourth, \emph{ledger behavior}: endorsement and finality latency, throughput under realistic event batching, validator/resource cost, membership change, outage behavior, reconciliation completeness, and disputed histories. Fifth, \emph{accountability}: percentage of decisions with resolvable provenance, time to determine affected descendants, policy/model version traceability, and successful revocation and recovery.
+
+Experimental factors should cross object, threat, and context dimensions. Examples include compromised entities versus devices; isolated versus colluding nodes; jamming versus environmental fading; fresh versus stale attestation; independent versus correlated sensors; honest versus compromised gateways; short versus prolonged partitions; and routine versus high-consequence mission policies. A factorial design can reveal interactions that single-attack demonstrations miss. Crucially, ground truth must distinguish malicious action, benign degradation, and missing evidence. Otherwise a detector can appear successful by learning weather or topology artifacts.
+
+Baselines should also be layered. A centralized authenticated database tests whether a blockchain adds value; a signed local log tests whether replication is needed; static access control tests the value of continuous evidence; object-local trust tests graph propagation; a no-provenance condition tests the value of lineage; and a no-uncertainty condition reveals overconfident decisions. Blockchain comparisons should hold endorsement, workload, hardware, and fault assumptions constant. Studies of Fabric-based access control and integrated IoT ledgers offer implementation starting points \citep{liu2020fabric,hang2019design}; they do not remove the need for an application-specific baseline.
+
+Reproducibility requires the exact topology, channel and mobility models, workload, cryptographic settings, ledger release and configuration, endorsement and fault model, random seeds, data partitions, trust-policy versions, and mission-loss function. Versioned provenance should cover the evaluation itself. This is more than archival hygiene: if a policy threshold or model changes between runs, the reported mission outcome belongs to a different data product and assurance claim.
+
+\subsection{Reading Current Claims Conservatively}
+
+UAV blockchain applications range from security and privacy architectures to swarm monitoring and resilient-network proposals \citep{ch2020security,xiao2021blockchain,abualsauod2022hybrid,garcamagario2019security,zhou2024towards}. Their reported evidence should be read at the level actually provided. Likewise, broader claims about blockchain in Industry 4.0, federated learning, digital twins, supply chains, and government sharing demonstrate reusable organizational patterns \citep{javaid2021blockchain,javed2022integration,suhail2022trustworthy,kshetri20181,lnes2017blockchain}. Transfer to intermittent, safety-relevant cross-domain missions remains a hypothesis until endpoint, link, timing, governance, and mission consequences are jointly tested.
+
+The supplementary matrix is designed to support this discipline. It separates a DOI-verified source record from a full-text-coded claim and leaves unresolved detail visible. Before submission, all sources supporting method-specific comparisons or strong gap statements should be checked in full text, with paywalled items supplied lawfully by the authors. This draft intentionally avoids inventing maturity ratings or performance values for unavailable texts.

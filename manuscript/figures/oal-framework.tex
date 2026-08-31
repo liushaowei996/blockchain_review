@@ -1,0 +1,23 @@
+\begin{tikzpicture}[font=\small,>=Latex]
+\definecolor{oalblue}{HTML}{2474A6}\definecolor{oalgreen}{HTML}{239B56}\definecolor{oalorange}{HTML}{CA6F1E}\definecolor{oalgray}{HTML}{566573}
+\foreach \i/\name/\col in {0/Entity/oalblue,1/Platform--device/oalgreen,2/Link--path/oalorange,3/Data product/oalgray}{
+  \node[draw=\col,fill=\col!12,minimum width=31mm,minimum height=8mm,align=center] (o\i) at (3.3*\i,0) {\textbf{\name}};
+}
+\node[anchor=east,font=\bfseries] at (-1.8,0) {Trust objects};
+\foreach \j/\name in {0/Observation validity,1/Commitment \& provenance,2/Ledger \& governance,3/Mission-use suitability}{
+  \node[draw=black!50,fill=black!5,minimum width=42mm,minimum height=7.5mm,align=center] (a\j) at (-0.2,-1.15-0.72*\j) {\name};
+}
+\node[rotate=90,font=\bfseries] at (-2.65,-2.25) {Assurance layers};
+\foreach \k/\name in {0/Admit,1/Sense,2/Relay,3/Fuse/share,4/Decide/act,5/Audit/recover}{
+  \node[draw=oalblue!60,fill=oalblue!7,minimum width=22mm,minimum height=7mm,align=center] (l\k) at (3.3+2.35*\k,-4.65) {\name};
+  \ifnum\k>0\draw[->,oalblue!70] (l\the\numexpr\k-1\relax) -- (l\k);\fi
+}
+\node[anchor=east,font=\bfseries] at (1.95,-4.65) {Lifecycle};
+\draw[rounded corners,very thick,dashed,purple!65] (-1.9,0.65) rectangle (15.1,-5.25);
+\node[fill=white,text=purple!75,font=\bfseries] at (9.3,0.65) {Assurance and governance plane};
+\node[align=center,text=purple!80] at (9.3,-2.15) {identity and authorization $\cdot$ remote attestation $\cdot$ provenance\\dynamic inference $\cdot$ policy/model/contract versions $\cdot$ ledger state $\cdot$ consortium governance};
+\draw[->,thick] (o0.south) -- ++(0,-.42);
+\draw[->,thick] (o1.south) -- ++(0,-.42);
+\draw[->,thick] (o2.south) -- ++(0,-.42);
+\draw[->,thick] (o3.south) -- ++(0,-.42);
+\end{tikzpicture}

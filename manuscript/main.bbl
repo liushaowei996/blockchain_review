@@ -1,0 +1,1095 @@
+\begin{thebibliography}{999}
+
+\bibitem[Hu et~al.(2024)Hu, Zhang, Liu, Ding, Xu, Luo, and
+  Cao]{hu2024coordinated}
+Hu, B.B.; Zhang, H.T.; Liu, B.; Ding, J.; Xu, Y.; Luo, C.; Cao, H.
+\newblock {Coordinated Navigation Control of Cross-Domain Unmanned Systems via
+  Guiding Vector Fields}.
+\newblock {\em IEEE Transactions on Control Systems Technology} {\bf 2024},
+  {\em 32},~550--563.
+\newblock {\url{https://doi.org/10.1109/tcst.2023.3323766}}.
+
+\bibitem[Wei et~al.(2023)Wei, Wang, Fang, Chen, Ren, and Dong]{wei20233u}
+Wei, W.; Wang, J.; Fang, Z.; Chen, J.; Ren, Y.; Dong, Y.
+\newblock {3U: Joint Design of UAV-USV-UUV Networks for Cooperative Target
+  Hunting}.
+\newblock {\em IEEE Transactions on Vehicular Technology} {\bf 2023}, {\em
+  72},~4085--4090.
+\newblock {\url{https://doi.org/10.1109/tvt.2022.3220856}}.
+
+\bibitem[Wu et~al.(2020)Wu, Low, and Lv]{wu2020cooperative}
+Wu, Y.; Low, K.H.; Lv, C.
+\newblock {Cooperative Path Planning for Heterogeneous Unmanned Vehicles in a
+  Search-and-Track Mission Aiming at an Underwater Target}.
+\newblock {\em IEEE Transactions on Vehicular Technology} {\bf 2020}, {\em
+  69},~6782--6787.
+\newblock {\url{https://doi.org/10.1109/tvt.2020.2991983}}.
+
+\bibitem[Ke and Chen(2022)]{ke2022cooperative}
+Ke, C.; Chen, H.
+\newblock {Cooperative path planning for air--sea heterogeneous unmanned
+  vehicles using search-and-tracking mission}.
+\newblock {\em Ocean Engineering} {\bf 2022}, {\em 262},~112020.
+\newblock {\url{https://doi.org/10.1016/j.oceaneng.2022.112020}}.
+
+\bibitem[Liu et~al.(2023)Liu, Li, Zhu, Guo, and Liu]{liu2023formation}
+Liu, M.; Li, Y.; Zhu, L.; Guo, Y.; Liu, B.
+\newblock {Formation Control for Mixed-Order UAVs--USVs--UUVs Systems under
+  Cooperative and Optimal Control}.
+\newblock {\em Journal of Marine Science and Engineering} {\bf 2023}, {\em
+  11},~704.
+\newblock {\url{https://doi.org/10.3390/jmse11040704}}.
+
+\bibitem[Ke et~al.(2023)Ke, Chen, and Xie]{ke2023cross}
+Ke, C.; Chen, H.; Xie, L.
+\newblock {Cross-Domain Fixed-Time Formation Control for an Air-Sea
+  Heterogeneous Unmanned System with Disturbances}.
+\newblock {\em Journal of Marine Science and Engineering} {\bf 2023}, {\em
+  11},~1336.
+\newblock {\url{https://doi.org/10.3390/jmse11071336}}.
+
+\bibitem[Pang et~al.(2026)Pang, Zhu, Chen, Wang, and Wang]{pang2026cooperative}
+Pang, W.; Zhu, D.; Chen, M.; Wang, Z.; Wang, B.
+\newblock {A cooperative heterogeneous formation control and motion planning
+  design of 3U: UAV-USV-UUV systems}.
+\newblock {\em Ocean Engineering} {\bf 2026}, {\em 347},~123867.
+\newblock {\url{https://doi.org/10.1016/j.oceaneng.2025.123867}}.
+
+\bibitem[Hayat et~al.(2016)Hayat, Yanmaz, and Muzaffar]{hayat2016survey}
+Hayat, S.; Yanmaz, E.; Muzaffar, R.
+\newblock {Survey on Unmanned Aerial Vehicle Networks for Civil Applications: A
+  Communications Viewpoint}.
+\newblock {\em IEEE Communications Surveys \& Tutorials} {\bf 2016}, {\em
+  18},~2624--2661.
+\newblock {\url{https://doi.org/10.1109/comst.2016.2560343}}.
+
+\bibitem[Shakhatreh et~al.(2019)Shakhatreh, Sawalmeh, Al-Fuqaha, Dou, Almaita,
+  Khalil, Othman, Khreishah, and Guizani]{shakhatreh2019unmanned}
+Shakhatreh, H.; Sawalmeh, A.H.; Al-Fuqaha, A.; Dou, Z.; Almaita, E.; Khalil,
+  I.; Othman, N.S.; Khreishah, A.; Guizani, M.
+\newblock {Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and
+  Key Research Challenges}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~48572--48634.
+\newblock {\url{https://doi.org/10.1109/access.2019.2909530}}.
+
+\bibitem[Mohsan et~al.(2023)Mohsan, Othman, Li, Alsharif, and
+  Khan]{mohsan2023unmanned}
+Mohsan, S.A.H.; Othman, N.Q.H.; Li, Y.; Alsharif, M.H.; Khan, M.A.
+\newblock {Unmanned aerial vehicles (UAVs): practical aspects, applications,
+  open challenges, security issues, and future trends}.
+\newblock {\em Intelligent Service Robotics} {\bf 2023}, {\em 16},~109--137.
+\newblock {\url{https://doi.org/10.1007/s11370-022-00452-4}}.
+
+\bibitem[Bae and Hong(2023)]{bae2023survey}
+Bae, I.; Hong, J.
+\newblock {Survey on the Developments of Unmanned Marine Vehicles: Intelligence
+  and Cooperation}.
+\newblock {\em Sensors} {\bf 2023}, {\em 23},~4643.
+\newblock {\url{https://doi.org/10.3390/s23104643}}.
+
+\bibitem[Wibisono et~al.(2023)Wibisono, Piran, Song, and
+  Lee]{wibisono2023survey}
+Wibisono, A.; Piran, M.J.; Song, H.K.; Lee, B.M.
+\newblock {A Survey on Unmanned Underwater Vehicles: Challenges, Enabling
+  Technologies, and Future Research Directions}.
+\newblock {\em Sensors} {\bf 2023}, {\em 23},~7321.
+\newblock {\url{https://doi.org/10.3390/s23177321}}.
+
+\bibitem[González-García et~al.(2020)González-García, Gómez-Espinosa,
+  Cuan-Urquizo, García-Valdovinos, Salgado-Jiménez, and
+  Cabello]{gonzlezgarca2020autonomous}
+González-García, J.; Gómez-Espinosa, A.; Cuan-Urquizo, E.;
+  García-Valdovinos, L.G.; Salgado-Jiménez, T.; Cabello, J.A.E.
+\newblock {Autonomous Underwater Vehicles: Localization, Navigation, and
+  Communication for Collaborative Missions}.
+\newblock {\em Applied Sciences} {\bf 2020}, {\em 10},~1256.
+\newblock {\url{https://doi.org/10.3390/app10041256}}.
+
+\bibitem[Mekdad et~al.(2023)Mekdad, Aris, Babun, Fergougui, Conti, Lazzeretti,
+  and Uluagac]{mekdad2023survey}
+Mekdad, Y.; Aris, A.; Babun, L.; Fergougui, A.E.; Conti, M.; Lazzeretti, R.;
+  Uluagac, A.S.
+\newblock {A survey on security and privacy issues of UAVs}.
+\newblock {\em Computer Networks} {\bf 2023}, {\em 224},~109626.
+\newblock {\url{https://doi.org/10.1016/j.comnet.2023.109626}}.
+
+\bibitem[Wang et~al.(2025)Wang, Zhao, Yi, Ning, Guo, Yu, and
+  Guo]{wang2025survey}
+Wang, X.; Zhao, Z.; Yi, L.; Ning, Z.; Guo, L.; Yu, F.R.; Guo, S.
+\newblock {A Survey on Security of UAV Swarm Networks: Attacks and
+  Countermeasures}.
+\newblock {\em ACM Computing Surveys} {\bf 2025}, {\em 57},~1--37.
+\newblock {\url{https://doi.org/10.1145/3703625}}.
+
+\bibitem[Hadi et~al.(2023)Hadi, Cao, Nisa, Jamil, and
+  Ni]{hadi2023comprehensive}
+Hadi, H.J.; Cao, Y.; Nisa, K.U.; Jamil, A.M.; Ni, Q.
+\newblock {A comprehensive survey on security, privacy issues and emerging
+  defence technologies for UAVs}.
+\newblock {\em Journal of Network and Computer Applications} {\bf 2023}, {\em
+  213},~103607.
+\newblock {\url{https://doi.org/10.1016/j.jnca.2023.103607}}.
+
+\bibitem[Yahuza et~al.(2021)Yahuza, Idris, Ahmedy, Wahab, Nandy, Noor, and
+  Bala]{yahuza2021internet}
+Yahuza, M.; Idris, M.Y.I.; Ahmedy, I.B.; Wahab, A.W.A.; Nandy, T.; Noor, N.M.;
+  Bala, A.
+\newblock {Internet of Drones Security and Privacy Issues: Taxonomy and Open
+  Challenges}.
+\newblock {\em IEEE Access} {\bf 2021}, {\em 9},~57243--57270.
+\newblock {\url{https://doi.org/10.1109/access.2021.3072030}}.
+
+\bibitem[Jiang(2019)]{jiang2019securing}
+Jiang, S.
+\newblock {On Securing Underwater Acoustic Networks: A Survey}.
+\newblock {\em IEEE Communications Surveys \& Tutorials} {\bf 2019}, {\em
+  21},~729--752.
+\newblock {\url{https://doi.org/10.1109/comst.2018.2864127}}.
+
+\bibitem[Yang et~al.(2018)Yang, Dai, and Wei]{yang2018challenges}
+Yang, G.; Dai, L.; Wei, Z.
+\newblock {Challenges, Threats, Security Issues and New Trends of Underwater
+  Wireless Sensor Networks}.
+\newblock {\em Sensors} {\bf 2018}, {\em 18},~3907.
+\newblock {\url{https://doi.org/10.3390/s18113907}}.
+
+\bibitem[Yisa et~al.(2021)Yisa, Dargahi, Belguith, and
+  Hammoudeh]{yisa2021security}
+Yisa, A.G.; Dargahi, T.; Belguith, S.; Hammoudeh, M.
+\newblock {Security challenges of Internet of Underwater Things: A systematic
+  literature review}.
+\newblock {\em Transactions on Emerging Telecommunications Technologies} {\bf
+  2021}, {\em 32}.
+\newblock {\url{https://doi.org/10.1002/ett.4203}}.
+
+\bibitem[Adam et~al.(2024)Adam, Ali, Naeem, Ghazy, and Kaddoum]{adam2024state}
+Adam, N.; Ali, M.; Naeem, F.; Ghazy, A.S.; Kaddoum, G.
+\newblock {State-of-the-Art Security Schemes for the Internet of Underwater
+  Things: A Holistic Survey}.
+\newblock {\em IEEE Open Journal of the Communications Society} {\bf 2024},
+  {\em 5},~6561--6592.
+\newblock {\url{https://doi.org/10.1109/ojcoms.2024.3474290}}.
+
+\bibitem[Hafeez et~al.(2023)Hafeez, Khan, Al-Quraan, Mohjazi, Zoha, Imran, and
+  Sun]{hafeez2023blockchain}
+Hafeez, S.; Khan, A.R.; Al-Quraan, M.M.; Mohjazi, L.; Zoha, A.; Imran, M.A.;
+  Sun, Y.
+\newblock {Blockchain-Assisted UAV Communication Systems: A Comprehensive
+  Survey}.
+\newblock {\em IEEE Open Journal of Vehicular Technology} {\bf 2023}, {\em
+  4},~558--580.
+\newblock {\url{https://doi.org/10.1109/ojvt.2023.3295208}}.
+
+\bibitem[Alladi et~al.(2020)Alladi, Chamola, Sahu, and
+  Guizani]{alladi2020applications}
+Alladi, T.; Chamola, V.; Sahu, N.; Guizani, M.
+\newblock {Applications of blockchain in unmanned aerial vehicles: A review}.
+\newblock {\em Vehicular Communications} {\bf 2020}, {\em 23},~100249.
+\newblock {\url{https://doi.org/10.1016/j.vehcom.2020.100249}}.
+
+\bibitem[Mehta et~al.(2020)Mehta, Gupta, and Tanwar]{mehta2020blockchain}
+Mehta, P.; Gupta, R.; Tanwar, S.
+\newblock {Blockchain envisioned UAV networks: Challenges, solutions, and
+  comparisons}.
+\newblock {\em Computer Communications} {\bf 2020}, {\em 151},~518--538.
+\newblock {\url{https://doi.org/10.1016/j.comcom.2020.01.023}}.
+
+\bibitem[Hawashin et~al.(2024)Hawashin, Nemer, Gebreab, Salah, Jayaraman, Khan,
+  and Damiani]{hawashin2024blockchain}
+Hawashin, D.; Nemer, M.; Gebreab, S.A.; Salah, K.; Jayaraman, R.; Khan, M.K.;
+  Damiani, E.
+\newblock {Blockchain applications in UAV industry: Review, opportunities, and
+  challenges}.
+\newblock {\em Journal of Network and Computer Applications} {\bf 2024}, {\em
+  230},~103932.
+\newblock {\url{https://doi.org/10.1016/j.jnca.2024.103932}}.
+
+\bibitem[Phadke et~al.(2024)Phadke, Sekharan, Vasudeva, and
+  Kar]{phadke2024unifying}
+Phadke, A.; Sekharan, C.N.; Vasudeva, K.K.; Kar, D.
+\newblock {Unifying Sky and Chain: A Perspective on Blockchain’s Role in UAV
+  Swarms}.
+\newblock In Proceedings of the 2024 2nd International Conference on Artificial
+  Intelligence, Blockchain, and Internet of Things (AIBThings). IEEE,  2024,
+  pp. 1--9.
+\newblock {\url{https://doi.org/10.1109/aibthings63359.2024.10863717}}.
+
+\bibitem[Han et~al.(2022)Han, Sui, and Wu]{han2022identity}
+Han, P.; Sui, A.; Wu, J.
+\newblock {Identity Management and Authentication of a UAV Swarm Based on a
+  Blockchain}.
+\newblock {\em Applied Sciences} {\bf 2022}, {\em 12},~10524.
+\newblock {\url{https://doi.org/10.3390/app122010524}}.
+
+\bibitem[Tan et~al.(2022)Tan, Wang, Liu, and Kato]{tan2022blockchain}
+Tan, Y.; Wang, J.; Liu, J.; Kato, N.
+\newblock {Blockchain-Assisted Distributed and Lightweight Authentication
+  Service for Industrial Unmanned Aerial Vehicles}.
+\newblock {\em IEEE Internet of Things Journal} {\bf 2022}, {\em
+  9},~16928--16940.
+\newblock {\url{https://doi.org/10.1109/jiot.2022.3142251}}.
+
+\bibitem[Liu et~al.(2023)Liu, Guo, Huang, Cai, Wu, Chen, and
+  Igorevich]{liu2023lightweight}
+Liu, Z.; Guo, J.; Huang, F.; Cai, D.; Wu, Y.; Chen, X.; Igorevich, K.K.
+\newblock {Lightweight Trustworthy Message Exchange in Unmanned Aerial Vehicle
+  Networks}.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems} {\bf
+  2023}, {\em 24},~2144--2157.
+\newblock {\url{https://doi.org/10.1109/tits.2021.3136304}}.
+
+\bibitem[Islam and Shin(2019)]{islam2019bus}
+Islam, A.; Shin, S.Y.
+\newblock {BUS: A Blockchain-Enabled Data Acquisition Scheme With the
+  Assistance of UAV Swarm in Internet of Things}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~103231--103249.
+\newblock {\url{https://doi.org/10.1109/access.2019.2930774}}.
+
+\bibitem[Karmakar et~al.(2024)Karmakar, Kaddoum, and
+  Akhrif]{karmakar2024blockchain}
+Karmakar, R.; Kaddoum, G.; Akhrif, O.
+\newblock {A Blockchain-Based Distributed and Intelligent Clustering-Enabled
+  Authentication Protocol for UAV Swarms}.
+\newblock {\em IEEE Transactions on Mobile Computing} {\bf 2024}, {\em
+  23},~6178--6195.
+\newblock {\url{https://doi.org/10.1109/tmc.2023.3319544}}.
+
+\bibitem[Farah et~al.(2024)Farah, Ahmed, Mahmoud, Shah, Al-kadri, Taramonli,
+  Bellekens, Abozariba, Idrissi, and Aneiba]{farah2024survey}
+Farah, M.B.; Ahmed, Y.; Mahmoud, H.; Shah, S.A.; Al-kadri, M.O.; Taramonli, S.;
+  Bellekens, X.; Abozariba, R.; Idrissi, M.; Aneiba, A.
+\newblock {A survey on blockchain technology in the maritime industry:
+  Challenges and future perspectives}.
+\newblock {\em Future Generation Computer Systems} {\bf 2024}, {\em
+  157},~618--637.
+\newblock {\url{https://doi.org/10.1016/j.future.2024.03.046}}.
+
+\bibitem[Li and Zhou(2021)]{li2021survey}
+Li, L.; Zhou, H.
+\newblock {A survey of blockchain with applications in maritime and shipping
+  industry}.
+\newblock {\em Information Systems and e-Business Management} {\bf 2021}, {\em
+  19},~789--807.
+\newblock {\url{https://doi.org/10.1007/s10257-020-00480-6}}.
+
+\bibitem[Yang(2019)]{yang2019maritime}
+Yang, C.S.
+\newblock {Maritime shipping digitalization: Blockchain-based technology
+  applications, future improvements, and intention to use}.
+\newblock {\em Transportation Research Part E: Logistics and Transportation
+  Review} {\bf 2019}, {\em 131},~108--117.
+\newblock {\url{https://doi.org/10.1016/j.tre.2019.09.020}}.
+
+\bibitem[Li et~al.(2020)Li, Jiang, Chen, Luo, and Wen]{li2020survey}
+Li, X.; Jiang, P.; Chen, T.; Luo, X.; Wen, Q.
+\newblock {A survey on the security of blockchain systems}.
+\newblock {\em Future Generation Computer Systems} {\bf 2020}, {\em
+  107},~841--853.
+\newblock {\url{https://doi.org/10.1016/j.future.2017.08.020}}.
+
+\bibitem[Reyna et~al.(2018)Reyna, Martín, Chen, Soler, and
+  Díaz]{reyna2018blockchain}
+Reyna, A.; Martín, C.; Chen, J.; Soler, E.; Díaz, M.
+\newblock {On blockchain and its integration with IoT. Challenges and
+  opportunities}.
+\newblock {\em Future Generation Computer Systems} {\bf 2018}, {\em
+  88},~173--190.
+\newblock {\url{https://doi.org/10.1016/j.future.2018.05.046}}.
+
+\bibitem[Uddin et~al.(2021)Uddin, Stranieri, Gondal, and
+  Balasubramanian]{uddin2021survey}
+Uddin, M.A.; Stranieri, A.; Gondal, I.; Balasubramanian, V.
+\newblock {A survey on the adoption of blockchain in IoT: challenges and
+  solutions}.
+\newblock {\em Blockchain: Research and Applications} {\bf 2021}, {\em
+  2},~100006.
+\newblock {\url{https://doi.org/10.1016/j.bcra.2021.100006}}.
+
+\bibitem[Monrat et~al.(2019)Monrat, Schelen, and Andersson]{monrat2019survey}
+Monrat, A.A.; Schelen, O.; Andersson, K.
+\newblock {A Survey of Blockchain From the Perspectives of Applications,
+  Challenges, and Opportunities}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~117134--117151.
+\newblock {\url{https://doi.org/10.1109/access.2019.2936094}}.
+
+\bibitem[Rose et~al.(2020)Rose, Borchert, Mitchell, and Connelly]{rose2020zero}
+Rose, S.; Borchert, O.; Mitchell, S.; Connelly, S.
+\newblock {Zero Trust Architecture}.
+\newblock Technical report, National Institute of Standards and Technology,
+  2020.
+\newblock {\url{https://doi.org/10.6028/nist.sp.800-207}}.
+
+\bibitem[Syed et~al.(2022)Syed, Shah, Shaghaghi, Anwar, Baig, and
+  Doss]{syed2022zero}
+Syed, N.F.; Shah, S.W.; Shaghaghi, A.; Anwar, A.; Baig, Z.; Doss, R.
+\newblock {Zero Trust Architecture (ZTA): A Comprehensive Survey}.
+\newblock {\em IEEE Access} {\bf 2022}, {\em 10},~57143--57179.
+\newblock {\url{https://doi.org/10.1109/access.2022.3174679}}.
+
+\bibitem[Birkholz et~al.(2023)Birkholz, Thaler, Richardson, Smith, and
+  Pan]{birkholz2023remote}
+Birkholz, H.; Thaler, D.; Richardson, M.; Smith, N.; Pan, W.
+\newblock {Remote ATtestation procedureS (RATS) Architecture}.
+\newblock Technical report, RFC Editor,  2023.
+\newblock {\url{https://doi.org/10.17487/rfc9334}}.
+
+\bibitem[Hardjono and Smith(2021)]{hardjono2021towards}
+Hardjono, T.; Smith, N.
+\newblock {Towards an attestation architecture for blockchain networks}.
+\newblock {\em World Wide Web} {\bf 2021}, {\em 24},~1587--1615.
+\newblock {\url{https://doi.org/10.1007/s11280-021-00869-4}}.
+
+\bibitem[Ott et~al.(2023)Ott, Kamhuber, Pecholt, and Wessel]{ott2023universal}
+Ott, S.; Kamhuber, M.; Pecholt, J.; Wessel, S.
+\newblock {Universal Remote Attestation for Cloud and Edge Platforms}.
+\newblock In Proceedings of the Proceedings of the 18th International
+  Conference on Availability, Reliability and Security. ACM,  2023, pp. 1--11.
+\newblock {\url{https://doi.org/10.1145/3600160.3600171}}.
+
+\bibitem[{World Wide Web Consortium}(2013{\natexlab{a}})]{w3c2013provdm}
+{World Wide Web Consortium}.
+\newblock {PROV-DM}: The {PROV} Data Model.
+\newblock W3C Recommendation,  2013.
+\newblock Accessed 6 August 2026.
+
+\bibitem[{World Wide Web Consortium}(2013{\natexlab{b}})]{w3c2013provo}
+{World Wide Web Consortium}.
+\newblock {PROV-O}: The {PROV} Ontology.
+\newblock W3C Recommendation,  2013.
+\newblock Accessed 6 August 2026.
+
+\bibitem[Hu et~al.(2020)Hu, Yan, Ding, and Yang]{hu2020survey}
+Hu, R.; Yan, Z.; Ding, W.; Yang, L.T.
+\newblock {A survey on data provenance in IoT}.
+\newblock {\em World Wide Web} {\bf 2020}, {\em 23},~1441--1463.
+\newblock {\url{https://doi.org/10.1007/s11280-019-00746-1}}.
+
+\bibitem[Pan et~al.(2023)Pan, Stakhanova, and Ray]{pan2023data}
+Pan, B.; Stakhanova, N.; Ray, S.
+\newblock {Data Provenance in Security and Privacy}.
+\newblock {\em ACM Computing Surveys} {\bf 2023}, {\em 55},~1--35.
+\newblock {\url{https://doi.org/10.1145/3593294}}.
+
+\bibitem[Ahmed et~al.(2019)Ahmed, Ab~Hamid, Gani, khan, and
+  Khan]{ahmed2019trust}
+Ahmed, A.I.A.; Ab~Hamid, S.H.; Gani, A.; khan, S.; Khan, M.K.
+\newblock {Trust and reputation for Internet of Things: Fundamentals, taxonomy,
+  and open research challenges}.
+\newblock {\em Journal of Network and Computer Applications} {\bf 2019}, {\em
+  145},~102409.
+\newblock {\url{https://doi.org/10.1016/j.jnca.2019.102409}}.
+
+\bibitem[Aaqib et~al.(2023)Aaqib, Ali, Chen, and Nibouche]{aaqib2023iot}
+Aaqib, M.; Ali, A.; Chen, L.; Nibouche, O.
+\newblock {IoT trust and reputation: a survey and taxonomy}.
+\newblock {\em Journal of Cloud Computing} {\bf 2023}, {\em 12}.
+\newblock {\url{https://doi.org/10.1186/s13677-023-00416-8}}.
+
+\bibitem[Junior and Kamienski(2021)]{junior2021survey}
+Junior, F.M.R.; Kamienski, C.A.
+\newblock {A Survey on Trustworthiness for the Internet of Things}.
+\newblock {\em IEEE Access} {\bf 2021}, {\em 9},~42493--42514.
+\newblock {\url{https://doi.org/10.1109/access.2021.3066457}}.
+
+\bibitem[Jøsang(2016)]{jsang2016subjective}
+Jøsang, A.
+\newblock {\em {Subjective Logic}}; Springer International Publishing,  2016.
+\newblock {\url{https://doi.org/10.1007/978-3-319-42337-1}}.
+
+\bibitem[Mui et~al.(2003)Mui, Mohtashemi, and
+  Halberstadt]{mui2003computational}
+Mui, L.; Mohtashemi, M.; Halberstadt, A.
+\newblock {A computational model of trust and reputation}.
+\newblock In Proceedings of the Proceedings of the 35th Annual Hawaii
+  International Conference on System Sciences. IEEE Comput. Soc,  2003, pp.
+  2431--2439.
+\newblock {\url{https://doi.org/10.1109/hicss.2002.994181}}.
+
+\bibitem[Kamvar et~al.(2003)Kamvar, Schlosser, and
+  Garcia-Molina]{kamvar2003eigentrust}
+Kamvar, S.D.; Schlosser, M.T.; Garcia-Molina, H.
+\newblock {The Eigentrust algorithm for reputation management in P2P networks}.
+\newblock In Proceedings of the Proceedings of the twelfth international
+  conference on World Wide Web - WWW '03. ACM Press,  2003, p. 640.
+\newblock {\url{https://doi.org/10.1145/775152.775242}}.
+
+\bibitem[Nomikos et~al.(2023)Nomikos, Gkonis, Bithas, and
+  Trakadas]{nomikos2023survey}
+Nomikos, N.; Gkonis, P.K.; Bithas, P.S.; Trakadas, P.
+\newblock {A Survey on UAV-Aided Maritime Communications: Deployment
+  Considerations, Applications, and Future Challenges}.
+\newblock {\em IEEE Open Journal of the Communications Society} {\bf 2023},
+  {\em 4},~56--78.
+\newblock {\url{https://doi.org/10.1109/ojcoms.2022.3225590}}.
+
+\bibitem[Nomikos et~al.(2024)Nomikos, Giannopoulos, Kalafatelis, Özduran,
+  Trakadas, and Karagiannidis]{nomikos2024improving}
+Nomikos, N.; Giannopoulos, A.; Kalafatelis, A.; Özduran, V.; Trakadas, P.;
+  Karagiannidis, G.K.
+\newblock {Improving Connectivity in 6G Maritime Communication Networks With
+  UAV Swarms}.
+\newblock {\em IEEE Access} {\bf 2024}, {\em 12},~18739--18751.
+\newblock {\url{https://doi.org/10.1109/access.2024.3360133}}.
+
+\bibitem[Ali et~al.(2020)Ali, Jayakody, Chursin, Affes, and
+  Dmitry]{ali2020recent}
+Ali, M.F.; Jayakody, D.N.K.; Chursin, Y.A.; Affes, S.; Dmitry, S.
+\newblock {Recent Advances and Future Directions on Underwater Wireless
+  Communications}.
+\newblock {\em Archives of Computational Methods in Engineering} {\bf 2020},
+  {\em 27},~1379--1412.
+\newblock {\url{https://doi.org/10.1007/s11831-019-09354-8}}.
+
+\bibitem[Saeed et~al.(2019)Saeed, Celik, Al-Naffouri, and
+  Alouini]{saeed2019underwater}
+Saeed, N.; Celik, A.; Al-Naffouri, T.Y.; Alouini, M.S.
+\newblock {Underwater optical wireless communications, networking, and
+  localization: A survey}.
+\newblock {\em Ad Hoc Networks} {\bf 2019}, {\em 94},~101935.
+\newblock {\url{https://doi.org/10.1016/j.adhoc.2019.101935}}.
+
+\bibitem[Diamant and Lampe(2018)]{diamant2018low}
+Diamant, R.; Lampe, L.
+\newblock {Low Probability of Detection for Underwater Acoustic Communication:
+  A Review}.
+\newblock {\em IEEE Access} {\bf 2018}, {\em 6},~19099--19112.
+\newblock {\url{https://doi.org/10.1109/access.2018.2818110}}.
+
+\bibitem[Jahanbakht et~al.(2021)Jahanbakht, Xiang, Hanzo, and
+  Rahimi~Azghadi]{jahanbakht2021internet}
+Jahanbakht, M.; Xiang, W.; Hanzo, L.; Rahimi~Azghadi, M.
+\newblock {Internet of Underwater Things and Big Marine Data Analytics---A
+  Comprehensive Survey}.
+\newblock {\em IEEE Communications Surveys \& Tutorials} {\bf 2021}, {\em
+  23},~904--956.
+\newblock {\url{https://doi.org/10.1109/comst.2021.3053118}}.
+
+\bibitem[Stolfi et~al.(2021)Stolfi, Brust, Danoy, and Bouvry]{stolfi2021uav}
+Stolfi, D.H.; Brust, M.R.; Danoy, G.; Bouvry, P.
+\newblock {UAV-UGV-UMV Multi-Swarms for Cooperative Surveillance}.
+\newblock {\em Frontiers in Robotics and AI} {\bf 2021}, {\em 8}.
+\newblock {\url{https://doi.org/10.3389/frobt.2021.616950}}.
+
+\bibitem[Xue and Wu(2021)]{xue2021distributed}
+Xue, K.; Wu, T.
+\newblock {Distributed Consensus of USVs under Heterogeneous UAV-USV
+  Multi-Agent Systems Cooperative Control Scheme}.
+\newblock {\em Journal of Marine Science and Engineering} {\bf 2021}, {\em
+  9},~1314.
+\newblock {\url{https://doi.org/10.3390/jmse9111314}}.
+
+\bibitem[Shafique et~al.(2021)Shafique, Mehmood, and
+  Elhadef]{shafique2021detecting}
+Shafique, A.; Mehmood, A.; Elhadef, M.
+\newblock {Detecting Signal Spoofing Attack in UAVs Using Machine Learning
+  Models}.
+\newblock {\em IEEE Access} {\bf 2021}, {\em 9},~93803--93815.
+\newblock {\url{https://doi.org/10.1109/access.2021.3089847}}.
+
+\bibitem[Dang et~al.(2022)Dang, Benzaid, Yang, Taleb, and Shen]{dang2022deep}
+Dang, Y.; Benzaid, C.; Yang, B.; Taleb, T.; Shen, Y.
+\newblock {Deep-Ensemble-Learning-Based GPS Spoofing Detection for
+  Cellular-Connected UAVs}.
+\newblock {\em IEEE Internet of Things Journal} {\bf 2022}, {\em
+  9},~25068--25085.
+\newblock {\url{https://doi.org/10.1109/jiot.2022.3195320}}.
+
+\bibitem[Semanjski et~al.(2020)Semanjski, Semanjski, De~Wilde, and
+  Muls]{semanjski2020use}
+Semanjski, S.; Semanjski, I.; De~Wilde, W.; Muls, A.
+\newblock {Use of Supervised Machine Learning for GNSS Signal Spoofing
+  Detection with Validation on Real-World Meaconing and Spoofing Data---Part
+  I}.
+\newblock {\em Sensors} {\bf 2020}, {\em 20},~1171.
+\newblock {\url{https://doi.org/10.3390/s20041171}}.
+
+\bibitem[Radoš et~al.(2024)Radoš, Brkić, and Begušić]{rado2024recent}
+Radoš, K.; Brkić, M.; Begušić, D.
+\newblock {Recent Advances on Jamming and Spoofing Detection in GNSS}.
+\newblock {\em Sensors} {\bf 2024}, {\em 24},~4210.
+\newblock {\url{https://doi.org/10.3390/s24134210}}.
+
+\bibitem[Varshosaz et~al.(2019)Varshosaz, Afary, Mojaradi, Saadatseresht, and
+  Ghanbari~Parmehr]{varshosaz2019spoofing}
+Varshosaz, M.; Afary, A.; Mojaradi, B.; Saadatseresht, M.; Ghanbari~Parmehr, E.
+\newblock {Spoofing Detection of Civilian UAVs Using Visual Odometry}.
+\newblock {\em ISPRS International Journal of Geo-Information} {\bf 2019}, {\em
+  9},~6.
+\newblock {\url{https://doi.org/10.3390/ijgi9010006}}.
+
+\bibitem[Fagan et~al.(2020)Fagan, Megas, Scarfone, and Smith]{fagan2020iot}
+Fagan, M.; Megas, K.N.; Scarfone, K.; Smith, M.
+\newblock {IoT device cybersecurity capability core baseline}.
+\newblock Technical report, National Institute of Standards and Technology,
+  2020.
+\newblock {\url{https://doi.org/10.6028/nist.ir.8259a}}.
+
+\bibitem[Li et~al.(2023)Li, Zhang, Jiang, and Zhang]{li2023survey}
+Li, J.; Zhang, G.; Jiang, C.; Zhang, W.
+\newblock {A survey of maritime unmanned search system: Theory, applications
+  and future directions}.
+\newblock {\em Ocean Engineering} {\bf 2023}, {\em 285},~115359.
+\newblock {\url{https://doi.org/10.1016/j.oceaneng.2023.115359}}.
+
+\bibitem[Wei et~al.(2022)Wei, Guo, Wang, Wang, and Qiu]{wei2022reliable}
+Wei, X.; Guo, H.; Wang, X.; Wang, X.; Qiu, M.
+\newblock {Reliable Data Collection Techniques in Underwater Wireless Sensor
+  Networks: A Survey}.
+\newblock {\em IEEE Communications Surveys \& Tutorials} {\bf 2022}, {\em
+  24},~404--431.
+\newblock {\url{https://doi.org/10.1109/comst.2021.3134955}}.
+
+\bibitem[Liu et~al.(2023)Liu, Wang, Yan, Wan, and Jäntti]{liu2023survey}
+Liu, Y.; Wang, J.; Yan, Z.; Wan, Z.; Jäntti, R.
+\newblock {A Survey on Blockchain-Based Trust Management for Internet of
+  Things}.
+\newblock {\em IEEE Internet of Things Journal} {\bf 2023}, {\em
+  10},~5898--5922.
+\newblock {\url{https://doi.org/10.1109/jiot.2023.3237893}}.
+
+\bibitem[Veith et~al.(2023)Veith, Krummacker, and Schotten]{veith2023road}
+Veith, B.; Krummacker, D.; Schotten, H.D.
+\newblock {The Road to Trustworthy 6G: A Survey on Trust Anchor Technologies}.
+\newblock {\em IEEE Open Journal of the Communications Society} {\bf 2023},
+  {\em 4},~581--595.
+\newblock {\url{https://doi.org/10.1109/ojcoms.2023.3244274}}.
+
+\bibitem[Ali et~al.(2019)Ali, Vecchio, Pincheira, Dolui, Antonelli, and
+  Rehmani]{ali2019applications}
+Ali, M.S.; Vecchio, M.; Pincheira, M.; Dolui, K.; Antonelli, F.; Rehmani, M.H.
+\newblock {Applications of Blockchains in the Internet of Things: A
+  Comprehensive Survey}.
+\newblock {\em IEEE Communications Surveys \& Tutorials} {\bf 2019}, {\em
+  21},~1676--1717.
+\newblock {\url{https://doi.org/10.1109/comst.2018.2886932}}.
+
+\bibitem[Alladi et~al.(2019)Alladi, Chamola, Parizi, and
+  Choo]{alladi2019blockchain}
+Alladi, T.; Chamola, V.; Parizi, R.M.; Choo, K.K.R.
+\newblock {Blockchain Applications for Industry 4.0 and Industrial IoT: A
+  Review}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~176935--176951.
+\newblock {\url{https://doi.org/10.1109/access.2019.2956748}}.
+
+\bibitem[Sedjelmaci et~al.(2018)Sedjelmaci, Senouci, and
+  Ansari]{sedjelmaci2018hierarchical}
+Sedjelmaci, H.; Senouci, S.M.; Ansari, N.
+\newblock {A Hierarchical Detection and Response System to Enhance Security
+  Against Lethal Cyber-Attacks in UAV Networks}.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics: Systems}
+  {\bf 2018}, {\em 48},~1594--1606.
+\newblock {\url{https://doi.org/10.1109/tsmc.2017.2681698}}.
+
+\bibitem[Jouhari et~al.(2019)Jouhari, Ibrahimi, Tembine, and
+  Ben-Othman]{jouhari2019underwater}
+Jouhari, M.; Ibrahimi, K.; Tembine, H.; Ben-Othman, J.
+\newblock {Underwater Wireless Sensor Networks: A Survey on Enabling
+  Technologies, Localization Protocols, and Internet of Underwater Things}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~96879--96899.
+\newblock {\url{https://doi.org/10.1109/access.2019.2928876}}.
+
+\bibitem[Mohsan et~al.(2022)Mohsan, Mazinani, Othman, and
+  Amjad]{mohsan2022towards}
+Mohsan, S.A.H.; Mazinani, A.; Othman, N.Q.H.; Amjad, H.
+\newblock {Towards the internet of underwater things: a comprehensive survey}.
+\newblock {\em Earth Science Informatics} {\bf 2022}, {\em 15},~735--764.
+\newblock {\url{https://doi.org/10.1007/s12145-021-00762-8}}.
+
+\bibitem[Hbaieb et~al.(2022)Hbaieb, Ayed, and Chaari]{hbaieb2022survey}
+Hbaieb, A.; Ayed, S.; Chaari, L.
+\newblock {A survey of trust management in the Internet of Vehicles}.
+\newblock {\em Computer Networks} {\bf 2022}, {\em 203},~108558.
+\newblock {\url{https://doi.org/10.1016/j.comnet.2021.108558}}.
+
+\bibitem[Jiang et~al.(2020)Jiang, Zhu, Han, Guizani, and Shu]{jiang2020dynamic}
+Jiang, J.; Zhu, X.; Han, G.; Guizani, M.; Shu, L.
+\newblock {A Dynamic Trust Evaluation and Update Mechanism Based on C4.5
+  Decision Tree in Underwater Wireless Sensor Networks}.
+\newblock {\em IEEE Transactions on Vehicular Technology} {\bf 2020}, {\em
+  69},~9031--9040.
+\newblock {\url{https://doi.org/10.1109/tvt.2020.2999566}}.
+
+\bibitem[Arifeen et~al.(2020)Arifeen, Bhakta, Remu, Islam, Mahmud, and
+  Kaiser]{arifeen2020hidden}
+Arifeen, M.M.; Bhakta, D.; Remu, S.R.H.; Islam, M.M.; Mahmud, M.; Kaiser, M.S.
+\newblock {Hidden Markov Model based Trust Management Model for Underwater
+  Wireless Sensor Networks}.
+\newblock In Proceedings of the Proceedings of the International Conference on
+  Computing Advancements. ACM,  2020, pp. 1--5.
+\newblock {\url{https://doi.org/10.1145/3377049.3377054}}.
+
+\bibitem[Zhu et~al.(2024)Zhu, Boukerche, Long, and Yang]{zhu2024design}
+Zhu, R.; Boukerche, A.; Long, L.; Yang, Q.
+\newblock {Design Guidelines on Trust Management for Underwater Wireless Sensor
+  Networks}.
+\newblock {\em IEEE Communications Surveys \& Tutorials} {\bf 2024}, {\em
+  26},~2547--2576.
+\newblock {\url{https://doi.org/10.1109/comst.2024.3389728}}.
+
+\bibitem[Bellini et~al.(2020)Bellini, Iraqi, and
+  Damiani]{bellini2020blockchain}
+Bellini, E.; Iraqi, Y.; Damiani, E.
+\newblock {Blockchain-Based Distributed Trust and Reputation Management
+  Systems: A Survey}.
+\newblock {\em IEEE Access} {\bf 2020}, {\em 8},~21127--21151.
+\newblock {\url{https://doi.org/10.1109/access.2020.2969820}}.
+
+\bibitem[Kumar and Sharma(2022)]{kumar2022leveraging}
+Kumar, R.; Sharma, R.
+\newblock {Leveraging blockchain for ensuring trust in IoT: A survey}.
+\newblock {\em Journal of King Saud University - Computer and Information
+  Sciences} {\bf 2022}, {\em 34},~8599--8622.
+\newblock {\url{https://doi.org/10.1016/j.jksuci.2021.09.004}}.
+
+\bibitem[Li et~al.(2021)Li, Wu, Cao, Chen, Zhang, and Buyya]{li2021blockchain}
+Li, W.; Wu, J.; Cao, J.; Chen, N.; Zhang, Q.; Buyya, R.
+\newblock {Blockchain-based trust management in cloud computing systems: a
+  taxonomy, review and future directions}.
+\newblock {\em Journal of Cloud Computing} {\bf 2021}, {\em 10}.
+\newblock {\url{https://doi.org/10.1186/s13677-021-00247-5}}.
+
+\bibitem[Al-khafajiy et~al.(2020)Al-khafajiy, Baker, Asim, Guo, Ranjan, Longo,
+  Puthal, and Taylor]{alkhafajiy2020comitment}
+Al-khafajiy, M.; Baker, T.; Asim, M.; Guo, Z.; Ranjan, R.; Longo, A.; Puthal,
+  D.; Taylor, M.
+\newblock {COMITMENT: A Fog Computing Trust Management Approach}.
+\newblock {\em Journal of Parallel and Distributed Computing} {\bf 2020}, {\em
+  137},~1--16.
+\newblock {\url{https://doi.org/10.1016/j.jpdc.2019.10.006}}.
+
+\bibitem[Mohammadi et~al.(2019)Mohammadi, Rahmani, Darwesh, and
+  Sahafi]{mohammadi2019trust}
+Mohammadi, V.; Rahmani, A.M.; Darwesh, A.M.; Sahafi, A.
+\newblock {Trust-based recommendation systems in Internet of Things: a
+  systematic literature review}.
+\newblock {\em Human-centric Computing and Information Sciences} {\bf 2019},
+  {\em 9}.
+\newblock {\url{https://doi.org/10.1186/s13673-019-0183-8}}.
+
+\bibitem[Yaga et~al.(2018)Yaga, Mell, Roby, and Scarfone]{yaga2018blockchain}
+Yaga, D.; Mell, P.; Roby, N.; Scarfone, K.
+\newblock {Blockchain technology overview}.
+\newblock Technical report, National Institute of Standards and Technology,
+  2018.
+\newblock {\url{https://doi.org/10.6028/nist.ir.8202}}.
+
+\bibitem[Wang et~al.(2019)Wang, Hoang, Hu, Xiong, Niyato, Wang, Wen, and
+  Kim]{wang2019survey}
+Wang, W.; Hoang, D.T.; Hu, P.; Xiong, Z.; Niyato, D.; Wang, P.; Wen, Y.; Kim,
+  D.I.
+\newblock {A Survey on Consensus Mechanisms and Mining Strategy Management in
+  Blockchain Networks}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~22328--22370.
+\newblock {\url{https://doi.org/10.1109/access.2019.2896108}}.
+
+\bibitem[Lashkari and Musilek(2021)]{lashkari2021comprehensive}
+Lashkari, B.; Musilek, P.
+\newblock {A Comprehensive Review of Blockchain Consensus Mechanisms}.
+\newblock {\em IEEE Access} {\bf 2021}, {\em 9},~43620--43652.
+\newblock {\url{https://doi.org/10.1109/access.2021.3065880}}.
+
+\bibitem[Shrimali and Patel(2022)]{shrimali2022blockchain}
+Shrimali, B.; Patel, H.B.
+\newblock {Blockchain state-of-the-art: architecture, use cases, consensus,
+  challenges and opportunities}.
+\newblock {\em Journal of King Saud University - Computer and Information
+  Sciences} {\bf 2022}, {\em 34},~6793--6807.
+\newblock {\url{https://doi.org/10.1016/j.jksuci.2021.08.005}}.
+
+\bibitem[Hewa et~al.(2021)Hewa, Ylianttila, and Liyanage]{hewa2021survey}
+Hewa, T.; Ylianttila, M.; Liyanage, M.
+\newblock {Survey on blockchain based smart contracts: Applications,
+  opportunities and challenges}.
+\newblock {\em Journal of Network and Computer Applications} {\bf 2021}, {\em
+  177},~102857.
+\newblock {\url{https://doi.org/10.1016/j.jnca.2020.102857}}.
+
+\bibitem[Dorri et~al.(2017)Dorri, Kanhere, and Jurdak]{dorri2017towards}
+Dorri, A.; Kanhere, S.S.; Jurdak, R.
+\newblock {Towards an Optimized BlockChain for IoT}.
+\newblock In Proceedings of the Proceedings of the Second International
+  Conference on Internet-of-Things Design and Implementation. ACM,  2017, pp.
+  173--178.
+\newblock {\url{https://doi.org/10.1145/3054977.3055003}}.
+
+\bibitem[Barka et~al.(2022)Barka, Kerrache, Benkraouda, Shuaib, Ahmad, and
+  Kurugollu]{barka2022towards}
+Barka, E.; Kerrache, C.A.; Benkraouda, H.; Shuaib, K.; Ahmad, F.; Kurugollu, F.
+\newblock {Towards a trusted unmanned aerial system using blockchain for the
+  protection of critical infrastructure}.
+\newblock {\em Transactions on Emerging Telecommunications Technologies} {\bf
+  2022}, {\em 33}.
+\newblock {\url{https://doi.org/10.1002/ett.3706}}.
+
+\bibitem[Jensen et~al.(2019)Jensen, Selvaraj, and
+  Ranganathan]{jensen2019blockchain}
+Jensen, I.J.; Selvaraj, D.F.; Ranganathan, P.
+\newblock {Blockchain Technology for Networked Swarms of Unmanned Aerial
+  Vehicles (UAVs)}.
+\newblock In Proceedings of the 2019 IEEE 20th International Symposium on "A
+  World of Wireless, Mobile and Multimedia Networks" (WoWMoM). IEEE,  2019, pp.
+  1--7.
+\newblock {\url{https://doi.org/10.1109/wowmom.2019.8793027}}.
+
+\bibitem[Zhou et~al.(2024)Zhou, Yang, MA, and He]{zhou2024towards}
+Zhou, X.; Yang, L.; MA, L.; He, H.
+\newblock {Towards secure and resilient unmanned aerial vehicles swarm network
+  based on blockchain}.
+\newblock {\em IET Blockchain} {\bf 2024}, {\em 4},~483--493.
+\newblock {\url{https://doi.org/10.1049/blc2.12050}}.
+
+\bibitem[Zhang et~al.(2022)Zhang, Wang, Aujla, Jindal, and
+  Al-Otaibi]{zhang2022blockchain}
+Zhang, P.; Wang, Y.; Aujla, G.S.; Jindal, A.; Al-Otaibi, Y.D.
+\newblock {A Blockchain-Based Authentication Scheme and Secure Architecture for
+  IoT-Enabled Maritime Transportation Systems}.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems} {\bf
+  2022}, pp. 1--10.
+\newblock {\url{https://doi.org/10.1109/tits.2022.3159485}}.
+
+\bibitem[Yang et~al.(2022)Yang, He, Vijayakumar, Gupta, and
+  Xie]{yang2022efficient}
+Yang, Y.; He, D.; Vijayakumar, P.; Gupta, B.B.; Xie, Q.
+\newblock {An Efficient Identity-Based Aggregate Signcryption Scheme With
+  Blockchain for IoT-Enabled Maritime Transportation System}.
+\newblock {\em IEEE Transactions on Green Communications and Networking} {\bf
+  2022}, {\em 6},~1520--1531.
+\newblock {\url{https://doi.org/10.1109/tgcn.2022.3163596}}.
+
+\bibitem[Casino et~al.(2019)Casino, Dasaklis, and
+  Patsakis]{casino2019systematic}
+Casino, F.; Dasaklis, T.K.; Patsakis, C.
+\newblock {A systematic literature review of blockchain-based applications:
+  Current status, classification and open issues}.
+\newblock {\em Telematics and Informatics} {\bf 2019}, {\em 36},~55--81.
+\newblock {\url{https://doi.org/10.1016/j.tele.2018.11.006}}.
+
+\bibitem[Kumari et~al.(2020)Kumari, Gupta, Tanwar, and
+  Kumar]{kumari2020taxonomy}
+Kumari, A.; Gupta, R.; Tanwar, S.; Kumar, N.
+\newblock {A taxonomy of blockchain-enabled softwarization for secure UAV
+  network}.
+\newblock {\em Computer Communications} {\bf 2020}, {\em 161},~304--323.
+\newblock {\url{https://doi.org/10.1016/j.comcom.2020.07.042}}.
+
+\bibitem[Aggarwal et~al.(2021)Aggarwal, Kumar, and
+  Tanwar]{aggarwal2021blockchain}
+Aggarwal, S.; Kumar, N.; Tanwar, S.
+\newblock {Blockchain-Envisioned UAV Communication Using 6G Networks: Open
+  Issues, Use Cases, and Future Directions}.
+\newblock {\em IEEE Internet of Things Journal} {\bf 2021}, {\em
+  8},~5416--5441.
+\newblock {\url{https://doi.org/10.1109/jiot.2020.3020819}}.
+
+\bibitem[Khan et~al.(2023)Khan, Kumar, Mohsan, Khan, Nasralla, Alsharif,
+  Żywiołek, and Ullah]{khan2023swarm}
+Khan, M.A.; Kumar, N.; Mohsan, S.A.H.; Khan, W.U.; Nasralla, M.M.; Alsharif,
+  M.H.; Żywiołek, J.; Ullah, I.
+\newblock {Swarm of UAVs for Network Management in 6G: A Technical Review}.
+\newblock {\em IEEE Transactions on Network and Service Management} {\bf 2023},
+  {\em 20},~741--761.
+\newblock {\url{https://doi.org/10.1109/tnsm.2022.3213370}}.
+
+\bibitem[Holzinger et~al.(2022)Holzinger, Dehmer, Emmert-Streib, Cucchiara,
+  Augenstein, Ser, Samek, Jurisica, and
+  Díaz-Rodríguez]{holzinger2022information}
+Holzinger, A.; Dehmer, M.; Emmert-Streib, F.; Cucchiara, R.; Augenstein, I.;
+  Ser, J.D.; Samek, W.; Jurisica, I.; Díaz-Rodríguez, N.
+\newblock {Information fusion as an integrative cross-cutting enabler to
+  achieve robust, explainable, and trustworthy medical artificial
+  intelligence}.
+\newblock {\em Information Fusion} {\bf 2022}, {\em 79},~263--278.
+\newblock {\url{https://doi.org/10.1016/j.inffus.2021.10.007}}.
+
+\bibitem[Liu et~al.(2022)Liu, Yue, Chen, and Denoeux]{liu2022trusted}
+Liu, W.; Yue, X.; Chen, Y.; Denoeux, T.
+\newblock {Trusted Multi-View Deep Learning with Opinion Aggregation}.
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence}
+  {\bf 2022}, {\em 36},~7585--7593.
+\newblock {\url{https://doi.org/10.1609/aaai.v36i7.20724}}.
+
+\bibitem[Qian et~al.(2025)Qian, Wang, Zhu, and Wang]{qian2025review}
+Qian, H.; Wang, M.; Zhu, M.; Wang, H.
+\newblock {A Review of Multi-Sensor Fusion in Autonomous Driving}.
+\newblock {\em Sensors} {\bf 2025}, {\em 25},~6033.
+\newblock {\url{https://doi.org/10.3390/s25196033}}.
+
+\bibitem[Singh et~al.(2019)Singh, Cobbe, and Norval]{singh2019decision}
+Singh, J.; Cobbe, J.; Norval, C.
+\newblock {Decision Provenance: Harnessing Data Flow for Accountable Systems}.
+\newblock {\em IEEE Access} {\bf 2019}, {\em 7},~6562--6574.
+\newblock {\url{https://doi.org/10.1109/access.2018.2887201}}.
+
+\bibitem[Androulaki et~al.(2018)Androulaki, Barger, Bortnikov, Cachin,
+  Christidis, De~Caro, Enyeart, Ferris, Laventman, Manevich, Muralidharan,
+  Murthy, Nguyen, Sethi, Singh, Smith, Sorniotti, Stathakopoulou, Vukolić,
+  Cocco, and Yellick]{androulaki2018hyperledger}
+Androulaki, E.; Barger, A.; Bortnikov, V.; Cachin, C.; Christidis, K.; De~Caro,
+  A.; Enyeart, D.; Ferris, C.; Laventman, G.; Manevich, Y.;  et~al.
+\newblock {Hyperledger fabric}.
+\newblock In Proceedings of the Proceedings of the Thirteenth EuroSys
+  Conference. ACM,  2018, pp. 1--15.
+\newblock {\url{https://doi.org/10.1145/3190508.3190538}}.
+
+\bibitem[{Hyperledger Foundation}(2026)]{hyperledger2026fabric}
+{Hyperledger Foundation}.
+\newblock Hyperledger Fabric Documentation: Ordering Service,  2026.
+\newblock Accessed 6 August 2026.
+
+\bibitem[Zhang and Lee(2020)]{zhang2020analysis}
+Zhang, S.; Lee, J.H.
+\newblock {Analysis of the main consensus protocols of blockchain}.
+\newblock {\em ICT Express} {\bf 2020}, {\em 6},~93--97.
+\newblock {\url{https://doi.org/10.1016/j.icte.2019.08.001}}.
+
+\bibitem[Nguyen et~al.(2020)Nguyen, Pathirana, Ding, and
+  Seneviratne]{nguyen2020blockchain}
+Nguyen, D.C.; Pathirana, P.N.; Ding, M.; Seneviratne, A.
+\newblock {Blockchain for 5G and beyond networks: A state of the art survey}.
+\newblock {\em Journal of Network and Computer Applications} {\bf 2020}, {\em
+  166},~102693.
+\newblock {\url{https://doi.org/10.1016/j.jnca.2020.102693}}.
+
+\bibitem[Zhou et~al.(2020)Zhou, Soh, Loh, and Yuen]{zhou2020key}
+Zhou, Y.; Soh, Y.S.; Loh, H.S.; Yuen, K.F.
+\newblock {The key challenges and critical success factors of blockchain
+  implementation: Policy implications for Singapore’s maritime industry}.
+\newblock {\em Marine Policy} {\bf 2020}, {\em 122},~104265.
+\newblock {\url{https://doi.org/10.1016/j.marpol.2020.104265}}.
+
+\bibitem[Figueiredo et~al.(2022)Figueiredo, Silva, Iacovazzi, Holubenko, Casal,
+  Calero, Wang, Colarejo, Armitt, Inches, and Raza]{figueiredo2022arcadian}
+Figueiredo, S.; Silva, P.; Iacovazzi, A.; Holubenko, V.; Casal, J.; Calero,
+  J.M.A.; Wang, Q.; Colarejo, P.; Armitt, R.L.; Inches, G.;  et~al.
+\newblock {ARCADIAN-IoT - Enabling Autonomous Trust, Security and Privacy
+  Management for IoT}. In {\em Lecture Notes in Computer Science}; Springer
+  International Publishing,  2022; pp. 348--359.
+\newblock {\url{https://doi.org/10.1007/978-3-031-20936-9_28}}.
+
+\bibitem[Baciu et~al.(2025)Baciu, Braeken, Segers, and Silva]{baciu2025secure}
+Baciu, V.E.; Braeken, A.; Segers, L.; Silva, B.d.
+\newblock {Secure Tiny Machine Learning on Edge Devices: A Lightweight Dual
+  Attestation Mechanism for Machine Learning}.
+\newblock {\em Future Internet} {\bf 2025}, {\em 17},~85.
+\newblock {\url{https://doi.org/10.3390/fi17020085}}.
+
+\bibitem[Hang and Kim(2019)]{hang2019design}
+Hang, L.; Kim, D.H.
+\newblock {Design and Implementation of an Integrated IoT Blockchain Platform
+  for Sensing Data Integrity}.
+\newblock {\em Sensors} {\bf 2019}, {\em 19},~2228.
+\newblock {\url{https://doi.org/10.3390/s19102228}}.
+
+\bibitem[Honar~Pajooh et~al.(2021)Honar~Pajooh, Rashid, Alam, and
+  Demidenko]{honarpajooh2021iot}
+Honar~Pajooh, H.; Rashid, M.A.; Alam, F.; Demidenko, S.
+\newblock {IoT Big Data provenance scheme using blockchain on Hadoop
+  ecosystem}.
+\newblock {\em Journal of Big Data} {\bf 2021}, {\em 8}.
+\newblock {\url{https://doi.org/10.1186/s40537-021-00505-y}}.
+
+\bibitem[Khan et~al.(2020)Khan, Byun, and Park]{khan2020iot}
+Khan, P.W.; Byun, Y.C.; Park, N.
+\newblock {IoT-Blockchain Enabled Optimized Provenance System for Food Industry
+  4.0 Using Advanced Deep Learning}.
+\newblock {\em Sensors} {\bf 2020}, {\em 20},~2990.
+\newblock {\url{https://doi.org/10.3390/s20102990}}.
+
+\bibitem[Rahman et~al.(2020)Rahman, Hossain, Islam, Alrajeh, and
+  Muhammad]{rahman2020secure}
+Rahman, M.A.; Hossain, M.S.; Islam, M.S.; Alrajeh, N.A.; Muhammad, G.
+\newblock {Secure and Provenance Enhanced Internet of Health Things Framework:
+  A Blockchain Managed Federated Learning Approach}.
+\newblock {\em IEEE Access} {\bf 2020}, {\em 8},~205071--205087.
+\newblock {\url{https://doi.org/10.1109/access.2020.3037474}}.
+
+\bibitem[Kale et~al.(2023)Kale, Nguyen, Harris, Li, Zhang, and
+  Ma]{kale2023provenance}
+Kale, A.; Nguyen, T.; Harris, F.C.; Li, C.; Zhang, J.; Ma, X.
+\newblock {Provenance documentation to enable explainable and trustworthy AI: A
+  literature review}.
+\newblock {\em Data Intelligence} {\bf 2023}, {\em 5},~139--162.
+\newblock {\url{https://doi.org/10.1162/dint_a_00119}}.
+
+\bibitem[Brewer(2000)]{brewer2000towards}
+Brewer, E.A.
+\newblock {Towards robust distributed systems (abstract)}.
+\newblock In Proceedings of the Proceedings of the nineteenth annual ACM
+  symposium on Principles of distributed computing. ACM,  2000, p.~7.
+\newblock {\url{https://doi.org/10.1145/343477.343502}}.
+
+\bibitem[Neto et~al.(2023)Neto, Dadkhah, Ferreira, Zohourian, Lu, and
+  Ghorbani]{neto2023ciciot2023}
+Neto, E.C.P.; Dadkhah, S.; Ferreira, R.; Zohourian, A.; Lu, R.; Ghorbani, A.A.
+\newblock {CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale
+  Attacks in IoT Environment}.
+\newblock {\em Sensors} {\bf 2023}, {\em 23},~5941.
+\newblock {\url{https://doi.org/10.3390/s23135941}}.
+
+\bibitem[Alsaedi et~al.(2020)Alsaedi, Moustafa, Tari, Mahmood, and
+  Anwar]{alsaedi2020ton}
+Alsaedi, A.; Moustafa, N.; Tari, Z.; Mahmood, A.; Anwar, A.
+\newblock {TON\_IoT Telemetry Dataset: A New Generation Dataset of IoT and IIoT
+  for Data-Driven Intrusion Detection Systems}.
+\newblock {\em IEEE Access} {\bf 2020}, {\em 8},~165130--165150.
+\newblock {\url{https://doi.org/10.1109/access.2020.3022862}}.
+
+\bibitem[Ferrag et~al.(2022)Ferrag, Friha, Hamouda, Maglaras, and
+  Janicke]{ferrag2022edge}
+Ferrag, M.A.; Friha, O.; Hamouda, D.; Maglaras, L.; Janicke, H.
+\newblock {Edge-IIoTset: A New Comprehensive Realistic Cyber Security Dataset
+  of IoT and IIoT Applications for Centralized and Federated Learning}.
+\newblock {\em IEEE Access} {\bf 2022}, {\em 10},~40281--40306.
+\newblock {\url{https://doi.org/10.1109/access.2022.3165809}}.
+
+\bibitem[Varga et~al.(2022)Varga, Kiefer, Messmer, and
+  Zell]{varga2022seadronessee}
+Varga, L.A.; Kiefer, B.; Messmer, M.; Zell, A.
+\newblock {SeaDronesSee}: A Maritime Benchmark for Detecting Humans in Open
+  Water.
+\newblock In Proceedings of the Proceedings of the IEEE/CVF Winter Conference
+  on Applications of Computer Vision,  2022, pp. 2260--2270.
+
+\bibitem[Shah et~al.(2018)Shah, Dey, Lovett, and Kapoor]{shah2018airsim}
+Shah, S.; Dey, D.; Lovett, C.; Kapoor, A.
+\newblock {AirSim: High-Fidelity Visual and Physical Simulation for Autonomous
+  Vehicles}. In {\em Springer Proceedings in Advanced Robotics}; Springer
+  International Publishing,  2018; pp. 621--635.
+\newblock {\url{https://doi.org/10.1007/978-3-319-67361-5_40}}.
+
+\bibitem[Manhaes et~al.(2016)Manhaes, Scherer, Voss, Douat, and
+  Rauschenbach]{manhaes2016uuv}
+Manhaes, M.M.M.; Scherer, S.A.; Voss, M.; Douat, L.R.; Rauschenbach, T.
+\newblock {UUV Simulator: A Gazebo-based package for underwater intervention
+  and multi-robot simulation}.
+\newblock In Proceedings of the OCEANS 2016 MTS/IEEE Monterey. IEEE,  2016, pp.
+  1--8.
+\newblock {\url{https://doi.org/10.1109/oceans.2016.7761080}}.
+
+\bibitem[Martin et~al.(2017)Martin, Rajasekaran, and Peng]{martin2017aqua}
+Martin, R.; Rajasekaran, S.; Peng, Z.
+\newblock {Aqua-Sim Next Generation}.
+\newblock In Proceedings of the Proceedings of the International Conference on
+  Underwater Networks \& Systems. ACM,  2017, pp. 1--8.
+\newblock {\url{https://doi.org/10.1145/3148675.3148679}}.
+
+\bibitem[Liu et~al.(2020)Liu, Han, and Li]{liu2020fabric}
+Liu, H.; Han, D.; Li, D.
+\newblock {Fabric-iot: A Blockchain-Based Access Control System in IoT}.
+\newblock {\em IEEE Access} {\bf 2020}, {\em 8},~18207--18218.
+\newblock {\url{https://doi.org/10.1109/access.2020.2968492}}.
+
+\bibitem[Ch et~al.(2020)Ch, Srivastava, Reddy~Gadekallu, Maddikunta, and
+  Bhattacharya]{ch2020security}
+Ch, R.; Srivastava, G.; Reddy~Gadekallu, T.; Maddikunta, P.K.R.; Bhattacharya,
+  S.
+\newblock {Security and privacy of UAV data using blockchain technology}.
+\newblock {\em Journal of Information Security and Applications} {\bf 2020},
+  {\em 55},~102670.
+\newblock {\url{https://doi.org/10.1016/j.jisa.2020.102670}}.
+
+\bibitem[Xiao et~al.(2021)Xiao, Li, Alzahrani, Alotaibi, Barnawi, and
+  Ai]{xiao2021blockchain}
+Xiao, W.; Li, M.; Alzahrani, B.; Alotaibi, R.; Barnawi, A.; Ai, Q.
+\newblock {A Blockchain-Based Secure Crowd Monitoring System Using UAV Swarm}.
+\newblock {\em IEEE Network} {\bf 2021}, {\em 35},~108--115.
+\newblock {\url{https://doi.org/10.1109/mnet.011.2000210}}.
+
+\bibitem[Abualsauod(2022)]{abualsauod2022hybrid}
+Abualsauod, E.H.
+\newblock {A hybrid blockchain method in internet of things for privacy and
+  security in unmanned aerial vehicles network}.
+\newblock {\em Computers and Electrical Engineering} {\bf 2022}, {\em
+  99},~107847.
+\newblock {\url{https://doi.org/10.1016/j.compeleceng.2022.107847}}.
+
+\bibitem[García-Magariño et~al.(2019)García-Magariño, Lacuesta, Rajarajan,
+  and Lloret]{garcamagario2019security}
+García-Magariño, I.; Lacuesta, R.; Rajarajan, M.; Lloret, J.
+\newblock {Security in networks of unmanned aerial vehicles for surveillance
+  with an agent-based approach inspired by the principles of blockchain}.
+\newblock {\em Ad Hoc Networks} {\bf 2019}, {\em 86},~72--82.
+\newblock {\url{https://doi.org/10.1016/j.adhoc.2018.11.010}}.
+
+\bibitem[Javaid et~al.(2021)Javaid, Haleem, Pratap~Singh, Khan, and
+  Suman]{javaid2021blockchain}
+Javaid, M.; Haleem, A.; Pratap~Singh, R.; Khan, S.; Suman, R.
+\newblock {Blockchain technology applications for Industry 4.0: A
+  literature-based review}.
+\newblock {\em Blockchain: Research and Applications} {\bf 2021}, {\em
+  2},~100027.
+\newblock {\url{https://doi.org/10.1016/j.bcra.2021.100027}}.
+
+\bibitem[Javed et~al.(2022)Javed, Hassan, Shahzad, Ahmed, Singh, Baker, and
+  Gadekallu]{javed2022integration}
+Javed, A.R.; Hassan, M.A.; Shahzad, F.; Ahmed, W.; Singh, S.; Baker, T.;
+  Gadekallu, T.R.
+\newblock {Integration of Blockchain Technology and Federated Learning in
+  Vehicular (IoT) Networks: A Comprehensive Survey}.
+\newblock {\em Sensors} {\bf 2022}, {\em 22},~4394.
+\newblock {\url{https://doi.org/10.3390/s22124394}}.
+
+\bibitem[Suhail et~al.(2022)Suhail, Hussain, Jurdak, and
+  Hong]{suhail2022trustworthy}
+Suhail, S.; Hussain, R.; Jurdak, R.; Hong, C.S.
+\newblock {Trustworthy Digital Twins in the Industrial Internet of Things With
+  Blockchain}.
+\newblock {\em IEEE Internet Computing} {\bf 2022}, {\em 26},~58--67.
+\newblock {\url{https://doi.org/10.1109/mic.2021.3059320}}.
+
+\bibitem[Kshetri(2018)]{kshetri20181}
+Kshetri, N.
+\newblock {1 Blockchain’s roles in meeting key supply chain management
+  objectives}.
+\newblock {\em International Journal of Information Management} {\bf 2018},
+  {\em 39},~80--89.
+\newblock {\url{https://doi.org/10.1016/j.ijinfomgt.2017.12.005}}.
+
+\bibitem[Ølnes et~al.(2017)Ølnes, Ubacht, and Janssen]{lnes2017blockchain}
+Ølnes, S.; Ubacht, J.; Janssen, M.
+\newblock {Blockchain in government: Benefits and implications of distributed
+  ledger technology for information sharing}.
+\newblock {\em Government Information Quarterly} {\bf 2017}, {\em
+  34},~355--364.
+\newblock {\url{https://doi.org/10.1016/j.giq.2017.09.007}}.
+
+\bibitem[Hafid et~al.(2020)Hafid, Hafid, and Samih]{hafid2020scaling}
+Hafid, A.; Hafid, A.S.; Samih, M.
+\newblock {Scaling Blockchains: A Comprehensive Survey}.
+\newblock {\em IEEE Access} {\bf 2020}, {\em 8},~125244--125262.
+\newblock {\url{https://doi.org/10.1109/access.2020.3007251}}.
+
+\bibitem[Khan et~al.(2021)Khan, Jung, and Hashmani]{khan2021systematic}
+Khan, D.; Jung, L.T.; Hashmani, M.A.
+\newblock {Systematic Literature Review of Challenges in Blockchain
+  Scalability}.
+\newblock {\em Applied Sciences} {\bf 2021}, {\em 11},~9372.
+\newblock {\url{https://doi.org/10.3390/app11209372}}.
+
+\bibitem[Kshetri(2017)]{kshetri2017can}
+Kshetri, N.
+\newblock {Can Blockchain Strengthen the Internet of Things?}
+\newblock {\em IT Professional} {\bf 2017}, {\em 19},~68--72.
+\newblock {\url{https://doi.org/10.1109/mitp.2017.3051335}}.
+
+\bibitem[{3rd Generation Partnership
+  Project}(2026{\natexlab{a}})]{threegpp22125}
+{3rd Generation Partnership Project}.
+\newblock Unmanned Aerial System ({UAS}) Support in {3GPP}; Stage 1.
+\newblock 3GPP TS 22.125,  2026.
+\newblock Specification record accessed 6 August 2026.
+
+\bibitem[{3rd Generation Partnership
+  Project}(2026{\natexlab{b}})]{threegpp22119}
+{3rd Generation Partnership Project}.
+\newblock Maritime Communication Services over {3GPP} System.
+\newblock 3GPP TS 22.119,  2026.
+\newblock Specification record accessed 6 August 2026.
+
+\bibitem[Moran et~al.(2021)Moran, Tschofenig, Brown, and Meriac]{ietf2020suit}
+Moran, B.; Tschofenig, H.; Brown, D.; Meriac, M.
+\newblock A Firmware Update Architecture for Internet of Things.
+\newblock RFC 9019,  2021.
+\newblock {\url{https://doi.org/10.17487/RFC9019}}.
+
+\end{thebibliography}
