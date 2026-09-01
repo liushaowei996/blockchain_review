@@ -53,7 +53,7 @@
 - 采用“一名人工作者 + AI 辅助”流程：AI 只做预标注、候选排除理由和一致性检查，人工作者确认每条最终决定。
 - 人工作者确认全部全文纳入和排除决定；15% 分层样本进行延迟重复判定并报告内部一致性。
 - 保存筛选提示、模型信息、日期、人工覆盖记录和排除理由。
-- 在 Methods 与 Acknowledgments 中如实披露 AI 在检索整理、筛选辅助、研究设计、代码和文本起草中的用途；AI 不列为作者，全部引用和结论由作者负责。[MDPI AI Policy](https://www.mdpi.com/ethics#_bookmark10)
+- AI 使用声明由作者在正式投稿时根据 MDPI 政策和投稿系统要求另行填写；当前匿名稿不预置工具或用途表述。[MDPI AI Policy](https://www.mdpi.com/ethics#_bookmark10)
 - 所有“现有研究通常”“多数方法”“明显缺少”等结论必须由编码比例、证据表或明确引用支持，不沿用 `deep-research-report.md` 中的 `turn...` 占位引用。
 
 ### 2.5 论文结构
@@ -335,7 +335,7 @@ communication_cost, calibration_record, time_sync_error
 - 摘要控制在约 200 词以内，使用单段 Background-Methods-Results-Conclusions 逻辑但不加小标题。
 - 设置 3-10 个关键词。
 - 使用 MDPI ACS 数字编号制和 BibTeX；正文、图题和表题中的文献按首次出现顺序编号。
-- 保留并填写匿名化的 Author Contributions 占位说明、Funding、Data Availability、Acknowledgments、GenAI 使用和 Conflicts of Interest。[Blockchains Instructions](https://www.mdpi.com/journal/blockchains/instructions)
+- 保留并填写匿名化的 Author Contributions 占位说明、Funding、Data Availability、Acknowledgments 和 Conflicts of Interest；GenAI 使用声明由作者在正式投稿时填写。[Blockchains Instructions](https://www.mdpi.com/journal/blockchains/instructions)
 - 概念图、架构图和流程图采用可复现的矢量源；实验图由代码生成，同时导出投稿所需高分辨率版本。
 - 不使用 AI 生成的装饰性科研图片，不复制未经许可的既有图表。
 

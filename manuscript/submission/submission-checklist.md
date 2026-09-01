@@ -32,7 +32,7 @@
 - [x] Abstract is one paragraph and 186 words.
 - [x] Eight keywords are supplied.
 - [x] Anonymous author, affiliation, correspondence, CRediT, and funding placeholders contain no real identity.
-- [x] No-new-data, conflict-of-interest, ethics, consent, and GenAI statements are present.
+- [x] No-new-data, conflict-of-interest, ethics, consent, and acknowledgment statements are present.
 - [ ] Real author metadata, affiliations, ORCID identifiers, CRediT roles, funding, and correspondence are ready for the journal system.
 - [ ] Special Issue status, deadline, invitation/editorial pre-assessment, and any APC waiver have been reconfirmed.
 

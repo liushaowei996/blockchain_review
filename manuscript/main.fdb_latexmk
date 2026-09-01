@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1788226974.34053 "main.aux" "main.bbl" "main" 1788227009.79273 0
+["bibtex main"] 1788228927.77322 "main.aux" "main.bbl" "main" 1788229002.17727 0
   "./Definitions/mdpi.bst" 1734396266 23683 4afe8e0b352a18c39ff91c43fd26f4b2 ""
   "./references.bib" 1785983822 70831 a69db48d5aa896eca7965084601f8ad9 ""
-  "main.aux" 1788227002 32974 9a5bc27ab84ab62db798b967e84e4fbd "pdflatex"
+  "main.aux" 1788228975 32974 3042e3ef18466c1f77bbaf46fdb0efb0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1788226976.7475 "main.tex" "main.pdf" "main" 1788227009.8 0
+["pdflatex"] 1788228933.54515 "main.tex" "main.pdf" "main" 1788229002.18594 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136743454 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/palatino/pplb8t.tfm" 1136743454 3456 16dd534f88eb2bd21ebc7203786b436e ""
@@ -258,12 +258,12 @@
   "figures/figure-05-ctg-reasoning-loop.pdf" 1788224484 1265465 fd3b36d0dda60c1d478be4efa6668b93 ""
   "figures/figure-06-blockchain-boundary.pdf" 1788224495 1197105 f5e3d9a394ad6bf1dc7b735694199c58 ""
   "figures/figure-07-evidence-maturity.pdf" 1788224502 1715925 b90ad44c3fd3615895386b215dc37f68 ""
-  "main.aux" 1788227002 32974 9a5bc27ab84ab62db798b967e84e4fbd "pdflatex"
-  "main.bbl" 1788226976 52762 a4dd88c572a310abd4b0de8ba599ae83 "bibtex main"
-  "main.out" 1788227002 10308 b8dafa51d20aa6b5a934217528d7415f "pdflatex"
-  "main.tex" 1788224556 5355 6fea5c2717b8401409f0a71682243ddc ""
+  "main.aux" 1788228975 32974 3042e3ef18466c1f77bbaf46fdb0efb0 "pdflatex"
+  "main.bbl" 1788228932 52762 a4dd88c572a310abd4b0de8ba599ae83 "bibtex main"
+  "main.out" 1788228975 10308 b8dafa51d20aa6b5a934217528d7415f "pdflatex"
+  "main.tex" 1788228806 5102 0437f587c1cedbcd78c127dcf26e5443 ""
   "sections/01-introduction.tex" 1788142867 7914 d10e80cc5c527ca8c49d501db64ac8cc ""
-  "sections/02-scope.tex" 1788142250 6082 79307b205f4b23006fa7af31eee528e7 ""
+  "sections/02-scope.tex" 1788228806 6082 79307b205f4b23006fa7af31eee528e7 ""
   "sections/03-context.tex" 1788224556 9468 f7dfe13e6526e2d09170ac346e428c20 ""
   "sections/04-landscapes.tex" 1788142867 9446 938cd514110657be599e7a63e7d3670e ""
   "sections/05-oal.tex" 1788226886 11010 7a8591f3ea4a5d755d1b1eb41ca393cf ""
