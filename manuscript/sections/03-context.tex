@@ -11,7 +11,8 @@ Cross-domain cooperation also changes fault containment. A USV may be the naviga
 Administrative heterogeneity is equally important. A civil emergency may combine government responders, commercial communications providers, research vehicles, and contracted data services. A coalition mission may include platforms that remain under distinct authorities. Cross-organizational authority therefore combines local authentication with policy equivalence, delegated roles, and accountable governance. The system boundary includes organizations, credentials, data-use restrictions, software and model versions, and the process that admits, suspends, or removes participants. Under these conditions, a shared ledger can provide a consistent audit state whose history is jointly governed by the participating parties.
 
 \begin{figure}[H]
-\centering\resizebox{\textwidth}{!}{\input{figures/reference-architecture}}
+\centering
+\includegraphics[width=\textwidth]{figures/figure-01-reference-architecture.pdf}
 \caption{Author-proposed cross-domain reference architecture. Full ledger peers and policy services are placed on relatively capable USV, shore, or edge nodes; constrained vehicles retain signed local logs and submit commitments when connectivity permits. The dashed enclosure identifies the cross-cutting assurance and governance plane.\label{fig:architecture}}
 \end{figure}
 
@@ -35,7 +36,8 @@ A \emph{trusted data environment} is the socio-technical setting that produces, 
 The assurance chain in Figure~\ref{fig:assurance-chain} distinguishes four questions. Observation validity asks whether a measurement plausibly represents the physical phenomenon, considering calibration, geometry, environment, sensor health, and corroboration. Commitment and provenance integrity asks who or what produced the item, when and where it was produced, how it was transformed, and whether the recorded bytes and lineage were altered. Ledger and governance consistency asks whether authorized record keepers agree on membership, order, versions, and state transitions under stated fault assumptions. Mission-use suitability asks whether the item is timely, relevant, sufficiently certain, policy-compliant, and proportionate to the consequences of the contemplated action.
 
 \begin{figure}[H]
-\centering\resizebox{\textwidth}{!}{\input{figures/assurance-chain}}
+\centering
+\includegraphics[width=\textwidth]{figures/figure-02-assurance-chain.pdf}
 \caption{The authors' four-layer assurance chain. Each layer contributes a distinct claim to the relying decision.\label{fig:assurance-chain}}
 \end{figure}
 

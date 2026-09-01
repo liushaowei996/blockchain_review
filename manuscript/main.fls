@@ -527,23 +527,20 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
-INPUT .\figures\reference-architecture.tex
-INPUT .\figures\reference-architecture.tex
-INPUT .\figures\reference-architecture.tex
-INPUT .\figures\reference-architecture.tex
-INPUT figures\reference-architecture.tex
+INPUT .\figures\figure-01-reference-architecture.pdf
+INPUT .\figures\figure-01-reference-architecture.pdf
+INPUT .\figures\figure-01-reference-architecture.pdf
+INPUT .\figures\figure-01-reference-architecture.pdf
+INPUT .\figures\figure-01-reference-architecture.pdf
+INPUT .\figures\figure-01-reference-architecture.pdf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
-INPUT .\figures\assurance-chain.tex
-INPUT .\figures\assurance-chain.tex
-INPUT .\figures\assurance-chain.tex
-INPUT .\figures\assurance-chain.tex
-INPUT figures\assurance-chain.tex
-INPUT .\sections\04-landscapes.tex
-INPUT .\sections\04-landscapes.tex
-INPUT .\sections\04-landscapes.tex
-INPUT .\sections\04-landscapes.tex
-INPUT sections\04-landscapes.tex
+INPUT .\figures\figure-02-assurance-chain.pdf
+INPUT .\figures\figure-02-assurance-chain.pdf
+INPUT .\figures\figure-02-assurance-chain.pdf
+INPUT .\figures\figure-02-assurance-chain.pdf
+INPUT .\figures\figure-02-assurance-chain.pdf
+INPUT .\figures\figure-02-assurance-chain.pdf
 INPUT C:\Program Files\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -562,6 +559,11 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr7t.vf
 INPUT C:\Program Files\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT .\sections\04-landscapes.tex
+INPUT .\sections\04-landscapes.tex
+INPUT .\sections\04-landscapes.tex
+INPUT .\sections\04-landscapes.tex
+INPUT sections\04-landscapes.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm
@@ -588,46 +590,51 @@ INPUT .\sections\05-oal.tex
 INPUT .\sections\05-oal.tex
 INPUT .\sections\05-oal.tex
 INPUT sections\05-oal.tex
-INPUT .\figures\oal-framework.tex
-INPUT .\figures\oal-framework.tex
-INPUT .\figures\oal-framework.tex
-INPUT .\figures\oal-framework.tex
-INPUT figures\oal-framework.tex
+INPUT .\figures\figure-03-oal-framework.pdf
+INPUT .\figures\figure-03-oal-framework.pdf
+INPUT .\figures\figure-03-oal-framework.pdf
+INPUT .\figures\figure-03-oal-framework.pdf
+INPUT .\figures\figure-03-oal-framework.pdf
+INPUT .\figures\figure-03-oal-framework.pdf
 INPUT .\sections\06-dependencies.tex
 INPUT .\sections\06-dependencies.tex
 INPUT .\sections\06-dependencies.tex
 INPUT .\sections\06-dependencies.tex
 INPUT sections\06-dependencies.tex
-INPUT .\figures\dependency-threat.tex
-INPUT .\figures\dependency-threat.tex
-INPUT .\figures\dependency-threat.tex
-INPUT .\figures\dependency-threat.tex
-INPUT figures\dependency-threat.tex
-INPUT .\figures\evidence-loop.tex
-INPUT .\figures\evidence-loop.tex
-INPUT .\figures\evidence-loop.tex
-INPUT .\figures\evidence-loop.tex
-INPUT figures\evidence-loop.tex
+INPUT .\figures\figure-04-dependency-threat.pdf
+INPUT .\figures\figure-04-dependency-threat.pdf
+INPUT .\figures\figure-04-dependency-threat.pdf
+INPUT .\figures\figure-04-dependency-threat.pdf
+INPUT .\figures\figure-04-dependency-threat.pdf
+INPUT .\figures\figure-04-dependency-threat.pdf
+INPUT .\figures\figure-05-ctg-reasoning-loop.pdf
+INPUT .\figures\figure-05-ctg-reasoning-loop.pdf
+INPUT .\figures\figure-05-ctg-reasoning-loop.pdf
+INPUT .\figures\figure-05-ctg-reasoning-loop.pdf
+INPUT .\figures\figure-05-ctg-reasoning-loop.pdf
+INPUT .\figures\figure-05-ctg-reasoning-loop.pdf
 INPUT .\sections\07-blockchain.tex
 INPUT .\sections\07-blockchain.tex
 INPUT .\sections\07-blockchain.tex
 INPUT .\sections\07-blockchain.tex
 INPUT sections\07-blockchain.tex
-INPUT .\figures\blockchain-boundary.tex
-INPUT .\figures\blockchain-boundary.tex
-INPUT .\figures\blockchain-boundary.tex
-INPUT .\figures\blockchain-boundary.tex
-INPUT figures\blockchain-boundary.tex
+INPUT .\figures\figure-06-blockchain-boundary.pdf
+INPUT .\figures\figure-06-blockchain-boundary.pdf
+INPUT .\figures\figure-06-blockchain-boundary.pdf
+INPUT .\figures\figure-06-blockchain-boundary.pdf
+INPUT .\figures\figure-06-blockchain-boundary.pdf
+INPUT .\figures\figure-06-blockchain-boundary.pdf
 INPUT .\sections\08-evaluation.tex
 INPUT .\sections\08-evaluation.tex
 INPUT .\sections\08-evaluation.tex
 INPUT .\sections\08-evaluation.tex
 INPUT sections\08-evaluation.tex
-INPUT .\figures\maturity-ladder.tex
-INPUT .\figures\maturity-ladder.tex
-INPUT .\figures\maturity-ladder.tex
-INPUT .\figures\maturity-ladder.tex
-INPUT figures\maturity-ladder.tex
+INPUT .\figures\figure-07-evidence-maturity.pdf
+INPUT .\figures\figure-07-evidence-maturity.pdf
+INPUT .\figures\figure-07-evidence-maturity.pdf
+INPUT .\figures\figure-07-evidence-maturity.pdf
+INPUT .\figures\figure-07-evidence-maturity.pdf
+INPUT .\figures\figure-07-evidence-maturity.pdf
 INPUT .\sections\09-discussion.tex
 INPUT .\sections\09-discussion.tex
 INPUT .\sections\09-discussion.tex

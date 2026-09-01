@@ -18,7 +18,7 @@ The manuscript uses the official MDPI ACS template downloaded on 6 August 2026. 
 
 - `main.tex`: anonymous MDPI manuscript entry point.
 - `sections/`: eleven editable narrative-review sections.
-- `figures/`: seven editable TikZ vector figures.
+- `figures/`: seven publication PDF figures used by the manuscript, plus historical editable TikZ working sources.
 - `Definitions/`: official MDPI class, bibliography style, and assets.
 - `references.bib`: 140-entry ACS-style bibliography source.
 - `supplement/evidence-matrix.csv`: conservative source inventory and analytical routing.

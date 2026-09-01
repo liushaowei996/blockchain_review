@@ -5,7 +5,8 @@
 OAL classifies claims; a dependency graph explains how they interact. Let $G_t=(V_t,E_t)$ be a time-indexed directed multigraph whose vertices are versioned instances of the four object types. Edges carry typed relations: an entity \textit{controls} a platform; a platform \textit{hosts} a sensor, model, or gateway; a platform \textit{observes} a data product; a link \textit{transmits} it; an activity \textit{transforms} inputs into a new product; an entity or service \textit{endorses} it; a ledger transaction \textit{records} a commitment; and a mission function \textit{consumes} it. Time and version qualifiers are essential. ``UAV-7 hosts model M'' is insufficient if the decision depended on model version 4.2 before a rollback.
 
 \begin{figure}[H]
-\centering\resizebox{\textwidth}{!}{\input{figures/dependency-threat}}
+\centering
+\includegraphics[width=\textwidth]{figures/figure-04-dependency-threat.pdf}
 \caption{Simplified object dependency and attack-propagation path. Red dashed arrows illustrate one causal hypothesis within a diagnosis that retains malicious, benign-degraded, and unknown interpretations.\label{fig:dependency}}
 \end{figure}
 
@@ -41,7 +42,8 @@ Three-way interpretation provides a baseline state model. \emph{Malicious} denot
 CTG-Trust denotes the authors' context--temporal--graph reasoning loop shown in Figure~\ref{fig:ctg}. First, evidence events are captured with source, subject, time, context, value, and lineage. Second, evidence reliability is appraised: a device self-report and an independent verifier carry different evidential relationships. Third, object state is inferred using an appropriate published method. Fourth, dependencies are traversed to identify downstream claims and shared causes. Fifth, uncertainty is made explicit. Sixth, a mission policy chooses an action. Seventh, the decision, relevant versions, and evidence commitment are recorded for accountable review. Eighth, operational outcomes and later verification update the evidence base.
 
 \begin{figure}[H]
-\centering\resizebox{0.86\textwidth}{!}{\input{figures/evidence-loop}}
+\centering
+\includegraphics[width=0.86\textwidth]{figures/figure-05-ctg-reasoning-loop.pdf}
 \caption{CTG as an author-proposed reasoning loop that defines information flow, uncertainty handling, policy action, and accountability while accommodating validated inference methods.\label{fig:ctg}}
 \end{figure}
 

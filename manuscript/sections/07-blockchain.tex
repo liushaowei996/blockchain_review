@@ -7,7 +7,8 @@ The decision to use blockchain begins with the governance structure. A permissio
 The relevant ledger is normally permissioned. Open, computation-intensive participation is poorly aligned with constrained vehicles, sensitive mission metadata, and accountable membership. Full peers and ordering services belong on capable shore, edge, or selected USV nodes; UAVs and UUVs can act as clients or light verifiers. Hyperledger Fabric provides one representative architecture with identities, endorsement policies, channels, ordering, and validation \citep{androulaki2018hyperledger,hyperledger2026fabric}. The OAL framework is ledger-neutral: Byzantine-fault-tolerant replicas, crash-fault-tolerant ordering, or another shared-state service may be selected if the stated threat, availability, and governance assumptions match. Consensus surveys show that throughput, finality, membership, energy, and fault tolerance involve trade-offs rather than a single ranking \citep{wang2019survey,lashkari2021comprehensive,zhang2020analysis}.
 
 \begin{figure}[H]
-\centering\resizebox{0.92\textwidth}{!}{\input{figures/blockchain-boundary}}
+\centering
+\includegraphics[width=0.92\textwidth]{figures/figure-06-blockchain-boundary.pdf}
 \caption{Blockchain boundary in mission trust. The left column identifies suitable ledger functions; the right column identifies complementary assurance responsibilities.\label{fig:blockchain-boundary}}
 \end{figure}
 

@@ -1,14 +1,15 @@
 # Build and Quality Report
 
-- Validation date: 31 August 2026 (Asia/Shanghai)
+- Validation date: 1 September 2026 (Asia/Shanghai)
 - Target: MDPI *Blockchains*, Review, anonymous submit mode
-- Main PDF: 34 A4 pages
+- Main PDF: 35 A4 pages
 - Approximate English manuscript words: 10,894
 - Abstract: 178 words, one paragraph
 - Keywords: 8
 - Bibliography entries: 140
 - Unique cited entries: 140
-- Original editable vector figures: 7
+- Final raster-artwork figure PDFs: 7
+- Historical editable TikZ working sources, not used by the manuscript: 7
 - Editable comparison/analysis tables: 8
 - Evidence-matrix rows: 140
 - Priority lawful full-text acquisition records: 119
@@ -29,7 +30,7 @@
 
 ## Visual checks
 
-All 34 pages were rendered to PNG and inspected after the language and full-text evidence revisions. The anonymous title page, seven figures, eight tables, equations, revised evidence-comparison paragraphs, declarations, and all reference pages were checked for clipping and legibility. No visual defect was found; wide tables remain within the MDPI `adjustwidth`/`\fulllength` layout.
+All 35 pages were rendered to PNG and inspected after the final figure replacement. The anonymous title page, seven figures, eight tables, equations, evidence-comparison paragraphs, declarations, and all reference pages were checked for clipping and legibility. The seven figure pages were also rendered at higher resolution to verify labels, arrow direction, captions, and raster sharpness. No visual defect was found; wide tables remain within the MDPI `adjustwidth`/`\fulllength` layout.
 
 ## Open author actions
 

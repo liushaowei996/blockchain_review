@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2026.8.6)  31 AUG 2026 10:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2026.8.6)  1 SEP 2026 09:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1432,8 +1432,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 {C:/Users/survivor/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
  Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Definitions/logo-mdpi-eps-convert
 ed-to.pdf>] [2]) (sections/02-scope.tex
-[3]) (sections/03-context.tex [4] [5] (figures/reference-architecture.tex)
-[6] (figures/assurance-chain.tex)) (sections/04-landscapes.tex [7]
+[3]) (sections/03-context.tex [4] [5]
+<figures/figure-01-reference-architecture.pdf, id=287, 1156.32pt x 770.88pt>
+File: figures/figure-01-reference-architecture.pdf Graphic file (type pdf)
+<use figures/figure-01-reference-architecture.pdf>
+Package pdftex.def Info: figures/figure-01-reference-architecture.pdf  used on 
+input line 15.
+(pdftex.def)             Requested size: 394.35522pt x 262.8956pt.
+ [6 <./figures/figure-01-reference-architecture.pdf>]
+<figures/figure-02-assurance-chain.pdf, id=306, 1258.7025pt x 708.39656pt>
+File: figures/figure-02-assurance-chain.pdf Graphic file (type pdf)
+<use figures/figure-02-assurance-chain.pdf>
+Package pdftex.def Info: figures/figure-02-assurance-chain.pdf  used on input l
+ine 40.
+(pdftex.def)             Requested size: 394.35522pt x 221.93546pt.
+ [7]) (sections/04-landscapes.tex
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 9.37807pt on input line 6.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1447,129 +1460,167 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 []|\T1/ppl/m/n/7 (+20) Unmanned ma-rine and cross-
  []
 
-[8] [9]) (sections/05-oal.tex (figures/oal-framework.tex) [10] [11]
-Underfull \hbox (badness 4060) in paragraph at lines 64--64
+[8 <./figures/figure-02-assurance-chain.pdf>] [9]) (sections/05-oal.tex
+[10]
+<figures/figure-03-oal-framework.pdf, id=498, 1156.32pt x 770.88pt>
+File: figures/figure-03-oal-framework.pdf Graphic file (type pdf)
+<use figures/figure-03-oal-framework.pdf>
+Package pdftex.def Info: figures/figure-03-oal-framework.pdf  used on input lin
+e 7.
+(pdftex.def)             Requested size: 394.35522pt x 262.8956pt.
+ [11 <./figures/figure-03-oal-framework.pdf>] [12]
+Underfull \hbox (badness 4060) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Admission and au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Membership, role,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 \T1/ppl/m/n/9 (+20) attestation-result com-
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 64--64
+Underfull \hbox (badness 4048) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Sensing and col-lec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Acquisition com-mit-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Processing, fu-sion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Audit, re-vo-ca-tion,
  []
 
-) (sections/06-dependencies.tex [12] (figures/dependency-threat.tex)
-Underfull \hbox (badness 5260) in paragraph at lines 33--33
+) (sections/06-dependencies.tex [13]
+<figures/figure-04-dependency-threat.pdf, id=533, 1258.7025pt x 708.39656pt>
+File: figures/figure-04-dependency-threat.pdf Graphic file (type pdf)
+<use figures/figure-04-dependency-threat.pdf>
+Package pdftex.def Info: figures/figure-04-dependency-threat.pdf  used on input
+ line 9.
+(pdftex.def)             Requested size: 394.35522pt x 221.93546pt.
+
+Underfull \hbox (badness 5260) in paragraph at lines 34--34
 []|\T1/ppl/m/n/7 (+20) controls de-vice $\OMS/zplm/m/n/7 !$ \T1/ppl/m/n/7 (+20)
  en-dorses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []|\T1/ppl/m/n/7 (+20) Capture, mal-ware, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []|\T1/ppl/m/n/7 (+20) hosts sen-sor/model $\OMS/zplm/m/n/7 !$ \T1/ppl/m/n/7 (+
 20) ob-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []|\T1/ppl/m/n/7 (+20) transformed / en-dorsed /
  []
 
-[13] (figures/evidence-loop.tex) [14]
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[14 <./figures/figure-04-dependency-threat.pdf>]
+<figures/figure-05-ctg-reasoning-loop.pdf, id=546, 1055.44313pt x 844.65562pt>
+File: figures/figure-05-ctg-reasoning-loop.pdf Graphic file (type pdf)
+<use figures/figure-05-ctg-reasoning-loop.pdf>
+Package pdftex.def Info: figures/figure-05-ctg-reasoning-loop.pdf  used on inpu
+t line 46.
+(pdftex.def)             Requested size: 339.14572pt x 271.40372pt.
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/ppl/m/n/9 (+20) Weighted multi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/ppl/m/n/9 (+20) Rule/tree/fuzzy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/ppl/m/n/9 (+20) Human-readable rules or
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 70--70
+Underfull \hbox (badness 4328) in paragraph at lines 72--72
 []|\T1/ppl/m/n/9 (+20) Graph-based prop-a-
  []
 
-[15]) (sections/07-blockchain.tex [16] (figures/blockchain-boundary.tex)
-Underfull \hbox (badness 1331) in paragraph at lines 38--38
+[16 <./figures/figure-05-ctg-reasoning-loop.pdf>]) (sections/07-blockchain.tex
+[17]
+<figures/figure-06-blockchain-boundary.pdf, id=619, 1274.51157pt x 699.36281pt>
+
+File: figures/figure-06-blockchain-boundary.pdf Graphic file (type pdf)
+<use figures/figure-06-blockchain-boundary.pdf>
+Package pdftex.def Info: figures/figure-06-blockchain-boundary.pdf  used on inp
+ut line 11.
+(pdftex.def)             Requested size: 362.80608pt x 199.07503pt.
+
+Underfull \hbox (badness 1331) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) Accountable device-state ap-praisal
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 38--38
+Underfull \hbox (badness 1406) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) Partition-aware au-dit and
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 38--38
+Underfull \hbox (badness 1509) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) Signed se-quence range, batch
  []
 
-[17] [18]) (sections/08-evaluation.tex [19] (figures/maturity-ladder.tex)
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[18 <./figures/figure-06-blockchain-boundary.pdf>] [19])
+(sections/08-evaluation.tex [20]
+<figures/figure-07-evidence-maturity.pdf, id=678, 1156.32pt x 770.88pt>
+File: figures/figure-07-evidence-maturity.pdf Graphic file (type pdf)
+<use figures/figure-07-evidence-maturity.pdf>
+Package pdftex.def Info: figures/figure-07-evidence-maturity.pdf  used on input
+ line 11.
+(pdftex.def)             Requested size: 358.86469pt x 239.24088pt.
+ [21 <./figures/figure-07-evidence-maturity.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) SeaDronesSee and GNSS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) Real mar-itime im-
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 38--38
+Underfull \hbox (badness 1442) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) Observation va-lid-ity, data-product
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 38--38
+Underfull \hbox (badness 2582) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) High-frequency physics, sen-
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 38--38
+Underfull \hbox (badness 1515) in paragraph at lines 39--39
 []|\T1/ppl/m/n/7 (+20) ROS/Gazebo hy-dro-dy-nam-ics,
  []
 
-[21]) (sections/09-discussion.tex [22] [23] [24] [25])
-(sections/10-limitations.tex) (sections/11-conclusions.tex [26]) [27] (main.bbl
-[28] [29] [30] [31] [32] [33]) 
+[22]) (sections/09-discussion.tex [23] [24] [25] [26])
+(sections/10-limitations.tex [27]) (sections/11-conclusions.tex) [28] (main.bbl
+[29] [30] [31] [32] [33] [34]) 
 AED: lastpage setting LastPage
-[34] (main.aux)
+[35] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1578,13 +1629,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B8DAFA51D20AA6B5A934217528D7415F;10308.
  ) 
 Here is how much of TeX's memory you used:
- 37172 strings out of 474436
- 696953 string characters out of 5751761
- 1977190 words of memory out of 5000000
- 57899 multiletter control sequences out of 15000+600000
- 639872 words of font info for 575 fonts, out of 8000000 for 9000
+ 36475 strings out of 474436
+ 685960 string characters out of 5751761
+ 1976190 words of memory out of 5000000
+ 57226 multiletter control sequences out of 15000+600000
+ 639752 words of font info for 573 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,14n,121p,1555b,1123s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,13n,121p,1555b,1111s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\survivor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\e
 css0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
@@ -1592,9 +1643,9 @@ les/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiK
 TeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/ur
 w/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on main.pdf (34 pages, 433145 bytes).
+Output written on main.pdf (35 pages, 10437598 bytes).
 PDF statistics:
- 1088 PDF objects out of 1200 (max. 8388607)
- 234 named destinations out of 1000 (max. 500000)
- 94058 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1115 PDF objects out of 1200 (max. 8388607)
+ 235 named destinations out of 1000 (max. 500000)
+ 94093 words of extra memory for PDF output out of 106986 (max. 10000000)
 

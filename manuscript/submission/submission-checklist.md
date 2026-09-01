@@ -40,7 +40,7 @@
 
 - [x] `latexmk`/`pdflatex` build completes without errors.
 - [x] No undefined citation, undefined cross-reference, duplicate label, missing figure, or overfull box remains.
-- [x] Seven figures are editable TikZ vector sources; eight tables are editable LaTeX.
-- [x] All 34 PDF pages were rendered and visually checked for clipping, figure legibility, table width, references, and anonymity.
+- [x] Seven final figures are publication PDF files containing reviewed raster artwork; historical TikZ working sources remain available but are not used by the manuscript. Eight tables are editable LaTeX.
+- [x] All 35 PDF pages were rendered and visually checked for clipping, figure legibility, table width, references, and anonymity.
 - [x] The anonymous PDF and source package contain no `turn...` citation placeholders.
 - [ ] Final files have been checked in the journal submission preview after upload.

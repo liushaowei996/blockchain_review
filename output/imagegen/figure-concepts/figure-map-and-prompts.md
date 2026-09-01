@@ -1,6 +1,16 @@
-# Generated Figure Concepts
+# Manuscript Figure Assets
 
-These seven raster concepts were generated with the built-in image generation tool as visual references for manual Visio reconstruction. They are not inserted into the LaTeX manuscript and do not replace the editable TikZ sources.
+These seven raster figures were generated with the built-in image generation tool and selected for the manuscript after checking terminology, arrow direction, grouping, and consistency with the captions and surrounding text. Figures 2 and 4 were regenerated from blank prompts to correct semantic ambiguity; the other five generated originals were retained. The final PNG files are wrapped without content edits in PDF containers under `manuscript/figures/` and inserted into the LaTeX manuscript. The earlier TikZ files remain in the repository as historical working sources but are not used by the manuscript.
+
+| Figure | Disposition |
+|---|---|
+| 1 | Existing generated original retained |
+| 2 | Regenerated from a blank prompt |
+| 3 | Existing generated original retained |
+| 4 | Regenerated from a blank prompt |
+| 5 | Existing generated original retained |
+| 6 | Existing generated original retained |
+| 7 | Existing generated original retained |
 
 ## Shared visual direction
 
@@ -20,7 +30,7 @@ Prompt: Show three operating domains with UAVs and satellite/HAPS in the sky, a 
 
 File: `figure-02-assurance-chain.png`
 
-Prompt: Arrange four connected architectural gateways from left to right: `Observation Validity`, `Provenance Integrity`, `Ledger Consistency`, and `Mission Suitability`. Beneath them, place visually subordinate foundation tiles labeled `Physical Corroboration`, `Privacy Controls`, `Endpoint Integrity`, and `Context + Consequence`. Use a final decision beacon to suggest mission action while preserving the distinction between assurance claims and supporting mechanisms.
+Final prompt: Create a wide scholarly infographic with exactly four equal claim gateways connected left to right: `Observation Validity`, `Commitment + Provenance Integrity`, `Ledger + Governance Consistency`, and `Mission-Use Suitability`, ending in a small unlabeled decision beacon. Put `Physical Corroboration`, `Privacy Controls`, `Endpoint Integrity`, and `Context + Consequence` in one separate full-width band titled `Complementary Evidence and Controls`. The band supports the complete chain collectively: do not align or connect any lower tile with a specific upper claim. Use large horizontal labels, restrained 2.5D depth, consistent icons, and a warm-white journal background; add no other text, logos, watermarks, equations, cryptocurrency symbols, or military imagery.
 
 ## Figure 3 — Object–Assurance–Lifecycle framework
 
@@ -32,7 +42,7 @@ Prompt: Build an isometric translucent analytical lattice with three visible dim
 
 File: `figure-04-dependency-threat.png`
 
-Prompt: Use a two-tier left-to-right structure. The upper dependency chain is `Entity` → `Platform / Device` → `Link / Path` → `Data Product` → `Mission Consumer`, with concise relation labels including `controls`, `hosts`, `transmits`, and `consumed by`. The lower tier contains `Credential Theft`, `Endpoint Capture`, `Jamming / Route Attack`, `Poisoning / Stale Replay`, and `Unsafe Allocation`, connected by a muted coral causal path. At the bottom, show three parallel interpretation lenses labeled `Malicious`, `Benign-Degraded`, and `Unknown`.
+Final prompt: Create a wide scholarly infographic with three separated tiers. The top dependency chain is `Entity` → `Platform / Device` → `Link / Path` → `Data Product` → `Mission Consumer`, with arrow labels `controls`, `uses`, `transmits`, and `consumed by`, plus a thin secondary arrow from `Platform / Device` to `Data Product` labeled `observes / transforms`. The middle tier is the continuous muted-coral dashed chain `Credential Theft` → `Endpoint Capture` → `Jamming / Route Attack` → `Poisoning / Stale Replay` → `Unsafe Allocation`. The bottom is one full-width panel titled `Parallel Causal Interpretations` with equal lenses `Malicious`, `Benign-Degraded`, and `Unknown`. Associate the entire middle chain with the panel through one bracket; do not connect an individual stage to an individual interpretation. Use large horizontal labels, restrained 2.5D depth, consistent icons, and a warm-white journal background; add no other text, logos, watermarks, equations, military weapons, circuitry, or cryptocurrency imagery.
 
 ## Figure 5 — CTG reasoning loop
 
@@ -52,9 +62,8 @@ File: `figure-07-evidence-maturity.png`
 
 Prompt: Create six ascending terraces from lower left to upper right: `Concept`, `Analysis`, `Simulation`, `Prototype`, `Field Trial`, and `Deployment`. Increase implementation detail, environmental realism, organizational participation, and operational duration at each level. Add a rising ribbon labeled `Increasing Ecological Evidence` and a continuous foundation labeled `Preserve Clarity + Traceability`.
 
-## Visio reconstruction notes
+## Integration notes
 
-- Treat the generated typography as a placement reference; re-enter all labels in Visio for exact spelling and consistent type.
-- Preserve semantic grouping and arrow direction before reproducing illustrative detail.
-- Use one icon family and one line-weight system across all figures.
-- Retain the manuscript captions as the authoritative description of each figure.
+- The PNG files are the raster masters; the PDF files contain the same pixels without post-generation image editing.
+- Preserve semantic grouping and arrow direction if a figure is regenerated later.
+- Retain the manuscript captions as the authoritative descriptions.
