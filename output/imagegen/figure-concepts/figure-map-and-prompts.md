@@ -1,10 +1,10 @@
 # Manuscript Figure Assets
 
-These seven raster figures were generated with the built-in image generation tool and selected for the manuscript after checking terminology, axis geometry, arrow direction, grouping, and consistency with the captions and surrounding text. Figures 2, 3, and 4 were regenerated from blank prompts to correct semantic or geometric ambiguity; the other four generated originals were retained. The final PNG files are wrapped without content edits in PDF containers under `manuscript/figures/` and inserted into the LaTeX manuscript. The earlier TikZ files remain in the repository as historical working sources but are not used by the manuscript.
+These seven raster figures were generated with the built-in image generation tool and selected for the manuscript after checking terminology, axis geometry, arrow direction, color semantics, grouping, and consistency with the captions and surrounding text. Figures 1--4 were regenerated from blank prompts to correct semantic or geometric ambiguity; the other three generated originals were retained. The final PNG files are wrapped without content edits in PDF containers under `manuscript/figures/` and inserted into the LaTeX manuscript. The earlier TikZ files remain in the repository as historical working sources but are not used by the manuscript.
 
 | Figure | Disposition |
 |---|---|
-| 1 | Existing generated original retained |
+| 1 | Regenerated from a blank prompt to clarify flow and color semantics |
 | 2 | Regenerated from a blank prompt |
 | 3 | Regenerated from a blank prompt to correct axis geometry |
 | 4 | Regenerated from a blank prompt |
@@ -24,7 +24,7 @@ These seven raster figures were generated with the built-in image generation too
 
 File: `figure-01-reference-architecture.png`
 
-Prompt: Show three operating domains with UAVs and satellite/HAPS in the sky, a USV or buoy gateway at the surface, and UUV/AUV platforms underwater. Place shore services, policy and permissioned-ledger peers, an encrypted evidence store, and an auditor to the right. Connect them with visually distinct radio, optical, acoustic, and intermittent governance links. Enclose the system in a subtle assurance-and-governance plane. Use the labels `UAV`, `Satellite / HAPS`, `USV Gateway`, `UUV / AUV`, `Shore Services`, `Policy + Ledger`, `Evidence Store`, `Auditor`, and `Assurance + Governance`.
+Final prompt: Generate a brand-new, deliberately simplified cross-domain mission-trust reference architecture with exactly three columns inside a dashed `Assurance + Governance` enclosure: `MISSION PLATFORMS` contains `UAV`, `Satellite / HAPS`, `USV Gateway`, and `UUV / AUV`; `EDGE + SHORE` contains `Shore Services` and `Encrypted Evidence Store`; `SHARED TRUST SERVICES` contains `Policy + Ledger` and `Auditor`. Use neutral gray topology lines and the tags `RADIO` and `ACOUSTIC / OPTICAL` for communication media. Use solid teal left-to-right arrows only for data and evidence: `TELEMETRY + MISSION DATA` to shore services, `SIGNED LOGS + ENCRYPTED CONTENT` to the evidence store, and `COMMITMENTS + STATE UPDATES` to policy and ledger. Use one separate dashed violet right-to-left lane for `POLICY + MEMBERSHIP + REVOCATION`, and local dotted slate bidirectional links for audit and reconciliation. Put the three arrow meanings in one bottom legend. Every colored line must begin and end on its named group or node; forbid crossings, empty-space endpoints, perimeter-spanning loops, additional arrow colors, duplicate arrows, tiny text, decorative circuitry, cryptocurrency symbols, weapons, logos, and watermarks.
 
 ## Figure 2 — Four-layer assurance chain
 

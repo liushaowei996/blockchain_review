@@ -30,7 +30,7 @@
 
 ## Visual checks
 
-All 35 pages were rendered to PNG and inspected after the final figure replacement. The anonymous title page, seven figures, eight tables, equations, evidence-comparison paragraphs, declarations, and all reference pages were checked for clipping and legibility. The seven figure pages were also rendered at higher resolution to verify labels, axis geometry, arrow direction, captions, and raster sharpness. No visual defect was found; wide tables remain within the MDPI `adjustwidth`/`\fulllength` layout.
+All 35 pages were rendered to PNG and inspected after the final figure replacement. The anonymous title page, seven figures, eight tables, equations, evidence-comparison paragraphs, declarations, and all reference pages were checked for clipping and legibility. The seven figure pages were also rendered at higher resolution to verify labels, axis geometry, arrow direction and color semantics, captions, and raster sharpness. No visual defect was found; wide tables remain within the MDPI `adjustwidth`/`\fulllength` layout.
 
 ## Open author actions
 
