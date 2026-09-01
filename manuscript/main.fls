@@ -534,6 +534,16 @@ INPUT .\figures\reference-architecture.tex
 INPUT figures\reference-architecture.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
+INPUT .\figures\assurance-chain.tex
+INPUT .\figures\assurance-chain.tex
+INPUT .\figures\assurance-chain.tex
+INPUT .\figures\assurance-chain.tex
+INPUT figures\assurance-chain.tex
+INPUT .\sections\04-landscapes.tex
+INPUT .\sections\04-landscapes.tex
+INPUT .\sections\04-landscapes.tex
+INPUT .\sections\04-landscapes.tex
+INPUT sections\04-landscapes.tex
 INPUT C:\Program Files\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -552,16 +562,6 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\palatino\pplr7t.vf
 INPUT C:\Program Files\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT .\figures\assurance-chain.tex
-INPUT .\figures\assurance-chain.tex
-INPUT .\figures\assurance-chain.tex
-INPUT .\figures\assurance-chain.tex
-INPUT figures\assurance-chain.tex
-INPUT .\sections\04-landscapes.tex
-INPUT .\sections\04-landscapes.tex
-INPUT .\sections\04-landscapes.tex
-INPUT .\sections\04-landscapes.tex
-INPUT sections\04-landscapes.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm

@@ -464,6 +464,13 @@ Jahanbakht, M.; Xiang, W.; Hanzo, L.; Rahimi~Azghadi, M.
   23},~904--956.
 \newblock {\url{https://doi.org/10.1109/comst.2021.3053118}}.
 
+\bibitem[Li et~al.(2023)Li, Zhang, Jiang, and Zhang]{li2023survey}
+Li, J.; Zhang, G.; Jiang, C.; Zhang, W.
+\newblock {A survey of maritime unmanned search system: Theory, applications
+  and future directions}.
+\newblock {\em Ocean Engineering} {\bf 2023}, {\em 285},~115359.
+\newblock {\url{https://doi.org/10.1016/j.oceaneng.2023.115359}}.
+
 \bibitem[Stolfi et~al.(2021)Stolfi, Brust, Danoy, and Bouvry]{stolfi2021uav}
 Stolfi, D.H.; Brust, M.R.; Danoy, G.; Bouvry, P.
 \newblock {UAV-UGV-UMV Multi-Swarms for Cooperative Surveillance}.
@@ -523,13 +530,6 @@ Fagan, M.; Megas, K.N.; Scarfone, K.; Smith, M.
 \newblock Technical report, National Institute of Standards and Technology,
   2020.
 \newblock {\url{https://doi.org/10.6028/nist.ir.8259a}}.
-
-\bibitem[Li et~al.(2023)Li, Zhang, Jiang, and Zhang]{li2023survey}
-Li, J.; Zhang, G.; Jiang, C.; Zhang, W.
-\newblock {A survey of maritime unmanned search system: Theory, applications
-  and future directions}.
-\newblock {\em Ocean Engineering} {\bf 2023}, {\em 285},~115359.
-\newblock {\url{https://doi.org/10.1016/j.oceaneng.2023.115359}}.
 
 \bibitem[Wei et~al.(2022)Wei, Guo, Wang, Wang, and Qiu]{wei2022reliable}
 Wei, X.; Guo, H.; Wang, X.; Wang, X.; Qiu, M.
@@ -918,14 +918,6 @@ Brewer, E.A.
   symposium on Principles of distributed computing. ACM,  2000, p.~7.
 \newblock {\url{https://doi.org/10.1145/343477.343502}}.
 
-\bibitem[Neto et~al.(2023)Neto, Dadkhah, Ferreira, Zohourian, Lu, and
-  Ghorbani]{neto2023ciciot2023}
-Neto, E.C.P.; Dadkhah, S.; Ferreira, R.; Zohourian, A.; Lu, R.; Ghorbani, A.A.
-\newblock {CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale
-  Attacks in IoT Environment}.
-\newblock {\em Sensors} {\bf 2023}, {\em 23},~5941.
-\newblock {\url{https://doi.org/10.3390/s23135941}}.
-
 \bibitem[Alsaedi et~al.(2020)Alsaedi, Moustafa, Tari, Mahmood, and
   Anwar]{alsaedi2020ton}
 Alsaedi, A.; Moustafa, N.; Tari, Z.; Mahmood, A.; Anwar, A.
@@ -941,6 +933,14 @@ Ferrag, M.A.; Friha, O.; Hamouda, D.; Maglaras, L.; Janicke, H.
   of IoT and IIoT Applications for Centralized and Federated Learning}.
 \newblock {\em IEEE Access} {\bf 2022}, {\em 10},~40281--40306.
 \newblock {\url{https://doi.org/10.1109/access.2022.3165809}}.
+
+\bibitem[Neto et~al.(2023)Neto, Dadkhah, Ferreira, Zohourian, Lu, and
+  Ghorbani]{neto2023ciciot2023}
+Neto, E.C.P.; Dadkhah, S.; Ferreira, R.; Zohourian, A.; Lu, R.; Ghorbani, A.A.
+\newblock {CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale
+  Attacks in IoT Environment}.
+\newblock {\em Sensors} {\bf 2023}, {\em 23},~5941.
+\newblock {\url{https://doi.org/10.3390/s23135941}}.
 
 \bibitem[Varga et~al.(2022)Varga, Kiefer, Messmer, and
   Zell]{varga2022seadronessee}

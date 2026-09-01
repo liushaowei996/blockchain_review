@@ -1,9 +1,9 @@
 \begin{tikzpicture}[font=\small,>=Latex]
 \tikzset{yes/.style={draw=green!55!black,fill=green!8,rounded corners,minimum width=54mm,minimum height=9mm,align=center},no/.style={draw=red!65,fill=red!7,rounded corners,minimum width=54mm,minimum height=9mm,align=center}}
 \node[font=\bfseries,text=green!45!black] at (-3.2,2.75) {Ledger-supported assurance};
-\node[font=\bfseries,text=red!70!black] at (3.2,2.75) {Outside the ledger guarantee};
+\node[font=\bfseries,text=red!70!black] at (3.2,2.75) {Complementary assurance required};
 \foreach \i/\t in {0/Cross-organization member status,1/Attestation and provenance commitments,2/Policy and model version coordination,3/Audit accountability and reconciliation}{\node[yes] (y\i) at (-3.2,1.85-.75*\i) {\t};}
-\foreach \i/\t in {0/Sensor physical truth,1/Endpoint integrity without attestation,2/Partition elimination or hard deadlines,3/Privacy or sound consortium governance}{\node[no] (n\i) at (3.2,1.85-.75*\i) {\t};}
+\foreach \i/\t in {0/Sensor and physical validation,1/Endpoint attestation and runtime protection,2/Partition-aware safety and deadlines,3/Privacy and consortium governance}{\node[no] (n\i) at (3.2,1.85-.75*\i) {\t};}
 \draw[very thick] (0,2.45)--(0,-1.25);
-\node[draw,fill=orange!8,rounded corners,align=center,minimum width=95mm,minimum height=10mm] at (0,-1.85) {Use a conventional authenticated database when one trusted authority governs,\\a hard real-time loop dominates, or cross-organization audit is not required.};
+\node[draw,fill=orange!8,rounded corners,align=center,minimum width=95mm,minimum height=10mm] at (0,-1.85) {Prefer an authenticated database when one accountable authority governs,\\hard real-time control dominates, or shared audit has limited value.};
 \end{tikzpicture}

@@ -3,8 +3,8 @@
 \node[obj,fill=blue!8] (e) {Entity}; \node[obj,fill=green!8,right=of e] (v) {Platform/device};
 \node[obj,fill=orange!9,right=of v] (l) {Link/path}; \node[obj,fill=gray!10,right=of l] (d) {Data product};
 \node[obj,fill=purple!8,right=of d] (m) {Mission consumer};
-\draw[rel] (e)--node[above]{controls}(v); \draw[rel] (v)--node[above]{observes}(d);
-\draw[rel,bend left=25] (v) to node[above]{hosts}(l); \draw[rel] (l)--node[above]{transmits}(d);
+\draw[rel] (e)--node[above]{controls}(v); \draw[rel] (v)--node[above]{hosts}(l);
+\draw[rel,bend left=25] (v) to node[above]{observes}(d); \draw[rel] (l)--node[above]{transmits}(d);
 \draw[rel] (d)--node[above]{consumed by}(m);
 \node[bad,below=16mm of e] (a1) {credential theft};
 \node[bad,below=16mm of v] (a2) {endpoint capture};
@@ -13,5 +13,5 @@
 \node[bad,below=16mm of m] (a5) {unsafe allocation};
 \foreach \a/\b in {a1/e,a2/v,a3/l,a4/d,a5/m}{\draw[->,red!70] (\a)--(\b);}
 \draw[->,very thick,red!75,dashed] (a1)--(a2);\draw[->,very thick,red!75,dashed] (a2)--(a3);\draw[->,very thick,red!75,dashed] (a3)--(a4);\draw[->,very thick,red!75,dashed] (a4)--(a5);
-\node[align=center,below=4mm of a3,text=red!75] {Propagation must be distinguished from coincident benign degradation\\and from evidence insufficiency.};
+\node[align=center,below=4mm of a3,text=red!75] {Propagation analysis compares malicious, benign-degraded,\\and unknown causal hypotheses.};
 \end{tikzpicture}

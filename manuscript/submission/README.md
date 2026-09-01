@@ -26,6 +26,6 @@ The manuscript uses the official MDPI ACS template downloaded on 6 August 2026. 
 - `submission/cover-letter-anonymous.tex`: editable anonymous cover-letter template.
 - `submission/submission-checklist.md`: pre-submission verification list.
 
-## Important evidence status
+## Evidence status
 
-The manuscript is a complete, compilable narrative-review draft. Bibliographic metadata and citations are verified, but rows marked `full-text analytical coding pending` must be completed after the authors obtain lawful full texts. Do not convert those pending rows into method-specific or prevalence claims without inspection.
+The manuscript is a complete, compilable narrative-review draft. Bibliographic metadata and citations are verified, lawful full texts have been obtained for all 33 sources in the priority acquisition set, and 16 sources supporting method-specific comparisons have received claim-level coding. The remaining screened records provide discovery and thematic context and form a transparent roadmap for subsequent analytical coding.

@@ -18,6 +18,123 @@ OUT = Path("manuscript/supplement/evidence-matrix.csv")
 MANIFEST = Path("manuscript/supplement/full-text-acquisition-manifest.csv")
 
 
+FULLTEXT_ACQUIRED = {
+    "ahmed2019trust", "alladi2019blockchain", "alladi2020applications", "alsaedi2020ton",
+    "arifeen2020hidden", "bellini2020blockchain", "ferrag2022edge", "hadi2023comprehensive",
+    "hawashin2024blockchain", "hayat2016survey", "jiang2019securing", "jiang2020dynamic",
+    "jsang2016subjective", "junior2021survey", "karmakar2024blockchain", "li2023survey",
+    "manhaes2016uuv", "martin2017aqua", "mehta2020blockchain", "ott2023universal",
+    "pan2023data", "reyna2018blockchain", "semanjski2020use", "shafique2021detecting",
+    "shah2018airsim", "syed2022zero", "tan2022blockchain", "uddin2021survey",
+    "veith2023road", "wang2025survey", "wei2022reliable", "zhang2020analysis",
+    "zhu2024design",
+}
+
+
+FULLTEXT_OVERRIDES = {
+    "hayat2016survey": {
+        "evidence": "application taxonomy plus quantified mission, data, network, and QoS requirements",
+        "evaluation_maturity": "review-level synthesis with reported quantitative requirements",
+        "assumptions": "civil UAV applications; communication requirements vary by mission and network role",
+        "limitations": "air-domain communications review; does not validate cross-domain assurance",
+    },
+    "hadi2023comprehensive": {
+        "evidence": "review taxonomy of software, hardware, and communication vulnerabilities, attacks, and defenses",
+        "evaluation_maturity": "peer-reviewed review-level synthesis",
+        "assumptions": "primarily civilian/commercial UAV systems and published countermeasures",
+        "limitations": "blockchain and other emerging defenses are not evidence of real-time deployment in highly mobile UAVs",
+    },
+    "li2023survey": {
+        "evidence": "review of UAV, USV, UUV, and heterogeneous maritime search plus an illustrative USV--UAV platform",
+        "evaluation_maturity": "review-level synthesis with limited platform integration",
+        "assumptions": "maritime search missions and platform capabilities reported in the surveyed literature",
+        "limitations": "heterogeneous cooperative application remains early-stage and does not include mission-trust validation",
+    },
+    "arifeen2020hidden": {
+        "evidence": "HMM construction using packet-loss/error observations plus MATLAB numerical illustration and analytical cipher cost",
+        "evaluation_maturity": "analytical and numerical illustration (maturity level 1--2)",
+        "assumptions": "packet loss/error discriminate malicious from trustworthy state; illustration uses random probabilities and ten observations",
+        "limitations": "no calibrated attack/environment separation or representative underwater deployment",
+    },
+    "jiang2020dynamic": {
+        "evidence": "C4.5 classification of data-, link-, and node-based trust evidence with simulated attack and energy comparisons",
+        "evaluation_maturity": "software simulation (maturity level 2)",
+        "assumptions": "base station performs classification; evaluated trust evidence is not maliciously polluted",
+        "limitations": "actual underwater applicability not tested; acoustic loss can make normal nodes appear untrustworthy",
+    },
+    "zhu2024design": {
+        "source_type": "peer-reviewed review",
+        "evidence": "UWSN trust-management taxonomy, process decomposition, method comparison, and design guidelines",
+        "evaluation_maturity": "review-level synthesis",
+        "assumptions": "published UWSN trust models are comparable through common evidence/evaluation/propagation stages",
+        "limitations": "does not itself validate an integrated mission-trust implementation",
+    },
+    "tan2022blockchain": {
+        "evidence": "Fabric 1.4 smart-contract prototype plus formal/security analysis and simulated cryptographic cost comparisons",
+        "evaluation_maturity": "prototype and simulation (maturity level 3 for authentication service only)",
+        "assumptions": "cloud-hosted peers, sufficient peer availability, and base-station coverage across the mission area",
+        "limitations": "explicitly unsuitable where UAVs cannot reach blockchain services; no observation or cross-domain mission validation",
+    },
+    "karmakar2024blockchain": {
+        "evidence": "PUF mutual authentication, EVM smart-contract implementation, and simulated cost/throughput/delay comparisons",
+        "evaluation_maturity": "prototype and simulation (maturity level 3 for authentication service only)",
+        "assumptions": "cloud-hosted peers, ground-station controller, modeled mobility, and K-means cluster formation",
+        "limitations": "cross-domain authentication is future work; no underwater, governance, or mission-outcome evaluation",
+    },
+    "ott2023universal": {
+        "evidence": "implemented hardware-agnostic attestation for TPM, AMD SEV-SNP, and ARM PSA with latency, size, and security evaluation",
+        "evaluation_maturity": "multi-platform prototype (maturity level 3)",
+        "assumptions": "trusted hardware roots, signed reference manifests, TLS 1.3, and valid appraisal metadata",
+        "limitations": "cloud/edge testbed; attests measured platform state, not sensor calibration or physical truth",
+    },
+    "zhang2020analysis": {
+        "source_type": "peer-reviewed review/analysis",
+        "evidence": "comparative analysis of probabilistic- and absolute-finality consensus families",
+        "evaluation_maturity": "analytical comparison",
+        "assumptions": "consensus protocols compared under their stated fault and membership models",
+        "limitations": "not an unmanned-system or partitioned-mission benchmark",
+    },
+    "alsaedi2020ton": {
+        "evidence": "labeled IoT/IIoT telemetry, operating-system logs, and network traffic from the UNSW Canberra cyber range",
+        "evaluation_maturity": "public dataset with baseline machine-learning evaluation",
+        "assumptions": "cyber-range devices and attacks represent target anomaly classes",
+        "limitations": "no maritime physics, vehicle dependencies, ledger, or mission outcomes",
+    },
+    "ferrag2022edge": {
+        "source_type": "peer-reviewed dataset/benchmark",
+        "evidence": "purpose-built seven-layer IoT/IIoT testbed dataset with centralized and federated learning baselines",
+        "evaluation_maturity": "public dataset/testbed with baseline evaluation",
+        "assumptions": "testbed protocols, devices, and attack labels transfer to the target deployment",
+        "limitations": "no cross-media maritime mission, vehicle dynamics, or governance behavior",
+    },
+    "semanjski2020use": {
+        "evidence": "two supervised-learning experiments validated on distinct real-world GNSS spoofing and meaconing datasets",
+        "evaluation_maturity": "recorded real-world signal evaluation (maturity level 2)",
+        "assumptions": "selected features and labeled signal-manipulation events transfer to the target receiver/context",
+        "limitations": "single signal family and experimental context; no endpoint, ledger, or mission-lifecycle integration",
+    },
+    "shah2018airsim": {
+        "evidence": "high-frequency physics and visual simulation with hardware-in-the-loop support and selected real-flight comparisons",
+        "evaluation_maturity": "simulation/tool with component validation",
+        "assumptions": "vehicle, environment, and sensor models adequately represent the intended air scenario",
+        "limitations": "does not natively model underwater acoustic links or consortium governance",
+    },
+    "manhaes2016uuv": {
+        "evidence": "Gazebo/ROS package for hydrodynamics, thrusters, sensors, disturbances, intervention, and multi-robot scenarios",
+        "evaluation_maturity": "open simulation/tool platform",
+        "assumptions": "configured hydrodynamic and sensor models represent the target vehicle/environment",
+        "limitations": "simulated dynamics and sensors require field validation; no trust or ledger semantics",
+    },
+    "martin2017aqua": {
+        "source_type": "peer-reviewed tool/platform paper",
+        "evidence": "ns-3 underwater-network simulator architecture with protocol support and reported experimental comparison",
+        "evaluation_maturity": "network simulation/tool evaluation",
+        "assumptions": "channel, protocol, topology, and traffic models represent the target underwater network",
+        "limitations": "network abstraction does not establish observation truth or integrated mission assurance",
+    },
+}
+
+
 def parse_entries(text: str) -> list[dict[str, str]]:
     starts = list(re.finditer(r"(?m)^@(\w+)\{([^,]+),", text))
     entries: list[dict[str, str]] = []
@@ -144,7 +261,7 @@ def classify(entry: dict[str, str]) -> dict[str, str]:
         limitations = "pending full-text coding; no detailed claim drawn from title alone"
         coding_status = "bibliographic metadata verified; full-text analytical coding pending"
 
-    return {
+    result = {
         "source_id": source_id,
         "source_type": source_type,
         "domain": domain,
@@ -165,6 +282,12 @@ def classify(entry: dict[str, str]) -> dict[str, str]:
         "year": entry["year"],
         "doi_or_url": entry["doi"] or entry["url"],
     }
+    if source_id in FULLTEXT_ACQUIRED:
+        result["coding_status"] = "lawful full text acquired and screened; fine-grained analytical coding pending"
+    if source_id in FULLTEXT_OVERRIDES:
+        result.update(FULLTEXT_OVERRIDES[source_id])
+        result["coding_status"] = "lawful full text inspected; claim-level coding completed for review scope"
+    return result
 
 
 def main() -> None:
@@ -187,7 +310,13 @@ def main() -> None:
                 "title": entry["title"],
                 "doi_or_url": entry["doi"] or entry["url"],
                 "priority": "high" if any(term in title for term in ("survey", "review", "uav", "underwater", "maritime")) else "medium",
-                "status": "obtain and inspect lawful full text before final evidence coding",
+                "status": (
+                    "lawful full text acquired; claim-level coding completed for review scope"
+                    if entry["source_id"] in FULLTEXT_OVERRIDES
+                    else "lawful full text acquired and screened; fine-grained coding pending"
+                    if entry["source_id"] in FULLTEXT_ACQUIRED
+                    else "obtain and inspect lawful full text before final evidence coding"
+                ),
             })
     with MANIFEST.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(priority[0]))

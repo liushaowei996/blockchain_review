@@ -1,0 +1,189 @@
+{"kind":"deck","id":"pr/dlfset","name":"Deck"}
+{"kind":"layout","layoutId":"71d283f6-541e-4c17-b5a3-9c0f1e026346","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"54d3fe55-c374-4ced-8963-1cf457c5bfec","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/w3eo5v","slide":1,"title":"FIGURE 1","textShapes":11}
+{"kind":"textbox","id":"sh/hgj2l4ny","slide":1,"name":"figure-1-eyebrow","text":"FIGURE 1","textPreview":"FIGURE 1","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/udsjq9o7","slide":1,"name":"figure-1-title","text":"Cross-domain reference architecture","textPreview":"Cross-domain reference architecture","textChars":35,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/ve1kje5s","slide":1,"name":"figure-1-accent","bbox":[64,107,82,5]}
+{"kind":"shape","id":"sh/4jalwjmp","slide":1,"name":"assurance-boundary","bbox":[50,126,1180,520]}
+{"kind":"textbox","id":"sh/5k32ponu","slide":1,"name":"uav-domain","text":"UAV\nradio + optical sensing","textPreview":"UAV | radio + optical sensing","textChars":27,"textLines":2,"bbox":[85,160,430,118]}
+{"kind":"textbox","id":"sh/ihs3u94j","slide":1,"name":"usv-domain","text":"USV GATEWAY\nedge validation + cache","textPreview":"USV GATEWAY | edge validation + cache","textChars":35,"textLines":2,"bbox":[150,325,430,118]}
+{"kind":"textbox","id":"sh/ji1kne54","slide":1,"name":"uuv-domain","text":"UUV / AUV\nacoustic + optical links","textPreview":"UUV / AUV | acoustic + optical links","textChars":34,"textLines":2,"bbox":[85,490,430,118]}
+{"kind":"textbox","id":"sh/knq1kz65","slide":1,"name":"satellite","text":"SATELLITE / HAPS","textPreview":"SATELLITE / HAPS","textChars":16,"textLines":1,"bbox":[555,165,180,52]}
+{"kind":"textbox","id":"sh/loz2dknq","slide":1,"name":"shore-services","text":"SHORE SERVICES","textPreview":"SHORE SERVICES","textChars":14,"textLines":1,"bbox":[790,150,350,82]}
+{"kind":"textbox","id":"sh/1o7qlwnm","slide":1,"name":"policy-ledger","text":"POLICY + LEDGER","textPreview":"POLICY + LEDGER","textChars":15,"textLines":1,"bbox":[790,260,350,82]}
+{"kind":"textbox","id":"sh/gny9sr61","slide":1,"name":"evidence-store","text":"ENCRYPTED EVIDENCE STORE","textPreview":"ENCRYPTED EVIDENCE STORE","textChars":24,"textLines":1,"bbox":[790,370,350,82]}
+{"kind":"textbox","id":"sh/fm58jm5g","slide":1,"name":"auditor","text":"AUDITOR / OPERATOR","textPreview":"AUDITOR / OPERATOR","textChars":18,"textLines":1,"bbox":[790,480,350,82]}
+{"kind":"shape","id":"sh/elwrqhov","slide":1,"bbox":[300,278,65,47]}
+{"kind":"shape","id":"sh/pc7qpgni","slide":1,"bbox":[300,443,65,47]}
+{"kind":"shape","id":"sh/oby9wb6x","slide":1,"bbox":[580,301,210,83]}
+{"kind":"shape","id":"sh/3ap8n65s","slide":1,"bbox":[515,191,40,28]}
+{"kind":"shape","id":"sh/2pgru1o7","slide":1,"bbox":[735,191,55,0]}
+{"kind":"shape","id":"sh/dgratgnu","slide":1,"bbox":[965,232,0,28]}
+{"kind":"shape","id":"sh/cfi90bm9","slide":1,"bbox":[965,342,0,28]}
+{"kind":"shape","id":"sh/wva1cjyh","slide":1,"bbox":[965,452,0,28]}
+{"kind":"textbox","id":"sh/hwj2loz2","slide":1,"name":"assurance-label","text":"ASSURANCE + GOVERNANCE","textPreview":"ASSURANCE + GOVERNANCE","textChars":22,"textLines":1,"bbox":[440,613,400,40]}
+{"kind":"notes","id":"nt/w3eo5v","slide":1,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-01-reference-architecture.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}
+{"kind":"slide","id":"sl/atm7vn","slide":2,"title":"FIGURE 2","textShapes":11}
+{"kind":"textbox","id":"sh/ts7yd0fu","slide":2,"name":"figure-2-eyebrow","text":"FIGURE 2","textPreview":"FIGURE 2","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/65gzilg3","slide":2,"name":"figure-2-title","text":"Four-layer assurance chain","textPreview":"Four-layer assurance chain","textChars":26,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/rqpgbqxo","slide":2,"name":"figure-2-accent","bbox":[64,107,82,5]}
+{"kind":"textbox","id":"sh/gvyhofyl","slide":2,"name":"assurance-main-1","text":"1\nOBSERVATION\nVALIDITY","textPreview":"1 | OBSERVATION | VALIDITY","textChars":22,"textLines":3,"bbox":[70,180,235,175]}
+{"kind":"textbox","id":"sh/1wryh0fq","slide":2,"name":"assurance-support-1","text":"Physical\nCorroboration","textPreview":"Physical | Corroboration","textChars":22,"textLines":2,"bbox":[70,455,235,115]}
+{"kind":"shape","id":"sh/etgzm5gf","slide":2,"bbox":[187.5,355,0,100]}
+{"kind":"textbox","id":"sh/fupgfax0","slide":2,"name":"assurance-main-2","text":"2\nPROVENANCE\nINTEGRITY","textPreview":"2 | PROVENANCE | INTEGRITY","textChars":22,"textLines":3,"bbox":[370,180,235,175]}
+{"kind":"textbox","id":"sh/ozihsfyh","slide":2,"name":"assurance-support-2","text":"Privacy\nControls","textPreview":"Privacy | Controls","textChars":16,"textLines":2,"bbox":[370,455,235,115]}
+{"kind":"shape","id":"sh/p0rilkf2","slide":2,"bbox":[487.5,355,0,100]}
+{"kind":"shape","id":"sh/103ihozy","slide":2,"bbox":[305,267.5,65,0]}
+{"kind":"textbox","id":"sh/0fa1ojyd","slide":2,"name":"assurance-main-3","text":"3\nLEDGER\nCONSISTENCY","textPreview":"3 | LEDGER | CONSISTENCY","textChars":20,"textLines":3,"bbox":[670,180,235,175]}
+{"kind":"textbox","id":"sh/ze10fehs","slide":2,"name":"assurance-support-3","text":"Endpoint\nIntegrity","textPreview":"Endpoint | Integrity","textChars":18,"textLines":2,"bbox":[670,455,235,115]}
+{"kind":"shape","id":"sh/edsjmtg7","slide":2,"bbox":[787.5,355,0,100]}
+{"kind":"shape","id":"sh/943il8fu","slide":2,"bbox":[605,267.5,65,0]}
+{"kind":"textbox","id":"sh/o3u1s3yp","slide":2,"name":"assurance-main-4","text":"4\nMISSION\nSUITABILITY","textPreview":"4 | MISSION | SUITABILITY","textChars":21,"textLines":3,"bbox":[970,180,235,175]}
+{"kind":"textbox","id":"sh/n2l0jyx4","slide":2,"name":"assurance-support-4","text":"Context +\nConsequence","textPreview":"Context + | Consequence","textChars":21,"textLines":2,"bbox":[970,455,235,115]}
+{"kind":"shape","id":"sh/m1cjqtgj","slide":2,"bbox":[1087.5,355,0,100]}
+{"kind":"shape","id":"sh/p8zi94zq","slide":2,"bbox":[905,267.5,65,0]}
+{"kind":"textbox","id":"sh/47qhgzy5","slide":2,"name":"decision-outcome","text":"DEFENSIBLE\nMISSION DECISION","textPreview":"DEFENSIBLE | MISSION DECISION","textChars":27,"textLines":2,"bbox":[470,605,340,68]}
+{"kind":"notes","id":"nt/atm7vn","slide":2,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-02-assurance-chain.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}
+{"kind":"slide","id":"sl/urhfbj","slide":3,"title":"FIGURE 3","textShapes":17}
+{"kind":"textbox","id":"sh/p0nypsbm","slide":3,"name":"figure-3-eyebrow","text":"FIGURE 3","textPreview":"FIGURE 3","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/2dwfudsb","slide":3,"name":"figure-3-title","text":"Object–Assurance–Lifecycle framework","textPreview":"Object–Assurance–Lifecycle framework","textChars":36,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/3y5gnitw","slide":3,"name":"figure-3-accent","bbox":[64,107,82,5]}
+{"kind":"shape","id":"sh/gbexsnu5","slide":3,"name":"oal-boundary","bbox":[55,130,1170,535]}
+{"kind":"textbox","id":"sh/hcnylsbq","slide":3,"name":"oal-plane","text":"ASSURANCE + GOVERNANCE PLANE","textPreview":"ASSURANCE + GOVERNANCE PLANE","textChars":28,"textLines":1,"bbox":[820,120,340,42]}
+{"kind":"textbox","id":"sh/u9wfqdcz","slide":3,"name":"object-1","text":"ENTITY","textPreview":"ENTITY","textChars":6,"textLines":1,"bbox":[320,165,190,58]}
+{"kind":"textbox","id":"sh/fa5gjitk","slide":3,"name":"object-2","text":"PLATFORM / DEVICE","textPreview":"PLATFORM / DEVICE","textChars":17,"textLines":1,"bbox":[525,165,190,58]}
+{"kind":"textbox","id":"sh/s7uxo3u9","slide":3,"name":"object-3","text":"LINK / PATH","textPreview":"LINK / PATH","textChars":11,"textLines":1,"bbox":[730,165,190,58]}
+{"kind":"textbox","id":"sh/t83yh8bu","slide":3,"name":"object-4","text":"DATA PRODUCT","textPreview":"DATA PRODUCT","textChars":12,"textLines":1,"bbox":[935,165,190,58]}
+{"kind":"textbox","id":"sh/lkvip8jy","slide":3,"name":"layer-1","text":"OBSERVATION","textPreview":"OBSERVATION","textChars":11,"textLines":1,"bbox":[80,250,220,58]}
+{"kind":"shape","id":"sh/kjmhw3id","slide":3,"name":"cell-1-1","bbox":[320,250,190,58]}
+{"kind":"shape","id":"sh/jit0ny1s","slide":3,"name":"cell-1-2","bbox":[525,250,190,58]}
+{"kind":"shape","id":"sh/yhkzut07","slide":3,"name":"cell-1-3","bbox":[730,250,190,58]}
+{"kind":"shape","id":"sh/xgbilojm","slide":3,"name":"cell-1-4","bbox":[935,250,190,58]}
+{"kind":"textbox","id":"sh/wf2hsjih","slide":3,"name":"layer-2","text":"PROVENANCE","textPreview":"PROVENANCE","textChars":10,"textLines":1,"bbox":[80,325,220,58]}
+{"kind":"shape","id":"sh/bet0je1w","slide":3,"name":"cell-2-1","bbox":[320,325,190,58]}
+{"kind":"shape","id":"sh/adkzq90b","slide":3,"name":"cell-2-2","bbox":[525,325,190,58]}
+{"kind":"shape","id":"sh/9sbyhojq","slide":3,"name":"cell-2-3","bbox":[730,325,190,58]}
+{"kind":"shape","id":"sh/orihoji5","slide":3,"name":"cell-2-4","bbox":[935,325,190,58]}
+{"kind":"textbox","id":"sh/0769k3ud","slide":3,"name":"layer-3","text":"LEDGER + GOVERNANCE","textPreview":"LEDGER + GOVERNANCE","textChars":19,"textLines":1,"bbox":[80,400,220,58]}
+{"kind":"shape","id":"sh/18fqt8vy","slide":3,"name":"cell-3-1","bbox":[320,400,190,58]}
+{"kind":"shape","id":"sh/e5oridc7","slide":3,"name":"cell-3-2","bbox":[525,400,190,58]}
+{"kind":"shape","id":"sh/z6x8rids","slide":3,"name":"cell-3-3","bbox":[730,400,190,58]}
+{"kind":"shape","id":"sh/cj69g3u1","slide":3,"name":"cell-3-4","bbox":[935,400,190,58]}
+{"kind":"textbox","id":"sh/d4fqp8vm","slide":3,"name":"layer-4","text":"MISSION USE","textPreview":"MISSION USE","textChars":11,"textLines":1,"bbox":[80,475,220,58]}
+{"kind":"shape","id":"sh/qh4retcb","slide":3,"name":"cell-4-1","bbox":[320,475,190,58]}
+{"kind":"shape","id":"sh/rix8nydg","slide":3,"name":"cell-4-2","bbox":[525,475,190,58]}
+{"kind":"shape","id":"sh/wzq9snul","slide":3,"name":"cell-4-3","bbox":[730,475,190,58]}
+{"kind":"shape","id":"sh/x0za1svq","slide":3,"name":"cell-4-4","bbox":[935,475,190,58]}
+{"kind":"textbox","id":"sh/7ulcr6x8","slide":3,"name":"stage-1","text":"ADMIT","textPreview":"ADMIT","textChars":5,"textLines":1,"bbox":[78,575,192,64]}
+{"kind":"textbox","id":"sh/6tcbi1wn","slide":3,"name":"stage-2","text":"SENSE","textPreview":"SENSE","textChars":5,"textLines":1,"bbox":[266,575,192,64]}
+{"kind":"textbox","id":"sh/tw3utwfy","slide":3,"name":"stage-3","text":"RELAY","textPreview":"RELAY","textChars":5,"textLines":1,"bbox":[454,575,192,64]}
+{"kind":"textbox","id":"sh/svutkret","slide":3,"name":"stage-4","text":"FUSE + SHARE","textPreview":"FUSE + SHARE","textChars":12,"textLines":1,"bbox":[642,575,192,64]}
+{"kind":"textbox","id":"sh/fylcv6x4","slide":3,"name":"stage-5","text":"DECIDE + ACT","textPreview":"DECIDE + ACT","textChars":12,"textLines":1,"bbox":[830,575,192,64]}
+{"kind":"textbox","id":"sh/uxcbm1wj","slide":3,"name":"stage-6","text":"AUDIT + RECOVER","textPreview":"AUDIT + RECOVER","textChars":15,"textLines":1,"bbox":[1018,575,192,64]}
+{"kind":"notes","id":"nt/urhfbj","slide":3,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-03-oal-framework.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}
+{"kind":"slide","id":"sl/im9d6y","slide":4,"title":"FIGURE 4","textShapes":16}
+{"kind":"textbox","id":"sh/o7ipcz2h","slide":4,"name":"figure-4-eyebrow","text":"FIGURE 4","textPreview":"FIGURE 4","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/n69oju1w","slide":4,"name":"figure-4-title","text":"Dependency and threat propagation","textPreview":"Dependency and threat propagation","textChars":33,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/2507apkb","slide":4,"name":"figure-4-accent","bbox":[64,107,82,5]}
+{"kind":"textbox","id":"sh/xcbqp4jy","slide":4,"name":"dependency-node-1","text":"ENTITY","textPreview":"ENTITY","textChars":6,"textLines":1,"bbox":[55,155,185,118]}
+{"kind":"textbox","id":"sh/cb2pgz2d","slide":4,"name":"threat-1","text":"Credential\nTheft","textPreview":"Credential | Theft","textChars":16,"textLines":2,"bbox":[55,325,185,92]}
+{"kind":"shape","id":"sh/batone1s","slide":4,"bbox":[147.5,273,0,52]}
+{"kind":"textbox","id":"sh/a9k7e9k7","slide":4,"name":"dependency-node-2","text":"PLATFORM /\nDEVICE","textPreview":"PLATFORM / | DEVICE","textChars":17,"textLines":2,"bbox":[300,155,185,118]}
+{"kind":"textbox","id":"sh/l0vqtoju","slide":4,"name":"threat-2","text":"Endpoint\nCapture","textPreview":"Endpoint | Capture","textChars":16,"textLines":2,"bbox":[300,325,185,92]}
+{"kind":"shape","id":"sh/kzmpkj2p","slide":4,"bbox":[392.5,273,0,52]}
+{"kind":"shape","id":"sh/qpwzadkb","slide":4,"bbox":[240,214,60,0]}
+{"kind":"textbox","id":"sh/rqp03i1g","slide":4,"name":"dependency-node-3","text":"LINK / PATH","textPreview":"LINK / PATH","textChars":11,"textLines":1,"bbox":[545,155,185,118]}
+{"kind":"textbox","id":"sh/cryhcn21","slide":4,"name":"threat-3","text":"Jamming /\nRoute Attack","textPreview":"Jamming / | Route Attack","textChars":22,"textLines":2,"bbox":[545,325,185,92]}
+{"kind":"shape","id":"sh/ds7i58jm","slide":4,"bbox":[637.5,273,0,52]}
+{"kind":"shape","id":"sh/ytgzedk7","slide":4,"bbox":[485,214,60,0]}
+{"kind":"textbox","id":"sh/zup07i1s","slide":4,"name":"dependency-node-4","text":"DATA PRODUCT","textPreview":"DATA PRODUCT","textChars":12,"textLines":1,"bbox":[790,155,185,118]}
+{"kind":"textbox","id":"sh/0fyhgn2d","slide":4,"name":"threat-4","text":"Poisoning /\nStale Replay","textPreview":"Poisoning / | Stale Replay","textChars":24,"textLines":2,"bbox":[790,325,185,92]}
+{"kind":"shape","id":"sh/lg7i9sjy","slide":4,"bbox":[882.5,273,0,52]}
+{"kind":"shape","id":"sh/uxcz2tk3","slide":4,"bbox":[730,214,60,0]}
+{"kind":"textbox","id":"sh/fy50vylo","slide":4,"name":"dependency-node-5","text":"MISSION\nCONSUMER","textPreview":"MISSION | CONSUMER","textChars":16,"textLines":2,"bbox":[1035,155,185,118]}
+{"kind":"textbox","id":"sh/j21w3uhg","slide":4,"name":"threat-5","text":"Unsafe\nAllocation","textPreview":"Unsafe | Allocation","textChars":17,"textLines":2,"bbox":[1035,325,185,92]}
+{"kind":"shape","id":"sh/i1sfap0v","slide":4,"bbox":[1127.5,273,0,52]}
+{"kind":"shape","id":"sh/54je5kz6","slide":4,"bbox":[975,214,60,0]}
+{"kind":"textbox","id":"sh/k3axczil","slide":4,"name":"propagation-band","text":"POTENTIAL MISSION-IMPACT PROPAGATION","textPreview":"POTENTIAL MISSION-IMPACT PROPAGATION","textChars":36,"textLines":1,"bbox":[92,447,1085,52]}
+{"kind":"textbox","id":"sh/vyhwza14","slide":4,"name":"hypothesis-1","text":"MALICIOUS","textPreview":"MALICIOUS","textChars":9,"textLines":1,"bbox":[150,555,300,90]}
+{"kind":"textbox","id":"sh/ax8f650j","slide":4,"name":"hypothesis-2","text":"BENIGN-DEGRADED","textPreview":"BENIGN-DEGRADED","textChars":15,"textLines":1,"bbox":[490,555,300,90]}
+{"kind":"textbox","id":"sh/x0je1kja","slide":4,"name":"hypothesis-3","text":"UNKNOWN","textPreview":"UNKNOWN","textChars":7,"textLines":1,"bbox":[830,555,300,90]}
+{"kind":"notes","id":"nt/im9d6y","slide":4,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-04-dependency-threat.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}
+{"kind":"slide","id":"sl/nsu5f4","slide":5,"title":"FIGURE 5","textShapes":11}
+{"kind":"textbox","id":"sh/3yhkvyho","slide":5,"name":"figure-5-eyebrow","text":"FIGURE 5","textPreview":"FIGURE 5","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/4zql43it","slide":5,"name":"figure-5-title","text":"Context–temporal–graph reasoning loop","textPreview":"Context–temporal–graph reasoning loop","textChars":37,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/50zmx8ze","slide":5,"name":"figure-5-accent","bbox":[64,107,82,5]}
+{"kind":"textbox","id":"sh/q1836d0z","slide":5,"name":"ctg-step-1","text":"01  Evidence\nCapture","textPreview":"01  Evidence | Capture","textChars":20,"textLines":2,"bbox":[530,135,220,84]}
+{"kind":"textbox","id":"sh/r2h4zihk","slide":5,"name":"ctg-step-2","text":"02  Reliability\nAppraisal","textPreview":"02  Reliability | Appraisal","textChars":25,"textLines":2,"bbox":[825,170,220,84]}
+{"kind":"textbox","id":"sh/snql83i5","slide":5,"name":"ctg-step-3","text":"03  Object-State\nInference","textPreview":"03  Object-State | Inference","textChars":26,"textLines":2,"bbox":[955,300,220,84]}
+{"kind":"textbox","id":"sh/dozm18zq","slide":5,"name":"ctg-step-4","text":"04  Dependency\nPropagation","textPreview":"04  Dependency | Propagation","textChars":26,"textLines":2,"bbox":[825,475,220,84]}
+{"kind":"textbox","id":"sh/6543u90v","slide":5,"name":"ctg-step-5","text":"05  Uncertainty\nExpression","textPreview":"05  Uncertainty | Expression","textChars":26,"textLines":2,"bbox":[530,540,220,84]}
+{"kind":"textbox","id":"sh/76dknehg","slide":5,"name":"ctg-step-6","text":"06  Policy\nAction","textPreview":"06  Policy | Action","textChars":17,"textLines":2,"bbox":[235,475,220,84]}
+{"kind":"textbox","id":"sh/r6pg3mlg","slide":5,"name":"ctg-step-7","text":"07  Accountable\nAudit","textPreview":"07  Accountable | Audit","textChars":21,"textLines":2,"bbox":[105,300,220,84]}
+{"kind":"textbox","id":"sh/q5wzahkv","slide":5,"name":"ctg-step-8","text":"08  Operational\nFeedback","textPreview":"08  Operational | Feedback","textChars":24,"textLines":2,"bbox":[235,170,220,84]}
+{"kind":"shape","id":"sh/d87y5c3m","slide":5,"bbox":[770,157,35,75]}
+{"kind":"shape","id":"sh/s7yhcr21","slide":5,"bbox":[929,254,26,88]}
+{"kind":"shape","id":"sh/3i5gz2lk","slide":5,"bbox":[929,342,26,133]}
+{"kind":"shape","id":"sh/ihwz6xkz","slide":5,"bbox":[755,512,65,75]}
+{"kind":"shape","id":"sh/5kny1c3q","slide":5,"bbox":[460,512,65,75]}
+{"kind":"shape","id":"sh/4jeh8725","slide":5,"bbox":[325,342,26,133]}
+{"kind":"shape","id":"sh/velgv2l8","slide":5,"bbox":[209,212,26,88]}
+{"kind":"shape","id":"sh/udcf2xk3","slide":5,"bbox":[475,157,35,75]}
+{"kind":"textbox","id":"sh/y9czexov","slide":5,"name":"ctg-hub","text":"CONTEXT\n\nTIME\n\nMISSION","textPreview":"CONTEXT |  | TIME |  | MISSION","textChars":22,"textLines":5,"bbox":[505,280,270,205]}
+{"kind":"notes","id":"nt/nsu5f4","slide":5,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-05-ctg-reasoning-loop.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}
+{"kind":"slide","id":"sl/60dr42","slide":6,"title":"FIGURE 6","textShapes":18}
+{"kind":"textbox","id":"sh/47y9s7a9","slide":6,"name":"figure-6-eyebrow","text":"FIGURE 6","textPreview":"FIGURE 6","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/36p8z2to","slide":6,"name":"figure-6-title","text":"Blockchain assurance boundary","textPreview":"Blockchain assurance boundary","textChars":29,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/25grqxs3","slide":6,"name":"figure-6-accent","bbox":[64,107,82,5]}
+{"kind":"textbox","id":"sh/dwrq5wbq","slide":6,"name":"ledger-hub","text":"PERMISSIONED\nLEDGER","textPreview":"PERMISSIONED | LEDGER","textChars":19,"textLines":2,"bbox":[225,245,270,170]}
+{"kind":"textbox","id":"sh/cvy9wra5","slide":6,"name":"assurance-hub","text":"COMPLEMENTARY\nASSURANCE","textPreview":"COMPLEMENTARY | ASSURANCE","textChars":23,"textLines":2,"bbox":[785,245,270,170]}
+{"kind":"textbox","id":"sh/rup83mtk","slide":6,"name":"mission-assurance","text":"INTEGRATED\nMISSION ASSURANCE","textPreview":"INTEGRATED | MISSION ASSURANCE","textChars":28,"textLines":2,"bbox":[525,285,230,90]}
+{"kind":"shape","id":"sh/qtgruhsf","slide":6,"bbox":[495,330,30,0]}
+{"kind":"shape","id":"sh/t0nqtsbm","slide":6,"bbox":[755,330,30,0]}
+{"kind":"textbox","id":"sh/szepkna1","slide":6,"name":"ledger-role-1","text":"Membership + Authority","textPreview":"Membership + Authority","textChars":22,"textLines":1,"bbox":[70,145,220,68]}
+{"kind":"textbox","id":"sh/6p032dsj","slide":6,"name":"ledger-role-2","text":"Provenance Commitments","textPreview":"Provenance Commitments","textChars":22,"textLines":1,"bbox":[70,420,220,68]}
+{"kind":"textbox","id":"sh/7q94bit4","slide":6,"name":"ledger-role-3","text":"Version Coordination","textPreview":"Version Coordination","textChars":20,"textLines":1,"bbox":[300,135,220,68]}
+{"kind":"textbox","id":"sh/sril4na9","slide":6,"name":"ledger-role-4","text":"Audit + Reconciliation","textPreview":"Audit + Reconciliation","textChars":22,"textLines":1,"bbox":[300,440,220,68]}
+{"kind":"textbox","id":"sh/tcrmdsbu","slide":6,"name":"assurance-role-1","text":"Physical Validation","textPreview":"Physical Validation","textChars":19,"textLines":1,"bbox":[990,145,220,68]}
+{"kind":"textbox","id":"sh/ud0n6dsf","slide":6,"name":"assurance-role-2","text":"Endpoint Protection","textPreview":"Endpoint Protection","textChars":19,"textLines":1,"bbox":[990,420,220,68]}
+{"kind":"textbox","id":"sh/fet4fit0","slide":6,"name":"assurance-role-3","text":"Real-Time Safety","textPreview":"Real-Time Safety","textChars":16,"textLines":1,"bbox":[760,135,220,68]}
+{"kind":"textbox","id":"sh/gf258nal","slide":6,"name":"assurance-role-4","text":"Privacy + Governance","textPreview":"Privacy + Governance","textChars":20,"textLines":1,"bbox":[760,440,220,68]}
+{"kind":"shape","id":"sh/hgbmhsb6","slide":6,"bbox":[290,179,70,66]}
+{"kind":"shape","id":"sh/2hknaxsr","slide":6,"bbox":[290,415,70,39]}
+{"kind":"shape","id":"sh/3it4j2tw","slide":6,"bbox":[360,203,50,42]}
+{"kind":"shape","id":"sh/zmd472p4","slide":6,"bbox":[360,415,50,25]}
+{"kind":"shape","id":"sh/el43yx8j","slide":6,"bbox":[920,179,70,66]}
+{"kind":"shape","id":"sh/1ovm9c7a","slide":6,"bbox":[920,415,70,39]}
+{"kind":"shape","id":"sh/0nml07qp","slide":6,"bbox":[870,203,50,42]}
+{"kind":"shape","id":"sh/ritk32p8","slide":6,"bbox":[870,415,50,25]}
+{"kind":"shape","id":"sh/qhk3ux8n","slide":6,"name":"decision-divider","bbox":[60,535,1160,2]}
+{"kind":"textbox","id":"sh/dkb25s7y","slide":6,"name":"governance-structure","text":"GOVERNANCE\nSTRUCTURE","textPreview":"GOVERNANCE | STRUCTURE","textChars":20,"textLines":2,"bbox":[70,565,185,105]}
+{"kind":"textbox","id":"sh/cj2lwnqt","slide":6,"name":"independent-parties","text":"INDEPENDENT PARTIES","textPreview":"INDEPENDENT PARTIES","textChars":19,"textLines":1,"bbox":[345,560,250,52]}
+{"kind":"textbox","id":"sh/3etkzipw","slide":6,"name":"single-authority","text":"SINGLE ACCOUNTABLE AUTHORITY","textPreview":"SINGLE ACCOUNTABLE AUTHORITY","textChars":28,"textLines":1,"bbox":[345,625,250,52]}
+{"kind":"textbox","id":"sh/2tk3qd8b","slide":6,"name":"ledger-choice","text":"PERMISSIONED LEDGER","textPreview":"PERMISSIONED LEDGER","textChars":19,"textLines":1,"bbox":[750,560,250,52]}
+{"kind":"textbox","id":"sh/szy10j69","slide":6,"name":"database-choice","text":"AUTHENTICATED DATABASE","textPreview":"AUTHENTICATED DATABASE","textChars":22,"textLines":1,"bbox":[750,625,250,52]}
+{"kind":"shape","id":"sh/tk7i9onu","slide":6,"bbox":[255,586,90,31.5]}
+{"kind":"shape","id":"sh/6xgzy9o3","slide":6,"bbox":[255,617.5,90,33.5]}
+{"kind":"shape","id":"sh/7yp07e5o","slide":6,"bbox":[595,586,155,0]}
+{"kind":"shape","id":"sh/gni14j6l","slide":6,"bbox":[595,651,155,0]}
+{"kind":"notes","id":"nt/60dr42","slide":6,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-06-blockchain-boundary.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}
+{"kind":"slide","id":"sl/yhp0l2","slide":7,"title":"FIGURE 7","textShapes":10}
+{"kind":"textbox","id":"sh/3qx0zm18","slide":7,"name":"figure-7-eyebrow","text":"FIGURE 7","textPreview":"FIGURE 7","textChars":8,"textLines":1,"bbox":[64,30,150,24]}
+{"kind":"textbox","id":"sh/or61srit","slide":7,"name":"figure-7-title","text":"Evidence-maturity ladder","textPreview":"Evidence-maturity ladder","textChars":24,"textLines":1,"bbox":[64,50,1080,50]}
+{"kind":"shape","id":"sh/pszi1wje","slide":7,"name":"figure-7-accent","bbox":[64,107,82,5]}
+{"kind":"textbox","id":"sh/qt8juh0j","slide":7,"name":"evidence-rise","text":"INCREASING ECOLOGICAL EVIDENCE","textPreview":"INCREASING ECOLOGICAL EVIDENCE","textChars":30,"textLines":1,"bbox":[120,135,1035,64]}
+{"kind":"shape","id":"sh/buh03m14","slide":7,"name":"maturity-1","bbox":[55,535,182,115]}
+{"kind":"textbox","id":"sh/cvq1wrip","slide":7,"name":"maturity-label-1","text":"CONCEPT\nargument","textPreview":"CONCEPT | argument","textChars":16,"textLines":2,"bbox":[67,551,158,70]}
+{"kind":"shape","id":"sh/dwz25wja","slide":7,"name":"maturity-2","bbox":[255,480,182,170]}
+{"kind":"textbox","id":"sh/6x4jix0f","slide":7,"name":"maturity-label-2","text":"ANALYSIS\nformal model","textPreview":"ANALYSIS | formal model","textChars":21,"textLines":2,"bbox":[267,496,158,70]}
+{"kind":"shape","id":"sh/ryd0r210","slide":7,"name":"maturity-3","bbox":[455,425,182,225]}
+{"kind":"textbox","id":"sh/rm58nmto","slide":7,"name":"maturity-label-3","text":"SIMULATION\ncontrolled study","textPreview":"SIMULATION | controlled study","textChars":27,"textLines":2,"bbox":[467,441,158,70]}
+{"kind":"shape","id":"sh/qlw7uhs3","slide":7,"name":"maturity-4","bbox":[655,370,182,280]}
+{"kind":"textbox","id":"sh/d8nqpwbu","slide":7,"name":"maturity-label-4","text":"PROTOTYPE\nintegrated testbed","textPreview":"PROTOTYPE | integrated testbed","textChars":28,"textLines":2,"bbox":[667,386,158,70]}
+{"kind":"shape","id":"sh/c7e9wra9","slide":7,"name":"maturity-5","bbox":[855,315,182,335]}
+{"kind":"textbox","id":"sh/3i58j2ts","slide":7,"name":"maturity-label-5","text":"FIELD TRIAL\noperational setting","textPreview":"FIELD TRIAL | operational setting","textChars":31,"textLines":2,"bbox":[867,331,158,70]}
+{"kind":"shape","id":"sh/2hc7qhs7","slide":7,"name":"maturity-6","bbox":[1055,260,182,390]}
+{"kind":"textbox","id":"sh/pknqlcby","slide":7,"name":"maturity-label-6","text":"DEPLOYMENT\nsustained use","textPreview":"DEPLOYMENT | sustained use","textChars":24,"textLines":2,"bbox":[1067,276,158,70]}
+{"kind":"textbox","id":"sh/4jeps7ad","slide":7,"name":"clarity-foundation","text":"PRESERVE CLARITY + TRACEABILITY","textPreview":"PRESERVE CLARITY + TRACEABILITY","textChars":31,"textLines":1,"bbox":[130,650,1020,44]}
+{"kind":"notes","id":"nt/yhp0l2","slide":7,"text":"[Sources]\n- Local source concept: output/imagegen/figure-concepts/figure-07-evidence-maturity.png\n- Diagram content: manuscript captions and figure source files in manuscript/figures/\n[/Sources]"}

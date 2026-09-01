@@ -1,0 +1,5 @@
+# Repository Working Rules
+
+- After completing any user-requested modification, run proportionate verification, commit the in-scope repository changes, and push the current branch to its configured remote before reporting completion. Do not include unrelated user changes. Skip the commit or push only when the user explicitly requests that, or when an external blocker such as authentication, network access, or remote rejection prevents it; report such a blocker immediately.
+- Write manuscript text and related project prose in a direct, evidence-based, constructive voice. Do not use self-defensive, self-exculpatory, apologetic, or argumentative wording intended to pre-empt criticism or justify the authors. State necessary exclusions, negative findings, uncertainty, evidence gaps, scope boundaries, and limitations neutrally when they are scientifically relevant; do not remove substantive negation merely because it is negative.
+- Keep lawfully acquired reference full texts and temporary working files out of Git. Do not force-add ignored content under `literature/fulltext/` or `tmp/` unless the user explicitly changes this rule.

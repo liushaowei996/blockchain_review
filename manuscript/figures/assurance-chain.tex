@@ -1,13 +1,13 @@
 \begin{tikzpicture}[font=\small,node distance=9mm and 5mm,>=Latex]
-\tikzset{stage/.style={draw,rounded corners,minimum width=35mm,minimum height=14mm,align=center,fill=blue!7},check/.style={draw,dashed,rounded corners,minimum width=31mm,minimum height=12mm,align=center,fill=orange!8}}
+\tikzset{stage/.style={draw,rounded corners,minimum width=35mm,minimum height=14mm,align=center,fill=blue!7},check/.style={draw,dashed,rounded corners,text width=34mm,minimum width=35mm,minimum height=17mm,align=center,font=\footnotesize,fill=orange!8}}
 \node[stage] (obs) {\textbf{Observation validity}\\calibration, context,\\cross-sensor plausibility};
 \node[stage,right=of obs] (com) {\textbf{Commitment/provenance}\\signature, time, lineage,\\version and custody};
 \node[stage,right=of com] (led) {\textbf{Ledger/governance}\\ordering, membership,\\policy consistency};
 \node[stage,right=of led] (use) {\textbf{Mission-use suitability}\\freshness, relevance, risk,\\decision consequence};
 \draw[->,very thick] (obs)--(com); \draw[->,very thick] (com)--(led); \draw[->,very thick] (led)--(use);
-\node[check,below=of obs] (n1) {A valid signature does not\\make a measurement true};
-\node[check,below=of com] (n2) {A hash does not disclose\\or conceal content by itself};
-\node[check,below=of led] (n3) {Consensus does not secure\\a compromised endpoint};
-\node[check,below=of use] (n4) {A trustworthy datum may still\\be unfit for this mission};
+\node[check,below=of obs] (n1) {Physical corroboration\\supports measurement\\truth};
+\node[check,below=of com] (n2) {Encryption, access\\control, and minimization\\provide privacy};
+\node[check,below=of led] (n3) {Attestation and runtime\\controls support endpoint\\integrity};
+\node[check,below=of use] (n4) {Current context and\\consequence determine\\mission suitability};
 \foreach \a/\b in {obs/n1,com/n2,led/n3,use/n4}{\draw[->,dashed] (\a)--(\b);}
 \end{tikzpicture}
