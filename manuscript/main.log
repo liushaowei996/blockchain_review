@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2026.8.6)  1 SEP 2026 09:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2026.8.6)  1 SEP 2026 09:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,12 +1462,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 
 [8 <./figures/figure-02-assurance-chain.pdf>] [9]) (sections/05-oal.tex
 [10]
-<figures/figure-03-oal-framework.pdf, id=498, 1156.32pt x 770.88pt>
+<figures/figure-03-oal-framework.pdf, id=498, 1258.7025pt x 708.39656pt>
 File: figures/figure-03-oal-framework.pdf Graphic file (type pdf)
 <use figures/figure-03-oal-framework.pdf>
 Package pdftex.def Info: figures/figure-03-oal-framework.pdf  used on input lin
 e 7.
-(pdftex.def)             Requested size: 394.35522pt x 262.8956pt.
+(pdftex.def)             Requested size: 394.35522pt x 221.93546pt.
  [11 <./figures/figure-03-oal-framework.pdf>] [12]
 Underfull \hbox (badness 4060) in paragraph at lines 65--65
 []|\T1/ppl/m/n/9 (+20) Admission and au-
@@ -1629,11 +1629,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B8DAFA51D20AA6B5A934217528D7415F;10308.
  ) 
 Here is how much of TeX's memory you used:
- 36475 strings out of 474436
- 685960 string characters out of 5751761
+ 36472 strings out of 474436
+ 685936 string characters out of 5751761
  1976190 words of memory out of 5000000
  57226 multiletter control sequences out of 15000+600000
- 639752 words of font info for 573 fonts, out of 8000000 for 9000
+ 639667 words of font info for 571 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,121p,1555b,1111s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\survivor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\e
@@ -1643,7 +1643,7 @@ les/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiK
 TeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/ur
 w/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on main.pdf (35 pages, 10437598 bytes).
+Output written on main.pdf (35 pages, 9971420 bytes).
 PDF statistics:
  1115 PDF objects out of 1200 (max. 8388607)
  235 named destinations out of 1000 (max. 500000)

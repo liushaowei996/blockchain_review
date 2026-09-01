@@ -1,12 +1,12 @@
 # Manuscript Figure Assets
 
-These seven raster figures were generated with the built-in image generation tool and selected for the manuscript after checking terminology, arrow direction, grouping, and consistency with the captions and surrounding text. Figures 2 and 4 were regenerated from blank prompts to correct semantic ambiguity; the other five generated originals were retained. The final PNG files are wrapped without content edits in PDF containers under `manuscript/figures/` and inserted into the LaTeX manuscript. The earlier TikZ files remain in the repository as historical working sources but are not used by the manuscript.
+These seven raster figures were generated with the built-in image generation tool and selected for the manuscript after checking terminology, axis geometry, arrow direction, grouping, and consistency with the captions and surrounding text. Figures 2, 3, and 4 were regenerated from blank prompts to correct semantic or geometric ambiguity; the other four generated originals were retained. The final PNG files are wrapped without content edits in PDF containers under `manuscript/figures/` and inserted into the LaTeX manuscript. The earlier TikZ files remain in the repository as historical working sources but are not used by the manuscript.
 
 | Figure | Disposition |
 |---|---|
 | 1 | Existing generated original retained |
 | 2 | Regenerated from a blank prompt |
-| 3 | Existing generated original retained |
+| 3 | Regenerated from a blank prompt to correct axis geometry |
 | 4 | Regenerated from a blank prompt |
 | 5 | Existing generated original retained |
 | 6 | Existing generated original retained |
@@ -36,7 +36,7 @@ Final prompt: Create a wide scholarly infographic with exactly four equal claim 
 
 File: `figure-03-oal-framework.png`
 
-Prompt: Build an isometric translucent analytical lattice with three visible dimensions. Across the top, show trust objects `Entity`, `Platform / Device`, `Link / Path`, and `Data Product`. Vertically, show assurance layers `Observation`, `Provenance`, `Ledger + Governance`, and `Mission Use`. Along the depth/timeline, show `Admit`, `Sense`, `Relay`, `Fuse + Share`, `Decide + Act`, and `Audit + Recover`. Enclose the lattice in a cross-cutting assurance and governance envelope without filling every cell with text.
+Final prompt: Create a geometrically explicit three-dimensional OAL lattice with a four-column by four-row front face and six distinct planes receding into depth. `TRUST OBJECTS` must run horizontally across the front face with `Entity`, `Platform / Device`, `Link / Path`, and `Data Product`. `ASSURANCE LAYERS` must run vertically with `Observation Validity`, `Commitment + Provenance Integrity`, `Ledger + Governance Consistency`, and `Mission-Use Suitability`. `MISSION LIFECYCLE` must run diagonally away into perspective with `Admit`, `Sense`, `Relay`, `Fuse + Share`, `Decide + Act`, and `Audit + Recover`. The lifecycle axis must be oblique in the page projection and must never be parallel to, or presented as another horizontal row beneath, the trust-object axis. Surround the complete lattice with a dashed envelope labeled `Cross-Cutting Assurance + Governance`. Use large print-readable labels, restrained translucent depth, and no cell text, extra labels, logos, watermarks, equations, military imagery, or cryptocurrency symbols.
 
 ## Figure 4 — Dependency and threat propagation
 
