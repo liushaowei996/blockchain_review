@@ -23,7 +23,7 @@
 
 - [x] Eight keywords and a one-paragraph abstract are present.
 - [x] Seven figures and eight editable LaTeX tables are supplied.
-- [x] Figures 4, 6, and 7 are editable vector diagrams consistent with the revised argument.
+- [x] Figures 4, 6, and 7 use regenerated raster artwork consistent with the revised argument and the other figures; PNG masters, exact prompts, and PDF wrappers are supplied.
 - [x] Author, affiliation, correspondence, CRediT, and funding placeholders remain anonymous.
 - [x] Compiled manuscript, cover template, bibliography, figures, supplements, and source dependencies are packaged together.
 - [x] Publisher reference full texts, temporary work, credentials, and Git history are excluded from the package.

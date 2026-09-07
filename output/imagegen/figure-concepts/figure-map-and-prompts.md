@@ -1,16 +1,16 @@
 # Manuscript Figure Assets
 
-These seven raster figures were generated with the built-in image generation tool and selected for the manuscript after checking terminology, axis geometry, arrow direction, color semantics, grouping, and consistency with the captions and surrounding text. Figures 1--4 were regenerated from blank prompts to correct semantic or geometric ambiguity; the other three generated originals were retained. The final PNG files are wrapped without content edits in PDF containers under `manuscript/figures/` and inserted into the LaTeX manuscript. The earlier TikZ files remain in the repository as historical working sources but are not used by the manuscript.
+All seven current figures use artwork generated with the built-in image generation tool. On 7 September 2026, Figures 4, 6, and 7 were regenerated to match the retained artwork while preserving the preceding scientific revision. The final PNG files are wrapped without pixel edits in PDF containers under `manuscript/figures/` and inserted into the manuscript. The TeX wrappers for Figures 4, 6, and 7 now embed the supplied PNGs; all TikZ drawing sources are historical working versions. No CLI/API fallback was used.
 
 | Figure | Disposition |
 |---|---|
 | 1 | Regenerated from a blank prompt to clarify flow and color semantics |
 | 2 | Regenerated from a blank prompt |
 | 3 | Regenerated from a blank prompt to correct axis geometry |
-| 4 | Regenerated from a blank prompt |
+| 4 | Regenerated on 7 September; causal hypotheses and evidence status separated; final routing correction applied |
 | 5 | Existing generated original retained |
-| 6 | Existing generated original retained |
-| 7 | Existing generated original retained |
+| 6 | Regenerated on 7 September; conditional ledger selection and alternatives retained |
+| 7 | Regenerated on 7 September; six equally prominent, non-cumulative evidence categories |
 
 ## Shared visual direction
 
@@ -38,11 +38,11 @@ File: `figure-03-oal-framework.png`
 
 Final prompt: Create a geometrically explicit three-dimensional OAL lattice with a four-column by four-row front face and six distinct planes receding into depth. `TRUST OBJECTS` must run horizontally across the front face with `Entity`, `Platform / Device`, `Link / Path`, and `Data Product`. `ASSURANCE LAYERS` must run vertically with `Observation Validity`, `Commitment + Provenance Integrity`, `Ledger + Governance Consistency`, and `Mission-Use Suitability`. `MISSION LIFECYCLE` must run diagonally away into perspective with `Admit`, `Sense`, `Relay`, `Fuse + Share`, `Decide + Act`, and `Audit + Recover`. The lifecycle axis must be oblique in the page projection and must never be parallel to, or presented as another horizontal row beneath, the trust-object axis. Surround the complete lattice with a dashed envelope labeled `Cross-Cutting Assurance + Governance`. Use large print-readable labels, restrained translucent depth, and no cell text, extra labels, logos, watermarks, equations, military imagery, or cryptocurrency symbols.
 
-## Figure 4 — Dependency and threat propagation
+## Figure 4 — Dependencies and illustrative exposures
 
 File: `figure-04-dependency-threat.png`
 
-Final prompt: Create a wide scholarly infographic with three separated tiers. The top dependency chain is `Entity` → `Platform / Device` → `Link / Path` → `Data Product` → `Mission Consumer`, with arrow labels `controls`, `uses`, `transmits`, and `consumed by`, plus a thin secondary arrow from `Platform / Device` to `Data Product` labeled `observes / transforms`. The middle tier is the continuous muted-coral dashed chain `Credential Theft` → `Endpoint Capture` → `Jamming / Route Attack` → `Poisoning / Stale Replay` → `Unsafe Allocation`. The bottom is one full-width panel titled `Parallel Causal Interpretations` with equal lenses `Malicious`, `Benign-Degraded`, and `Unknown`. Associate the entire middle chain with the panel through one bracket; do not connect an individual stage to an individual interpretation. Use large horizontal labels, restrained 2.5D depth, consistent icons, and a warm-white journal background; add no other text, logos, watermarks, equations, military weapons, circuitry, or cryptocurrency imagery.
+The current image shows five object stations and five separate exposure arrows. Causal hypotheses and evidence status occupy separate panels; `Unknown` is an epistemic label. The secondary operational dependency is routed above the objects. The exact initial prompt and final image-generation routing edit are recorded in [the September prompt set](../../../manuscript/figures/image-generation-prompts-20260907.md#figure-4--initial-generation).
 
 ## Figure 5 — CTG reasoning loop
 
@@ -54,16 +54,17 @@ Prompt: Create a clockwise circular loop of exactly eight stations: `Evidence Ca
 
 File: `figure-06-blockchain-boundary.png`
 
-Prompt: Separate two cooperating responsibility groups. The blue-teal `Permissioned Ledger` hub contains only `Membership + Authority`, `Provenance Commitments`, `Version Coordination`, and `Audit + Reconciliation`. The amber-violet `Complementary Assurance` hub contains only `Physical Validation`, `Endpoint Protection`, `Real-Time Safety`, and `Privacy + Governance`. Connect the hubs through `Integrated Mission Assurance`. In a separate bottom strip, split `Governance Structure` into exactly two unambiguous branches: `Independent Parties` → `Permissioned Ledger`; `Single Accountable Authority` → `Authenticated Database`.
+The current image distinguishes ledger-supported records from complementary controls. A ledger is a candidate when joint control of state transitions and no agreed custodian occur together. Witnessed signed logs and replicated databases are shown as alternatives to compare under matched conditions. See [the exact final prompt](../../../manuscript/figures/image-generation-prompts-20260907.md#figure-6--initial-generation).
 
-## Figure 7 — Evidence-maturity ladder
+## Figure 7 — Claim-specific evidence profile
 
 File: `figure-07-evidence-maturity.png`
 
-Prompt: Create six ascending terraces from lower left to upper right: `Concept`, `Analysis`, `Simulation`, `Prototype`, `Field Trial`, and `Deployment`. Increase implementation detail, environmental realism, organizational participation, and operational duration at each level. Add a rising ribbon labeled `Increasing Ecological Evidence` and a continuous foundation labeled `Preserve Clarity + Traceability`.
+The current image uses six equally sized illustrated panels for L0–L5. Rigor and uncertainty, environmental fit, and scope and duration are assessed separately. The categories are explicitly complementary rather than cumulative. See [the exact final prompt](../../../manuscript/figures/image-generation-prompts-20260907.md#figure-7--initial-generation).
 
 ## Integration notes
 
 - The PNG files are the raster masters; the PDF files contain the same pixels without post-generation image editing.
+- Copies of the current Figure 4, 6, and 7 PNGs and their PDF-only TeX wrappers are included in the submission sources so those figure PDFs can be rebuilt from the extracted package.
 - Preserve semantic grouping and arrow direction if a figure is regenerated later.
 - Retain the manuscript captions as the authoritative descriptions.

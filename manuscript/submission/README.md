@@ -2,7 +2,7 @@
 
 ## Current version
 
-The 7 September 2026 revision is a narrative Review and conceptual synthesis. It includes a revised OAL assessment/decision interface, a bounded CTG worked example, conditional ledger-selection criteria, and a claim-specific evidence profile. No new integrated experiment or performance result is reported.
+The 7 September 2026 revision is a narrative Review and conceptual synthesis. It includes a revised OAL assessment/decision interface, a bounded CTG worked example, conditional ledger-selection criteria, and a claim-specific evidence profile. A subsequent figure-style revision regenerated Figures 4, 6, and 7 with the built-in image generation tool to match the retained artwork while preserving the revised scientific distinctions. No new integrated experiment or performance result is reported.
 
 ## Build
 
@@ -18,7 +18,7 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 
 - `main.tex`, `sections/`, `references.bib`, `main.bbl`, and `main.pdf`: editable source and compiled manuscript.
 - `Definitions/`: MDPI class, bibliography styles, and assets.
-- `figures/`: seven publication PDFs. Figures 4, 6, and 7 have current editable TikZ sources and standalone wrappers. Figures 1, 2, 3, and 5 use retained raster artwork; the other TikZ sources are historical working versions.
+- `figures/`: seven publication PDFs containing image-generated raster artwork. Figures 4, 6, and 7 include the current PNG masters, standalone PDF wrappers, and `image-generation-prompts-20260907.md`. All TikZ drawing sources are historical working versions and are not used by the manuscript.
 - `supplement/evidence-matrix.csv`: 141-source inventory with routing basis, availability, coding status, and selected claim locators.
 - `supplement/full-text-acquisition-manifest.csv`: the same 141 sources with separate availability and coding fields.
 - `supplement/review-method-and-coding-notes.md`: Supplementary Note S3, including the discovery query set and source locators.
@@ -26,7 +26,7 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 - `submission/review-20260907.md`: Chinese review and revision record.
 - `submission/qa-report.md` and `submission-checklist.md`: validation results and author actions.
 
-Standalone wrappers for Figures 4, 6, and 7 can be compiled with `pdflatex` from `figures/`; their PDFs are already supplied. Publisher reference full texts, temporary extraction files, and Git history are excluded.
+Standalone wrappers for Figures 4, 6, and 7 can be compiled with `pdflatex` from `figures/`; they embed the supplied PNG pixels without drawing or editing image content. The figure PDFs are already supplied. Publisher reference full texts, temporary extraction files, and Git history are excluded.
 
 ## Evidence status
 
