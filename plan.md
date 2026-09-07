@@ -1,5 +1,7 @@
 # MDPI *Blockchains* 混合研究论文实施计划
 
+> 历史方案说明（2026-09-07）：本文件保留早期 Research Article 与实验研究规划。当前已实现的稿件是 `manuscript/main.tex` 所定义的叙述性 Review；本轮审阅没有生成系统映射结果或实验数据。当前证据状态与校验结果以 `manuscript/submission/README.md` 和 `qa-report.md` 为准。
+
 ## 1. 目标与论文定位
 
 - 按 **Research Article** 投稿，而非 Review：MDPI 明确规定 Review 不应呈现新的未发表数据；Article 可以同时包含系统映射综述、原创方法、原型和实验。[MDPI Article Types](https://www.mdpi.com/about/article_types)

@@ -1,9 +1,36 @@
-\begin{tikzpicture}[font=\small,>=Latex]
-\tikzset{yes/.style={draw=green!55!black,fill=green!8,rounded corners,minimum width=54mm,minimum height=9mm,align=center},no/.style={draw=red!65,fill=red!7,rounded corners,minimum width=54mm,minimum height=9mm,align=center}}
-\node[font=\bfseries,text=green!45!black] at (-3.2,2.75) {Ledger-supported assurance};
-\node[font=\bfseries,text=red!70!black] at (3.2,2.75) {Complementary assurance required};
-\foreach \i/\t in {0/Cross-organization member status,1/Attestation and provenance commitments,2/Policy and model version coordination,3/Audit accountability and reconciliation}{\node[yes] (y\i) at (-3.2,1.85-.75*\i) {\t};}
-\foreach \i/\t in {0/Sensor and physical validation,1/Endpoint attestation and runtime protection,2/Partition-aware safety and deadlines,3/Privacy and consortium governance}{\node[no] (n\i) at (3.2,1.85-.75*\i) {\t};}
-\draw[very thick] (0,2.45)--(0,-1.25);
-\node[draw,fill=orange!8,rounded corners,align=center,minimum width=95mm,minimum height=10mm] at (0,-1.85) {Prefer an authenticated database when one accountable authority governs,\\hard real-time control dominates, or shared audit has limited value.};
+\begin{tikzpicture}[font=\sffamily\fontsize{9}{11}\selectfont]
+\hyphenpenalty=10000
+\definecolor{boundarynavy}{HTML}{16385C}
+\definecolor{boundaryteal}{HTML}{167D8D}
+\definecolor{boundarygold}{HTML}{A87522}
+\tikzset{
+  ledgerpanel/.style={draw=boundaryteal,line width=.8pt,rounded corners=1.5mm,fill=boundaryteal!4,text=boundarynavy,align=left,text width=53mm,inner sep=2.5mm,anchor=north west},
+  controlpanel/.style={ledgerpanel,draw=boundarygold,fill=boundarygold!5},
+  selectionpanel/.style={draw=boundarynavy,line width=.8pt,rounded corners=1.5mm,fill=boundarynavy!3,text=boundarynavy,align=left,text width=115mm,inner sep=2.5mm,anchor=north west},
+  comparisonpanel/.style={selectionpanel,draw=boundarygold,fill=boundarygold!5}
+}
+\node[ledgerpanel,minimum height=53mm] (ledger) at (0,0) {
+  {\color{boundaryteal}\bfseries\fontsize{10}{12}\selectfont Ledger-supported records}\\[4pt]
+  Under declared key, validation, and consensus assumptions:\\[5pt]
+  Membership and authority records\\[4pt]
+  Attestation and provenance\\commitments\\[4pt]
+  Agreement on policy / model versions\\[4pt]
+  Audit and reconciliation checkpoints
+};
+\node[controlpanel,minimum height=53mm] (controls) at (62mm,0) {
+  {\color{boundarygold}\bfseries\fontsize{10}{12}\selectfont Complementary controls}\\[4pt]
+  Required for the applicable physical and mission-use claims:\\[5pt]
+  Sensor and physical validity\\[4pt]
+  Endpoint and runtime\\protection\\[4pt]
+  Local safety, fallback, and deadlines\\[4pt]
+  Privacy and legitimate governance
+};
+\node[selectionpanel] (selection) at (0,-58mm) {
+  {\bfseries\fontsize{10}{12}\selectfont Select by required control and guarantees}\\[4pt]
+  Consider a ledger when independently administered parties need joint control of accepted state transitions and cannot appoint an agreed custodian.
+};
+\node[comparisonpanel,below=3mm of selection.south west,anchor=north west] (comparison) {
+  {\color{boundarygold}\bfseries\fontsize{10}{12}\selectfont Compare feasible alternatives}\\[4pt]
+  Evaluate witnessed signed logs and jointly administered replicated databases under matched fault assumptions, availability requirements, workloads, and resource budgets. Select the architecture by achieved guarantees and measured cost.
+};
 \end{tikzpicture}

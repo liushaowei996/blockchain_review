@@ -1,17 +1,35 @@
-\begin{tikzpicture}[font=\small,>=Latex,node distance=8mm and 9mm]
-\tikzset{obj/.style={draw,ellipse,minimum width=25mm,minimum height=10mm,align=center},bad/.style={draw=red!70,fill=red!8,rounded corners,align=center,minimum width=25mm,minimum height=9mm},rel/.style={->,thick}}
-\node[obj,fill=blue!8] (e) {Entity}; \node[obj,fill=green!8,right=of e] (v) {Platform/device};
-\node[obj,fill=orange!9,right=of v] (l) {Link/path}; \node[obj,fill=gray!10,right=of l] (d) {Data product};
-\node[obj,fill=purple!8,right=of d] (m) {Mission consumer};
-\draw[rel] (e)--node[above]{controls}(v); \draw[rel] (v)--node[above]{hosts}(l);
-\draw[rel,bend left=25] (v) to node[above]{observes}(d); \draw[rel] (l)--node[above]{transmits}(d);
-\draw[rel] (d)--node[above]{consumed by}(m);
-\node[bad,below=16mm of e] (a1) {credential theft};
-\node[bad,below=16mm of v] (a2) {endpoint capture};
-\node[bad,below=16mm of l] (a3) {jamming / route attack};
-\node[bad,below=16mm of d] (a4) {poisoning / stale replay};
-\node[bad,below=16mm of m] (a5) {unsafe allocation};
-\foreach \a/\b in {a1/e,a2/v,a3/l,a4/d,a5/m}{\draw[->,red!70] (\a)--(\b);}
-\draw[->,very thick,red!75,dashed] (a1)--(a2);\draw[->,very thick,red!75,dashed] (a2)--(a3);\draw[->,very thick,red!75,dashed] (a3)--(a4);\draw[->,very thick,red!75,dashed] (a4)--(a5);
-\node[align=center,below=4mm of a3,text=red!75] {Propagation analysis compares malicious, benign-degraded,\\and unknown causal hypotheses.};
+\begin{tikzpicture}[font=\small,>=Latex]
+\definecolor{oalnavy}{HTML}{16385C}
+\definecolor{oalteal}{HTML}{167D8D}
+\definecolor{oalviolet}{HTML}{69548F}
+\definecolor{oalred}{HTML}{A94136}
+\tikzset{
+  object/.style={draw=oalnavy,line width=.8pt,rounded corners=2mm,fill=oalnavy!5,text=oalnavy,align=center,text width=24mm,minimum height=15mm,inner sep=2mm},
+  exposure/.style={draw=oalred!70,rounded corners=1.5mm,fill=oalred!4,text=oalred,align=center,text width=24mm,minimum height=14mm,inner sep=2mm},
+  relation/.style={->,line width=.8pt,draw=oalnavy},
+  labeltext/.style={font=\footnotesize,text=oalnavy,fill=white,inner sep=1pt}
+}
+\node[object] (e) at (0,0) {Entity};
+\node[object] (v) at (3.3,0) {Platform /\\device};
+\node[object] (l) at (6.6,0) {Link / path};
+\node[object] (d) at (9.9,0) {Data product};
+\node[object] (m) at (13.2,0) {Consumer\\(entity role)};
+\draw[relation] (e)--node[labeltext,above=8mm]{controls}(v);
+\draw[relation] (v)--node[labeltext,above=8mm]{uses}(l);
+\draw[relation] (l)--node[labeltext,above=8mm]{transmits}(d);
+\draw[relation] (d)--node[labeltext,above=8mm,align=center]{consumed by}(m);
+\draw[relation] (v.north) -- ++(0,1.25) -| (d.north);
+\node[labeltext] at (6.6,2) {observes / transforms};
+\node[exposure] (a1) at (0,-2.2) {Credential\\misuse};
+\node[exposure] (a2) at (3.3,-2.2) {Endpoint\\compromise};
+\node[exposure] (a3) at (6.6,-2.2) {Delay / route\\manipulation};
+\node[exposure] (a4) at (9.9,-2.2) {False or\\stale product};
+\node[exposure] (a5) at (13.2,-2.2) {Unsafe relying\\decision};
+\foreach \a/\b in {a1/e,a2/v,a3/l,a4/d,a5/m}{\draw[->,dashed,draw=oalred!80] (\a.north)--(\b.south);}
+\node[align=center,text=oalred,font=\footnotesize] at (6.6,-3.45) {Illustrative exposures at each object; a causal propagation claim needs additional evidence.};
+\node[draw=oalteal,fill=oalteal!4,rounded corners=2mm,text width=87mm,minimum height=24mm,align=left,inner sep=3mm,anchor=north west] at (-1.4,-4.1)
+  {\textbf{Causal hypotheses}\\[3pt]Adversarial manipulation; environmental or operational degradation. Causes may coexist.};
+\node[draw=oalviolet,fill=oalviolet!5,rounded corners=2mm,text width=54mm,minimum height=24mm,align=left,inner sep=3mm,anchor=north east] at (14.6,-4.1)
+  {\textbf{Evidence status}\\[3pt]Unknown: evidence is insufficient to resolve the relevant claim.};
+\node[align=center,text=oalnavy,font=\footnotesize] at (6.6,-7.1) {Nominal operation and recovery are assessed separately. Policy acts on scoped claims and uncertainty.};
 \end{tikzpicture}

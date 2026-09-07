@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import re
+import csv
+import sys
 from pathlib import Path
 
 
@@ -42,5 +44,33 @@ print(f"Uncited bibliography entries ({len(uncited)}): {uncited}")
 print(f"Duplicate labels: {duplicates}")
 print(f"Undefined refs: {undefined_refs}")
 
-for marker in ("turn0", "turn1", "PRISMA", "scoping review", "systematic review", "U+2011"):
-    print(f"Marker {marker!r}: {text.lower().count(marker.lower())}")
+placeholders = re.findall(r"turn\d+(?:search|view|fetch)\d+|U\+2011|\u2011", text)
+print(f"Unresolved tool/character placeholders: {placeholders}")
+
+graphics = re.findall(r"\\includegraphics(?:\[[^]]*\])?\{([^}]+)\}", text)
+missing_graphics = [name for name in graphics if not (ROOT / name).is_file()]
+all_bib_keys = re.findall(r"(?m)^@\w+\{([^,]+),", bib)
+duplicate_bib = sorted({key for key in all_bib_keys if all_bib_keys.count(key) > 1})
+errors = [name for name, value in {
+    "missing citations": missing, "uncited entries": uncited,
+    "duplicate labels": duplicates, "undefined refs": undefined_refs,
+    "missing figures": missing_graphics, "duplicate bibliography keys": duplicate_bib,
+    "placeholders": placeholders,
+}.items() if value]
+for filename in ("evidence-matrix.csv", "full-text-acquisition-manifest.csv"):
+    with (ROOT / "supplement" / filename).open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    ids = [row["source_id"] for row in rows]
+    if len(ids) != len(set(ids)) or set(ids) != bib_keys:
+        errors.append(f"{filename} bibliography/identity mismatch")
+    print(f"{filename}: {len(ids)} unique-source records; bibliography match={set(ids) == bib_keys}")
+    if filename == "evidence-matrix.csv":
+        retained = sum("artifact retained;" in row["full_text_status"] for row in rows)
+        coded = sum("claim-level coding completed" in row["coding_status"] for row in rows)
+        missing_locators = [row["source_id"] for row in rows if "claim-level coding completed" in row["coding_status"] and row["claim_locator"].startswith("not assigned")]
+        print(f"Retained full-text artifacts: {retained}; detailed coded sources: {coded}")
+        if missing_locators:
+            errors.append(f"coded sources without locators: {missing_locators}")
+print(f"Missing figures: {missing_graphics}")
+print(f"Audit failures: {errors}")
+sys.exit(bool(errors))

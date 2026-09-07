@@ -1,46 +1,34 @@
 # Anonymous Submission Checklist
 
-## Scope and article type
+## Scientific scope
 
-- [x] Journal class is `\documentclass[blockchains,review,submit,moreauthors]{Definitions/mdpi}`.
-- [x] Manuscript is framed as a narrative Review with a problem-driven conceptual-synthesis method.
-- [x] Review contributions are distinguished from future empirical, performance, and protocol-validation work.
-- [x] UAV--USV--UUV systems are the core; satellite, shore, cloud, and edge nodes are supporting infrastructure.
-- [x] Civil and public defense-support contexts exclude weapon effects, targeting procedures, and sensitive tactics.
+- [x] Manuscript is a narrative Review with an explicit problem-driven conceptual-synthesis method.
+- [x] Assessment, reliance policy, dependency, causality, and epistemic uncertainty are distinguished.
+- [x] OAL, CTG, the decision trace, research propositions, and CDUTP are identified as conceptual proposals.
+- [x] Ledger guarantees are scoped by fault model, governance, commit validity, timing, and evidence capture.
+- [x] Alternatives include authenticated databases, witnessed signed logs, and jointly administered replication.
+- [x] The evidence profile distinguishes methods and operational contexts without a cumulative quality score.
 
-## Original synthesis
+## Sources and evidence
 
-- [x] OAL is identified as the authors' proposed analytical framework.
-- [x] CTG is identified as the authors' conceptual evidence-reasoning loop that accommodates validated inference methods.
-- [x] CDUTP is identified as the authors' forward-looking interoperability proposal.
-- [x] Blockchain claims distinguish physical truth, provenance, ledger consistency, privacy, endpoint security, governance, partition tolerance, and hard real-time control.
-- [x] Threat analysis distinguishes malicious action, benign degradation, and insufficient evidence.
+- [x] All 141 cited bibliography entries resolve; the two CSV inventories contain the same source identifiers.
+- [x] Acquisition and coding are separate: 73 retained artifacts and 16 detailed comparison records.
+- [x] Title-derived analytical fields are identified as routing and are not used to estimate coverage or prevalence.
+- [x] Detailed comparison records have source page/section locators in Table S1 and Supplementary Note S3.
+- [x] CAP is linked to the primary Gilbert-Lynch analysis; Zhang's final issue metadata is reconciled with the authors' institutional record.
+- [ ] Authors have reviewed the final scientific claims, citations, inclusion choices, and any additional claims needing coding.
+- [ ] Literature and specification versions have been refreshed as appropriate to the actual submission date.
 
-## Evidence and references
+## Manuscript and package
 
-- [x] 140 unique references are cited; all citekeys resolve.
-- [x] DOI-bearing entries were resolved against Crossref or an authoritative publisher record.
-- [x] Standards and specifications link to official NIST, RFC Editor, W3C, 3GPP, or Hyperledger sources.
-- [x] The evidence matrix distinguishes metadata verification, lawful acquisition, screening, and claim-level full-text coding.
-- [x] Authors have lawfully obtained all 33 sources in the priority acquisition set and completed claim-level coding for the sources used in method-specific comparisons.
-- [ ] Pending method, assumption, maturity, and limitation fields have been completed or removed.
-- [ ] All strong gap or prevalence statements have been rechecked against the completed matrix.
-- [ ] Literature and specifications have been updated within 14 days of submission.
-
-## Front and back matter
-
-- [x] Abstract is one paragraph and 186 words.
-- [x] Eight keywords are supplied.
-- [x] Anonymous author, affiliation, correspondence, CRediT, and funding placeholders contain no real identity.
-- [x] No-new-data, conflict-of-interest, ethics, consent, and acknowledgment statements are present.
-- [ ] Real author metadata, affiliations, ORCID identifiers, CRediT roles, funding, and correspondence are ready for the journal system.
-- [ ] Special Issue status, deadline, invitation/editorial pre-assessment, and any APC waiver have been reconfirmed.
-
-## Files and technical QA
-
-- [x] `latexmk`/`pdflatex` build completes without errors.
-- [x] No undefined citation, undefined cross-reference, duplicate label, missing figure, or overfull box remains.
-- [x] Seven final figures are publication PDF files containing reviewed raster artwork; historical TikZ working sources remain available but are not used by the manuscript. Eight tables are editable LaTeX.
-- [x] All 35 PDF pages were rendered and visually checked for clipping, figure legibility, table width, references, and anonymity.
-- [x] The anonymous PDF and source package contain no `turn...` citation placeholders.
+- [x] Eight keywords and a one-paragraph abstract are present.
+- [x] Seven figures and eight editable LaTeX tables are supplied.
+- [x] Figures 4, 6, and 7 are editable vector diagrams consistent with the revised argument.
+- [x] Author, affiliation, correspondence, CRediT, and funding placeholders remain anonymous.
+- [x] Compiled manuscript, cover template, bibliography, figures, supplements, and source dependencies are packaged together.
+- [x] Publisher reference full texts, temporary work, credentials, and Git history are excluded from the package.
+- [ ] Authors have confirmed journal/issue status, template, anonymity policy, and submission instructions.
+- [ ] Authors have supplied actual author, affiliation, funding, conflict, CRediT, and AI-use disclosures.
 - [ ] Final files have been checked in the journal submission preview after upload.
+
+Build and visual-verification results are recorded in `qa-report.md`.

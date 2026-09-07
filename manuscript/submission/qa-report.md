@@ -1,37 +1,40 @@
 # Build and Quality Report
 
-- Validation date: 1 September 2026 (Asia/Shanghai)
-- Target: MDPI *Blockchains*, Review, anonymous submit mode
-- Main PDF: 35 A4 pages
-- Approximate English manuscript words: 10,894
-- Abstract: 178 words, one paragraph
-- Keywords: 8
-- Bibliography entries: 140
-- Unique cited entries: 140
-- Final raster-artwork figure PDFs: 7
-- Historical editable TikZ working sources, not used by the manuscript: 7
-- Editable comparison/analysis tables: 8
-- Evidence-matrix rows: 140
-- Priority lawful full-text acquisition records: 119
-- Priority-set full texts acquired: 33/33
-- Full-text sources with claim-level coding completed for this review scope: 16
-- Acquired priority sources screened and available for future claim-level coding: 17
+Validation date: 7 September 2026 (Asia/Shanghai).
+Target: MDPI Blockchains, narrative Review, anonymous submit mode.
 
-## Automated checks
+## Final artifacts
 
-- Missing citekeys: 0
-- Uncited bibliography entries: 0
-- Undefined cross-references: 0
-- Duplicate labels: 0
-- Overfull boxes: 0
-- `turn...` placeholders in manuscript: 0
-- Prohibited review-positioning markers in manuscript: 0
-- BibTeX warnings: 0
+- Manuscript: 39 A4 pages.
+- Approximate English manuscript words: 13,840 using the repository's static estimator.
+- Abstract: 187 words, one paragraph; keywords: 8.
+- Bibliography and unique cited entries: 141 each.
+- Figures: 7; current editable vector Figures 4, 6, and 7; retained raster Figures 1, 2, 3, and 5.
+- Editable LaTeX tables: 8.
+- Both supplementary CSVs: 141 source identifiers, matching the bibliography exactly.
+- Retained cited-source full-text artifacts: 73, including 9 official references.
+- Detailed comparison records: 16, each with a page/section locator; additional targeted checks are recorded separately.
+- Final manuscript SHA-256: `ac6125c226dbd781a000e4d3a21bd12744e5cd584b352a879e72f8696d38d2dd`.
+- Dated source package: `blockchain-review-anonymous-submission-package-20260907.zip`.
 
-## Visual checks
+## Verification
 
-All 35 pages were rendered to PNG and inspected after the final figure replacement. The anonymous title page, seven figures, eight tables, equations, evidence-comparison paragraphs, declarations, and all reference pages were checked for clipping and legibility. The seven figure pages were also rendered at higher resolution to verify labels, axis geometry, arrow direction and color semantics, captions, and raster sharpness. No visual defect was found; wide tables remain within the MDPI `adjustwidth`/`\fulllength` layout.
+The manuscript and cover template compiled successfully with `latexmk -pdf -interaction=nonstopmode -halt-on-error` from an isolated package copy. The final log has zero undefined citations/cross-references, duplicate-label warnings, overfull boxes, underfull boxes, or BibTeX warnings. All PDF fonts are embedded Type 1 fonts; the template's former bitmap sans-serif metadata font was replaced with its scalable counterpart.
 
-## Open author actions
+The local TeX distribution emits an existing package/kernel-version notice and MiKTeX host-support/locale diagnostics. These did not prevent compilation. The final manuscript and the copy in the delivered output directory are byte-identical to the isolated build.
 
-The 33-source priority acquisition set is complete, and the 16 sources supporting method-specific comparisons in this version have claim-level coding. Before submission, authors should code any additional records used for newly added detailed claims, refresh the literature and journal/template status within 14 days, and supply real author/funding/CRediT metadata through the appropriate non-anonymous channel.
+The static manuscript audit exits unsuccessfully on missing citations, duplicate labels or bibliography keys, absent figure files, unresolved tool placeholders, mismatched supplementary source IDs, or detailed coded records without locators. All checks passed. The corrected Zhang bibliography override was checked against the retained metadata cache, and evidence-inventory regeneration was verified to preserve identical outputs. `git diff --check` passed.
+
+## Visual inspection
+
+All 39 final pages were rendered to PNG. Pages 1-18 and 19-30 received independent layout checks; pages 31-39, the declarations, abbreviations, and references were checked during integration. Full-size checks covered the title, assessment/decision equation, descriptive comparison, all revised figures, compact tables, worked decision trace, research propositions, and cover template. No clipping, overlaps, broken labels, missing glyphs, or unreadable diagram text were found.
+
+Floating placement and ragged table columns reduced unnecessary white space and uneven word spacing. The abbreviation heading stays with its table. Figure 4 separates causal hypotheses from evidence status; Figure 6 presents conditional ledger selection and alternatives; Figure 7 shows all six non-cumulative evidence categories.
+
+## Package and anonymity
+
+The package includes the final PDF, current source files, bibliography, figure PDFs and editable sources, supporting CSV/Markdown files, and cover template. Only explicit publication-source file types are included; logs, caches, Git history, local reference full texts, and temporary material are excluded. Its internal SHA-256 manifest permits file-level verification. Packaged source files and final PDFs were checked against the workspace copies, and PDF/source checks found no local account name, identifying repository URL, or unresolved tool citation token. Author metadata remains anonymous.
+
+## Scientific scope of this revision
+
+This was a substantive narrative-review revision with targeted primary-source checks, not a repeat of the complete discovery search or a new integrated empirical evaluation. Sixteen detailed comparison records do not represent uniform coding of the full corpus. Supplementary Note S3 and `review-20260907.md` document the changes and evidence boundaries. Remaining author and submission decisions are listed in `submission-checklist.md`.

@@ -738,13 +738,13 @@ Zhou, X.; Yang, L.; MA, L.; He, H.
 \newblock {\em IET Blockchain} {\bf 2024}, {\em 4},~483--493.
 \newblock {\url{https://doi.org/10.1049/blc2.12050}}.
 
-\bibitem[Zhang et~al.(2022)Zhang, Wang, Aujla, Jindal, and
+\bibitem[Zhang et~al.(2023)Zhang, Wang, Aujla, Jindal, and
   Al-Otaibi]{zhang2022blockchain}
 Zhang, P.; Wang, Y.; Aujla, G.S.; Jindal, A.; Al-Otaibi, Y.D.
 \newblock {A Blockchain-Based Authentication Scheme and Secure Architecture for
   IoT-Enabled Maritime Transportation Systems}.
 \newblock {\em IEEE Transactions on Intelligent Transportation Systems} {\bf
-  2022}, pp. 1--10.
+  2023}, {\em 24},~2322--2331.
 \newblock {\url{https://doi.org/10.1109/tits.2022.3159485}}.
 
 \bibitem[Yang et~al.(2022)Yang, He, Vijayakumar, Gupta, and
@@ -917,6 +917,13 @@ Brewer, E.A.
 \newblock In Proceedings of the Proceedings of the nineteenth annual ACM
   symposium on Principles of distributed computing. ACM,  2000, p.~7.
 \newblock {\url{https://doi.org/10.1145/343477.343502}}.
+
+\bibitem[Gilbert and Lynch(2002)]{gilbert2002brewer}
+Gilbert, S.; Lynch, N.
+\newblock Brewer's Conjecture and the Feasibility of Consistent, Available,
+  Partition-Tolerant Web Services.
+\newblock {\em ACM SIGACT News} {\bf 2002}, {\em 33},~51--59.
+\newblock {\url{https://doi.org/10.1145/564585.564601}}.
 
 \bibitem[Alsaedi et~al.(2020)Alsaedi, Moustafa, Tari, Mahmood, and
   Anwar]{alsaedi2020ton}

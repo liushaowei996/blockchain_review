@@ -213,6 +213,17 @@ MANUAL_ENTRIES = r"""
   url          = {https://www.rfc-editor.org/rfc/rfc9019}
 }
 
+@article{gilbert2002brewer,
+  author       = {Gilbert, Seth and Lynch, Nancy},
+  title        = {Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services},
+  journal      = {ACM SIGACT News},
+  year         = {2002},
+  volume       = {33},
+  number       = {2},
+  pages        = {51--59},
+  doi          = {10.1145/564585.564601}
+}
+
 @inproceedings{varga2022seadronessee,
   author       = {Varga, Leon Amadeus and Kiefer, Benjamin and Messmer, Martin and Zell, Andreas},
   title        = {{SeaDronesSee}: A Maritime Benchmark for Detecting Humans in Open Water},
@@ -311,6 +322,15 @@ def bibtex_entry(message: dict, doi: str, used: set[str]) -> tuple[str, str]:
                 target = "institution"
             fields.append((target, clean(str(message[source]))))
     fields.extend([("doi", doi), ("url", f"https://doi.org/{doi}")])
+    if doi.lower() == "10.1109/tits.2022.3159485":
+        # Final issue verified from the authors' Durham institutional record on
+        # 2026-09-07; Crossref still exposes the early-access year and pages.
+        # Preserve the existing citation key even if Crossref later updates.
+        key = "zhang2022blockchain"
+        used.add(key)
+        overrides = {"year": "2023", "volume": "24", "number": "2", "pages": "2322--2331"}
+        fields = [(name, overrides.pop(name, value)) for name, value in fields]
+        fields.extend(overrides.items())
     width = max(len(name) for name, _ in fields)
     body = ",\n".join(f"  {name.ljust(width)} = {{{value}}}" for name, value in fields)
     return key, f"@{entry_type}{{{key},\n{body}\n}}"

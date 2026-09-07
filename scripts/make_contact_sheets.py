@@ -1,10 +1,11 @@
 """Build legible PDF page contact sheets for visual QA."""
 
 from pathlib import Path
+import sys
 from PIL import Image, ImageDraw
 
 
-root = Path("tmp/pdfs/render-final")
+root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("tmp/pdfs/render-final")
 pages = sorted(root.glob("page-*.png"), key=lambda p: int(p.stem.split("-")[-1]))
 per_sheet = 6
 thumb_w = 410

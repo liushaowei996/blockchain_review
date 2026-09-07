@@ -1,0 +1,5 @@
+# Preserve compiled artifacts byte-for-byte across Git checkouts.
+*.pdf binary
+*.zip binary
+*.png binary
+*.pptx binary
