@@ -7,13 +7,13 @@
 - [x] OAL, CTG, the decision trace, research propositions, and CDUTP are identified as conceptual proposals.
 - [x] Ledger guarantees are scoped by fault model, governance, commit validity, timing, and evidence capture.
 - [x] Alternatives include authenticated databases, witnessed signed logs, and jointly administered replication.
-- [x] The evidence profile distinguishes methods and operational contexts without a cumulative quality score.
+- [x] The evidence profile distinguishes complementary methods and operational contexts, with scope and rigor assessed separately.
 
 ## Sources and evidence
 
 - [x] All 141 cited bibliography entries resolve; the two CSV inventories contain the same source identifiers.
 - [x] Acquisition and coding are separate: 73 retained artifacts and 16 detailed comparison records.
-- [x] Title-derived analytical fields are identified as routing and are not used to estimate coverage or prevalence.
+- [x] Title-derived analytical fields support routing; coverage and prevalence estimates require systematic source inspection and coding.
 - [x] Detailed comparison records have source page/section locators in Table S1 and Supplementary Note S3.
 - [x] CAP is linked to the primary Gilbert-Lynch analysis; Zhang's final issue metadata is reconciled with the authors' institutional record.
 - [ ] Authors have reviewed the final scientific claims, citations, inclusion choices, and any additional claims needing coding.
@@ -22,6 +22,7 @@
 ## Manuscript and package
 
 - [x] Eight keywords and a one-paragraph abstract are present.
+- [x] Language presents contributions, scope, and evidence conditions directly, with review-appropriate subjects and the scientific content preserved.
 - [x] Seven figures and eight editable LaTeX tables are supplied.
 - [x] Figures 4, 6, and 7 use regenerated raster artwork consistent with the revised argument and the other figures; PNG masters, exact prompts, and PDF wrappers are supplied.
 - [x] Author, affiliation, correspondence, CRediT, and funding placeholders remain anonymous.

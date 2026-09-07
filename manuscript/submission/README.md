@@ -2,7 +2,7 @@
 
 ## Current version
 
-The 7 September 2026 revision is a narrative Review and conceptual synthesis. It includes a revised OAL assessment/decision interface, a bounded CTG worked example, conditional ledger-selection criteria, and a claim-specific evidence profile. A subsequent figure-style revision regenerated Figures 4, 6, and 7 with the built-in image generation tool to match the retained artwork while preserving the revised scientific distinctions. No new integrated experiment or performance result is reported.
+The 7 September 2026 revision is a narrative Review and conceptual synthesis. It includes a revised OAL assessment/decision interface, a bounded CTG worked example, conditional ledger-selection criteria, and a claim-specific evidence profile. The figure-style revision regenerated Figures 4, 6, and 7 with the built-in image generation tool to match the retained artwork while preserving the revised scientific distinctions. The subsequent language revision presents the contribution, scope, and evidence conditions directly, with literature, mechanisms, and analytical results as the principal subjects. The scientific claims, research propositions, mathematical expressions, numerical examples, cited sources, and figure artwork retain their preceding content.
 
 ## Build
 
@@ -18,7 +18,7 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 
 - `main.tex`, `sections/`, `references.bib`, `main.bbl`, and `main.pdf`: editable source and compiled manuscript.
 - `Definitions/`: MDPI class, bibliography styles, and assets.
-- `figures/`: seven publication PDFs containing image-generated raster artwork. Figures 4, 6, and 7 include the current PNG masters, standalone PDF wrappers, and `image-generation-prompts-20260907.md`. All TikZ drawing sources are historical working versions and are not used by the manuscript.
+- `figures/`: seven publication PDFs containing image-generated raster artwork. Figures 4, 6, and 7 include the current PNG masters, standalone PDF wrappers, and `image-generation-prompts-20260907.md`. Historical TikZ drawing sources document earlier working versions; the manuscript uses the supplied figure PDFs.
 - `supplement/evidence-matrix.csv`: 141-source inventory with routing basis, availability, coding status, and selected claim locators.
 - `supplement/full-text-acquisition-manifest.csv`: the same 141 sources with separate availability and coding fields.
 - `supplement/review-method-and-coding-notes.md`: Supplementary Note S3, including the discovery query set and source locators.
@@ -30,6 +30,6 @@ Standalone wrappers for Figures 4, 6, and 7 can be compiled with `pdflatex` from
 
 ## Evidence status
 
-The inventory records 73 retained cited-source full-text artifacts, including nine official references. The 33-source acquisition batch completed in August is a subset of these 73. Sixteen sources have detailed coding for selected comparisons. Further targeted checks and the newly added foundational CAP analysis are recorded separately; availability and selective checking do not imply full-corpus analytical coverage.
+The inventory records 73 retained cited-source full-text artifacts, including nine official references. The 33-source acquisition batch completed in August is a subset of these 73. Sixteen sources have detailed coding for selected comparisons. Further targeted checks and the newly added foundational CAP analysis are recorded separately. Availability, selective claim checks, and completed analytical coding have distinct inventory fields and documented scopes.
 
-The principal discovery cutoff remains 6 August 2026. The September revision performed targeted source and specification checks without repeating the complete discovery search. Remaining submission decisions include current journal/issue requirements, author metadata, disclosures, and any further literature refresh.
+The principal discovery cutoff remains 6 August 2026. The September scientific revision performed targeted source and specification checks using the August discovery export as its retrieval baseline. The figure and language revisions refine the presentation of that synthesis. Submission preparation includes confirmation of current journal/issue requirements, author metadata, disclosures, and the timing of any further literature refresh.
