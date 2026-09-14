@@ -1,69 +1,20 @@
-# Supplementary Note S3: discovery and evidence traceability
+# Supplementary Note S3: Supporting evidence and source notes
 
-Version: 7 September 2026. This note accompanies the narrative review and Tables S1 and S2.
+This note summarizes the findings, assumptions, and source locations supporting the review's method and resource comparisons.
 
-## Discovery and selection
+## Reference scope
 
-The retained discovery helper uses OpenAlex topical search with `from_publication_date:2016-01-01`, relevance sorting, and at most 25 records per query. It deduplicates by DOI or OpenAlex identifier. The retained candidate export and Crossref metadata cache were produced on 6 August 2026. Search-result limits and relevance ranking define the retrieval scope; the dated export represents the resulting candidate set. Earlier foundational references and official documents were selected separately.
+The review draws on 141 references: 130 scholarly papers and book chapters, one book, and 10 standards, technical reports, or other official technical references. The English-language literature mainly covers 2016-2026, with earlier foundational contributions on reputation, distributed-system limits, provenance, and consensus. Its themes include unmanned-system cooperation and security, underwater communications, trust and reputation, provenance, attestation, zero trust, and permissioned-ledger governance.
 
-The six discovery themes were UAV blockchain/security; maritime and underwater communication/security; heterogeneous vehicle cooperation; trust/reputation; provenance/attestation/zero trust; and ledger architecture/governance. The exact query strings were:
+Research studies provide models, protocols, implementations, datasets, and evaluation results. Reviews connect these contributions within their application domains. Standards, architectural recommendations, and implementation documentation provide technical definitions and design guidance, with conformance requirements determined by each document's status and scope.
 
-```text
-blockchain UAV survey
-blockchain unmanned aerial vehicle security
-blockchain UAV swarm
-UAV swarm security survey
-unmanned aerial vehicle trust management reputation
-UAV data provenance blockchain
-maritime blockchain survey
-maritime IoT blockchain security
-Internet of Underwater Things security survey
-underwater acoustic network security survey
-underwater wireless sensor network trust management
-UUV security trust
-UAV USV UUV cooperative systems
-air surface underwater heterogeneous unmanned systems
-cross-domain unmanned systems UAV USV UUV
-blockchain trust management IoT survey
-IoT trust reputation survey taxonomy
-dynamic trust management IoT Bayesian subjective logic
-zero trust architecture IoT review
-remote attestation IoT survey RATS
-data provenance IoT survey W3C PROV
-blockchain data provenance IoT
-blockchain off-chain storage IoT survey
-permissioned blockchain IoT resource constrained
-blockchain network partition finality
-blockchain governance permissioned consortium
-multi-sensor fusion trust reliability adversarial
-data trustworthiness sensor fusion provenance
-UAV GNSS spoofing survey
-underwater acoustic jamming security
-UAV USV cooperative search review
-UAV UUV cross-domain communication
-```
+## Method and resource comparisons
 
-Retention was purposive, according to relevance to an assurance claim, operational condition, implementation assumption, or evaluation resource. The source inventory supports focused conceptual comparisons. Estimates of literature prevalence or pooled performance require a completed multi-database systematic-screening protocol, a full exclusion log, duplicate human coding records, and compatible study outcomes. The September revision used the August discovery export as its retrieval baseline, checked selected claims, and added the primary CAP analysis.
+The following comparisons identify the evidence supporting each claim and the conditions under which it applies. Page numbers count from the first page of each document; printed pagination may differ.
 
-## Meaning of the inventory fields
-
-Table S1 includes all 141 bibliography entries. `classification_basis` distinguishes title/bibliographic routing from source-specific analytical overrides. Domain, object, and lifecycle labels produced from titles serve as discovery aids. Assessing a paper's coverage, including the presence or absence of a mechanism, requires inspection of its content.
-
-Table S2 now covers the same 141 entries, expanding the previous 119-entry keyword-filtered acquisition queue. Its priority field supports acquisition routing; source quality requires a separate assessment. Full-text availability and coding are separate columns in both tables. The September reconciliation records 73 retained cited-source artifacts: 64 scholarly sources and 9 official references. The 33-source August acquisition batch is included in those 73. File availability records access to a source; claim and edition coverage are documented through analytical coding.
-
-Sixteen sources retain detailed coding for the selected method/resource comparisons. The other inventory records comprise 17 previously screened sources awaiting detailed coding, 31 additional retained scholarly artifacts awaiting completed coding, 10 official references, 66 bibliographic records awaiting detailed coding, and the newly checked foundational CAP analysis. These categories sum to 141; availability is a separate overlapping attribute. Targeted checks elsewhere in this note are recorded at the inspected-claim level; completed full-paper coding has its own inventory status.
-
-The official-reference category includes technical reports, architectural RFCs, recommendations, specifications, and implementation documentation. Each document's standards status, empirical support, and conformance semantics require assessment on its own terms. The retained 3GPP artifacts are TS 22.119 v19.0.0 and TS 22.125 v19.2.0; identifying the latest release at submission requires a current version check.
-
-Mekdad's UAV review and Wang's consensus survey are retained as author/preprint versions of the cited work. The subjective-logic reference and claim locators use the retained 2016 book edition; the 2013 draft represents a distinct version. Reproducing a claim check requires matching the cited work and inspected version; PDF page numbers below refer to the locally retained edition and may differ from printed pagination.
-
-## Locators for the 16 detailed comparison records
-
-These locators were checked against the retained full texts during the September revision. They identify passages supporting the review's selected claims. Exhaustive extraction and independent experimental replication require dedicated protocols and records. The `claim_locator` column in Table S1 carries the same pointers.
-
-| Source ID | One-based PDF pages and section | Claim supported and scope |
+| Source ID | Pages and sections | Evidence and scope |
 |---|---|---|
-| hayat2016survey | p.1 abstract; p.8 §V; p.14 §VI; pp.20–27 §VII and Table III | Application-specific communication and QoS requirements; air-domain review. |
+| hayat2016survey | p.1; p.8 §V; p.14 §VI; pp.20–27 §VII and Table III | Application-specific communication and QoS requirements; air-domain review. |
 | hadi2023comprehensive | pp.8–10 §§3.1–3.3; pp.17–19 §5; p.22 §6.10 | UAV vulnerability taxonomy and deployment constraints for emerging defenses. |
 | li2023survey | p.7 §3.4.3; pp.7–8 §4 and Figure 4 | Early-stage heterogeneous maritime cooperation and an illustrative one-USV/two-UAV platform. |
 | arifeen2020hidden | p.3 HMM construction and illustration | Random-probability numerical illustration using ten observations; field diagnosis requires calibration. |
@@ -80,18 +31,17 @@ These locators were checked against the retained full texts during the September
 | manhaes2016uuv | pp.3–5 §III; p.6 §IV; pp.6–7 §V; p.7 §VI | Hydrodynamics, sensors, ROS modules and use cases; dynamic validation is ongoing; representing waves/turbulence requires extensions to the implemented current model. |
 | martin2017aqua | pp.5–8 §5 | Simulator memory, scalability, and performance evaluation. |
 
-Source claims about test conditions remain separate from the review's proposed OAL mappings and cross-domain transfer requirements. The L0–L5 labels denote complementary evidence categories, with quality assessed separately. A prototype record may also carry simulation evidence; a formal-proof claim requires its own proof and assumptions.
+The L0-L5 categories denote complementary forms of evidence, with quality and applicability assessed for each claim. A prototype may also supply simulation results; a formal guarantee requires its own proof and assumptions. The reported configurations delimit each result. Cross-domain transfer requires validation under the target mission's channel, resource, timing, and governance conditions.
 
-## Additional targeted checks
+## Additional findings and architectural boundaries
 
-- `zhang2022blockchain`: final issue metadata was corrected to 2023, 24(2), 2322–2331 using the [authors' Durham institutional record](https://durham-repository.worktribe.com/output/1206869/a-blockchain-based-authentication-scheme-and-secure-architecture-for-iot-enabled-maritime-transportation-systems). The citation key retains its early-access year for stability. The publisher page was access-limited and Crossref still returned early-access metadata at the check date.
-
-- `kamvar2003eigentrust`: PDF pp.2–3, §§4.2–4.5 support relative spectral reputation and pretrusted peers; interpreting a score as a mission probability requires a statistical model and calibration.
-- `varga2022seadronessee`: PDF pp.3–5, §§3–4 and Table 3 support footage, metadata, and benchmark tasks.
-- `neto2023ciciot2023`: PDF p.3 §3 and pp.13–16 §§4–5 support the dataset and baseline-evaluation description.
-- `gilbert2002brewer`: [primary author paper](https://www.cs.princeton.edu/courses/archive/spring21/cos418/papers/cap.pdf), §§2 and 3.1, defines atomic consistency, availability, and the asynchronous impossibility result. Its availability definition concerns eventual request completion; a hard deadline guarantee requires an additional timing condition.
-- [RFC 9334](https://www.rfc-editor.org/rfc/rfc9334.html), §§4, 7, and 10, supports separation of evidence, appraisal, relying decisions, and freshness conditions.
-- [PROV-DM](https://www.w3.org/TR/prov-dm/) supports entity/activity/agent semantics. An OAL principal usually maps to a PROV agent, while a data product maps to a PROV entity; these mappings preserve the distinct meanings of the two vocabularies.
-- [NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final), [NISTIR 8202](https://nvlpubs.nist.gov/nistpubs/ir/2018/nist.ir.8202.pdf), [RFC 9019](https://www.rfc-editor.org/rfc/rfc9019.html), and [Fabric ordering documentation](https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html) were consulted for architectural boundaries, update roles, and ordering/commit semantics.
-
-Publisher full texts and temporary extraction files are retained outside the distributed source package. The accompanying bibliography supplies the publication identifiers for all source IDs above.
+- `kamvar2003eigentrust`: EigenTrust defines relative spectral reputation and uses pretrusted peers (pp.2-3, Sections 4.2-4.5). Interpreting its score as a mission-success probability requires an explicit event model and calibration.
+- `varga2022seadronessee`: SeaDronesSee provides maritime UAV footage, metadata, and visual detection and tracking benchmarks (pp.3-5, Sections 3-4 and Table 3).
+- `neto2023ciciot2023`: CICIoT2023 provides IoT traffic and attack data with baseline intrusion-detection evaluations (p.3, Section 3; pp.13-16, Sections 4-5).
+- `gilbert2002brewer`: The [CAP analysis](https://www.cs.princeton.edu/courses/archive/spring21/cos418/papers/cap.pdf), Sections 2 and 3.1, establishes the incompatibility of atomic consistency and availability under arbitrary partitions in its asynchronous model. Availability concerns eventual request completion; a hard deadline guarantee requires an additional timing condition.
+- [RFC 9334](https://www.rfc-editor.org/rfc/rfc9334.html), Sections 4, 7, and 10, separates attestation evidence, appraisal, and relying-party decisions and specifies freshness considerations.
+- [PROV-DM](https://www.w3.org/TR/prov-dm/) relates entities, activities, and agents. An OAL principal usually maps to a PROV agent, while a data product maps to a PROV entity.
+- [NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final) describes policy-based access decisions using subject, device, and contextual evidence.
+- [NISTIR 8202](https://nvlpubs.nist.gov/nistpubs/ir/2018/nist.ir.8202.pdf) distinguishes recording sensor inputs from establishing whether they reflect physical events.
+- [RFC 9019](https://www.rfc-editor.org/rfc/rfc9019.html) defines firmware-update roles, manifests, authorization, and device constraints.
+- [Hyperledger Fabric ordering documentation](https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html) distinguishes ordering from transaction validation and commitment. Application-state changes require successful validation after block inclusion.
