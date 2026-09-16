@@ -19,9 +19,6 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 - `main.tex`, `sections/`, `references.bib`, `main.bbl`, and `main.pdf`: editable source and compiled manuscript.
 - `Definitions/`: MDPI class, bibliography styles, and assets.
 - `figures/`: seven publication PDFs containing image-generated raster artwork. Figures 4, 6, and 7 include the current PNG masters, standalone PDF wrappers, and `image-generation-prompts-20260907.md`. Historical TikZ drawing sources document earlier working versions; the manuscript uses the supplied figure PDFs.
-- `supplement/evidence-matrix.csv`: 141-source inventory with routing basis, availability, coding status, and selected claim locators.
-- `supplement/full-text-acquisition-manifest.csv`: the same 141 sources with separate availability and coding fields.
-- `supplement/review-method-and-coding-notes.md`: Supplementary Note S3, including the discovery query set and source locators.
 - `submission/cover-letter-anonymous.tex` and `.pdf`: cover-letter template.
 - `submission/review-20260907.md`: Chinese review and revision record.
 - `submission/qa-report.md` and `submission-checklist.md`: validation results and author actions.
@@ -29,7 +26,5 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 Standalone wrappers for Figures 4, 6, and 7 can be compiled with `pdflatex` from `figures/`; they embed the supplied PNG pixels without drawing or editing image content. The figure PDFs are already supplied. Publisher reference full texts, temporary extraction files, and Git history are excluded.
 
 ## Evidence status
-
-The inventory records 73 retained cited-source full-text artifacts, including nine official references. The 33-source acquisition batch completed in August is a subset of these 73. Sixteen sources have detailed coding for selected comparisons. Further targeted checks and the newly added foundational CAP analysis are recorded separately. Availability, selective claim checks, and completed analytical coding have distinct inventory fields and documented scopes.
 
 The principal discovery cutoff remains 6 August 2026. The September scientific revision performed targeted source and specification checks using the August discovery export as its retrieval baseline. The figure and language revisions refine the presentation of that synthesis. Submission preparation includes confirmation of current journal/issue requirements, author metadata, disclosures, and the timing of any further literature refresh.

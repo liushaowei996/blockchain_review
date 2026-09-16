@@ -40,8 +40,6 @@ PACKAGE_FILES = (
     "figures/figure-05-ctg-reasoning-loop.pdf",
     "figures/figure-06-blockchain-boundary.pdf",
     "figures/figure-07-evidence-maturity.pdf",
-    "supplement/evidence-matrix.csv",
-    "supplement/review-method-and-coding-notes.md",
     "submission/cover-letter-anonymous.tex",
     "submission/cover-letter-anonymous.pdf",
 )

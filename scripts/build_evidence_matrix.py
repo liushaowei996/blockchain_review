@@ -1,4 +1,4 @@
-"""Create a conservative evidence inventory for the narrative review.
+"""Create an internal working evidence inventory for the narrative review.
 
 The inventory separates bibliographic verification from full-text analytical
 coding.  Title-level rules are used only for routing; method, assumptions,
@@ -14,8 +14,8 @@ from pathlib import Path
 
 
 BIB = Path("manuscript/references.bib")
-OUT = Path("manuscript/supplement/evidence-matrix.csv")
-MANIFEST = Path("manuscript/supplement/full-text-acquisition-manifest.csv")
+OUT = Path("tmp/evidence-inventory/evidence-matrix.csv")
+MANIFEST = Path("tmp/evidence-inventory/full-text-acquisition-manifest.csv")
 
 # Reconciled against the retained source artifacts on 7 September 2026.
 # Presence is acquisition evidence, not evidence of completed analytical coding.
@@ -35,7 +35,7 @@ OFFICIAL_RETAINED = {
 }
 OFFICIAL_SOURCES = OFFICIAL_RETAINED | {"yaga2018blockchain"}
 
-# One-based pages of the lawfully retained PDF edition; see Supplementary Note S3.
+# One-based pages of the lawfully retained PDF edition.
 CLAIM_LOCATORS = {
     "hayat2016survey": "PDF p.1 abstract; p.8 Section V; p.14 Section VI; pp.20-27 Section VII and Table III",
     "hadi2023comprehensive": "PDF pp.8-10 Sections 3.1-3.3; pp.17-19 Section 5; p.22 Section 6.10",
@@ -325,7 +325,7 @@ def classify(entry: dict[str, str]) -> dict[str, str]:
         "doi_or_url": entry["doi"] or entry["url"],
         "classification_basis": "bibliographic/title routing; not a full-text coverage judgment",
         "full_text_status": "retained full-text artifact not recorded; inspect source before detailed claims",
-        "claim_locator": CLAIM_LOCATORS.get(source_id, "not assigned; consult Supplementary Note S3 for targeted checks"),
+        "claim_locator": CLAIM_LOCATORS.get(source_id, "not assigned; inspect source for targeted checks"),
     }
     if source_id in PREVIOUSLY_RETAINED | FULLTEXT_ACQUIRED | OFFICIAL_RETAINED:
         result["full_text_status"] = "lawful full-text artifact retained; inventory reconciled 7 September 2026"
