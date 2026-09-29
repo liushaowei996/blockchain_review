@@ -1,5 +1,21 @@
 # Build and Quality Report
 
+## 29 September 2026: Title and Wording Revision
+
+The revised title is "Blockchain-Assisted Mission Trust in Air--Surface--Underwater Unmanned Systems: A Review and Conceptual Framework." Two passages in Section 3 clarify the participating research institutions and supporting observations from independent sensors or platforms. The cover-letter title and the English title and Chinese interpretation in the reading guide are synchronized.
+
+The manuscript and cover letter compiled successfully from an isolated copy of the publication sources. The manuscript has 37 A4 pages, and the cover letter has one page. The static audit passes with 141 bibliography entries and 141 unique cited entries, with no missing figures, unresolved references, duplicate labels, or tool placeholders. The compiled bibliography is byte-identical to the preceding version. The final build logs contain no undefined citations or references, duplicate-label warnings, overfull boxes, or underfull boxes. The manuscript build retains the existing LaTeX release-version notice.
+
+PDF text and metadata checks confirm the new title and both revised passages. All 37 manuscript pages were rendered and reviewed in contact sheets; full-page inspection covered pages 1, 5, and 6 and the cover letter. The title, affected paragraphs, figures, tables, and page boundaries are correctly placed. Delivered PDF copies match the isolated build byte for byte. The 29 September source package is checked against the explicit publication-file list and the workspace files.
+
+- Manuscript SHA-256: `bc139dc08e7b4b1dfa170b9cc28b3b1fa3be46636154401d70d6ccbdc60c31e4`.
+- Cover-letter SHA-256: `17689cbbbbbfbc02f7832b582da397a237f4ab6e03e95adcc9561eda9c97c74e`.
+- Source package: `blockchain-review-anonymous-submission-package-20260929.zip`.
+
+The remainder of this file preserves the 7 September validation record; its page counts, hashes, and package descriptions refer to that earlier version.
+
+---
+
 Validation date: 7 September 2026 (Asia/Shanghai).
 Target: MDPI Blockchains, narrative Review, anonymous submit mode.
 

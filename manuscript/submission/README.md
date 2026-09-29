@@ -2,6 +2,8 @@
 
 ## Current version
 
+The 29 September 2026 revision adopts the title "Blockchain-Assisted Mission Trust in Air--Surface--Underwater Unmanned Systems: A Review and Conceptual Framework." Section 3.1 identifies research institutions operating unmanned platforms among the participating organizations, and Section 3.3 specifies supporting observations from independent sensors or platforms. The cover letter and Chinese reading-guide title are synchronized. The current manuscript has 37 pages; the updated publication files are packaged in `blockchain-review-anonymous-submission-package-20260929.zip`.
+
 The 7 September 2026 revision is a narrative Review and conceptual synthesis. It includes a revised OAL assessment/decision interface, a bounded CTG worked example, conditional ledger-selection criteria, and a claim-specific evidence profile. The figure-style revision regenerated Figures 4, 6, and 7 with the built-in image generation tool to match the retained artwork while preserving the revised scientific distinctions. The subsequent language revision presents the contribution, scope, and evidence conditions directly, with literature, mechanisms, and analytical results as the principal subjects. The scientific claims, research propositions, mathematical expressions, numerical examples, cited sources, and figure artwork retain their preceding content.
 
 ## Build
