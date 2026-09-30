@@ -12,6 +12,8 @@ MANUSCRIPT = ROOT / "manuscript"
 
 # Keep an explicit list: working figures, internal reports, and build products
 # must not enter the submission archive when new files appear in the repository.
+# Blockchains requires identifying author details in the cover letter. Upload
+# that letter separately so it does not enter this anonymous manuscript archive.
 PACKAGE_FILES = (
     "main.tex",
     "main.pdf",
@@ -40,8 +42,6 @@ PACKAGE_FILES = (
     "figures/figure-05-ctg-reasoning-loop.pdf",
     "figures/figure-06-blockchain-boundary.pdf",
     "figures/figure-07-evidence-maturity.pdf",
-    "submission/cover-letter-anonymous.tex",
-    "submission/cover-letter-anonymous.pdf",
 )
 
 

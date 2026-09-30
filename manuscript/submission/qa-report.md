@@ -1,5 +1,11 @@
 # Build and Quality Report
 
+## 30 September 2026: Cover-Letter Policy and Draft
+
+The journal-specific Instructions for Authors were checked for the cover-letter requirements and double-anonymized review policy. The new `cover-letter-draft.txt` uses the current manuscript title and describes its narrative review, conceptual framework, illustrative example, and evaluation agenda. A separate review checked the scientific descriptions against the manuscript. All six supplied authors and their affiliation mapping are recorded, with author order, romanization, remaining metadata, and declarations explicitly pending confirmation. The draft is not a submission-ready final letter.
+
+The package builder now excludes cover letters. A temporary build verified 27 publication files, ZIP CRC integrity, and byte-for-byte agreement between every archived file and its manuscript source. Additional checks passed for the letter's title, six author names, corresponding-author email, pending-data labels, absence of the former promise to defer author information until after review, and `git diff --check`. The manuscript and existing dated archives were not changed. The older anonymous cover-letter artifacts are marked as superseded in `README.md`.
+
 ## 29 September 2026: Title and Wording Revision
 
 The revised title is "Blockchain-Assisted Mission Trust in Air--Surface--Underwater Unmanned Systems: A Review and Conceptual Framework." Two passages in Section 3 clarify the participating research institutions and supporting observations from independent sensors or platforms. The cover-letter title and the English title and Chinese interpretation in the reading guide are synchronized.
