@@ -1,5 +1,16 @@
 # Build and Quality Report
 
+## 30 September 2026: Completed Identifying Cover Letter
+
+The user supplied all six authors and their affiliations, confirmed Chengnian Long's correspondence address, confirmed unpublished and exclusive-submission status and all-author approval, and confirmed no prior MDPI submissions or related versions. The user authorized a CRediT allocation based on author order, reported no acknowledgment, and explicitly requested omission of funding from the cover letter. The final letter follows these instructions, retains the existing Special Issue destination and manuscript no-conflict declaration, and contains no funding statement. Postal codes were checked against SF's official reports and the institute's CHSI admissions notice, linked in `README.md`.
+
+`cover-letter.txt` replaces the provisional draft. `output/pdf/cover-letter-blockchains.pdf` contains two A4 pages: the submission letter and a page of author information and declarations. Both final pages were rendered and visually inspected; text, spacing, page boundaries, and affiliations are legible, with no clipping or overlap. The PDF's extracted text exactly matches the editable text after whitespace normalization, and the Times New Roman font subsets are embedded. Checks passed for the six authors, dual affiliation of the first author, correspondence address, three postal codes, and absence of placeholders, funding text, and acknowledgments. An independent content review confirmed the conceptual and narrative scope of the scientific claims.
+
+The new `blockchain-review-anonymous-submission-package-20260930.zip` contains 27 files. Its manifest is identical to the 29 September archive except for removal of the two obsolete anonymous cover-letter files. Every retained file is byte-identical to the corresponding earlier archive entry. ZIP CRC checks and `git diff --check` pass. The manuscript itself has not been edited by this cover-letter task.
+
+- Cover-letter PDF SHA-256: `2dc2c008f85bd3732635d143f19d791dfa44cc8b4f4296211b97409e5cca412a`.
+- Anonymous source ZIP SHA-256: `e475b93a3146cdf22c592dafd394c2186dcd861b7238c0041f2c1e90c8e3c0a3`.
+
 ## 30 September 2026: Cover-Letter Policy and Draft
 
 The journal-specific Instructions for Authors were checked for the cover-letter requirements and double-anonymized review policy. The new `cover-letter-draft.txt` uses the current manuscript title and describes its narrative review, conceptual framework, illustrative example, and evaluation agenda. A separate review checked the scientific descriptions against the manuscript. All six supplied authors and their affiliation mapping are recorded, with author order, romanization, remaining metadata, and declarations explicitly pending confirmation. The draft is not a submission-ready final letter.

@@ -26,9 +26,9 @@
 - [x] Compiled manuscript, bibliography, figures, and source dependencies are supplied; the current package builder excludes cover letters from the anonymous manuscript archive.
 - [x] Publisher reference full texts, temporary work, credentials, and Git history are excluded from the package.
 - [x] The journal's official cover-letter and double-anonymized review requirements were checked on 30 September 2026: full author names, affiliations, and removed identifying information belong in the cover letter (see `README.md` for official sources).
-- [ ] Authors have confirmed the Special Issue or regular-submission destination and final submission date.
-- [ ] `cover-letter-draft.txt` has been completed with all author names in order, affiliation mapping, correspondence details, and identifying declarations removed from the manuscript.
-- [ ] Authors have confirmed the letter's publication-status and all-author approval statements and disclosed prior MDPI submissions or related versions where applicable.
+- [x] The cover letter follows the existing Special Issue plan, "Feature Papers in Blockchains 2026", and is dated 30 September 2026.
+- [x] `cover-letter.txt` and `output/pdf/cover-letter-blockchains.pdf` contain all six authors, three affiliations, correspondence details, and the CRediT allocation drafted at the user's request. Funding is omitted as instructed; no no-funding statement is made.
+- [x] The user confirmed the letter's publication-status and all-author approval statements, and confirmed no prior MDPI submissions or related versions.
 - [ ] The completed cover letter is uploaded separately; the superseded anonymous cover letter is excluded from the uploaded files and any historical ZIP used for submission.
 - [ ] Authors have supplied actual author, affiliation, funding, conflict, CRediT, and AI-use disclosures.
 - [ ] Final files have been checked in the journal submission preview after upload.
