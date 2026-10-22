@@ -34,8 +34,54 @@
   "files": {
     "output/pdf/blockchain-mission-trust-review-anonymous.pdf": "12d61dbf0ec70a3fb54cb11be76581b7ff7051643ff868eeed3eda828bae9fa5",
     "output/pdf/blockchain-mission-trust-review-revision-marked.pdf": "cac3fb27e4d986ef08bd59b296deae05ff1d3576ee7dff1b80e390ad5306b209",
-    "review/revision-1/Response-to-Reviewer-1.docx": "7cb28a19d6a78402cd2ebde8b0889148d75796ac6a6363b777f86f0fc3798584",
-    "review/revision-1/Response-to-Reviewer-2.docx": "98aa52f6691e159ee199d61708f370494d105132978de8e749664aba0c8d5ae8",
+    "review/revision-1/Response-to-Reviewer-1.docx": "9af49dfe04112c9883bfdd2915b607d8d9e5108266e0886f3266b3bd08a28d65",
+    "review/revision-1/Response-to-Reviewer-2.docx": "04d9f687729b8afdbc000c0060d29e8d83d33d0a673625ddad0a9a3fd7911c20",
     "output/blockchain-review-revision-1-source-20261022.zip": "01bad788a4176234c4a1c237306731114deb8a3235352a639f0a93e326d83dd9"
+  },
+  "general_evaluation": {
+    "updated_on": "2026-10-22",
+    "rating_scale_maximum": 5,
+    "criteria": [
+      "significance",
+      "organization",
+      "scientific_soundness",
+      "references"
+    ],
+    "reviewers": {
+      "1": {
+        "scores": [
+          3,
+          4,
+          4,
+          5
+        ],
+        "english_assessment": "The English is fine and does not require any improvement.",
+        "source": "review/reviewer1.png",
+        "source_sha256": "ba76e93a15c12ceb5eeadf99d7941473b068f28c82edff73caaf6df1d2ab8eff"
+      },
+      "2": {
+        "scores": [
+          4,
+          4,
+          3,
+          3
+        ],
+        "english_assessment": "The English is fine and does not require any improvement.",
+        "source": "review/reviewer2.png",
+        "source_sha256": "80363936f64c98d26360bca494d45fd30f48690492d1f543b4da3dbb6ef2c05f"
+      }
+    },
+    "update_modified_parts": [
+      "word/document.xml"
+    ],
+    "update_preserved_parts": 26,
+    "point_by_point_responses_unchanged": true,
+    "render_verification": {
+      "reviewer_1_changed_pages": [1, 3],
+      "reviewer_2_changed_pages": [1, 8, 9],
+      "all_other_pages_pixel_identical": true,
+      "all_12_final_pages_visually_inspected": true,
+      "pagination_unchanged": true
+    }
   }
 }
