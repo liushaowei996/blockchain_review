@@ -1,0 +1,142 @@
+original_reference_key,title,revision_role,reason,retained_in_revised_bibliography
+hafeez2023blockchain,Blockchain-Assisted UAV Communication Systems: A Comprehensive Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+alladi2020applications,Applications of blockchain in unmanned aerial vehicles: A review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+mehta2020blockchain,"Blockchain envisioned UAV networks: Challenges, solutions, and comparisons",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+mekdad2023survey,A survey on security and privacy issues of UAVs,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+wang2025survey,A Survey on Security of UAV Swarm Networks: Attacks and Countermeasures,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+hadi2023comprehensive,"A comprehensive survey on security, privacy issues and emerging defence technologies for UAVs",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+khan2023swarm,Swarm of UAVs for Network Management in 6G: A Technical Review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+hayat2016survey,Survey on Unmanned Aerial Vehicle Networks for Civil Applications: A Communications Viewpoint,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+shakhatreh2019unmanned,Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+mohsan2023unmanned,"Unmanned aerial vehicles (UAVs): practical aspects, applications, open challenges, security issues, and future trends",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+yahuza2021internet,Internet of Drones Security and Privacy Issues: Taxonomy and Open Challenges,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+ch2020security,Security and privacy of UAV data using blockchain technology,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+barka2022towards,Towards a trusted unmanned aerial system using blockchain for the protection of critical infrastructure,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+jensen2019blockchain,Blockchain Technology for Networked Swarms of Unmanned Aerial Vehicles (UAVs),not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+karmakar2024blockchain,A Blockchain-Based Distributed and Intelligent Clustering-Enabled Authentication Protocol for UAV Swarms,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+han2022identity,Identity Management and Authentication of a UAV Swarm Based on a Blockchain,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+xiao2021blockchain,A Blockchain-Based Secure Crowd Monitoring System Using UAV Swarm,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+abualsauod2022hybrid,A hybrid blockchain method in internet of things for privacy and security in unmanned aerial vehicles network,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+tan2022blockchain,Blockchain-Assisted Distributed and Lightweight Authentication Service for Industrial Unmanned Aerial Vehicles,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+liu2023lightweight,Lightweight Trustworthy Message Exchange in Unmanned Aerial Vehicle Networks,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+aggarwal2021blockchain,"Blockchain-Envisioned UAV Communication Using 6G Networks: Open Issues, Use Cases, and Future Directions",contextual perspective,organizational/application background rather than a coded security mechanism,false
+kumari2020taxonomy,A taxonomy of blockchain-enabled softwarization for secure UAV network,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+islam2019bus,BUS: A Blockchain-Enabled Data Acquisition Scheme With the Assistance of UAV Swarm in Internet of Things,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+garcamagario2019security,Security in networks of unmanned aerial vehicles for surveillance with an agent-based approach inspired by the principles of blockchain,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+zhou2024towards,Towards secure and resilient unmanned aerial vehicles swarm network based on blockchain,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+phadke2024unifying,Unifying Sky and Chain: A Perspective on Blockchain’s Role in UAV Swarms,contextual perspective,organizational/application background rather than a coded security mechanism,false
+hawashin2024blockchain,"Blockchain applications in UAV industry: Review, opportunities, and challenges",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+nomikos2023survey,"A Survey on UAV-Aided Maritime Communications: Deployment Considerations, Applications, and Future Challenges",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+hu2024coordinated,Coordinated Navigation Control of Cross-Domain Unmanned Systems via Guiding Vector Fields,operational context,"control, navigation or communications; not a security-mechanism evaluation",false
+wei20233u,3U: Joint Design of UAV-USV-UUV Networks for Cooperative Target Hunting,operational context,"control, navigation or communications; not a security-mechanism evaluation",true
+li2023survey,"A survey of maritime unmanned search system: Theory, applications and future directions",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+bae2023survey,Survey on the Developments of Unmanned Marine Vehicles: Intelligence and Cooperation,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+wibisono2023survey,"A Survey on Unmanned Underwater Vehicles: Challenges, Enabling Technologies, and Future Research Directions",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+jahanbakht2021internet,Internet of Underwater Things and Big Marine Data Analytics---A Comprehensive Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+wei2022reliable,Reliable Data Collection Techniques in Underwater Wireless Sensor Networks: A Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+mohsan2022towards,Towards the internet of underwater things: a comprehensive survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+jouhari2019underwater,"Underwater Wireless Sensor Networks: A Survey on Enabling Technologies, Localization Protocols, and Internet of Underwater Things",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+gonzlezgarca2020autonomous,"Autonomous Underwater Vehicles: Localization, Navigation, and Communication for Collaborative Missions",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+wu2020cooperative,Cooperative Path Planning for Heterogeneous Unmanned Vehicles in a Search-and-Track Mission Aiming at an Underwater Target,operational context,"control, navigation or communications; not a security-mechanism evaluation",true
+ke2022cooperative,Cooperative path planning for air--sea heterogeneous unmanned vehicles using search-and-tracking mission,operational context,"control, navigation or communications; not a security-mechanism evaluation",true
+stolfi2021uav,UAV-UGV-UMV Multi-Swarms for Cooperative Surveillance,operational context,"control, navigation or communications; not a security-mechanism evaluation",false
+xue2021distributed,Distributed Consensus of USVs under Heterogeneous UAV-USV Multi-Agent Systems Cooperative Control Scheme,operational context,"control, navigation or communications; not a security-mechanism evaluation",true
+liu2023formation,Formation Control for Mixed-Order UAVs--USVs--UUVs Systems under Cooperative and Optimal Control,operational context,"control, navigation or communications; not a security-mechanism evaluation",true
+ke2023cross,Cross-Domain Fixed-Time Formation Control for an Air-Sea Heterogeneous Unmanned System with Disturbances,operational context,"control, navigation or communications; not a security-mechanism evaluation",false
+nomikos2024improving,Improving Connectivity in 6G Maritime Communication Networks With UAV Swarms,operational context,"control, navigation or communications; not a security-mechanism evaluation",false
+pang2026cooperative,A cooperative heterogeneous formation control and motion planning design of 3U: UAV-USV-UUV systems,operational context,"control, navigation or communications; not a security-mechanism evaluation",true
+farah2024survey,A survey on blockchain technology in the maritime industry: Challenges and future perspectives,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+li2021survey,A survey of blockchain with applications in maritime and shipping industry,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+yang2019maritime,"Maritime shipping digitalization: Blockchain-based technology applications, future improvements, and intention to use",contextual perspective,organizational/application background rather than a coded security mechanism,false
+zhang2022blockchain,A Blockchain-Based Authentication Scheme and Secure Architecture for IoT-Enabled Maritime Transportation Systems,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+yang2022efficient,An Efficient Identity-Based Aggregate Signcryption Scheme With Blockchain for IoT-Enabled Maritime Transportation System,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+jiang2019securing,On Securing Underwater Acoustic Networks: A Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+yisa2021security,Security challenges of Internet of Underwater Things: A systematic literature review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+adam2024state,State-of-the-Art Security Schemes for the Internet of Underwater Things: A Holistic Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+yang2018challenges,"Challenges, Threats, Security Issues and New Trends of Underwater Wireless Sensor Networks",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+ali2020recent,Recent Advances and Future Directions on Underwater Wireless Communications,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+saeed2019underwater,"Underwater optical wireless communications, networking, and localization: A survey",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+diamant2018low,Low Probability of Detection for Underwater Acoustic Communication: A Review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+zhu2024design,Design Guidelines on Trust Management for Underwater Wireless Sensor Networks,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+jiang2020dynamic,A Dynamic Trust Evaluation and Update Mechanism Based on C4.5 Decision Tree in Underwater Wireless Sensor Networks,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+arifeen2020hidden,Hidden Markov Model based Trust Management Model for Underwater Wireless Sensor Networks,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+liu2023survey,A Survey on Blockchain-Based Trust Management for Internet of Things,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+ahmed2019trust,"Trust and reputation for Internet of Things: Fundamentals, taxonomy, and open research challenges",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+aaqib2023iot,IoT trust and reputation: a survey and taxonomy,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+junior2021survey,A Survey on Trustworthiness for the Internet of Things,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+bellini2020blockchain,Blockchain-Based Distributed Trust and Reputation Management Systems: A Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+hbaieb2022survey,A survey of trust management in the Internet of Vehicles,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+mohammadi2019trust,Trust-based recommendation systems in Internet of Things: a systematic literature review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+alkhafajiy2020comitment,COMITMENT: A Fog Computing Trust Management Approach,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+kumar2022leveraging,Leveraging blockchain for ensuring trust in IoT: A survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+li2021blockchain,"Blockchain-based trust management in cloud computing systems: a taxonomy, review and future directions",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+syed2022zero,Zero Trust Architecture (ZTA): A Comprehensive Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+veith2023road,The Road to Trustworthy 6G: A Survey on Trust Anchor Technologies,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+rose2020zero,Zero Trust Architecture,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+fagan2020iot,IoT device cybersecurity capability core baseline,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+birkholz2023remote,Remote ATtestation procedureS (RATS) Architecture,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+jsang2016subjective,Subjective Logic,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+mui2003computational,A computational model of trust and reputation,foundation/specification,foundational trust/consistency vocabulary; not included in the sampled mechanisms,true
+kamvar2003eigentrust,The Eigentrust algorithm for reputation management in P2P networks,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+androulaki2018hyperledger,Hyperledger fabric,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+yaga2018blockchain,Blockchain technology overview,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",false
+ali2019applications,Applications of Blockchains in the Internet of Things: A Comprehensive Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+reyna2018blockchain,On blockchain and its integration with IoT. Challenges and opportunities,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,true
+li2020survey,A survey on the security of blockchain systems,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+wang2019survey,A Survey on Consensus Mechanisms and Mining Strategy Management in Blockchain Networks,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+lashkari2021comprehensive,A Comprehensive Review of Blockchain Consensus Mechanisms,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+hafid2020scaling,Scaling Blockchains: A Comprehensive Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+zhang2020analysis,Analysis of the main consensus protocols of blockchain,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",false
+dorri2017towards,Towards an Optimized BlockChain for IoT,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,true
+hang2019design,Design and Implementation of an Integrated IoT Blockchain Platform for Sensing Data Integrity,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+honarpajooh2021iot,IoT Big Data provenance scheme using blockchain on Hadoop ecosystem,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+hu2020survey,A survey on data provenance in IoT,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+pan2023data,Data Provenance in Security and Privacy,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+singh2019decision,Decision Provenance: Harnessing Data Flow for Accountable Systems,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+kale2023provenance,Provenance documentation to enable explainable and trustworthy AI: A literature review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+hardjono2021towards,Towards an attestation architecture for blockchain networks,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+ott2023universal,Universal Remote Attestation for Cloud and Edge Platforms,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+figueiredo2022arcadian,"ARCADIAN-IoT - Enabling Autonomous Trust, Security and Privacy Management for IoT",mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+baciu2025secure,Secure Tiny Machine Learning on Edge Devices: A Lightweight Dual Attestation Mechanism for Machine Learning,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+suhail2022trustworthy,Trustworthy Digital Twins in the Industrial Internet of Things With Blockchain,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+khan2020iot,IoT-Blockchain Enabled Optimized Provenance System for Food Industry 4.0 Using Advanced Deep Learning,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+rahman2020secure,Secure and Provenance Enhanced Internet of Health Things Framework: A Blockchain Managed Federated Learning Approach,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+uddin2021survey,A survey on the adoption of blockchain in IoT: challenges and solutions,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+monrat2019survey,"A Survey of Blockchain From the Perspectives of Applications, Challenges, and Opportunities",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+casino2019systematic,"A systematic literature review of blockchain-based applications: Current status, classification and open issues",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+alladi2019blockchain,Blockchain Applications for Industry 4.0 and Industrial IoT: A Review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+javaid2021blockchain,Blockchain technology applications for Industry 4.0: A literature-based review,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+hewa2021survey,"Survey on blockchain based smart contracts: Applications, opportunities and challenges",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+nguyen2020blockchain,Blockchain for 5G and beyond networks: A state of the art survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+lnes2017blockchain,Blockchain in government: Benefits and implications of distributed ledger technology for information sharing,contextual perspective,organizational/application background rather than a coded security mechanism,true
+zhou2020key,The key challenges and critical success factors of blockchain implementation: Policy implications for Singapore’s maritime industry,contextual perspective,organizational/application background rather than a coded security mechanism,true
+liu2020fabric,Fabric-iot: A Blockchain-Based Access Control System in IoT,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+kshetri20181,1 Blockchain’s roles in meeting key supply chain management objectives,contextual perspective,organizational/application background rather than a coded security mechanism,true
+kshetri2017can,Can Blockchain Strengthen the Internet of Things?,contextual perspective,organizational/application background rather than a coded security mechanism,true
+javed2022integration,Integration of Blockchain Technology and Federated Learning in Vehicular (IoT) Networks: A Comprehensive Survey,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+shrimali2022blockchain,"Blockchain state-of-the-art: architecture, use cases, consensus, challenges and opportunities",contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+khan2021systematic,Systematic Literature Review of Challenges in Blockchain Scalability,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+brewer2000towards,Towards robust distributed systems (abstract),foundation/specification,foundational trust/consistency vocabulary; not included in the sampled mechanisms,false
+holzinger2022information,"Information fusion as an integrative cross-cutting enabler to achieve robust, explainable, and trustworthy medical artificial intelligence",contextual perspective,organizational/application background rather than a coded security mechanism,false
+shafique2021detecting,Detecting Signal Spoofing Attack in UAVs Using Machine Learning Models,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+dang2022deep,Deep-Ensemble-Learning-Based GPS Spoofing Detection for Cellular-Connected UAVs,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+semanjski2020use,Use of Supervised Machine Learning for GNSS Signal Spoofing Detection with Validation on Real-World Meaconing and Spoofing Data---Part I,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+rado2024recent,Recent Advances on Jamming and Spoofing Detection in GNSS,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+varshosaz2019spoofing,Spoofing Detection of Civilian UAVs Using Visual Odometry,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+sedjelmaci2018hierarchical,A Hierarchical Detection and Response System to Enhance Security Against Lethal Cyber-Attacks in UAV Networks,not mapped in the revision,full-text mechanism coding not completed; excluded from numerical coverage claims,false
+liu2022trusted,Trusted Multi-View Deep Learning with Opinion Aggregation,mapped mechanism study,full-text claim extraction in oal-study-mapping.csv,true
+qian2025review,A Review of Multi-Sensor Fusion in Autonomous Driving,contextual synthesis,review/survey; not counted as an independent mechanism evaluation,false
+neto2023ciciot2023,CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale Attacks in IoT Environment,evaluation resource,dataset or simulator; described separately in Section 8,true
+alsaedi2020ton,TON\_IoT Telemetry Dataset: A New Generation Dataset of IoT and IIoT for Data-Driven Intrusion Detection Systems,evaluation resource,dataset or simulator; described separately in Section 8,true
+ferrag2022edge,Edge-IIoTset: A New Comprehensive Realistic Cyber Security Dataset of IoT and IIoT Applications for Centralized and Federated Learning,evaluation resource,dataset or simulator; described separately in Section 8,true
+martin2017aqua,Aqua-Sim Next Generation,evaluation resource,dataset or simulator; described separately in Section 8,true
+shah2018airsim,AirSim: High-Fidelity Visual and Physical Simulation for Autonomous Vehicles,evaluation resource,dataset or simulator; described separately in Section 8,true
+manhaes2016uuv,UUV Simulator: A Gazebo-based package for underwater intervention and multi-robot simulation,evaluation resource,dataset or simulator; described separately in Section 8,true
+w3c2013provdm,PROV-DM: The PROV Data Model,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+w3c2013provo,PROV-O: The PROV Ontology,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+threegpp22125,Unmanned Aerial System (UAS) Support in 3GPP; Stage 1,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+threegpp22119,Maritime Communication Services over 3GPP System,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+hyperledger2026fabric,Hyperledger Fabric Documentation: Ordering Service,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+ietf2020suit,A Firmware Update Architecture for Internet of Things,foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+gilbert2002brewer,"Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services",foundation/specification,"conceptual vocabulary, standards or system foundations; not a sampled mechanism evaluation",true
+varga2022seadronessee,SeaDronesSee: A Maritime Benchmark for Detecting Humans in Open Water,evaluation resource,dataset or simulator; described separately in Section 8,true

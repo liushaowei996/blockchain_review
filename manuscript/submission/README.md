@@ -14,13 +14,13 @@ The user confirmed unpublished status, exclusive submission, all-author approval
 
 To rebuild the letter, run `python scripts/build_cover_letter.py` from the repository root with ReportLab installed. The renderer embeds the Windows Times New Roman fonts; `--font-dir` can specify another directory containing those font files.
 
-## Current version
+## Current version: first review revision, 22 October 2026
 
-The 30 September 2026 package, `blockchain-review-anonymous-submission-package-20260930.zip`, contains the same 37-page manuscript and publication sources as the 29 September package, with both obsolete anonymous cover-letter files removed. The completed, identifying cover letter is supplied separately.
+The current clean manuscript has 29 pages, 111 cited references, seven vector figures and ten tables. A disclosed full-text sample of 23 mechanism studies supplies 49 OAL claim records. The revision adds a partition/revocation/reconciliation illustration, a coalition ledger specification, a matched validating-log baseline, a requirement-driven consensus comparison and reproducible supplemental calculations. The source-text estimate falls from 13,389 to 9,743 words (27.2%) using the same procedure on both versions.
 
-The 29 September 2026 revision adopts the title "Blockchain-Assisted Mission Trust in Air--Surface--Underwater Unmanned Systems: A Review and Conceptual Framework." Section 3.1 identifies research institutions operating unmanned platforms among the participating organizations, and Section 3.3 specifies supporting observations from independent sensors or platforms. The cover letter and Chinese reading-guide title are synchronized. The current manuscript has 37 pages; the updated publication files are packaged in `blockchain-review-anonymous-submission-package-20260929.zip`.
+Use `../../output/blockchain-review-revision-1-source-20261022.zip` for the current anonymous source package. It contains the clean manuscript and supplementary files. The independent reviewer replies are in `../../review/revision-1/`. The clean PDF is `../../output/pdf/blockchain-mission-trust-review-anonymous.pdf`; the companion `blockchain-mission-trust-review-revision-marked.pdf` highlights rewritten body text in blue, with figures and tables retaining publication styling. It omits deletions and is not a word-level redline. Detailed change locations and the evidence boundaries are recorded in `../../review/revision-1/README.md`.
 
-The 7 September 2026 revision is a narrative Review and conceptual synthesis. It includes a revised OAL assessment/decision interface, a bounded CTG worked example, conditional ledger-selection criteria, and a claim-specific evidence profile. The figure-style revision regenerated Figures 4, 6, and 7 with the built-in image generation tool to match the retained artwork while preserving the revised scientific distinctions. The subsequent language revision presents the contribution, scope, and evidence conditions directly, with literature, mechanisms, and analytical results as the principal subjects. The scientific claims, research propositions, mathematical expressions, numerical examples, cited sources, and figure artwork retain their preceding content.
+The September archives and cover letter remain historical submission records. The present revision does not update or submit the cover letter. The published figure PDFs have been replaced by programmatic vector drawings; older raster masters, wrappers and slide files elsewhere in the repository describe earlier versions and are not used by the current manuscript.
 
 ## Build
 
@@ -34,15 +34,14 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 
 ## Contents
 
-- `main.tex`, `sections/`, `references.bib`, `main.bbl`, and `main.pdf`: editable source and compiled manuscript.
-- `Definitions/`: MDPI class, bibliography styles, and assets.
-- `figures/`: seven publication PDFs containing image-generated raster artwork. Figures 4, 6, and 7 include the current PNG masters, standalone PDF wrappers, and `image-generation-prompts-20260907.md`. Historical TikZ drawing sources document earlier working versions; the manuscript uses the supplied figure PDFs.
-- Historical archives include `submission/cover-letter-anonymous.tex` and `.pdf`; these templates are superseded and must be removed before using an old archive for submission. The current package builder excludes cover letters.
-- `submission/review-20260907.md`: Chinese review and revision record.
-- `submission/qa-report.md` and `submission-checklist.md`: validation results and author actions.
+- `main.tex`, `sections/`, `references.bib`, `main.bbl`, and `main.pdf`: editable clean source and compiled manuscript.
+- `main-marked.tex`: generated companion with section-level blue highlighting; compile separately when needed.
+- `Definitions/`: MDPI class, bibliography style, and template assets.
+- `figures/`: seven publication PDFs containing vector drawing commands and text.
+- `supplementary/`: claim and citation-role CSVs, codebook, query list, consensus requirements, application specification, executable replay, computed results and vector-figure generation script.
 
-Standalone wrappers for Figures 4, 6, and 7 can be compiled with `pdflatex` from `figures/`; they embed the supplied PNG pixels without drawing or editing image content. The figure PDFs are already supplied. Publisher reference full texts, temporary extraction files, and Git history are excluded.
+Run `python supplementary/replay_case.py` and `python supplementary/build_figures.py` from an extracted manuscript package with Python 3.10 or later, `cryptography`, and `reportlab` installed. The scripts identify their own paths. The replay runs synthetic rule checks; it does not run Fabric, consensus or a field trial. Full texts, temporary extraction files, credentials, identifying cover letters and Git history are excluded from the archive.
 
 ## Evidence status
 
-The principal discovery cutoff remains 6 August 2026. The September scientific revision performed targeted source and specification checks using the August discovery export as its retrieval baseline. The figure and language revisions refine the presentation of that synthesis. Submission preparation includes confirmation of current journal/issue requirements, author metadata, disclosures, and the timing of any further literature refresh.
+The original OpenAlex discovery date is 6 August 2026. Targeted retrieval and official-source checks for this revision extend through 22 October 2026. The original discovery set, cited bibliography and purposive full-text sample have different roles; the manuscript and codebook state these separately. Fourteen original mechanism candidates remain outside completed full-text numerical coding. Empty map cells and the absence of L4/L5 profiles describe this sample, not the whole literature.

@@ -1,0 +1,25 @@
+signature,message,bytes,net_payload_bit_s,serialization_s
+Ed25519,individual record,218,100,17.44
+Ed25519,individual record,218,1000,1.744
+Ed25519,individual record,218,5000,0.3488
+Ed25519,batch of 10 compact commitment,220,100,17.6
+Ed25519,batch of 10 compact commitment,220,1000,1.76
+Ed25519,batch of 10 compact commitment,220,5000,0.352
+Ed25519,10 complete records,2180,100,174.4
+Ed25519,10 complete records,2180,1000,17.44
+Ed25519,10 complete records,2180,5000,3.488
+Ed25519,one record proof and three-signature application receipt,697,100,55.76
+Ed25519,one record proof and three-signature application receipt,697,1000,5.576
+Ed25519,one record proof and three-signature application receipt,697,5000,1.1152
+ML-DSA-44,individual record,2574,100,205.92
+ML-DSA-44,individual record,2574,1000,20.592
+ML-DSA-44,individual record,2574,5000,4.1184
+ML-DSA-44,batch of 10 compact commitment,2576,100,206.08
+ML-DSA-44,batch of 10 compact commitment,2576,1000,20.608
+ML-DSA-44,batch of 10 compact commitment,2576,5000,4.1216
+ML-DSA-44,10 complete records,25740,100,2059.2
+ML-DSA-44,10 complete records,25740,1000,205.92
+ML-DSA-44,10 complete records,25740,5000,41.184
+ML-DSA-44,one record proof and three-signature application receipt,10121,100,809.68
+ML-DSA-44,one record proof and three-signature application receipt,10121,1000,80.968
+ML-DSA-44,one record proof and three-signature application receipt,10121,5000,16.1936

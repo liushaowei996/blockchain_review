@@ -1,0 +1,125 @@
+Coalition provenance and revocation pattern — application specification v1
+
+Status: implementable design specification and executable rule illustration.
+The accompanying replay is NOT a Fabric deployment or a consensus benchmark.
+
+PARTIES AND ASSUMPTIONS
+A = mission authority; B = research/platform operator; C = communications
+provider; D = contracted data/audit provider. Each owns one shore peer and one
+shore BFT orderer. At most one administrative domain is Byzantine. A+B+(C or D)
+must authorize application state updates, channel/configuration changes and
+chaincode approval. UUV and USV keys are distinct from organization keys.
+Protected clocks/counters and credible capture are required for event-time
+claims. A compromise cutoff earlier than a revocation changes historical review.
+No consensus traffic traverses the acoustic hop. Contact delivery may reorder,
+duplicate or lose messages. Source records remain retrievable off chain.
+
+ENCODING
+Network-byte-order struct: >BB16s16sIqqI32s32s32s (154 bytes).
+version:u8; kind:u8; mission:16 bytes; producer:16 bytes; sequence:u32;
+eventLo:i64; eventHi:i64; authorityEpoch:u32; policyHash:32 bytes;
+payloadOrBatchRoot:32 bytes; parentOrPreviousBatchRoot:32 bytes.
+Mission-relative time uses signed seconds; negative values and counter wrap
+are rejected by the profile. IDs are fixed identifiers, not variable strings.
+Record kind 1 is a source record; kind 2 is a batch checkpoint. A checkpoint
+appends count:u16 (156 bytes total), and its producer is the gateway.
+Sign the exact body prefixed by ASCII OAL-REPLAY-v1:. Ed25519 adds 64 bytes.
+Operational versions must allocate distinct registered domains for source,
+checkpoint and receipt protocols; the replay keys are public test fixtures.
+Leaf hash = SHA256(0x00 || complete signed source record).
+Node hash = SHA256(0x01 || left hash || right hash).
+Pad a non-power-of-two batch by repeating its last leaf. Retain the original
+count; reject a proof index >= count. A ten-leaf batch has a four-hash branch.
+The example JSON uses sorted keys, compact separators and UTF-8. It contains
+525 application bytes, excluding the newline on disk. It is not a Fabric
+envelope-size measurement. The ML-DSA comparison substitutes signature lengths
+only; no ML-DSA implementation is executed in the replay.
+
+STATE
+mission/<id>/policy/<epoch> -> hash, effective interval, allowed roles, envelope
+producer/<id>/key/<epoch> -> public key, validFrom, revocationEffective, cutoff
+delegation/<id> -> principal, permitted use, expiry, clock bound, policy epoch
+batch/<gateway>/<sequence> -> root, count, event span, prior root, policy epoch
+judgment/<sourceRecordHash>/<policyEpoch> -> outcome, reason, evidence references
+gateway/<id>/head -> latest accepted sequence, root
+
+FABRIC TRANSACTION PSEUDOCODE
+Each GetState below contributes to the transaction read set. Fabric validators
+check endorsement and MVCC versions after ordering. Concurrent changes causing
+a stale read set must be retried from the new state. No HTTP request, external
+clock read or nondeterministic oracle call is made from chaincode.
+
+CommitBatch(checkpoint, gatewaySignature):
+  require authenticated invoking principal has gateway-submitter role
+  require supported version/type; mission and gateway IDs match the registry
+  require 0 <= eventLo <= eventHi; 1 <= count <= configured maximum
+  read mission policy/epoch, gateway key history and current head
+  verify gateway signature and its applicable historical authority
+  require checkpoint.policyHash == policy.hash
+  if batch ID already exists:
+    require identical checkpoint bytes; return existing result (idempotent)
+  require sequence == head.sequence + 1
+  require previousBatchRoot == head.root
+  require epoch is authorized for this batch's event span or mark pending review
+  write batch root, count and provenance metadata; advance head
+  return committed-root status (not approval of every source observation)
+
+JudgeRecord(record, signature, batchID, index, branch, delegationID):
+  read batch, source key history, policy, delegation and prior judgment
+  require record.mission == batch.mission
+  require supported schema; ordered time interval; index < batch.count
+  verify record signature and domain-separated Merkle inclusion
+  require record.policyHash/epoch has an authenticated applicable history
+  verify referenced delegation, declared event-time clock bound and purpose
+  if key compromise cutoff or revocation applies from effective time e:
+    if eventHi < e: historicalStatus = eligible
+    else if eventLo >= e: historicalStatus = revoked
+    else: historicalStatus = quarantined (uncertain ordering)
+  preserve the evidence and write judgment as a new version
+  return historicalStatus, reason, policy epoch and evidence references
+  # A revoked/quarantined application judgment is itself a valid audit update.
+  # Current mission use additionally checks age, quality and present authority.
+
+UpdatePolicy(newPolicy, previousEpoch):
+  read current epoch and approved policy history
+  require new epoch == previousEpoch + 1 and previousEpoch == current
+  require coalition endorsement A+B+(C or D)
+  write immutable policy version and new current pointer
+
+RevokeKey(producer, keyEpoch, effectiveTime, reason, evidenceHash):
+  read producer/key epoch, policy and prior revocation history
+  require coalition endorsement A+B+(C or D)
+  append effective-time revocation; preserve superseded judgments and reasons
+  request review of affected records/descendants; never rewrite original events
+
+RECEIPT AND CONSTRAINED CLIENT
+After VALID Fabric commit, each receipt signer independently checks the block
+validation status and expected application state before signing its checkpoint.
+The receiver requires A and B plus C or D, identified by an epoch-pinned bitmap.
+A receipt is a jointly attested application checkpoint, not a native Fabric
+light-client proof of execution. Pin initial organization keys and policy.
+Verify any epoch transition from the previous pinned epoch before accepting it.
+Reject rollback or an unknown epoch; verify signer identities, all receipt
+signatures, checkpoint sequence, mission/policy binding, source signature,
+index/count, Merkle proof, and the relevant effective-time revocation history.
+If newer global state cannot be established, apply only the remaining local
+delegation. Deny new actions on expiry. Store the knowledge available at action
+time and the judgment learned at reconnection as separate facts.
+
+SIZES AND DEPLOYMENT MEASUREMENTS
+Ed25519 source record: 154 + 64 = 218 bytes.
+Signed batch: 154 + 2 + 64 = 220 bytes.
+One source record + proof + receipt:
+218 + 128 + 2(index) + 156(checkpoint) + 1(bitmap) + 3*64 = 697 bytes.
+Provisioned keys are assumed. Key updates, certificates, transport framing,
+BPSec, contact setup, propagation and retries are excluded from these payloads.
+Measure actual Fabric envelopes, endorsements, certificates, read/write sets,
+block overhead, peer/orderer CPU, storage, recovery and energy in a deployment.
+Measure receipt-service availability separately from consensus availability.
+
+LOG BASELINES
+Consistency-only witnessing commits to observed log contents but does not
+independently validate application authorization. A validating witnessed log
+executes the same rules above, with the same independent signer domains, epoch
+history and retention. Its safety decisions equal the modeled ledger decisions.
+Compare implementation and recovery cost under these matched guarantees.

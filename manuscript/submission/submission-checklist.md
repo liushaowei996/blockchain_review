@@ -11,17 +11,17 @@
 
 ## Sources and evidence
 
-- [x] All 141 cited bibliography entries resolve.
+- [x] All 111 current cited bibliography entries resolve.
 - [x] CAP is linked to the primary Gilbert-Lynch analysis; Zhang's final issue metadata is reconciled with the authors' institutional record.
 - [ ] Authors have reviewed the final scientific claims, citations, inclusion choices, and any additional claims needing coding.
-- [ ] Literature and specification versions have been refreshed as appropriate to the actual submission date.
+- [ ] Authors have checked whether any further literature or specification updates are needed after the 22 October 2026 revision checks.
 
 ## Manuscript and package
 
 - [x] Eight keywords and a one-paragraph abstract are present.
 - [x] Language presents contributions, scope, and evidence conditions directly, with review-appropriate subjects and the scientific content preserved.
-- [x] Seven figures and eight editable LaTeX tables are supplied.
-- [x] Figures 1--7 use the current Visio-exported publication PDFs.
+- [x] Seven figures and ten editable LaTeX tables are supplied.
+- [x] Figures 1--7 use reproducible vector PDFs from the supplied drawing script.
 - [x] Author, affiliation, correspondence, CRediT, and funding placeholders remain anonymous.
 - [x] Compiled manuscript, bibliography, figures, and source dependencies are supplied; the current package builder excludes cover letters from the anonymous manuscript archive.
 - [x] Publisher reference full texts, temporary work, credentials, and Git history are excluded from the package.
@@ -33,4 +33,4 @@
 - [ ] Authors have supplied actual author, affiliation, funding, conflict, CRediT, and AI-use disclosures.
 - [ ] Final files have been checked in the journal submission preview after upload.
 
-Build and visual-verification results are recorded in `qa-report.md`.
+The first-review revision adds independent template-based responses in `../../review/revision-1/`, an explicit full-text sample, executable rule checks, and scoped implementation claims. Build and visual-verification results are recorded in `qa-report.md`.

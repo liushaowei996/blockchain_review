@@ -1,0 +1,17 @@
+signers,ledger_accepts,validating_log_accepts,consistency_only_log
+none,False,False,records proposal; authorization requires application check
+D,False,False,records proposal; authorization requires application check
+C,False,False,records proposal; authorization requires application check
+CD,False,False,records proposal; authorization requires application check
+B,False,False,records proposal; authorization requires application check
+BD,False,False,records proposal; authorization requires application check
+BC,False,False,records proposal; authorization requires application check
+BCD,False,False,records proposal; authorization requires application check
+A,False,False,records proposal; authorization requires application check
+AD,False,False,records proposal; authorization requires application check
+AC,False,False,records proposal; authorization requires application check
+ACD,False,False,records proposal; authorization requires application check
+AB,False,False,records proposal; authorization requires application check
+ABD,True,True,records proposal; authorization requires application check
+ABC,True,True,records proposal; authorization requires application check
+ABCD,True,True,records proposal; authorization requires application check

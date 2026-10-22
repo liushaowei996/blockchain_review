@@ -1,0 +1,34 @@
+Original discovery: OpenAlex, 6 August 2026. English queries; from_publication_date:2016-01-01; relevance order; 25 results per query; deduplicate DOI/OpenAlex ID. Retained candidate file: 571 records. Historical rejection decisions not fully retained.
+
+1. blockchain UAV survey
+2. blockchain unmanned aerial vehicle security
+3. blockchain UAV swarm
+4. UAV swarm security survey
+5. unmanned aerial vehicle trust management reputation
+6. UAV data provenance blockchain
+7. maritime blockchain survey
+8. maritime IoT blockchain security
+9. Internet of Underwater Things security survey
+10. underwater acoustic network security survey
+11. underwater wireless sensor network trust management
+12. UUV security trust
+13. UAV USV UUV cooperative systems
+14. air surface underwater heterogeneous unmanned systems
+15. cross-domain unmanned systems UAV USV UUV
+16. blockchain trust management IoT survey
+17. IoT trust reputation survey taxonomy
+18. dynamic trust management IoT Bayesian subjective logic
+19. zero trust architecture IoT review
+20. remote attestation IoT survey RATS
+21. data provenance IoT survey W3C PROV
+22. blockchain data provenance IoT
+23. blockchain off-chain storage IoT survey
+24. permissioned blockchain IoT resource constrained
+25. blockchain network partition finality
+26. blockchain governance permissioned consortium
+27. multi-sensor fusion trust reliability adversarial
+28. data trustworthiness sensor fusion provenance
+29. UAV GNSS spoofing survey
+30. underwater acoustic jamming security
+31. UAV USV cooperative search review
+32. UAV UUV cross-domain communication

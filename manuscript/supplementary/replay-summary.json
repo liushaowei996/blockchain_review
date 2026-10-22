@@ -1,0 +1,18 @@
+{
+  "record_body_bytes": 154,
+  "ed25519_record_bytes": 218,
+  "checkpoint_body_bytes": 156,
+  "ed25519_checkpoint_bytes": 220,
+  "canonical_json_application_bytes": 525,
+  "merkle_branch_bytes": 128,
+  "trace_records": 3,
+  "arrival_permutations": 6,
+  "signer_subsets": 16,
+  "quorum_sensitivity_rows": 63,
+  "local_authority_expiry_s": 480,
+  "local_action_at_420_s": "restricted delegated use",
+  "local_action_at_540_s": "deny: delegation expired",
+  "consensus_execution": false,
+  "fabric_execution": false,
+  "latencies": "assumed sensitivity inputs, not measurements"
+}

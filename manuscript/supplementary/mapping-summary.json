@@ -1,0 +1,13 @@
+{
+  "studies": 23,
+  "claim_records": 49,
+  "nonempty_cells": 20,
+  "evidence_profiles": {
+    "L0": 4,
+    "L1": 6,
+    "L2": 13,
+    "L3": 11,
+    "L4": 0,
+    "L5": 0
+  }
+}

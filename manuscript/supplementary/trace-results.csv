@@ -1,0 +1,4 @@
+event,event_lo_s,event_hi_s,ledger,validating_witnessed_log,mean_score,mean_threshold_075,veto_scalar
+before,114,126,eligible historical record,eligible historical record,0.99,accept,eligible historical record
+overlap,234,246,quarantine: time interval overlaps revocation,quarantine: time interval overlaps revocation,0.89,accept,quarantine: time interval overlaps revocation
+after,294,306,revoked at event time,revoked at event time,0.79,accept,revoked at event time
