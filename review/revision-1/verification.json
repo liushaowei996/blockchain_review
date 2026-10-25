@@ -49,7 +49,9 @@
     "manuscript/main.pdf": "fd460160e7c725314306178f10b39a3bffe9b8ae5f12c2e11a12940ee46d6317",
     "output/pdf/blockchain-mission-trust-review-writing-checked.pdf": "fd460160e7c725314306178f10b39a3bffe9b8ae5f12c2e11a12940ee46d6317",
     "output/blockchain-review-writing-checked-source-20261025.zip": "fa3b287df8d22babe8de0b7372fe1a021303e69a208755ec0c8a8b5de64dad3e",
-    "review/revision-1/ai-writing-audit-20261025.txt": "b359bf453903ccfc0c12ddb859392783160676b8717728d27f7673e9332c8b7f"
+    "review/revision-1/ai-writing-audit-20261025.txt": "b359bf453903ccfc0c12ddb859392783160676b8717728d27f7673e9332c8b7f",
+    "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx": "8f0c787e5f33abbaf807684a3b036bf3badde5c78d0e00ad9cb0c3915c75f620",
+    "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx": "1e301942ce48381470ca7765be4c42935390eeecf31ab7e8fff6dbab50e3c425"
   },
   "general_evaluation": {
     "updated_on": "2026-10-22",
@@ -394,6 +396,10 @@
     "reviewer_responses": [
       "review/revision-1/Response-to-Reviewer-1.docx",
       "review/revision-1/Response-to-Reviewer-2.docx"
+    ],
+    "bilingual_reviewer_responses": [
+      "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx",
+      "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx"
     ]
   },
   "ai_writing_revision": {
@@ -543,6 +549,45 @@
     "official_date_sources": [
       "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-adopts-mass-code.aspx",
       "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+    ]
+  },
+  "response_translations": {
+    "date": "2026-10-25",
+    "source_commit": "9e1e206",
+    "languages": [
+      "English",
+      "Simplified Chinese"
+    ],
+    "paragraph_order": "Each original English paragraph is immediately followed by its Chinese translation, including title, headings, evaluation cells, reviewer comments and author responses.",
+    "total_paragraph_pairs": 116,
+    "font": "Palatino Linotype for Latin; SimSun for Chinese; body 11.5 pt with 15 pt line spacing.",
+    "reviewers": {
+      "1": {
+        "source": "review/revision-1/Response-to-Reviewer-1.docx",
+        "source_sha256": "bfd3fef26524ecb0fd3e492837c41f10e7674c8b55f205933f2764cdc1605dd3",
+        "output": "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx",
+        "output_sha256": "8f0c787e5f33abbaf807684a3b036bf3badde5c78d0e00ad9cb0c3915c75f620",
+        "paragraph_pairs": 33,
+        "pages": 4,
+        "all_pages_visually_inspected": true
+      },
+      "2": {
+        "source": "review/revision-1/Response-to-Reviewer-2.docx",
+        "source_sha256": "9b31d0c76e4868e62077b231cf27d3f645bc2c2409c7f0625e6cf74785ff9008",
+        "output": "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx",
+        "output_sha256": "1e301942ce48381470ca7765be4c42935390eeecf31ab7e8fff6dbab50e3c425",
+        "paragraph_pairs": 83,
+        "pages": 15,
+        "all_pages_visually_inspected": true
+      }
+    },
+    "validation": [
+      "All 33 and 83 source paragraphs have exactly one immediately following Chinese translation.",
+      "Original English text runs, colors and character formatting are preserved exactly.",
+      "All original numeric values, chapter/table/figure references and reviewer ratings are retained in the translations.",
+      "Only word/document.xml differs from each English source; the other 26 package parts, table geometry, headers, footers and page fields are unchanged.",
+      "Both original English replies retain their source SHA-256 hashes.",
+      "Both final DOCX files rendered with LibreOffice; all 4 and 15 final pages inspected at full size for text, Chinese glyphs, tables, pagination and footer placement."
     ]
   }
 }

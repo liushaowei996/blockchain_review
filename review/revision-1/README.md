@@ -7,6 +7,8 @@
 - `../../output/pdf/blockchain-mission-trust-review-writing-checked.pdf`：逐条写作核对后的论文清稿。
 - `Response-to-Reviewer-1.docx`：审稿人 1 的独立回复。
 - `Response-to-Reviewer-2.docx`：审稿人 2 的独立回复，逐条覆盖 9 项意见。
+- `Response-to-Reviewer-1-EN-ZH.docx`：审稿人 1 回复的逐段中英文对照版，33 组段落。
+- `Response-to-Reviewer-2-EN-ZH.docx`：审稿人 2 回复的逐段中英文对照版，83 组段落。两份对照版均为英文原段在上、中文译文在下，包含一般评价、审稿意见及作者回复。
 - `../../output/blockchain-review-writing-checked-source-20261025.zip`：58 个文件，包含匿名 LaTeX 源文件、清稿 PDF、可编辑 Visio 图件及其 PDF 导出、可复核补充材料。
 - `ai-writing-audit-20261025.txt`：对用户提供的 89 条分析意见逐条核对，并记录本轮 40 处局部编辑的原句、替换和理由。
 - `writing-audit-20261025.txt`：前一轮反防御写作检查，记录当轮 33 处局部编辑。
