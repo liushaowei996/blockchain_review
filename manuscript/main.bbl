@@ -522,22 +522,30 @@ Suhail, S.; Hussain, R.; Jurdak, R.; Hong, C.S.
 \newblock {\em IEEE Internet Computing} {\bf 2022}, {\em 26},~58--67.
 \newblock {\url{https://doi.org/10.1109/mic.2021.3059320}}.
 
-\bibitem[Laurie et~al.(2013)Laurie, Langley, and Kasper]{rfc6962}
-Laurie, B.; Langley, A.; Kasper, E.
-\newblock {Certificate Transparency. RFC 6962},  2013.
-\newblock Accessed 22 October 2026.
+\bibitem[Varshosaz et~al.(2020)Varshosaz, Afary, Mojaradi, Saadatseresht, and
+  Ghanbari~Parmehr]{varshosaz2019spoofing}
+Varshosaz, M.; Afary, A.; Mojaradi, B.; Saadatseresht, M.; Ghanbari~Parmehr, E.
+\newblock {Spoofing Detection of Civilian UAVs Using Visual Odometry}.
+\newblock {\em ISPRS International Journal of Geo-Information} {\bf 2020}, {\em
+  9},~6.
+\newblock {\url{https://doi.org/10.3390/ijgi9010006}}.
 
-\bibitem[Laurie et~al.(2021)Laurie, Messeri, and Stradling]{rfc9162}
-Laurie, B.; Messeri, E.; Stradling, R.
-\newblock {Certificate Transparency Version 2.0. RFC 9162},  2021.
-\newblock Accessed 22 October 2026.
+\bibitem[García-Magariño et~al.(2019)García-Magariño, Lacuesta, Rajarajan,
+  and Lloret]{garcamagario2019security}
+García-Magariño, I.; Lacuesta, R.; Rajarajan, M.; Lloret, J.
+\newblock {Security in networks of unmanned aerial vehicles for surveillance
+  with an agent-based approach inspired by the principles of blockchain}.
+\newblock {\em Ad Hoc Networks} {\bf 2019}, {\em 86},~72--82.
+\newblock {\url{https://doi.org/10.1016/j.adhoc.2018.11.010}}.
 
-\bibitem[Newman et~al.(2022)Newman, Meyers, and Torres-Arias]{sigstore2022}
-Newman, Z.; Meyers, J.S.; Torres-Arias, S.
-\newblock {Sigstore: Software Signing for Everybody}.
-\newblock In Proceedings of the 2022 ACM SIGSAC Conference on Computer and
-  Communications Security,  2022, pp. 2353--2367.
-\newblock {\url{https://doi.org/10.1145/3548606.3560596}}.
+\bibitem[Al-khafajiy et~al.(2020)Al-khafajiy, Baker, Asim, Guo, Ranjan, Longo,
+  Puthal, and Taylor]{alkhafajiy2020comitment}
+Al-khafajiy, M.; Baker, T.; Asim, M.; Guo, Z.; Ranjan, R.; Longo, A.; Puthal,
+  D.; Taylor, M.
+\newblock {COMITMENT: A Fog Computing Trust Management Approach}.
+\newblock {\em Journal of Parallel and Distributed Computing} {\bf 2020}, {\em
+  137},~1--16.
+\newblock {\url{https://doi.org/10.1016/j.jpdc.2019.10.006}}.
 
 \bibitem[Freire et~al.(2022)Freire, Melo, do~Nascimento, Nascimento, and
   de~Sá]{maritime2022monitoring}
@@ -564,31 +572,6 @@ Goudosis, A.; Katsikas, S.
   10},~805.
 \newblock {\url{https://doi.org/10.3390/jmse10060805}}.
 
-\bibitem[Varshosaz et~al.(2020)Varshosaz, Afary, Mojaradi, Saadatseresht, and
-  Ghanbari~Parmehr]{varshosaz2019spoofing}
-Varshosaz, M.; Afary, A.; Mojaradi, B.; Saadatseresht, M.; Ghanbari~Parmehr, E.
-\newblock {Spoofing Detection of Civilian UAVs Using Visual Odometry}.
-\newblock {\em ISPRS International Journal of Geo-Information} {\bf 2020}, {\em
-  9},~6.
-\newblock {\url{https://doi.org/10.3390/ijgi9010006}}.
-
-\bibitem[García-Magariño et~al.(2019)García-Magariño, Lacuesta, Rajarajan,
-  and Lloret]{garcamagario2019security}
-García-Magariño, I.; Lacuesta, R.; Rajarajan, M.; Lloret, J.
-\newblock {Security in networks of unmanned aerial vehicles for surveillance
-  with an agent-based approach inspired by the principles of blockchain}.
-\newblock {\em Ad Hoc Networks} {\bf 2019}, {\em 86},~72--82.
-\newblock {\url{https://doi.org/10.1016/j.adhoc.2018.11.010}}.
-
-\bibitem[Barka et~al.(2022)Barka, Kerrache, Benkraouda, Shuaib, Ahmad, and
-  Kurugollu]{barka2022towards}
-Barka, E.; Kerrache, C.A.; Benkraouda, H.; Shuaib, K.; Ahmad, F.; Kurugollu, F.
-\newblock {Towards a trusted unmanned aerial system using blockchain for the
-  protection of critical infrastructure}.
-\newblock {\em Transactions on Emerging Telecommunications Technologies} {\bf
-  2022}, {\em 33}.
-\newblock {\url{https://doi.org/10.1002/ett.3706}}.
-
 \bibitem[Zuo et~al.(2023)Zuo, Cao, Qi, Gao, Wang, Li, Zhang, and
   Lu]{hierarchical2023trust}
 Zuo, J.; Cao, R.; Qi, J.; Gao, P.; Wang, Z.; Li, J.; Zhang, L.; Lu, Y.
@@ -606,14 +589,14 @@ Yang, J.; Liu, X.; Jiang, X.; Zhang, Y.; Chen, S.; He, H.
   18},~98--108.
 \newblock {\url{https://doi.org/10.1109/mvt.2023.3242834}}.
 
-\bibitem[Al-khafajiy et~al.(2020)Al-khafajiy, Baker, Asim, Guo, Ranjan, Longo,
-  Puthal, and Taylor]{alkhafajiy2020comitment}
-Al-khafajiy, M.; Baker, T.; Asim, M.; Guo, Z.; Ranjan, R.; Longo, A.; Puthal,
-  D.; Taylor, M.
-\newblock {COMITMENT: A Fog Computing Trust Management Approach}.
-\newblock {\em Journal of Parallel and Distributed Computing} {\bf 2020}, {\em
-  137},~1--16.
-\newblock {\url{https://doi.org/10.1016/j.jpdc.2019.10.006}}.
+\bibitem[Barka et~al.(2022)Barka, Kerrache, Benkraouda, Shuaib, Ahmad, and
+  Kurugollu]{barka2022towards}
+Barka, E.; Kerrache, C.A.; Benkraouda, H.; Shuaib, K.; Ahmad, F.; Kurugollu, F.
+\newblock {Towards a trusted unmanned aerial system using blockchain for the
+  protection of critical infrastructure}.
+\newblock {\em Transactions on Emerging Telecommunications Technologies} {\bf
+  2022}, {\em 33}.
+\newblock {\url{https://doi.org/10.1002/ett.3706}}.
 
 \bibitem[Zhang and Xu(2026)]{zhang2026underwater}
 Zhang, Z.; Xu, M.
@@ -637,18 +620,6 @@ Anwar, R.W.; Abrar, M.; Salam, A.; Ullah, F.
 \newblock {\em Network} {\bf 2026}, {\em 6},~18.
 \newblock {\url{https://doi.org/10.3390/network6010018}}.
 
-\bibitem[Ongaro and Ousterhout(2014)]{raft2014}
-Ongaro, D.; Ousterhout, J.
-\newblock {In Search of an Understandable Consensus Algorithm}.
-\newblock In Proceedings of the 2014 USENIX Annual Technical Conference,  2014,
-  pp. 305--319.
-
-\bibitem[Castro and Liskov(1999)]{pbft1999}
-Castro, M.; Liskov, B.
-\newblock {Practical Byzantine Fault Tolerance}.
-\newblock In Proceedings of the Third Symposium on Operating Systems Design and
-  Implementation,  1999, pp. 173--186.
-
 \bibitem[Yin et~al.(2019)Yin, Malkhi, Reiter, Gueta, and Abraham]{hotstuff2019}
 Yin, M.; Malkhi, D.; Reiter, M.K.; Gueta, G.G.; Abraham, I.
 \newblock {HotStuff: BFT Consensus with Linearity and Responsiveness}.
@@ -663,6 +634,35 @@ Danezis, G.; Kokoris-Kogias, L.; Sonnino, A.; Spiegelman, A.
 \newblock In Proceedings of the Seventeenth European Conference on Computer
   Systems,  2022, pp. 34--50.
 \newblock {\url{https://doi.org/10.1145/3492321.3519594}}.
+
+\bibitem[Ongaro and Ousterhout(2014)]{raft2014}
+Ongaro, D.; Ousterhout, J.
+\newblock {In Search of an Understandable Consensus Algorithm}.
+\newblock In Proceedings of the 2014 USENIX Annual Technical Conference,  2014,
+  pp. 305--319.
+
+\bibitem[Castro and Liskov(1999)]{pbft1999}
+Castro, M.; Liskov, B.
+\newblock {Practical Byzantine Fault Tolerance}.
+\newblock In Proceedings of the Third Symposium on Operating Systems Design and
+  Implementation,  1999, pp. 173--186.
+
+\bibitem[Laurie et~al.(2013)Laurie, Langley, and Kasper]{rfc6962}
+Laurie, B.; Langley, A.; Kasper, E.
+\newblock {Certificate Transparency. RFC 6962},  2013.
+\newblock Accessed 22 October 2026.
+
+\bibitem[Laurie et~al.(2021)Laurie, Messeri, and Stradling]{rfc9162}
+Laurie, B.; Messeri, E.; Stradling, R.
+\newblock {Certificate Transparency Version 2.0. RFC 9162},  2021.
+\newblock Accessed 22 October 2026.
+
+\bibitem[Newman et~al.(2022)Newman, Meyers, and Torres-Arias]{sigstore2022}
+Newman, Z.; Meyers, J.S.; Torres-Arias, S.
+\newblock {Sigstore: Software Signing for Everybody}.
+\newblock In Proceedings of the 2022 ACM SIGSAC Conference on Computer and
+  Communications Security,  2022, pp. 2353--2367.
+\newblock {\url{https://doi.org/10.1145/3548606.3560596}}.
 
 \bibitem[Kephart and Chess(2003)]{kephart2003autonomic}
 Kephart, J.; Chess, D.

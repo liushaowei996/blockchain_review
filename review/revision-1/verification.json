@@ -1,6 +1,6 @@
 {
   "revision_date": "2026-10-25",
-  "clean_manuscript_pages": 31,
+  "clean_manuscript_pages": 30,
   "marked_manuscript_pages": 31,
   "reviewer_response_pages": {
     "1": 3,
@@ -19,39 +19,39 @@
   "original_mechanism_candidates_not_full_text_coded": 10,
   "word_estimates": {
     "before": 13389,
-    "previous": 9936,
-    "after": 9732,
-    "reduction_percent": 27.3,
-    "this_round_reduction_words": 204
+    "previous": 9732,
+    "after": 9570,
+    "reduction_percent": 28.5,
+    "this_round_reduction_words": 162
   },
   "validation": [
-    "All 89 numbered writing-analysis items and the Top 15 repeats audited against source and the baseline PDF; five alleged layout defects not present.",
-    "40 localized edits address 43 listed items including three duplicate allegations; 41 items retained as necessary definitions, findings, methods or evidence limits.",
-    "Static manuscript audit passed: 9732 approximate words, 178-word abstract, 123 used/resolved references, seven figures and twelve tables.",
-    "Clean manuscript built from isolated submission inputs: 31 pages; no overfull boxes, oversized floats or unresolved references.",
-    "All 31 manuscript pages inspected in rendered sheets; pages 11, 12, 14, 20 and 25 additionally inspected at full size.",
-    "Figure 5 shares page 14 with CTG and case text; all seven figure PDFs and the native Visio file are unchanged.",
-    "Citations, section headings, labels, equations, figure environments and all twelve tables are unchanged; bibliography and all supplementary files match the baseline after line-ending normalization.",
-    "Synthetic replay rerun; all six CSV/JSON outputs reproduce. Encoding sizes, bandwidth calculations, grid size and discovery settings cross-checked.",
-    "Reviewer 2 response changes only the word count and reduction percentage in paragraph 68; all 26 other DOCX parts and all other paragraphs unchanged. Reviewer 1 response byte-identical.",
-    "Reviewer 2 DOCX rendered with the installed LibreOffice requested by the user; all nine final pages visually inspected at full size.",
-    "Source archive CRC, explicit 58-file manifest, source-byte and isolated-build agreement passed; no marked wrapper, full texts or temporary files included."
+    "All 11 manuscript sections, abstract/end statements, and both complete reviewer replies audited for internal process, version comparisons and unsupported supplementary availability claims.",
+    "Thirty local manuscript edits, including citations for all 39 coded studies in Table 2; key field widths and all 63 sensitivity configurations stated in the manuscript.",
+    "Reviewer 1: six author paragraphs revised; Reviewer 2: sixteen author paragraphs revised. Reviewer comments, ratings, section geometry and other 26 DOCX parts preserved.",
+    "All 116 bilingual paragraph pairs synchronized with the final English replies; 4/14 pages rendered and verified, with Latin-word/number wrapping and two orphan heading rows corrected.",
+    "Static audit passed: 9570 approximate words, 178-word abstract, 123 used/resolved bibliography entries, seven figures and twelve tables.",
+    "Isolated clean build: 30 pages, no overfull boxes, oversized floats or unresolved references. All pages visually checked; Figure 5 shares page 13 with text.",
+    "All seven figure PDFs, native Visio file, bibliography database and thirty local analysis files are byte-identical to baseline.",
+    "58-file source archive passes CRC, explicit manifest and byte comparison with current source and isolated build. No journal upload performed."
   ],
   "files": {
     "output/pdf/blockchain-mission-trust-review-layout-refined.pdf": "3cc96282411ddfe818f09898ba9c8caa11a526b170d1cdb9234b73ea57b034e8",
     "output/pdf/blockchain-mission-trust-review-layout-refined-marked.pdf": "e3829def46d4ab1d4c94944d2c646f5044f184f1e5a6dcea4e4c524d43ac1060",
-    "review/revision-1/Response-to-Reviewer-1.docx": "bfd3fef26524ecb0fd3e492837c41f10e7674c8b55f205933f2764cdc1605dd3",
-    "review/revision-1/Response-to-Reviewer-2.docx": "9b31d0c76e4868e62077b231cf27d3f645bc2c2409c7f0625e6cf74785ff9008",
+    "review/revision-1/Response-to-Reviewer-1.docx": "0be7008d8cf64ce2dc1214818699e6ef887b1a5cb756e3792121b417ad6955a8",
+    "review/revision-1/Response-to-Reviewer-2.docx": "2134a99d515d9a6cd261071feaecfb0d6dbf9ecd952c7380e7800a0b12d3da46",
     "output/blockchain-review-layout-refined-source-20261025.zip": "4fc8c40ea2cf5b29bedb67a9d0528e3e46b6dc40457626be17114bc7dd287c15",
     "manuscript/figures/Figures-revised.vsdx": "a5286258cf77bc22f3606a328778226699d29ee60e6f12635056855ac3b305db",
     "manuscript/figures/figure-07-evidence-maturity.pdf": "396fc1d18c9b3e44086527c2a6eb56e26484cde6c39d20b9f3f491c37a8a5a32",
     "review/revision-1/writing-audit-20261025.txt": "52a504a54390f6ffaf49ade57e27026057ad4ab675a728ca6dcdc95664c8c188",
-    "manuscript/main.pdf": "fd460160e7c725314306178f10b39a3bffe9b8ae5f12c2e11a12940ee46d6317",
+    "manuscript/main.pdf": "0451fcb8325ae5880beba74347786a9aa14fda51a9e94836a81ac4de0f3f19c1",
     "output/pdf/blockchain-mission-trust-review-writing-checked.pdf": "fd460160e7c725314306178f10b39a3bffe9b8ae5f12c2e11a12940ee46d6317",
     "output/blockchain-review-writing-checked-source-20261025.zip": "fa3b287df8d22babe8de0b7372fe1a021303e69a208755ec0c8a8b5de64dad3e",
     "review/revision-1/ai-writing-audit-20261025.txt": "b359bf453903ccfc0c12ddb859392783160676b8717728d27f7673e9332c8b7f",
-    "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx": "8f0c787e5f33abbaf807684a3b036bf3badde5c78d0e00ad9cb0c3915c75f620",
-    "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx": "1e301942ce48381470ca7765be4c42935390eeecf31ab7e8fff6dbab50e3c425"
+    "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx": "3d3369117ec5a9a1b9d9a7a80f4ef50d814ea0f9f04034798ed6e41cbb5e10d1",
+    "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx": "6a151eb07a357c19026e02faca33639536a296c93ed4998548d0edd56549a1f4",
+    "output/pdf/blockchain-mission-trust-review-content-refined.pdf": "0451fcb8325ae5880beba74347786a9aa14fda51a9e94836a81ac4de0f3f19c1",
+    "output/blockchain-review-content-refined-source-20261025.zip": "6508a2013e4676c4241c4b48d3c4750e3cbca020d4d2bf7ca6bc1584b12cd51d",
+    "review/revision-1/content-presentation-audit-20261025.txt": "5b57aaf795a175934dfc8d9eece518b26d5f80760756a14f4547ac8fffe9ad2d"
   },
   "general_evaluation": {
     "updated_on": "2026-10-22",
@@ -239,7 +239,7 @@
       "straight_connectors": 12
     }
   },
-  "revision_focus": "Item-by-item writing audit, local prose edits, clean manuscript and synchronized response word count",
+  "revision_focus": "Remove internal revision history and unfulfilled supplementary-delivery claims; report completed methods and findings in the manuscript and replies",
   "bibliography_references": 123,
   "direct_domain_studies": 19,
   "transferable_studies": 20,
@@ -253,90 +253,46 @@
     "L5": 0
   },
   "artifact_checks": {
+    "main_pages": 30,
+    "bibliography_items": 123,
+    "figure_pages": {
+      "1": 5,
+      "2": 6,
+      "3": 10,
+      "4": 12,
+      "5": 13,
+      "6": 15,
+      "7": 20
+    },
+    "table_pages": {
+      "1": 4,
+      "2": 7,
+      "3": 8,
+      "4": 8,
+      "5": 9,
+      "6": 11,
+      "7": 13,
+      "8": 14,
+      "9": 16,
+      "10": 17,
+      "11": 19,
+      "12": 21
+    },
+    "all_scientific_files_unchanged": true,
     "unchanged_figure_pdfs": [
       "figure-01-reference-architecture.pdf",
       "figure-02-assurance-chain.pdf",
       "figure-03-oal-framework.pdf",
       "figure-04-dependency-threat.pdf",
       "figure-05-ctg-reasoning-loop.pdf",
-      "figure-06-blockchain-boundary.pdf"
+      "figure-06-blockchain-boundary.pdf",
+      "figure-07-evidence-maturity.pdf"
     ],
-    "changed_visio_parts": [
-      "visio/pages/pages.xml",
-      "visio/pages/page8.xml"
-    ],
-    "native_cells_verified": 96,
-    "original_visio_sha256": "91304529a425d154163223a774fcee4e22eb62b87cd8483b8683990ced26d17e",
-    "figure_raster_counts": [
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "main_pages": 31,
-    "main-marked_pages": 31,
-    "table_labels": {
-      "tab:scope": "1",
-      "tab:reviews": "2",
-      "tab:objects": "3",
-      "tab:lifecycle": "4",
-      "tab:interfaces": "5",
-      "tab:sensitivity": "6",
-      "tab:threats": "7",
-      "tab:trace": "8",
-      "tab:consensus": "9",
-      "tab:blockchain-patterns": "10",
-      "tab:budget": "11",
-      "tab:evaluation": "12"
-    },
-    "bibliography_items": 123,
-    "other_six_native_pages_unchanged": true,
-    "figure_7_shapes": "47 rectangles/text boxes and 12 straight connectors; no pictograms or image objects",
-    "figure_7_text_characters": 654,
-    "figure_7_raster_images": 0,
-    "figure_7_metadata": {
-      "/Producer": "Microsoft® Visio® 2021",
-      "/Creator": "Microsoft® Visio® 2021",
-      "/CreationDate": "D:20261025103450+08'00'",
-      "/ModDate": "D:20261025103450+08'00'"
-    },
-    "scientific_data_and_bibliography_unchanged_after_git_line_ending_normalization": true,
-    "native_figure_7_regeneration_identical": true,
-    "reviewer_2_updated_paragraphs": [
-      2,
-      68,
-      75,
-      76
-    ],
-    "reviewer_2_comments_ratings_and_other_parts_unchanged": true,
-    "table_pages": {
-      "1": 4,
-      "2": 8,
-      "3": 9,
-      "4": 9,
-      "5": 11,
-      "6": 12,
-      "7": 13,
-      "8": 15,
-      "9": 17,
-      "10": 18,
-      "11": 20,
-      "12": 22
-    },
-    "native_cells_verification_scope": "Verified in the preceding OAL expansion; Figure 3 native page, PDF and data are unchanged in this round.",
-    "source_archive_crc_passed": true,
-    "source_archive_manifest_and_source_bytes_match": true,
-    "source_archive_isolated_build_bytes_match": true,
-    "anonymous_manuscript_metadata": true,
-    "reviewer_1_updated_paragraphs": [
-      2
-    ],
-    "reviewer_1_comments_ratings_and_other_parts_unchanged": true
+    "source_package_matches_isolated_build": true,
+    "bilingual_paragraph_pairs": 116,
+    "all_final_artifact_pages_visually_checked": true
   },
-  "comparison_baseline": "2953d4d",
+  "comparison_baseline": "1fc88dd",
   "abstract_words": 178,
   "layout_writing_revision": {
     "writing_edits": 33,
@@ -390,9 +346,9 @@
   },
   "marked_manuscript_status": "Historical 31-page version retained; not regenerated or included in the current submission package.",
   "current_artifacts": {
-    "clean_manuscript": "output/pdf/blockchain-mission-trust-review-writing-checked.pdf",
-    "source_package": "output/blockchain-review-writing-checked-source-20261025.zip",
-    "writing_audit": "review/revision-1/ai-writing-audit-20261025.txt",
+    "clean_manuscript": "output/pdf/blockchain-mission-trust-review-content-refined.pdf",
+    "source_package": "output/blockchain-review-content-refined-source-20261025.zip",
+    "writing_audit": "review/revision-1/content-presentation-audit-20261025.txt",
     "reviewer_responses": [
       "review/revision-1/Response-to-Reviewer-1.docx",
       "review/revision-1/Response-to-Reviewer-2.docx"
@@ -553,7 +509,7 @@
   },
   "response_translations": {
     "date": "2026-10-25",
-    "source_commit": "9e1e206",
+    "source_commit": "1fc88dd (English sources updated in this revision)",
     "languages": [
       "English",
       "Simplified Chinese"
@@ -564,30 +520,274 @@
     "reviewers": {
       "1": {
         "source": "review/revision-1/Response-to-Reviewer-1.docx",
-        "source_sha256": "bfd3fef26524ecb0fd3e492837c41f10e7674c8b55f205933f2764cdc1605dd3",
+        "source_sha256": "0be7008d8cf64ce2dc1214818699e6ef887b1a5cb756e3792121b417ad6955a8",
         "output": "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx",
-        "output_sha256": "8f0c787e5f33abbaf807684a3b036bf3badde5c78d0e00ad9cb0c3915c75f620",
+        "output_sha256": "3d3369117ec5a9a1b9d9a7a80f4ef50d814ea0f9f04034798ed6e41cbb5e10d1",
         "paragraph_pairs": 33,
         "pages": 4,
         "all_pages_visually_inspected": true
       },
       "2": {
         "source": "review/revision-1/Response-to-Reviewer-2.docx",
-        "source_sha256": "9b31d0c76e4868e62077b231cf27d3f645bc2c2409c7f0625e6cf74785ff9008",
+        "source_sha256": "2134a99d515d9a6cd261071feaecfb0d6dbf9ecd952c7380e7800a0b12d3da46",
         "output": "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx",
-        "output_sha256": "1e301942ce48381470ca7765be4c42935390eeecf31ab7e8fff6dbab50e3c425",
+        "output_sha256": "6a151eb07a357c19026e02faca33639536a296c93ed4998548d0edd56549a1f4",
         "paragraph_pairs": 83,
-        "pages": 15,
+        "pages": 14,
         "all_pages_visually_inspected": true
       }
     },
     "validation": [
-      "All 33 and 83 source paragraphs have exactly one immediately following Chinese translation.",
-      "Original English text runs, colors and character formatting are preserved exactly.",
-      "All original numeric values, chapter/table/figure references and reviewer ratings are retained in the translations.",
-      "Only word/document.xml differs from each English source; the other 26 package parts, table geometry, headers, footers and page fields are unchanged.",
-      "Both original English replies retain their source SHA-256 hashes.",
-      "Both final DOCX files rendered with LibreOffice; all 4 and 15 final pages inspected at full size for text, Chinese glyphs, tables, pagination and footer placement."
-    ]
+      "Every final English paragraph is followed by one Chinese translation: 33 and 83 pairs.",
+      "English text, reviewer quotations, ratings, numerical values and manuscript pointers checked against the final English source.",
+      "Only word/document.xml differs from each English source; all other 26 parts, page geometry, table widths, headers, footers and page fields preserved.",
+      "For Reviewer 2 only, two short heading rows are joined to their first subordinate item to prevent orphan headings; all paragraphs and their order are preserved.",
+      "Both final documents rendered with installed LibreOffice 26.8.0.3; all 4/14 pages visually verified, including pixel comparisons after layout changes."
+    ],
+    "updated_by": "content_presentation_revision"
+  },
+  "content_presentation_revision": {
+    "date": "2026-10-25",
+    "baseline_commit": "1fc88dd",
+    "manuscript_layout": {
+      "pages": 30,
+      "figures": {
+        "1": 5,
+        "2": 6,
+        "3": 10,
+        "4": 12,
+        "5": 13,
+        "6": 15,
+        "7": 20
+      },
+      "tables": {
+        "1": 4,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 9,
+        "6": 11,
+        "7": 13,
+        "8": 14,
+        "9": 16,
+        "10": 17,
+        "11": 19,
+        "12": 21
+      },
+      "warnings": []
+    },
+    "manuscript_local_content_edits": 30,
+    "reference_spacing_multiplier": 0.99,
+    "approximate_words": 9570,
+    "abstract_words": 178,
+    "bibliography_entries": 123,
+    "table_2_coded_source_keys": 39,
+    "preserved_scientific_files": [
+      "manuscript/references.bib",
+      "manuscript/figures/figure-01-reference-architecture.pdf",
+      "manuscript/figures/figure-02-assurance-chain.pdf",
+      "manuscript/figures/figure-03-oal-framework.pdf",
+      "manuscript/figures/figure-04-dependency-threat.pdf",
+      "manuscript/figures/figure-05-ctg-reasoning-loop.pdf",
+      "manuscript/figures/figure-06-blockchain-boundary.pdf",
+      "manuscript/figures/figure-07-evidence-maturity.pdf",
+      "manuscript/figures/Figures-revised.vsdx",
+      "manuscript/supplementary/analyze_oal.py",
+      "manuscript/supplementary/build_figures.py",
+      "manuscript/supplementary/CODEBOOK.md",
+      "manuscript/supplementary/CODING-DECISIONS.md",
+      "manuscript/supplementary/communication-budget.csv",
+      "manuscript/supplementary/consensus-requirements.csv",
+      "manuscript/supplementary/current-reference-roles.csv",
+      "manuscript/supplementary/endorsement-results.csv",
+      "manuscript/supplementary/example-batch.json",
+      "manuscript/supplementary/expansion-screening.csv",
+      "manuscript/supplementary/export_visio_figures.ps1",
+      "manuscript/supplementary/mapping-summary.json",
+      "manuscript/supplementary/oal-analysis-summary.json",
+      "manuscript/supplementary/oal-cell-counts.csv",
+      "manuscript/supplementary/oal-layer-cooccurrence.csv",
+      "manuscript/supplementary/oal-leave-one-out.csv",
+      "manuscript/supplementary/oal-sensitivity.csv",
+      "manuscript/supplementary/oal-study-mapping.csv",
+      "manuscript/supplementary/oal-study-register.csv",
+      "manuscript/supplementary/original-citation-disposition.csv",
+      "manuscript/supplementary/partition-sensitivity.csv",
+      "manuscript/supplementary/protocol-specification.txt",
+      "manuscript/supplementary/replay-summary.json",
+      "manuscript/supplementary/replay_case.py",
+      "manuscript/supplementary/search-expansion-20261025.txt",
+      "manuscript/supplementary/search-queries.txt",
+      "manuscript/supplementary/trace-results.csv",
+      "manuscript/supplementary/update_evidence_visio.py",
+      "manuscript/supplementary/update_oal_visio.ps1",
+      "manuscript/supplementary/update_oal_visio.py"
+    ],
+    "all_preserved_hashes_match": true,
+    "no_supplementary_delivery_claims": true,
+    "responses": [
+      {
+        "reviewer": 1,
+        "english_paragraphs": 33,
+        "changed_author_paragraph_indices": [
+          2,
+          24,
+          25,
+          26,
+          27,
+          32
+        ],
+        "comments_and_general_evaluation_unchanged": true,
+        "modified_docx_parts": [
+          "word/document.xml"
+        ],
+        "other_parts_preserved": 26,
+        "bilingual_english_matches_final": true,
+        "paragraph_pairs": 33,
+        "section_geometry_and_table_widths_preserved": true,
+        "bilingual_heading_rows_joined_to_first_item": [],
+        "english_pages": 3,
+        "bilingual_pages": 4,
+        "source_sha256": "0be7008d8cf64ce2dc1214818699e6ef887b1a5cb756e3792121b417ad6955a8",
+        "bilingual_sha256": "3d3369117ec5a9a1b9d9a7a80f4ef50d814ea0f9f04034798ed6e41cbb5e10d1"
+      },
+      {
+        "reviewer": 2,
+        "english_paragraphs": 83,
+        "changed_author_paragraph_indices": [
+          2,
+          23,
+          24,
+          27,
+          29,
+          35,
+          37,
+          46,
+          48,
+          58,
+          61,
+          62,
+          68,
+          76,
+          77,
+          82
+        ],
+        "comments_and_general_evaluation_unchanged": true,
+        "modified_docx_parts": [
+          "word/document.xml"
+        ],
+        "other_parts_preserved": 26,
+        "bilingual_english_matches_final": true,
+        "paragraph_pairs": 83,
+        "section_geometry_and_table_widths_preserved": true,
+        "bilingual_heading_rows_joined_to_first_item": [
+          30,
+          38
+        ],
+        "english_pages": 9,
+        "bilingual_pages": 14,
+        "source_sha256": "2134a99d515d9a6cd261071feaecfb0d6dbf9ecd952c7380e7800a0b12d3da46",
+        "bilingual_sha256": "6a151eb07a357c19026e02faca33639536a296c93ed4998548d0edd56549a1f4"
+      }
+    ],
+    "source_archive_files": 58,
+    "source_archive_matches_isolated_build": true,
+    "source_archive_includes_local_analysis_files": true,
+    "journal_upload_performed": false,
+    "all_30_manuscript_pages_visually_checked": true,
+    "full_size_manuscript_checks": [
+      7,
+      13,
+      18,
+      26,
+      30
+    ],
+    "all_final_docx_pages_visually_checked": true,
+    "visual_qa_method": "All first-render pages inspected; every later changed page re-inspected, all remaining pages verified pixel-identical.",
+    "previous_artifact_checks": {
+      "unchanged_figure_pdfs": [
+        "figure-01-reference-architecture.pdf",
+        "figure-02-assurance-chain.pdf",
+        "figure-03-oal-framework.pdf",
+        "figure-04-dependency-threat.pdf",
+        "figure-05-ctg-reasoning-loop.pdf",
+        "figure-06-blockchain-boundary.pdf"
+      ],
+      "changed_visio_parts": [
+        "visio/pages/pages.xml",
+        "visio/pages/page8.xml"
+      ],
+      "native_cells_verified": 96,
+      "original_visio_sha256": "91304529a425d154163223a774fcee4e22eb62b87cd8483b8683990ced26d17e",
+      "figure_raster_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "main_pages": 31,
+      "main-marked_pages": 31,
+      "table_labels": {
+        "tab:scope": "1",
+        "tab:reviews": "2",
+        "tab:objects": "3",
+        "tab:lifecycle": "4",
+        "tab:interfaces": "5",
+        "tab:sensitivity": "6",
+        "tab:threats": "7",
+        "tab:trace": "8",
+        "tab:consensus": "9",
+        "tab:blockchain-patterns": "10",
+        "tab:budget": "11",
+        "tab:evaluation": "12"
+      },
+      "bibliography_items": 123,
+      "other_six_native_pages_unchanged": true,
+      "figure_7_shapes": "47 rectangles/text boxes and 12 straight connectors; no pictograms or image objects",
+      "figure_7_text_characters": 654,
+      "figure_7_raster_images": 0,
+      "figure_7_metadata": {
+        "/Producer": "Microsoft® Visio® 2021",
+        "/Creator": "Microsoft® Visio® 2021",
+        "/CreationDate": "D:20261025103450+08'00'",
+        "/ModDate": "D:20261025103450+08'00'"
+      },
+      "scientific_data_and_bibliography_unchanged_after_git_line_ending_normalization": true,
+      "native_figure_7_regeneration_identical": true,
+      "reviewer_2_updated_paragraphs": [
+        2,
+        68,
+        75,
+        76
+      ],
+      "reviewer_2_comments_ratings_and_other_parts_unchanged": true,
+      "table_pages": {
+        "1": 4,
+        "2": 8,
+        "3": 9,
+        "4": 9,
+        "5": 11,
+        "6": 12,
+        "7": 13,
+        "8": 15,
+        "9": 17,
+        "10": 18,
+        "11": 20,
+        "12": 22
+      },
+      "native_cells_verification_scope": "Verified in the preceding OAL expansion; Figure 3 native page, PDF and data are unchanged in this round.",
+      "source_archive_crc_passed": true,
+      "source_archive_manifest_and_source_bytes_match": true,
+      "source_archive_isolated_build_bytes_match": true,
+      "anonymous_manuscript_metadata": true,
+      "reviewer_1_updated_paragraphs": [
+        2
+      ],
+      "reviewer_1_comments_ratings_and_other_parts_unchanged": true
+    },
+    "audit": "review/revision-1/content-presentation-audit-20261025.txt"
   }
 }

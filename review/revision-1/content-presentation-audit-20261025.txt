@@ -1,0 +1,377 @@
+正文与审稿回复表达核查记录（2026-10-25）
+内部核查文件；不属于论文、审稿回复或投稿附件。为便于追溯，下文保留被删除的原句。
+比较基线：1fc88dd。
+
+一、处理原则与范围
+逐段核查正文 11 节、摘要和文末声明，以及两份英文回复的全部 33/83 段，并同步对应中文译文。
+正文直接呈现最终研究问题、方法、结果和科学限制，删除检索补救经历、修订过程和版本比较。
+审稿回复保留与意见直接对应的改动和定位，删除内部候选恢复、文件制作及整理过程。
+删除尚未作为期刊附件提供的补充材料、CSV、协议或脚本交付措辞，改述实际执行的分析与正文位置。
+正文表 2 补入全部 39 篇编码研究的分组引用，第 7.3 节补入字段宽度，第 7.4 节补入 63 个敏感性组合的参数取值。
+保留目的性样本、检索与可访问范围、单次抽取、零格解释、合成回放和部署/海试边界。
+本轮不更改分析数据或图件；39 篇研究、89 条主张、123 条参考文献及其科学结论均保留。
+本地分析文件仍保留在仓库和源归档中，本轮没有向期刊投稿系统上传文件，也没有生成独立的补充材料投稿包。
+
+二、正文局部修改（30 处；其中 12 处为表 2 分组来源引用）
+
+01. manuscript\main.tex
+理由：删除尚未作为补充材料提交的文件清单。
+原文：
+\supplementary{Supplementary materials contain the analytical CSV files, codebook, protocol specification, and Python reproduction scripts described in Sections~\ref{sec:coding}, \ref{sec:trace}, and~\ref{sec:budget}.}
+现文：
+[删除]
+
+02. manuscript\main.tex
+理由：准确说明文内已报告的数据和结果，不宣称文件已上传或公开，也不代作者承诺未来共享方式。
+原文：
+\dataavailability{The supplementary materials provide the OAL claim mapping, study and reference-role registers, screening dispositions, coding decisions, sensitivity analyses, query records, consensus-requirement matrix, pattern specification, executable replay, computed results, editable Visio figures, and PDF export script. Source publications are cited in the references; copyrighted full texts are not redistributed.}
+现文：
+\dataavailability{The published sources analyzed in this review are identified in the reference list. The analytical sample and coding rules are described in Section~\ref{sec:coding}. Derived coverage counts and sensitivity results are reported in Sections~\ref{sec:coverage}--\ref{sec:sensitivity}; synthetic replay outcomes and application-message calculations are reported in Sections~\ref{sec:trace} and~\ref{sec:budget}.}
+
+03. manuscript\sections\02-scope.tex
+理由：保留研究范围、数据库和检索方法，删除旧版参考文献数量及内部脚本叙述。
+原文：
+This is a structured narrative review. The original bibliography contained 141 references spanning unmanned cooperation, communication and security, trust inference, provenance, attestation, and distributed governance. The retained discovery script queried OpenAlex
+现文：
+This structured narrative review examines unmanned cooperation, communication and security, trust inference, provenance, attestation, and distributed governance. OpenAlex was queried
+
+04. manuscript\sections\02-scope.tex
+理由：检索日期、检索词示例、数量、时间范围和去重方法已在本段说明，删除文件可用性声明。
+原文：
+ The complete query list and retrieval settings accompany the supplementary materials.
+现文：
+[删除]
+
+05. manuscript\sections\02-scope.tex
+理由：删除内部补找、扩充批次、访问失败和历史记录保存经过；最终样本构成及非穷尽取样边界由后文说明。
+原文：
+The expansion revisited all 14 original mechanism candidates outside the initial coding, adding four after inspecting their methods and evaluations. It also added eight domain studies on AIS protection, maritime monitoring, UAV trust/routing, and underwater mechanisms, together with four already cited consensus comparators. Ten original candidates remained unavailable or only partly inspectable; access status is recorded separately from scientific eligibility. The supplementary expansion register documents these 26 candidates and four contextual leads, with source versions and successful retrieval URLs. The historical workflow did not retain all title/abstract rejection decisions or search-engine rankings. The discovery set, original bibliography, targeted checks, and final bibliography document different stages of the narrative review.
+现文：
+[删除]
+
+06. manuscript\sections\02-scope.tex
+理由：标题描述已完成的编码与综合分析。
+原文：
+\subsection{Full-Text Coding and Reproducible Synthesis}
+现文：
+\subsection{Full-Text Coding and Synthesis}
+
+07. manuscript\sections\02-scope.tex
+理由：将内部文件导航改为编码方法，并在表 2 中直接列出对应引文。
+原文：
+A reference-role register makes this distinction explicit. Source identifiers S01--S39, claims, supporting passages and evaluation scope appear in \texttt{oal-study-mapping.csv}; the study register adds source versions, domain strata and retrieval links. Full-text PDFs are not redistributed.
+现文：
+Table~\ref{tab:reviews} identifies the coded study groups and their sources. For each study, extraction recorded the mechanism claim, supporting passage, source version and evaluation scope.
+
+08. manuscript\sections\02-scope.tex
+理由：直接描述对歧义和样本选择实施的分析，删除内部日志导航。
+原文：
+A decision log documents ambiguous object assignments, prototype scope and application/data mismatches. Sensitivity analyses test the effects of domain balance, study inclusion, identity and evidence-profile coding, and removal of individual studies
+现文：
+Sensitivity analyses test the effects of domain balance, study inclusion, ambiguous identity assignments, evidence-profile coding, application/data mismatches, and removal of individual studies
+
+09. manuscript\sections\04-landscapes.tex
+理由：删除对未提交记录的指引；各组引文直接置于本表。
+原文：
+Identifiers match the supplementary records.
+现文：
+[删除]
+
+10. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& UAV identity/authentication/acquisition &
+现文：
+& UAV identity/authentication/acquisition \citep{han2022identity,tan2022blockchain,karmakar2024blockchain,islam2019bus} &
+
+11. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Underwater trust and P2P reputation &
+现文：
+& Underwater trust and P2P reputation \citep{jiang2020dynamic,arifeen2020hidden,kamvar2003eigentrust} &
+
+12. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Fabric, sensing records, Hadoop provenance &
+现文：
+& Fabric, sensing records, Hadoop provenance \citep{androulaki2018hyperledger,hang2019design,honarpajooh2021iot} &
+
+13. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Attestation and autonomous IoT security &
+现文：
+& Attestation and autonomous IoT security \citep{hardjono2021towards,ott2023universal,figueiredo2022arcadian,baciu2025secure} &
+
+14. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Food/health provenance and access control &
+现文：
+& Food/health provenance and access control \citep{khan2020iot,rahman2020secure,liu2020fabric} &
+
+15. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Decision provenance and digital twins &
+现文：
+& Decision provenance and digital twins \citep{singh2019decision,suhail2022trustworthy} &
+
+16. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& GNSS and multi-view observation appraisal &
+现文：
+& GNSS and multi-view observation appraisal \citep{shafique2021detecting,dang2022deep,semanjski2020use,liu2022trusted} &
+
+17. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Visual corroboration, UAV reports, fog offloading &
+现文：
+& Visual corroboration, UAV reports, fog offloading \citep{varshosaz2019spoofing,garcamagario2019security,alkhafajiy2020comitment} &
+
+18. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Maritime AIS provenance and message protection &
+现文：
+& Maritime AIS provenance and message protection \citep{maritime2022monitoring,kessler2020protected,goudossis2022secais} &
+
+19. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& UAV reputation, governance and routing &
+现文：
+& UAV reputation, governance and routing \citep{hierarchical2023trust,yang2023trusted,barka2022towards} &
+
+20. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Underwater signcryption, routing and FL &
+现文：
+& Underwater signcryption, routing and FL \citep{zhang2026underwater,eetauv2025trust,tafl2026underwater} &
+
+21. manuscript\sections\04-landscapes.tex
+理由：表 2 直接标明该组研究的文献来源。
+原文：
+& Generic consensus comparators &
+现文：
+& Generic consensus comparators \citep{hotstuff2019,narwhal2022,raft2014,pbft1999} &
+
+22. manuscript\sections\05-oal.tex
+理由：描述实际核对步骤，避免声称随文提供外部记录。
+原文：
+Source versions, evaluation settings and claim locators accompany every study so that these distinctions remain inspectable.
+现文：
+Each claim was checked against its supporting passage and evaluation setting.
+
+23. manuscript\sections\07-blockchain.tex
+理由：表 9 自身给出需求与共识机制比较，删除外部 CSV 交付声明。
+原文：
+ The full requirement matrix is supplied as CSV.
+现文：
+[删除]
+
+24. manuscript\sections\07-blockchain.tex
+理由：本节已给出状态模型及四项确定性操作，删除未随稿上传的伪代码附件指引。
+原文：
+ Pseudocode is provided in the supplementary protocol specification.
+现文：
+[删除]
+
+25. manuscript\sections\07-blockchain.tex
+理由：将支撑 154 字节计算所需的字段宽度直接写入正文。
+原文：
+A 154-byte fixed-width source body binds type/version, mission/producer identifiers, sequence and event bounds, authority epoch, and policy, payload, and parent/root hashes; the supplementary protocol specifies each field width.
+现文：
+The fixed-width source body contains one byte each for version and type, two 16-byte mission/producer identifiers, four-byte sequence and authority-epoch fields, two eight-byte event-time bounds, and three 32-byte hashes for policy, payload and parent/root. These fields total 154 bytes.
+
+26. manuscript\sections\07-blockchain.tex
+理由：将“已发布编码”改为文内可查的编码定义。
+原文：
+All sizes are computed from the released encoding;
+现文：
+All sizes are computed from the encoding in Section~\ref{sec:pattern};
+
+27. manuscript\sections\07-blockchain.tex
+理由：将 63 个参数组合的三个取值集合直接写入正文，保持计算条件不变。
+原文：
+The partition sensitivity calculation covers 63 combinations of validator count (4, 7, 10), quorum availability, and partition duration, listed in the supplementary sensitivity grid.
+现文：
+The partition sensitivity calculation covers 63 configurations: validator counts of 4, 7 and 10; responsive counts of quorum minus one, quorum and all validators; and partition durations of 0, 10, 30, 58, 59, 60 and 120 s.
+
+28. manuscript\sections\08-evaluation.tex
+理由：直接指向文内敏感性分析，删除已发布声明。
+原文：
+Treating that experiment as L3 only is a released sensitivity variant.
+现文：
+Treating that experiment as L3 only is evaluated as a sensitivity variant in Section~\ref{sec:sensitivity}.
+
+29. manuscript\sections\08-evaluation.tex
+理由：删除附件清单；实际映射、敏感性分析、回放和计算已在相应章节陈述。
+原文：
+ The supplementary materials contain the data, protocol specification, and scripts used for the mapping, sensitivity analyses, and synthetic replay.
+现文：
+[删除]
+
+30. manuscript\sections\10-limitations.tex
+理由：保留可获得性选择偏差及单次编码局限，删除内部候选补找和记录保存过程。
+原文：
+The 39-study analytical sample is purposive and availability-dependent. Ten original mechanism candidates remain outside coding because their full-text evaluations could not be sufficiently inspected. The original discovery records do not preserve all historical rejection decisions, and the extraction has no independent inter-rater estimate.
+现文：
+The 39-study analytical sample is purposively selected from studies with inspectable full texts and evaluations. Coverage depends on the search and access conditions, and the extraction has no independent inter-rater estimate.
+
+三、回复修改（审稿人 1：6 段；审稿人 2：16 段）
+
+01. 审稿人 1，段落索引 2（从 0 计）
+原文：
+Thank you for reviewing the manuscript. The revision applies OAL to a disclosed full-text sample, adds a partition–revocation–reconciliation case and a specified ledger application, strengthens the witnessed-log comparison and consensus selection, and consolidates the discussion. Section, table and figure references below refer to the revised manuscript.
+现文：
+Thank you for reviewing the manuscript. We have applied OAL to 39 full-text mechanism studies, added a partition–revocation–reconciliation case and a specified ledger application, strengthened the witnessed-log comparison and consensus selection, and consolidated the discussion. Section, table and figure references below refer to the revised manuscript.
+
+02. 审稿人 1，段落索引 24（从 0 计）
+原文：
+OAL is applied to 39 full-text mechanism studies through 89 scoped claim records. Section 2 distinguishes the 19 domain-focused studies, 20 transferable mechanisms and the 123-reference bibliography. Table 2 identifies the study groups; Figure 3 retains the original framework schematic beside the populated heatmap. Section 5.3 and Table 5 compare what AIS protection, observation corroboration, attestation, trust-aware routing and consensus actually support, and specify the evidence required at the next handover. Section 5.4 and Table 6 report domain stratification, exclusions and coding sensitivity, with all 39 leave-one-out results released. The supplements provide study versions, retrieval links, claim locators, reference roles and coding decisions. Four of the 14 previously uncoded original candidates were recovered; ten remain incompletely accessible. Zero cells describe this sample, while the physical UAV-node experiment is identified as a bounded positive precedent.
+现文：
+OAL is applied to 39 full-text mechanism studies through 89 scoped claim records. Section 2 distinguishes the 19 domain-focused studies, 20 transferable mechanisms and the 123-reference bibliography. Table 2 identifies the study groups and their sources; Figure 3 presents the framework schematic beside the populated heatmap. Section 5.3 and Table 5 compare what AIS protection, observation corroboration, attestation, trust-aware routing and consensus support, and specify the evidence required at the next handover. Section 5.4 and Table 6 report domain stratification, study-exclusion and coding sensitivity, and the results of removing each of the 39 studies in turn. Zero cells denote no coded claim in this sample. The physical UAV-node experiment is identified as evidence of cooperation and path adaptation under its stated operating conditions.
+
+03. 审稿人 1，段落索引 25（从 0 计）
+原文：
+Section 6.4 replaces the previous freshness/lineage example with a coalition mission that loses its gateway connection, commits a shore-side key revocation, and reconciles records after reconnection. Event intervals before, overlapping and after the effective revocation time lead to historical eligibility, quarantine and rejection, respectively. The example distinguishes locally available delegation from global authority learned later. Table 8 compares these outcomes with a mean-score policy and a veto-aware scalar policy using the same features.
+现文：
+Section 6.4 presents a coalition mission that loses its gateway connection, commits a shore-side key revocation, and reconciles records after reconnection. Event intervals before, overlapping and after the effective revocation time lead to historical eligibility, quarantine and rejection, respectively. The example distinguishes locally available delegation from global authority learned later. Table 8 compares these outcomes with a mean-score policy and a veto-aware scalar policy using the same features.
+
+04. 审稿人 1，段落索引 26（从 0 计）
+原文：
+Sections 7.2–7.4 specify the participating organizations, peer/orderer placement, joint endorsement policy, state keys, deterministic chaincode operations, receipt verification and communication budget. The supplied replay executes signature and Merkle checks, arrival-order and duplicate-delivery checks, and all coalition signer subsets. It also computes exact application-message sizes and an explicitly assumed partition/deadline sensitivity. This is reproducible analytical validation of the stated rules; it is not reported as a Fabric deployment, consensus benchmark or integrated sea trial.
+现文：
+Sections 7.2–7.4 specify the participating organizations, peer/orderer placement, joint endorsement policy, state keys, deterministic chaincode operations, receipt verification and communication budget. We executed a synthetic replay that checks signatures, Merkle inclusion, arrival-order and duplicate-delivery handling, and all 16 coalition signer subsets. We also calculated application-message sizes from the stated encoding and examined partition/deadline sensitivity under declared delay assumptions. These analyses test the specified rules and payload requirements; they do not measure Fabric deployment, consensus or integrated sea-trial performance.
+
+05. 审稿人 1，段落索引 27（从 0 计）
+原文：
+We also sharpened the title’s intended blockchain scope in the abstract and Sections 7.1 and 11. The ledger contributes to jointly governed commitments, policy state and reconciliation. A policy-validating witnessed log produces the same decisions under matched rules; the revised text therefore confines ledger value to particular governance conditions and implementation requirements. These changes connect the blockchain-assisted framing to a concrete design without extending the evidence to untested mission performance.
+现文：
+The abstract and Sections 7.1 and 11 state the ledger’s role in jointly governed commitments, policy state and reconciliation. A policy-validating witnessed log produces the same decisions under matched rules. Ledger value is therefore conditional on governance requirements and implementation cost. The coalition case connects this role to specific authorization rules and recovery operations.
+
+06. 审稿人 1，段落索引 32（从 0 计）
+原文：
+The revised manuscript and supplement distinguish completed analytical checks from proposed implementation and field evaluation. The manuscript remains anonymous.
+现文：
+The analytical results concern literature coding, deterministic policy checks and application-byte calculations. Fabric deployment and integrated mission trials are proposed validation steps.
+
+07. 审稿人 2，段落索引 2（从 0 计）
+原文：
+Thank you for reviewing the manuscript. The revision applies OAL to a disclosed full-text sample, adds a partition–revocation–reconciliation case and a specified ledger application, strengthens the witnessed-log comparison and consensus selection, and consolidates the discussion. Section, table and figure references below refer to the revised manuscript.
+现文：
+Thank you for reviewing the manuscript. We have applied OAL to 39 full-text mechanism studies, added a partition–revocation–reconciliation case and a specified ledger application, strengthened the witnessed-log comparison and consensus selection, and consolidated the discussion. Section, table and figure references below refer to the revised manuscript.
+
+08. 审稿人 2，段落索引 23（从 0 计）
+原文：
+Response 1: We added Section 2.1, “Identification and Selection”, and Section 2.2, “Full-Text Coding and Reproducible Synthesis”. The methods identify OpenAlex, the original retrieval date, the 32 English queries, the 2016 onward date filter, the top-25 retrieval limit per query and DOI/OpenAlex deduplication. The retained candidate file contains 571 records. The text distinguishes this discovery set from the original 141-reference bibliography, and describes citation following, targeted official-source retrieval and the relevance criteria.
+现文：
+Response 1: We added Section 2.1, “Identification and Selection”, and Section 2.2, “Full-Text Coding and Synthesis”. The methods identify OpenAlex, the retrieval date of 6 August 2026, 32 English queries, the date filter beginning on 1 January 2016, the top-25 retrieval limit per query, and DOI/OpenAlex deduplication, which yielded 571 candidate records. Section 2.1 gives example search strings, relevance criteria, and the roles of citation following and targeted publisher, author-repository and official-source retrieval.
+
+09. 审稿人 2，段落索引 24（从 0 计）
+原文：
+The supplements provide the original query list, all original-citation dispositions and an expansion register. Targeted checks through 25 October 2026 revisited the 14 previously uncoded original candidates, recovered four, and added eight domain studies plus four already cited consensus comparators. Ten original candidates remained unavailable or only partly inspectable. Section 2 separates these access outcomes from scientific eligibility and distinguishes the final 39-study analytical sample from the 123-reference bibliography. Historical rejection decisions and search rankings were not fully retained; no retrospective systematic-screening flow is reconstructed. Coding remains a single extraction process with source checks and explicit sensitivity analyses.
+现文：
+Targeted retrieval covered developments through 25 October 2026. Section 2 distinguishes the final 39-study analytical sample from the 123-reference bibliography: 19 studies address UAV, maritime AIS or underwater applications, 20 provide transferable mechanisms, and the remaining 84 references support context, foundations, standards or evaluation resources. Coding records mechanism claims and their supporting passages and evaluation settings. Section 2 states the purposive selection design and single extraction process; Section 5.4 examines sensitivity to study inclusion and coding choices, and Section 10 discusses the resulting coverage and interpretation limits.
+
+10. 审稿人 2，段落索引 27（从 0 计）
+原文：
+Response 2: Figure 3 combines the original OAL schematic in panel (a) with a heatmap in panel (b), computed from 89 scoped claims across 39 full-text mechanism studies. Nineteen studies target UAV, maritime AIS or underwater applications; twenty supply transferable mechanisms. Each cell counts distinct studies for an exact object–assurance–stage association, and the L0–L5 summary permits overlapping forms. The study register distinguishes intended domain from actual evaluation setting. All 96 native Visio cell values are checked against the released CSV.
+现文：
+Response 2: Figure 3 combines the OAL schematic in panel (a) with a heatmap in panel (b), computed from 89 scoped claims across 39 full-text mechanism studies. Nineteen studies target UAV, maritime AIS or underwater applications; twenty supply transferable mechanisms. Each cell counts distinct studies for an exact object–assurance–stage association, and the L0–L5 summary permits overlapping evidence forms. Section 2 distinguishes intended application domain from actual evaluation setting, and Table 2 identifies the coded study groups and their sources.
+
+11. 审稿人 2，段落索引 29（从 0 计）
+原文：
+Section 5.4 and Table 6 report inclusion and coding sensitivity. Removing the four generic consensus papers leaves 35 studies, all 25 occupied cells and the same leading cell (D/G/F, 12 studies). The direct-domain stratum instead leads with E/G/A (six studies), making selection effects visible. Excluding conceptual-only work or the proxy-data study, varying entity/platform identity coding, and all 39 leave-one-out maps are reproducible. A conservative L3-only reading of the bounded physical experiment removes L4 without changing the heatmap. The 71 zero cells are not interpreted as 71 research gaps. The reference-role register distinguishes 39 coded mechanisms from 84 contextual/evaluation references, and Section 10 states availability and single-extraction limits.
+现文：
+Section 5.4 and Table 6 report inclusion and coding sensitivity. Removing the four generic consensus papers leaves 35 studies, all 25 occupied cells and the same leading cell (D/G/F, 12 studies). The direct-domain stratum instead leads with E/G/A (six studies). We also tested exclusion of conceptual-only work and the proxy-data study, alternative entity/platform identity coding, and removal of each study in turn. Across the 39 leave-one-out analyses, occupancy ranges from 23 to 25 cells and D/G/F remains the leading cell with 15–16 studies. A conservative L3-only classification of the physical-node experiment removes L4 without changing the heatmap. The 71 zero cells denote no coded claim in the sample, rather than 71 established research gaps. Section 10 states the selection and single-extraction limits.
+
+12. 审稿人 2，段落索引 35（从 0 计）
+原文：
+We adopt the stronger baseline requested in the comment. A consistency-only witness and a policy-validating witness provide different guarantees. With the same independent parties, authorization rule, epoch history and retention, a validating witnessed log can provide the same safety decisions as the modeled ledger. The replay shows this equality. The revised manuscript therefore makes no claim of inherent superiority over that baseline; implementation cost, availability and recovery determine the choice.
+现文：
+We adopt the stronger baseline requested in the comment. A consistency-only witness and a policy-validating witness provide different guarantees. With the same independent parties, authorization rule, epoch history and retention, a validating witnessed log can provide the same safety decisions as the modeled ledger. The replay shows this equality. The choice therefore depends on implementation cost, availability and recovery under the required governance conditions.
+
+13. 审稿人 2，段落索引 37（从 0 计）
+原文：
+Section 7.2 and Table 9 replace the illustrative protocol list with requirements for fault domains, partition behavior, a stated deadline, membership epochs, heterogeneous nodes, power and constrained-link traffic. The analysis considers Raft, classical/SmartBFT, HotStuff, CometBFT, authority-based, DAG-based and IoT-oriented designs, with a full supplementary requirement matrix. CometBFT is described by its round/vote/gossip protocol rather than equated with HotStuff. Narwhal dissemination and Tusk ordering are distinguished. The mapping leads to crash replication for a single operator, Byzantine ordering plus joint application validation (or an equivalent log) for the shore coalition, and local signed records with delayed reconciliation for a disconnected UUV group. Švarcmajer et al. is included as a requirement-driven selection reference.
+现文：
+Section 7.2 and Table 9 assess consensus mechanisms against requirements for fault domains, partition behavior, a stated deadline, membership epochs, heterogeneous nodes, power and constrained-link traffic. The analysis covers Raft, classical/SmartBFT, HotStuff, CometBFT, authority-based, DAG-based and IoT-oriented designs. CometBFT is described by its round/vote/gossip protocol, and Narwhal dissemination is distinguished from Tusk ordering. The mapping leads to crash replication for a single operator, Byzantine ordering plus joint application validation (or an equivalent log) for the shore coalition, and local signed records with delayed reconciliation for a disconnected UUV group. Švarcmajer et al. is included as a requirement-driven selection reference.
+
+14. 审稿人 2，段落索引 46（从 0 计）
+原文：
+The pattern defines state keys and deterministic CommitBatch, JudgeRecord, UpdatePolicy and RevokeKey operations, including read-set validation, idempotent retry, historical key state, event-time revocation and preserved audit judgments. The supplementary specification gives the encoding and pseudocode. The binary source body is 154 bytes, the signed Ed25519 record 218 bytes, and a signed ten-record batch commitment 220 bytes. The released canonical JSON example is 525 application bytes.
+现文：
+The pattern defines state keys and deterministic CommitBatch, JudgeRecord, UpdatePolicy and RevokeKey operations, including read-set validation, idempotent retry, historical key state, event-time revocation and preserved audit judgments. Section 7.3 gives the source-body fields and their widths, totaling 154 bytes. Adding an Ed25519 signature produces a 218-byte record; a signed ten-record batch commitment occupies 220 bytes. We also calculated 525 application bytes for the canonical JSON gateway payload.
+
+15. 审稿人 2，段落索引 48（从 0 计）
+原文：
+Section 7.4 and Table 11 calculate payload serialization at 100, 1000 and 5000 bit/s, including Ed25519 and ML-DSA-44 signature lengths. At 100 bit/s, the 220-byte Ed25519 batch needs at least 17.60 s and the 2576-byte ML-DSA-44 batch 206.08 s; a source record with proof and three-signature receipt is 697 bytes. Propagation, retries, provisioning and transport overhead are identified separately. Full Fabric envelopes and measured deployment performance have not been produced in this revision; the paper reports exact application bytes and an implementable design, not an unmeasured transaction-size or throughput claim.
+现文：
+Section 7.4 and Table 11 calculate payload serialization at 100, 1000 and 5000 bit/s, including Ed25519 and ML-DSA-44 signature lengths. At 100 bit/s, the 220-byte Ed25519 batch needs at least 17.60 s and the 2576-byte ML-DSA-44 batch 206.08 s; a source record with proof and three-signature receipt is 697 bytes. Propagation, retries, provisioning and transport overhead are identified separately. These values describe application payloads. Full Fabric envelopes add configuration-dependent bytes, while deployment, consensus and acoustic performance require implementation measurements.
+
+16. 审稿人 2，段落索引 58（从 0 计）
+原文：
+Section 9.3 also adds IMO MSC.1/Circ.1604 and 1638, the MASS Code and DNV-CG-0264. The regulatory context is updated to the revision date: the non-mandatory MASS Code was adopted in May 2026 and took effect on 1 July 2026. Its applicability is tied to the actual vessel and operation rather than transferred wholesale to UAVs or underwater vehicles. These references support positioning and application requirements, not a claim of certification.
+现文：
+Section 9.3 also addresses IMO MSC.1/Circ.1604 and 1638, the MASS Code and DNV-CG-0264. The non-mandatory MASS Code was adopted in May 2026 and took effect on 1 July 2026. Its applicability is tied to the actual vessel and operation. These references identify the maritime context and application requirements; conformance requires assessment against the applicable instrument.
+
+17. 审稿人 2，段落索引 61（从 0 计）
+原文：
+Table 8 includes the requested scalar comparison. A mean of the same five features yields 0.99, 0.89 and 0.79 and accepts all three at a 0.75 threshold. A veto-aware scalar policy agrees with the structured rule on all outcomes. This stronger comparator avoids claiming that a scalar representation necessarily discards the relevant information.
+现文：
+Table 8 includes the requested scalar comparison. A mean of the same five features yields 0.99, 0.89 and 0.79 and accepts all three at a 0.75 threshold. A veto-aware scalar policy agrees with the structured rule on all outcomes. The result identifies enforcement of temporal authority as the condition that determines the decision.
+
+18. 审稿人 2，段落索引 62（从 0 计）
+原文：
+The supplementary script verifies the cryptographic bindings and rule checks, including six arrival orders with duplicate delivery and all 16 signer subsets. Sections 7.3–7.4 connect the replay to the specified ledger application and communication budget. Its scope is an executable synthetic illustration, not a Fabric or field-performance experiment.
+现文：
+We verified the cryptographic bindings and policy rules in a synthetic event replay, including six arrival orders with duplicate delivery and all 16 signer subsets. Sections 7.3–7.4 connect these checks to the specified ledger application and communication budget. The replay tests rule consistency and encoding; it does not measure Fabric or field performance.
+
+19. 审稿人 2，段落索引 68（从 0 计）
+原文：
+Response 8: The manuscript has been shortened from approximately 13,389 to 9,732 words using the same source-text counting procedure, a reduction of 27.3%. The estimate excludes the bibliography. The revision combines this reduction with the expanded full-text mapping, comparative synthesis and sensitivity analysis by consolidating repeated explanations and qualifications. The core OAL vocabulary and appraisal/decision distinction are retained.
+现文：
+Response 8: The manuscript has been shortened from approximately 13,389 to 9,570 words using the same source-text counting procedure, a reduction of 28.5%. The estimate excludes the bibliography. We consolidated repeated explanations and qualifications while retaining the full-text mapping, comparative synthesis and sensitivity analyses. The core OAL vocabulary and appraisal/decision distinction are retained.
+
+20. 审稿人 2，段落索引 76（从 0 计）
+原文：
+In Figure 7, the six photo-realistic illustrations have been replaced with text-and-box diagrams showing the inputs, reasoning or evaluation, and outputs associated with each evidence form. The six equal panels and category colors are retained. All diagram elements are native Visio text boxes and connecting arrows; no photographic, stock or generated-image assets are used. The editable Visio source, diagram-building script and PDF export script are supplied.
+现文：
+In Figure 7, the six photo-realistic illustrations have been replaced with text-and-box diagrams showing the inputs, reasoning or evaluation, and outputs associated with each evidence form. The six equal panels and category colors are retained. All diagram elements are native Visio text boxes and connecting arrows; no photographic, stock or generated-image assets are used.
+
+21. 审稿人 2，段落索引 77（从 0 计）
+原文：
+The bibliography has been checked and rebuilt with 123 cited entries. Mui et al. is dated 2002, the stray leading “1” is removed from the Kshetri title, and conference booktitles no longer duplicate the style-generated “Proceedings of”. The Fabric title and ARCADIAN-IoT print year are corrected. The Varshosaz article uses its 2020 journal issue while retaining its stable bibliography key. Newly added domain papers were checked against DOI metadata. The supplementary reference-role register identifies the 39 numerically coded studies; numbering follows the revised manuscript.
+现文：
+The bibliography contains 123 cited entries. Mui et al. is dated 2002, the stray leading “1” is removed from the Kshetri title, and conference booktitles no longer duplicate “Proceedings of”. The Fabric title and ARCADIAN-IoT print year are corrected. The Varshosaz article is cited by its 2020 journal issue. Section 2 and Table 2 identify the 39 studies used for numerical coding; the remaining references support context, foundations, standards and evaluation resources.
+
+22. 审稿人 2，段落索引 82（从 0 计）
+原文：
+The revised manuscript and supplement distinguish completed analytical checks from proposed implementation and field evaluation. The manuscript remains anonymous.
+现文：
+The analytical results concern literature coding, deterministic policy checks and application-byte calculations. Fabric deployment and integrated mission trials are proposed validation steps.
+
+四、排版与核验
+正文清稿 30 页；约 9,570 词，摘要 178 词；123 条参考文献均有实际引用，7 图、12 表，无未定义交叉引用或排版溢出警告。
+参考文献局部行距设为原来的 0.99，避免末条参考文献单独占页；正文和图件字号未改。Figure 5 在第 13 页与正文同页。
+全部 30 页正文已检查；表 2、Figure 5、编码段落和参考文献页另作放大检查。
+两份英文回复为 3/9 页，中英文对照版为 4/14 页；全部页面已视觉检查，后续排版修整后逐页比较并复查变化页。
+中文段落中的英文词与数字不再在词内断行；审稿人 2 的两处短意见标题与其下一项合并到同宽表格单元格，避免标题与正文分离。
+全部 116 组中英文段落顺序及英文内容核对通过；审稿原话与一般评价不变；每个 DOCX 只更新 word/document.xml，其余 26 个组件保留。
+原 7 个 PDF 图件、Visio、参考文献数据库和 30 个本地分析文件的 SHA-256 均与基线一致。
+58 文件源归档通过 CRC、明确清单、逐文件字节一致性和隔离编译输入一致性检查；不含临时文件或参考文献全文。
+
+当前文件：
+output/pdf/blockchain-mission-trust-review-content-refined.pdf
+output/blockchain-review-content-refined-source-20261025.zip
+review/revision-1/Response-to-Reviewer-1.docx
+review/revision-1/Response-to-Reviewer-2.docx
+review/revision-1/Response-to-Reviewer-1-EN-ZH.docx
+review/revision-1/Response-to-Reviewer-2-EN-ZH.docx

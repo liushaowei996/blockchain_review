@@ -21,25 +21,25 @@ Attestation supplies measured endpoint-state evidence. Architectural proposals d
 The coded UAV studies combine authenticated identities or data acquisition with ledger state \citep{han2022identity,tan2022blockchain,karmakar2024blockchain,islam2019bus}. Fabric provides an implemented execute--order--validate architecture \citep{androulaki2018hyperledger}; IoT platforms apply it to sensing-record integrity, off-chain provenance, and access policy \citep{hang2019design,honarpajooh2021iot,liu2020fabric}. Food, health, and digital-twin studies extend these patterns to forecasting, federated learning, and lifecycle coordination \citep{khan2020iot,rahman2020secure,suhail2022trustworthy}. Their recorded mechanisms and evaluation settings are summarized in Table~\ref{tab:reviews} and mapped in Section~\ref{sec:oal}.
 
 \begin{table}[!htb]
-\caption{The 39 coded studies and their principal evidence scope. Identifiers match the supplementary records. Profiles apply to scoped claims and may overlap within a study.\label{tab:reviews}}
+\caption{The 39 coded studies and their principal evidence scope. Profiles apply to scoped claims and may overlap within a study.\label{tab:reviews}}
 \begin{adjustwidth}{-\extralength}{0cm}
 \small
 \begin{tabularx}{\fulllength}{@{}P{25mm}P{46mm}P{24mm}Y@{}}
 \toprule
 \textbf{Identifiers} & \textbf{Mechanism focus} & \textbf{Profiles} & \textbf{Evaluation scope}\\
 \midrule
-S01--S04 & UAV identity/authentication/acquisition & L1, L2, L3 & Security analysis, simulation and implemented components; BUS includes UAV and IoT hardware\\
-S05--S07 & Underwater trust and P2P reputation & L1/L2 & Network or numerical evaluation and peer-selection simulation\\
-S08--S10 & Fabric, sensing records, Hadoop provenance & L3 & Server and embedded-device prototypes; record processing and retrieval\\
-S11--S14 & Attestation and autonomous IoT security & L0 or L3 & Two architectural contributions; two implemented attestation studies\\
-S15--S17 & Food/health provenance and access control & L2 and/or L3 & Forecasting, FL applications and controlled access-policy requests\\
-S18--S19 & Decision provenance and digital twins & L0 & Conceptual data-flow and lifecycle architectures\\
-S20--S23 & GNSS and multi-view observation appraisal & L1/L2 & Signal/learning experiments, recorded data and aggregation analysis\\
-S24--S26 & Visual corroboration, UAV reports, fog offloading & L0/L2 & Recorded trajectories, agent simulation and modeled partner/resource selection\\
-S27--S29 & Maritime AIS provenance and message protection & L3 & Receiver/ledger benchmark and two software protection demonstrations\\
-S30--S31, S39 & UAV reputation, governance and routing & L0/L2/L3/L4 & Simulated trust updates; S31 includes a physical UAV-node experiment and a separate container testbed\\
-S32--S34 & Underwater signcryption, routing and FL & L1/L2/L3 & Desktop cryptography, simulated routing and terrestrial-data proxy learning\\
-S35--S38 & Generic consensus comparators & L1/L3 & Protocol reasoning and server/cloud prototypes; fault models and recovery paths differ\\
+S01--S04 & UAV identity/authentication/acquisition \citep{han2022identity,tan2022blockchain,karmakar2024blockchain,islam2019bus} & L1, L2, L3 & Security analysis, simulation and implemented components; BUS includes UAV and IoT hardware\\
+S05--S07 & Underwater trust and P2P reputation \citep{jiang2020dynamic,arifeen2020hidden,kamvar2003eigentrust} & L1/L2 & Network or numerical evaluation and peer-selection simulation\\
+S08--S10 & Fabric, sensing records, Hadoop provenance \citep{androulaki2018hyperledger,hang2019design,honarpajooh2021iot} & L3 & Server and embedded-device prototypes; record processing and retrieval\\
+S11--S14 & Attestation and autonomous IoT security \citep{hardjono2021towards,ott2023universal,figueiredo2022arcadian,baciu2025secure} & L0 or L3 & Two architectural contributions; two implemented attestation studies\\
+S15--S17 & Food/health provenance and access control \citep{khan2020iot,rahman2020secure,liu2020fabric} & L2 and/or L3 & Forecasting, FL applications and controlled access-policy requests\\
+S18--S19 & Decision provenance and digital twins \citep{singh2019decision,suhail2022trustworthy} & L0 & Conceptual data-flow and lifecycle architectures\\
+S20--S23 & GNSS and multi-view observation appraisal \citep{shafique2021detecting,dang2022deep,semanjski2020use,liu2022trusted} & L1/L2 & Signal/learning experiments, recorded data and aggregation analysis\\
+S24--S26 & Visual corroboration, UAV reports, fog offloading \citep{varshosaz2019spoofing,garcamagario2019security,alkhafajiy2020comitment} & L0/L2 & Recorded trajectories, agent simulation and modeled partner/resource selection\\
+S27--S29 & Maritime AIS provenance and message protection \citep{maritime2022monitoring,kessler2020protected,goudossis2022secais} & L3 & Receiver/ledger benchmark and two software protection demonstrations\\
+S30--S31, S39 & UAV reputation, governance and routing \citep{hierarchical2023trust,yang2023trusted,barka2022towards} & L0/L2/L3/L4 & Simulated trust updates; S31 includes a physical UAV-node experiment and a separate container testbed\\
+S32--S34 & Underwater signcryption, routing and FL \citep{zhang2026underwater,eetauv2025trust,tafl2026underwater} & L1/L2/L3 & Desktop cryptography, simulated routing and terrestrial-data proxy learning\\
+S35--S38 & Generic consensus comparators \citep{hotstuff2019,narwhal2022,raft2014,pbft1999} & L1/L3 & Protocol reasoning and server/cloud prototypes; fault models and recovery paths differ\\
 \bottomrule
 \end{tabularx}
 \end{adjustwidth}
