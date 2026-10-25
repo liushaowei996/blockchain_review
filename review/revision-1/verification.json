@@ -28,8 +28,8 @@
     "all 62 final manuscript pages visually inspected in rendered sheets; affected layouts and Figure 7 inspected at full size",
     "Figure 5 shares page 14 with CTG discussion and case text; Tables 2 and 9 also share pages with body text",
     "33 local prose edits recorded with original wording, issue, replacement and reason; scientific limitations and falsification conditions retained",
-    "reviewer 2 reply rendered with LibreOffice 26.8.0.3; all nine pages visually inspected; reviewer 1 unchanged from the preceding verified version",
-    "only paragraphs 68, 75 and 76 in reviewer 2 word/document.xml changed; comments, ratings and all other DOCX parts unchanged",
+    "both replies rendered with LibreOffice 26.8.0.3; all 12 final pages visually inspected",
+    "since comparison baseline f0cd73f, reviewer 1 paragraph 2 and reviewer 2 paragraphs 2, 68, 75 and 76 changed; comments, ratings and all other DOCX parts unchanged",
     "Figure 7 uses 47 native rectangles/text boxes and 12 straight connectors; no pictograms or raster images; native regeneration is byte-identical",
     "Figures 1 through 6 PDFs and other native Visio pages unchanged; original supplied Visio unchanged",
     "scientific CSV/JSON data and bibliography unchanged after Git line-ending normalization; prior numerical verification remains applicable",
@@ -38,8 +38,8 @@
   "files": {
     "output/pdf/blockchain-mission-trust-review-layout-refined.pdf": "3cc96282411ddfe818f09898ba9c8caa11a526b170d1cdb9234b73ea57b034e8",
     "output/pdf/blockchain-mission-trust-review-layout-refined-marked.pdf": "e3829def46d4ab1d4c94944d2c646f5044f184f1e5a6dcea4e4c524d43ac1060",
-    "review/revision-1/Response-to-Reviewer-1.docx": "3537879503214046e006493d486b9d8908ad443b89b76695612c522e459689f6",
-    "review/revision-1/Response-to-Reviewer-2.docx": "d51d3e960dd98a59df1f4b19e3daa3a693bc9cd121e01cff9436bbbf2f64d88c",
+    "review/revision-1/Response-to-Reviewer-1.docx": "bfd3fef26524ecb0fd3e492837c41f10e7674c8b55f205933f2764cdc1605dd3",
+    "review/revision-1/Response-to-Reviewer-2.docx": "97fdf7849434ebf9f607f210217055fb49ae3c3c15072dc809ab798d39a7d691",
     "output/blockchain-review-layout-refined-source-20261025.zip": "4fc8c40ea2cf5b29bedb67a9d0528e3e46b6dc40457626be17114bc7dd287c15",
     "manuscript/figures/Figures-revised.vsdx": "a5286258cf77bc22f3606a328778226699d29ee60e6f12635056855ac3b305db",
     "manuscript/figures/figure-07-evidence-maturity.pdf": "396fc1d18c9b3e44086527c2a6eb56e26484cde6c39d20b9f3f491c37a8a5a32",
@@ -189,7 +189,15 @@
     "native_heatmap_cells_checked": 96,
     "response_structural_checks": {
       "1": {
-        "unchanged_from_comparison_baseline": true
+        "modified_parts": [
+          "word/document.xml"
+        ],
+        "preserved_parts": 26,
+        "changed_paragraph_indices": [
+          2
+        ],
+        "black_comment_paragraphs_unchanged": true,
+        "general_evaluation_unchanged": true
       },
       "2": {
         "modified_parts": [
@@ -197,6 +205,7 @@
         ],
         "preserved_parts": 26,
         "changed_paragraph_indices": [
+          2,
           68,
           75,
           76
@@ -289,12 +298,12 @@
     "scientific_data_and_bibliography_unchanged_after_git_line_ending_normalization": true,
     "native_figure_7_regeneration_identical": true,
     "reviewer_2_updated_paragraphs": [
+      2,
       68,
       75,
       76
     ],
     "reviewer_2_comments_ratings_and_other_parts_unchanged": true,
-    "reviewer_1_unchanged": true,
     "table_pages": {
       "1": 4,
       "2": 8,
@@ -313,7 +322,11 @@
     "source_archive_crc_passed": true,
     "source_archive_manifest_and_source_bytes_match": true,
     "source_archive_isolated_build_bytes_match": true,
-    "anonymous_manuscript_metadata": true
+    "anonymous_manuscript_metadata": true,
+    "reviewer_1_updated_paragraphs": [
+      2
+    ],
+    "reviewer_1_comments_ratings_and_other_parts_unchanged": true
   },
   "comparison_baseline": "f0cd73f",
   "abstract_words": 164,
@@ -329,6 +342,42 @@
       "marked": 31,
       "reviewer_2": 9
     },
-    "reviewer_1": "Unchanged from the preceding three-page version already visually verified."
+    "reviewer_1": "Three-page response; summary wording subsequently updated and all pages visually verified."
+  },
+  "response_wording_update": {
+    "date": "2026-10-25",
+    "comparison_baseline": "b1c6e06",
+    "change": "Removed the sentence referring to accompanying clean and marked manuscripts from the summary of each reviewer response.",
+    "reviewers": {
+      "1": {
+        "changed_parts": [
+          "word/document.xml"
+        ],
+        "preserved_parts": 26,
+        "changed_paragraph_indices": [
+          2
+        ],
+        "all_other_paragraphs_unchanged": true,
+        "marked_version_references_absent": true,
+        "sha256": "bfd3fef26524ecb0fd3e492837c41f10e7674c8b55f205933f2764cdc1605dd3",
+        "rendered_pages": 3,
+        "all_pages_visually_inspected": true
+      },
+      "2": {
+        "changed_parts": [
+          "word/document.xml"
+        ],
+        "preserved_parts": 26,
+        "changed_paragraph_indices": [
+          2
+        ],
+        "all_other_paragraphs_unchanged": true,
+        "marked_version_references_absent": true,
+        "sha256": "97fdf7849434ebf9f607f210217055fb49ae3c3c15072dc809ab798d39a7d691",
+        "rendered_pages": 9,
+        "all_pages_visually_inspected": true
+      }
+    },
+    "manuscript_figures_and_submission_archive_unchanged": true
   }
 }
