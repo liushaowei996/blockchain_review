@@ -16,7 +16,7 @@ Traversal identifies claims for reassessment when a key, endpoint, model, or inp
 
 \subsection{Threats, Degradation, and Missing Evidence}
 
-An analysis statement records \emph{attacker or environmental cause; capability; affected object; propagation relation; mission consequence; control; residual uncertainty}. For example, a compromised USV can withhold UUV batches, delaying the consumer's evidence and audit; independent contacts and protected local counters may expose gaps after reconnection. Acoustic fading can create the same delivery symptom with a different cause. The response can restrict freshness-sensitive use while attribution remains unknown.
+An analysis statement identifies the attacker or environmental cause and relevant capability, then traces the affected object and propagation relation to a mission consequence. It also records controls and residual uncertainty. For example, a compromised USV can withhold UUV batches, delaying the consumer's evidence and audit; independent contacts and protected local counters may expose gaps after reconnection. Acoustic fading can create the same delivery symptom with a different cause. The response can restrict freshness-sensitive use while attribution remains unknown.
 
 \begin{table}[!htb]
 \caption{Cross-object analysis of selected failure paths.\label{tab:threats}}
@@ -35,7 +35,7 @@ Unavailable governance quorum & Shared policy to fresh global authority & Retain
 
 \subsection{The CTG Reasoning Loop}
 
-CTG organizes context, temporal state, and dependencies through evidence capture, reliability appraisal, object-state inference, dependency propagation, uncertainty expression, policy action, accountable audit, and operational feedback. Evidence capture includes binding verification; propagation identifies affected descendants for reassessment under an explicit inference rule. Figure~\ref{fig:ctg} depicts this information flow.
+CTG uses context, temporal state, and dependencies to guide appraisal and policy action through the eight-step loop in Figure~\ref{fig:ctg}. Evidence capture includes binding verification; propagation identifies affected descendants for reassessment under an explicit inference rule.
 
 \begin{figure}[!htb]
 \centering
@@ -43,7 +43,7 @@ CTG organizes context, temporal state, and dependencies through evidence capture
 \caption{CTG appraisal and action loop, with policy, temporal state, and dependency knowledge shared across its steps.\label{fig:ctg}}
 \end{figure}
 
-The loop is positioned within established architectures. MAPE-K separates monitoring, analysis, planning, execution, and shared knowledge \citep{kephart2003autonomic,ibm2005mapek}; CTG specializes that organization for claim appraisal, event/receipt-time separation, and dependency-triggered reassessment. The JDL fusion model distinguishes object, situation, impact, and process refinement \citep{steinberg1999jdl}; CTG adds an explicit record of which identity, provenance, governance, and temporal evidence supports reliance on those estimates.
+MAPE-K provides monitoring, analysis, planning, execution, and shared knowledge \citep{kephart2003autonomic,ibm2005mapek}. CTG applies these functions to claim appraisal, separates event time from receipt time, and triggers reassessment through recorded dependencies. The JDL fusion model distinguishes object, situation, impact, and process refinement \citep{steinberg1999jdl}. For these estimates, CTG records the identity, provenance, governance, and temporal evidence needed for a relying decision.
 
 Implementations can use Bayesian models, subjective logic, hidden-state inference, rules, or learned classifiers. Their outputs retain the named property, context, evidence lineage, uncertainty, and permitted use. Re-estimating trust after a change requires a specified update rule, rather than an arbitrary decrement along graph edges. A hard authorization condition can coexist with a graded quality estimate; the choice to make one condition non-compensable belongs to the mission policy.
 
@@ -70,4 +70,4 @@ The illustrative mean averages signature validity, observation quality, lineage,
 
 During disconnection, an action at 420 s can have restricted local authority under the cached envelope even though later audit identifies a conflict with effective global revocation; at 540 s the envelope has expired and the local policy denies the action. Reconciliation retains both the locally available authority and the later global judgment. Rewriting the old decision as if the vehicle had received the revocation at 240 s would erase this distinction.
 
-The supplied Python replay verifies Ed25519 signatures and Merkle inclusion, rejects altered records/proofs, checks all six arrival orders with duplicate delivery, and enumerates all 16 coalition signer subsets. The ledger-policy and validating-log decision functions agree throughout. The replay checks deterministic policy consistency for the synthetic events. Section~\ref{sec:pattern} specifies how the same application rules map to Fabric and how the constrained vehicle receives an auditable result.
+The synthetic replay verifies Ed25519 signatures and Merkle inclusion, rejects altered records/proofs, checks all six arrival orders with duplicate delivery, and enumerates all 16 coalition signer subsets. The ledger-policy and validating-log decision functions agree throughout. Section~\ref{sec:pattern} specifies how the same application rules map to Fabric and how the constrained vehicle receives an auditable result.

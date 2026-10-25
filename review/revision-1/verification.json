@@ -13,37 +13,43 @@
     "word/settings.xml"
   ],
   "libreoffice_version": "26.8.0.3",
-  "source_package_files": 59,
+  "source_package_files": 58,
   "full_text_studies": 39,
   "claim_records": 89,
   "original_mechanism_candidates_not_full_text_coded": 10,
   "word_estimates": {
     "before": 13389,
-    "after": 9936,
-    "reduction_percent": 25.8
+    "previous": 9936,
+    "after": 9732,
+    "reduction_percent": 27.3,
+    "this_round_reduction_words": 204
   },
   "validation": [
-    "static manuscript audit passed: 123 used/resolved references, seven figures and twelve tables",
-    "clean and marked builds passed from the isolated submission inputs; 31 pages each; no overfull boxes, oversized floats or unresolved references",
-    "all 62 final manuscript pages visually inspected in rendered sheets; affected layouts and Figure 7 inspected at full size",
-    "Figure 5 shares page 14 with CTG discussion and case text; Tables 2 and 9 also share pages with body text",
-    "33 local prose edits recorded with original wording, issue, replacement and reason; scientific limitations and falsification conditions retained",
-    "both replies rendered with LibreOffice 26.8.0.3; all 12 final pages visually inspected",
-    "since comparison baseline f0cd73f, reviewer 1 paragraph 2 and reviewer 2 paragraphs 2, 68, 75 and 76 changed; comments, ratings and all other DOCX parts unchanged",
-    "Figure 7 uses 47 native rectangles/text boxes and 12 straight connectors; no pictograms or raster images; native regeneration is byte-identical",
-    "Figures 1 through 6 PDFs and other native Visio pages unchanged; original supplied Visio unchanged",
-    "scientific CSV/JSON data and bibliography unchanged after Git line-ending normalization; prior numerical verification remains applicable",
-    "source archive CRC, explicit 59-file manifest, source-byte and isolated-build agreement checks passed; no full texts or temporary working files included"
+    "All 89 numbered writing-analysis items and the Top 15 repeats audited against source and the baseline PDF; five alleged layout defects not present.",
+    "40 localized edits address 43 listed items including three duplicate allegations; 41 items retained as necessary definitions, findings, methods or evidence limits.",
+    "Static manuscript audit passed: 9732 approximate words, 178-word abstract, 123 used/resolved references, seven figures and twelve tables.",
+    "Clean manuscript built from isolated submission inputs: 31 pages; no overfull boxes, oversized floats or unresolved references.",
+    "All 31 manuscript pages inspected in rendered sheets; pages 11, 12, 14, 20 and 25 additionally inspected at full size.",
+    "Figure 5 shares page 14 with CTG and case text; all seven figure PDFs and the native Visio file are unchanged.",
+    "Citations, section headings, labels, equations, figure environments and all twelve tables are unchanged; bibliography and all supplementary files match the baseline after line-ending normalization.",
+    "Synthetic replay rerun; all six CSV/JSON outputs reproduce. Encoding sizes, bandwidth calculations, grid size and discovery settings cross-checked.",
+    "Reviewer 2 response changes only the word count and reduction percentage in paragraph 68; all 26 other DOCX parts and all other paragraphs unchanged. Reviewer 1 response byte-identical.",
+    "Reviewer 2 DOCX rendered with the installed LibreOffice requested by the user; all nine final pages visually inspected at full size.",
+    "Source archive CRC, explicit 58-file manifest, source-byte and isolated-build agreement passed; no marked wrapper, full texts or temporary files included."
   ],
   "files": {
     "output/pdf/blockchain-mission-trust-review-layout-refined.pdf": "3cc96282411ddfe818f09898ba9c8caa11a526b170d1cdb9234b73ea57b034e8",
     "output/pdf/blockchain-mission-trust-review-layout-refined-marked.pdf": "e3829def46d4ab1d4c94944d2c646f5044f184f1e5a6dcea4e4c524d43ac1060",
     "review/revision-1/Response-to-Reviewer-1.docx": "bfd3fef26524ecb0fd3e492837c41f10e7674c8b55f205933f2764cdc1605dd3",
-    "review/revision-1/Response-to-Reviewer-2.docx": "97fdf7849434ebf9f607f210217055fb49ae3c3c15072dc809ab798d39a7d691",
+    "review/revision-1/Response-to-Reviewer-2.docx": "9b31d0c76e4868e62077b231cf27d3f645bc2c2409c7f0625e6cf74785ff9008",
     "output/blockchain-review-layout-refined-source-20261025.zip": "4fc8c40ea2cf5b29bedb67a9d0528e3e46b6dc40457626be17114bc7dd287c15",
     "manuscript/figures/Figures-revised.vsdx": "a5286258cf77bc22f3606a328778226699d29ee60e6f12635056855ac3b305db",
     "manuscript/figures/figure-07-evidence-maturity.pdf": "396fc1d18c9b3e44086527c2a6eb56e26484cde6c39d20b9f3f491c37a8a5a32",
-    "review/revision-1/writing-audit-20261025.txt": "52a504a54390f6ffaf49ade57e27026057ad4ab675a728ca6dcdc95664c8c188"
+    "review/revision-1/writing-audit-20261025.txt": "52a504a54390f6ffaf49ade57e27026057ad4ab675a728ca6dcdc95664c8c188",
+    "manuscript/main.pdf": "fd460160e7c725314306178f10b39a3bffe9b8ae5f12c2e11a12940ee46d6317",
+    "output/pdf/blockchain-mission-trust-review-writing-checked.pdf": "fd460160e7c725314306178f10b39a3bffe9b8ae5f12c2e11a12940ee46d6317",
+    "output/blockchain-review-writing-checked-source-20261025.zip": "fa3b287df8d22babe8de0b7372fe1a021303e69a208755ec0c8a8b5de64dad3e",
+    "review/revision-1/ai-writing-audit-20261025.txt": "b359bf453903ccfc0c12ddb859392783160676b8717728d27f7673e9332c8b7f"
   },
   "general_evaluation": {
     "updated_on": "2026-10-22",
@@ -231,7 +237,7 @@
       "straight_connectors": 12
     }
   },
-  "revision_focus": "Layout, direct evidence-based writing and Figure 7 text-and-box schematic",
+  "revision_focus": "Item-by-item writing audit, local prose edits, clean manuscript and synchronized response word count",
   "bibliography_references": 123,
   "direct_domain_studies": 19,
   "transferable_studies": 20,
@@ -328,8 +334,8 @@
     ],
     "reviewer_1_comments_ratings_and_other_parts_unchanged": true
   },
-  "comparison_baseline": "f0cd73f",
-  "abstract_words": 164,
+  "comparison_baseline": "2953d4d",
+  "abstract_words": 178,
   "layout_writing_revision": {
     "writing_edits": 33,
     "audit": "review/revision-1/writing-audit-20261025.txt",
@@ -379,5 +385,164 @@
       }
     },
     "manuscript_figures_and_submission_archive_unchanged": true
+  },
+  "marked_manuscript_status": "Historical 31-page version retained; not regenerated or included in the current submission package.",
+  "current_artifacts": {
+    "clean_manuscript": "output/pdf/blockchain-mission-trust-review-writing-checked.pdf",
+    "source_package": "output/blockchain-review-writing-checked-source-20261025.zip",
+    "writing_audit": "review/revision-1/ai-writing-audit-20261025.txt",
+    "reviewer_responses": [
+      "review/revision-1/Response-to-Reviewer-1.docx",
+      "review/revision-1/Response-to-Reviewer-2.docx"
+    ]
+  },
+  "ai_writing_revision": {
+    "date": "2026-10-25",
+    "comparison_baseline": "2953d4d",
+    "input": "review/AI写作痕迹分析.md",
+    "input_sha256": "b6fad5af7decc4e15fea1c932493bb6608a05e36cd702a192fc14f91d9265029",
+    "baseline_pdf_sha256": "3cc96282411ddfe818f09898ba9c8caa11a526b170d1cdb9234b73ea57b034e8",
+    "audited_numbered_items": 89,
+    "layout_claims_not_present": 5,
+    "retained_items": 41,
+    "items_addressed_by_prose_edits": 43,
+    "duplicate_item_groups": [
+      [
+        24,
+        41
+      ],
+      [
+        53,
+        81
+      ],
+      [
+        58,
+        82
+      ]
+    ],
+    "local_edits": 40,
+    "numerical_checks": {
+      "queries": 32,
+      "discovery_records": 571,
+      "record_body_bytes": 154,
+      "json_bytes_excluding_newline": 525,
+      "downlink_bytes": 697,
+      "mean_bit_rates": [
+        29.3,
+        290.7,
+        343.5
+      ],
+      "sensitivity_combinations": 63,
+      "reproduced_outputs": [
+        "communication-budget.csv",
+        "endorsement-results.csv",
+        "example-batch.json",
+        "partition-sensitivity.csv",
+        "replay-summary.json",
+        "trace-results.csv"
+      ]
+    },
+    "unchanged_scientific_files": [
+      "manuscript/figures/figure-01-reference-architecture.pdf",
+      "manuscript/figures/figure-02-assurance-chain.pdf",
+      "manuscript/figures/figure-03-oal-framework.pdf",
+      "manuscript/figures/figure-04-dependency-threat.pdf",
+      "manuscript/figures/figure-05-ctg-reasoning-loop.pdf",
+      "manuscript/figures/figure-06-blockchain-boundary.pdf",
+      "manuscript/figures/figure-07-evidence-maturity.pdf",
+      "manuscript/figures/Figures-revised.vsdx",
+      "manuscript/references.bib",
+      "manuscript/supplementary/analyze_oal.py",
+      "manuscript/supplementary/build_figures.py",
+      "manuscript/supplementary/CODEBOOK.md",
+      "manuscript/supplementary/CODING-DECISIONS.md",
+      "manuscript/supplementary/communication-budget.csv",
+      "manuscript/supplementary/consensus-requirements.csv",
+      "manuscript/supplementary/current-reference-roles.csv",
+      "manuscript/supplementary/endorsement-results.csv",
+      "manuscript/supplementary/example-batch.json",
+      "manuscript/supplementary/expansion-screening.csv",
+      "manuscript/supplementary/export_visio_figures.ps1",
+      "manuscript/supplementary/mapping-summary.json",
+      "manuscript/supplementary/oal-analysis-summary.json",
+      "manuscript/supplementary/oal-cell-counts.csv",
+      "manuscript/supplementary/oal-layer-cooccurrence.csv",
+      "manuscript/supplementary/oal-leave-one-out.csv",
+      "manuscript/supplementary/oal-sensitivity.csv",
+      "manuscript/supplementary/oal-study-mapping.csv",
+      "manuscript/supplementary/oal-study-register.csv",
+      "manuscript/supplementary/original-citation-disposition.csv",
+      "manuscript/supplementary/partition-sensitivity.csv",
+      "manuscript/supplementary/protocol-specification.txt",
+      "manuscript/supplementary/replay-summary.json",
+      "manuscript/supplementary/replay_case.py",
+      "manuscript/supplementary/search-expansion-20261025.txt",
+      "manuscript/supplementary/search-queries.txt",
+      "manuscript/supplementary/trace-results.csv",
+      "manuscript/supplementary/update_evidence_visio.py",
+      "manuscript/supplementary/update_oal_visio.ps1",
+      "manuscript/supplementary/update_oal_visio.py"
+    ],
+    "figure_pages": {
+      "1": 5,
+      "2": 6,
+      "3": 10,
+      "4": 13,
+      "5": 14,
+      "6": 16,
+      "7": 20
+    },
+    "table_pages": {
+      "1": 4,
+      "2": 8,
+      "3": 8,
+      "4": 9,
+      "5": 11,
+      "6": 12,
+      "7": 13,
+      "8": 15,
+      "9": 17,
+      "10": 18,
+      "11": 20,
+      "12": 21
+    },
+    "reviewer_2_update": {
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "unchanged_parts": 26,
+      "changed_paragraph_indices": [
+        68
+      ],
+      "before": "Response 8: The manuscript has been shortened from approximately 13,389 to 9,936 words using the same source-text counting procedure, a reduction of 25.8%. The estimate excludes the bibliography. The revision combines this reduction with the expanded full-text mapping, comparative synthesis and sensitivity analysis by consolidating repeated explanations and qualifications. The core OAL vocabulary and appraisal/decision distinction are retained.",
+      "after": "Response 8: The manuscript has been shortened from approximately 13,389 to 9,732 words using the same source-text counting procedure, a reduction of 27.3%. The estimate excludes the bibliography. The revision combines this reduction with the expanded full-text mapping, comparative synthesis and sensitivity analysis by consolidating repeated explanations and qualifications. The core OAL vocabulary and appraisal/decision distinction are retained.",
+      "all_other_paragraphs_unchanged": true,
+      "sha256": "9b31d0c76e4868e62077b231cf27d3f645bc2c2409c7f0625e6cf74785ff9008"
+    },
+    "reviewer_1_unchanged": true,
+    "baseline_visual_pages": [
+      8,
+      11,
+      12,
+      13,
+      14,
+      21,
+      26
+    ],
+    "final_manuscript_pages_visually_checked": 31,
+    "full_size_final_manuscript_pages": [
+      11,
+      12,
+      14,
+      20,
+      25
+    ],
+    "reviewer_2_pages_visually_checked": 9,
+    "source_package_files": 58,
+    "source_package_matches_isolated_build": true,
+    "official_date_sources": [
+      "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-adopts-mass-code.aspx",
+      "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+    ]
   }
 }

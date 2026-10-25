@@ -16,7 +16,7 @@ A USV may simultaneously relay acoustic traffic, cache data, provide time, and h
 \end{adjustwidth}
 \end{figure}
 
-Raw imagery, sonar, detailed telemetry, and attestation evidence remain encrypted off chain. Shared records contain commitments, membership, policy/model versions, revocations, and audit judgments. Delay-tolerant forwarding can use Bundle Protocol version 7 and BPSec integrity/confidentiality services \citep{rfc9171,rfc9172}. Store-and-forward delivery preserves messages across contacts; authority expiry and evidence-age policy are separate application rules. A successfully delivered old command is not thereby timely.
+Raw imagery, sonar, detailed telemetry, and attestation evidence remain encrypted off chain. Shared records contain commitments, membership, policy/model versions, revocations, and audit judgments. Delay-tolerant forwarding can use Bundle Protocol version 7 and BPSec integrity/confidentiality services \citep{rfc9171,rfc9172}. Store-and-forward delivery preserves messages across contacts; authority expiry and evidence-age policy are separate application rules.
 
 \subsection{Mission Trust and the Relying Decision}
 
@@ -45,4 +45,4 @@ Observation validity concerns correspondence with the physical world. Commitment
 \end{adjustwidth}
 \end{figure}
 
-A signature can remain valid after key theft; an accurate observation can become stale; and a consistent record can contain an erroneous sensor assertion. RATS appraisals support scoped measured-state claims \citep{birkholz2023remote}, while physical diagnostics and corroboration support observation claims. The relying policy composes the applicable results, with explicit responses to failed or unknown requirements.
+A forged observation signed with a stolen key can pass signature verification. RATS appraisals support scoped measured-state claims \citep{birkholz2023remote}, while physical diagnostics and corroboration support observation claims. The relying policy composes the applicable results, with explicit responses to failed or unknown requirements.

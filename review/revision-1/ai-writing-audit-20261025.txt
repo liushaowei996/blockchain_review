@@ -1,0 +1,952 @@
+AI 写作痕迹分析：逐条核对与局部修改记录
+核查日期：2026-10-25
+核查基线：Git 2953d4d；manuscript/main.tex 及 sections；31 页清稿 blockchain-mission-trust-review-layout-refined.pdf。
+基线 PDF SHA-256：3cc96282411ddfe818f09898ba9c8caa11a526b170d1cdb9234b73ea57b034e8
+输入：review/AI写作痕迹分析.md（用户原文件未修改）。以下源文件行号均对应修改前基线，避免分页变化影响追踪。
+
+核对结论
+分析文件的 89 个编号全部逐条核对：5 条所称排版缺陷在当前稿中未发现；41 条保留；43 条涉及措辞精简或明确。43 条含 24/41、53/81、58/82 三组重复指控，对应 40 处局部编辑。
+“保留”表示该信息有定义、证据或解释作用；“调整”不等于确认 AI 生成，也不等于原文事实错误。句式、分号、定义、附件引用或小数位本身不能证明作者身份或生成来源。
+采用 anti-defensive-writing-skill 的最小修改原则：保留证据边界与科学上必要的否定，删除重复总结、过程叙述，拆分负担较重的长句。
+原有七幅图、Visio 源文件、123 条参考文献、39 篇研究和 89 条记录、案例事件及结果、敏感性数据均保持不变。
+源码统一口径字数由约 9,936 降至 9,732，减少 204 词（约 2.1%）；相对原稿 13,389 词减少 27.3%。摘要为 178 词。
+
+逐条核对
+
+1. 分析原定位：页26 Conclusions 整段重复
+核对位置：manuscript/sections/11-conclusions.tex:5
+分析所引原文：
+  “The partition-revocation case specifies coalition roles, a Fabric-oriented application pattern, constrained verification, and a reproducible communication budget. Its executable replay preserves the distinction between local authority, event-time revocation, and later audit. A policy-validating witnessed log produces the same decisions under matched rules. Ledger value is therefore conditional on shared-governance requirements and the measured cost of implementing them.”
+判断：未发现所称排版缺陷
+依据：未发现所称整段重复。基线源文件结论节该段仅一处，基线 PDF 第 26 页也只出现一次；保留这段案例与基线结果的结论。
+处理：正文不修改。
+
+2. 分析原定位：页26 结论开头格式异常
+核对位置：manuscript/sections/11-conclusions.tex:1
+分析所引原文：
+  “11. ConclusionsMission trust connects evidence about physical observations...”
+判断：未发现所称排版缺陷
+依据：未发现标题与正文粘连。基线 PDF 第 26 页中“11. Conclusions”独占标题行，下一行起正文；源文件使用独立的 section 命令。
+处理：正文不修改。
+
+3. 分析原定位：页11–12 “5.4. Sensitivity to Selection and Coding” 标题重复/错位
+核对位置：manuscript/sections/05-oal.tex:87
+分析所引原文：
+  “Across the sample, no extracted claim establishes”
+  “5.4. Sensitivity to Selection and Coding”
+  “an integrated air-surface-underwater mission...”
+判断：未发现所称排版缺陷
+依据：未发现小节标题重复或插入句中。基线 PDF 第 11 页末句在第 12 页续完后，才出现一次 5.4 标题；源文件中该标题也只有一次。跨页续句本身正常。
+处理：正文不修改。
+
+4. 分析原定位：页8 Table 2 标题缺“Table”
+核对位置：manuscript/sections/04-landscapes.tex:24
+分析所引原文：
+  “2. The 39 coded studies and their principal evidence scope.”
+判断：未发现所称排版缺陷
+依据：未发现标题缺字。基线 PDF 第 8 页实际显示“Table 2. The 39 coded studies and their principal evidence scope.”；caption 由模板正常编号。
+处理：正文不修改。
+
+5. 分析原定位：图题缺首字母
+核对位置：manuscript/sections/06-dependencies.tex:11
+另核对图 5（同一源文件）和图 7（manuscript/sections/08-evaluation.tex）的完整图题。
+分析所引原文：
+  “igure 4. Typedependeces and evidence states.”
+  “igure 5. CTG appraisal and action loop...”
+  “igure 7. Complementary evidence forms...”
+判断：未发现所称排版缺陷
+依据：未发现连续缺少 F 或“Typedependeces”拼写。基线 PDF 第 13、14、21 页分别完整显示 Figure 4/5/7，图 4 标题为“Typed dependencies and evidence states.”。这些视觉指控可能来自不同版本或文本提取，但现有证据不能确定原因。
+处理：正文不修改。
+
+6. 分析原定位：页1 摘要
+核对位置：manuscript/main.tex:31
+分析所引原文：
+  “Comparative synthesis distinguishes sender authentication from observation validity, platform integrity from task suitability, and replicated-state recovery from mission-data invalidation.”
+判断：保留
+依据：三组对比概括表 5 的具体机制接口，不是没有信息的排比。删除会削弱综述综合结果；句式对称不能证明生成来源。
+处理：正文不修改。
+
+7. 分析原定位：页1 摘要
+核对位置：manuscript/main.tex:31
+分析所引原文：
+  “A typed dependency graph and context-temporal-graph loop organize reassessment when evidence or authority changes.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：存在阅读负担：抽象名词较密，未立即说明重评对象。改为受影响产品定位和重评，保留 dependency graph 与 CTG 术语。
+处理：对应编辑 E01；见后附原句与替换句。
+
+8. 分析原定位：页1 摘要
+核对位置：manuscript/main.tex:31
+分析所引原文：
+  “An executable synthetic replay checks cryptographic bindings and temporal/authorization rules; a policy-validating witnessed log produces the same decisions under matched rules.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：原句结果真实；分号及 replay 一词不构成生成证据。拆开验证范围与基线结果，并明确签名、包含证明及时间/授权规则。
+处理：对应编辑 E02；见后附原句与替换句。
+
+9. 分析原定位：页1 摘要
+核对位置：manuscript/main.tex:31
+分析所引原文：
+  “Ledger value is therefore conditional on joint-governance requirements and implementation cost.”
+判断：保留
+依据：这是由相同规则下的等价决策推出的核心条件性结论。摘要与结论分别概括这一结果符合论文功能；不能为消除重复字词而改成无条件账本优势。
+处理：正文不修改。
+
+10. 分析原定位：页1 摘要
+核对位置：manuscript/main.tex:31
+分析所引原文：
+  “Requirement-based consensus selection and falsifiable propositions define an evaluation agenda.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：句子偏抽象。改为任务故障和通信需求指导选型，以及在匹配条件下比较决策质量和恢复。第 9.2 节的可证伪命题完整保留。
+处理：对应编辑 E03；见后附原句与替换句。
+
+11. 分析原定位：页2 引言
+核对位置：manuscript/sections/01-introduction.tex:13
+分析所引原文：
+  “The review makes three connected contributions. First, ... Second, ... Third, ...”
+判断：保留
+依据：三项贡献分别对应证据综合、可执行案例和研究命题，内容可核对且便于审稿人定位。First/Second/Third 是常规组织方式，没有理由只因格式改写。
+处理：正文不修改。
+
+12. 分析原定位：页2 引言
+核对位置：manuscript/sections/01-introduction.tex:13
+分析所引原文：
+  “Together, the mapping, replay, and requirement-based comparisons make claim composition and technology selection traceable.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：前文贡献段已给出具体内容，本句再次自评可追溯性，信息增量小；删除。
+处理：对应编辑 E05；见后附原句与替换句。
+
+13. 分析原定位：页2 引言
+核对位置：manuscript/sections/01-introduction.tex:15
+分析所引原文：
+  “The paper proceeds from review methods and operational context to the literature synthesis, OAL mapping, dependency reasoning, ledger design, evaluation practice, and research agenda.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：整句按目录顺序复述各节，与贡献段叠加显冗长；删除，不影响科学内容。
+处理：对应编辑 E06；见后附原句与替换句。
+
+14. 分析原定位：页2 引言
+核对位置：manuscript/sections/01-introduction.tex:15
+分析所引原文：
+  “Civil missions and publicly documented coalition settings provide the application context. Limitations of coverage, implementation evidence, and transfer to operational missions are consolidated in Section 10.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：应用范围需要保留；提前声明局限集中在哪一节没有必要。仅删后一导航句，保留 civil missions 范围。
+处理：对应编辑 E07；见后附原句与替换句。
+
+15. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:9
+分析所引原文：
+  “The supplementary expansion register documents these 26 candidates and four contextual leads, with source versions and successful retrieval URLs.”
+判断：保留
+依据：扩充筛选登记表是核对纳入、访问状态和来源版本的必要入口，26 个候选和 4 条背景线索可在表中核对；保留。
+处理：正文不修改。
+
+16. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:9
+分析所引原文：
+  “The historical workflow did not retain all title/abstract rejection decisions or search-engine rankings.”
+判断：保留
+依据：历史筛选记录不完整是方法事实，关系到检索可复现程度。删除会使读者误以为拥有完整系统综述流程，故保留中性陈述。
+处理：正文不修改。
+
+17. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:9
+分析所引原文：
+  “The 571 discovery records, 141 original citations, targeted expansion checks and final bibliography therefore describe different stages of a narrative synthesis, rather than a reconstructed systematic-review flow.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：必须区分发现集、原始书目与最终分析样本，但原句数字重复且以未采用的流程作对比。改为各集合所处阶段，原始计数和记录缺失说明仍保留。
+处理：对应编辑 E08；见后附原句与替换句。
+
+18. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:17
+分析所引原文：
+  “Several claims can be coded for one paper; unrelated labels are never expanded into an automatic Cartesian product.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：编码规则需要说明；原句主要强调没有进行错误操作。改为每条 object–layer–stage 关联必须得到引文段落支持，保留正确统计语义。
+处理：对应编辑 E09；见后附原句与替换句。
+
+19. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:17
+分析所引原文：
+  “Counts describe coverage, not additive sample sizes or effect sizes.”
+判断：保留
+依据：计数不可相加为独立样本量或效应量是统计解释要求，与零值含义不同；保留。
+处理：正文不修改。
+
+20. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:17
+分析所引原文：
+  “Layer co-occurrence within a paper identifies a possible interface; validated transfer between claims requires its own evidence.”
+判断：保留
+依据：同一论文同时涉及两层不等于层间已验证传递，是 OAL 接口比较的核心区分；保留。
+处理：正文不修改。
+
+21. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:21
+分析所引原文：
+  “Coding used one extraction process with passage checks; independent duplicate coding and inter-rater agreement were not performed.”
+判断：保留
+依据：单次抽取、未独立双人编码和无一致性系数属于方法透明度信息。不能因其暴露局限而删除，也不改写为未做过的双人流程。
+处理：正文不修改。
+
+22. 分析原定位：页3 方法
+核对位置：manuscript/sections/02-scope.tex:21
+分析所引原文：
+  “A decision log documents ambiguous object assignments, prototype scope and application/data mismatches.”
+判断：保留
+依据：编码决策日志实际存在，记录对象歧义、原型范围和代理数据；保留其复核入口。
+处理：正文不修改。
+
+23. 分析原定位：页4 方法
+核对位置：manuscript/sections/02-scope.tex:21
+分析所引原文：
+  “Reproducible sensitivity analyses separate the two strata, remove conceptual-only studies or the four generic consensus comparators, exclude the underwater proxy experiment, vary identity and physical-trial coding, and omit each study in turn.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：确实是较长操作清单，并与第 5.4 节和表 6 重复。正文概括维度、指向结果；完整变体和逐一删除结果保留。
+处理：对应编辑 E10；见后附原句与替换句。
+
+24. 分析原定位：页4 方法
+核对位置：manuscript/sections/02-scope.tex:21
+分析所引原文：
+  “Empty cells denote no coded claim; mission-specific applicability and global research absence cannot be inferred from a zero.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：零值定义必要，但同一方法段又预先展开两种不可推断结论，重复度较高。缩为 no coded claim，相关适用性和外推边界在结果、图注和局限保留。
+处理：对应编辑 E11；见后附原句与替换句。
+
+25. 分析原定位：页15 案例
+核对位置：manuscript/sections/06-dependencies.tex:73
+分析所引原文：
+  “The supplied Python replay verifies Ed25519 signatures and Merkle inclusion, rejects altered records/proofs, checks all six arrival orders with duplicate delivery, and enumerates all 16 coalition signer subsets.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：检查重新运行通过，六种到达顺序和十六种签名组合均有穷举依据。仅将 supplied Python 改为 synthetic，保留验证内容及其合成范围；精确组合数不是伪精确。
+处理：对应编辑 E25；见后附原句与替换句。
+
+26. 分析原定位：页15 案例
+核对位置：manuscript/sections/06-dependencies.tex:73
+分析所引原文：
+  “The replay checks deterministic policy consistency for the synthetic events.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：前两句已列出回放测试及两路径决策一致结果，本句重复概括，删除。
+处理：对应编辑 E26；见后附原句与替换句。
+
+27. 分析原定位：页18 模式
+核对位置：manuscript/sections/07-blockchain.tex:57
+分析所引原文：
+  “The application logic is specified in the supplementary pseudocode, and its temporal and authorization rules are exercised by the replay.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：补充协议是必要实现入口；同句再说规则已由 replay 测试与第 6.4 节重复。仅保留伪代码位置。
+处理：对应编辑 E28；见后附原句与替换句。
+
+28. 分析原定位：页22 评估
+核对位置：manuscript/sections/08-evaluation.tex:47
+分析所引原文：
+  “The present supplement provides the claim records, heatmap aggregation, replay inputs/results, byte calculations, and chaincode specification.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：与紧邻的下一句重复列举附件及用途，合为一句；完整文件清单仍在 Data Availability 和补充说明中。
+处理：对应编辑 E38；见后附原句与替换句。
+
+29. 分析原定位：页22 评估
+核对位置：manuscript/sections/08-evaluation.tex:47
+分析所引原文：
+  “The supplement supports reproduction of the claim mapping, sensitivity analyses, and synthetic policy replay.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：与第 28 条所引句共同合并，不能把这一对相邻句当成两项独立科学缺陷。
+处理：对应编辑 E38；见后附原句与替换句。
+
+30. 分析原定位：页23 局限
+核对位置：manuscript/sections/10-limitations.tex:5
+分析所引原文：
+  “A scalar policy can preserve the same constraints as a structured representation, as the worked case demonstrates.”
+判断：保留
+依据：案例确实得到带授权否决的标量规则与结构化规则相同的结果。该句约束 OAL 的效果主张，不是借自身案例证明普遍优势；保留。
+处理：正文不修改。
+
+31. 分析原定位：页18
+核对位置：manuscript/sections/07-blockchain.tex:76
+分析所引原文：
+  “A compact source record has a 154-byte fixed-width body: version (1), kind (1), mission ID (16), producer ID (16), sequence (4), event lower and upper bounds (8 each), authority epoch (4), policy hash (32), payload hash (32), and parent/root commitment (32).”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：154 字节由固定宽度编码计算得到，数值有效；逐字段括号宽度使正文过密。保留总大小及绑定语义，字段宽度在已有补充协议中完整保留。
+处理：对应编辑 E29；见后附原句与替换句。
+
+32. 分析原定位：页18
+核对位置：manuscript/sections/07-blockchain.tex:76
+分析所引原文：
+  “A 64-byte Ed25519 signature gives a 218-byte record.”
+判断：保留
+依据：64 字节签名加 154 字节主体等于 218 字节，是可复核的载荷计算；保留。
+处理：正文不修改。
+
+33. 分析原定位：页18–19
+核对位置：manuscript/sections/07-blockchain.tex:76
+分析所引原文：
+  “The released canonical JSON example submitted by a gateway is exactly 525 application bytes, excluding the file's trailing newline.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：525 字节经重新序列化复核正确，文件额外换行不属于载荷。正文删 exactly、released 及文件换行说明，保留准确应用载荷大小；协议仍保留计算口径。
+处理：对应编辑 E30；见后附原句与替换句。
+
+34. 分析原定位：页19
+核对位置：manuscript/sections/07-blockchain.tex:80
+分析所引原文：
+  “For ten leaves padded to 16, the branch has four 32-byte hashes.”
+判断：保留
+依据：十叶填充到十六叶后路径深度为四，每层 32 字节，是 128 字节包含证明的依据；保留以使通信预算可审计。
+处理：正文不修改。
+
+35. 分析原定位：页19
+核对位置：manuscript/sections/07-blockchain.tex:107
+分析所引原文：
+  “The 697-byte downlink comprises a 218-byte source record, 128-byte branch, two-byte leaf index, 156-byte checkpoint, one-byte signer bitmap, and three 64-byte signatures.”
+判断：保留
+依据：218+128+2+156+1+3×64=697，分项能解释车辆验证收到哪些数据；保留。这是响应受限端验证和字节预算意见的重要内容。
+处理：正文不修改。
+
+36. 分析原定位：页20
+核对位置：manuscript/sections/07-blockchain.tex:107
+分析所引原文：
+  “At one ten-record batch per minute, the 220-byte commitment needs 29.3 net bit/s on average, whereas sending all ten signed records needs 290.7 bit/s.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：220×8/60=29.333…，2180×8/60=290.666…，两值为固定发送频率下的平均净载荷速率，不是统计测量精度。加 about 明示一位小数的舍入，保留节奏假设。
+处理：对应编辑 E31；见后附原句与替换句。
+
+37. 分析原定位：页20
+核对位置：manuscript/sections/07-blockchain.tex:107
+分析所引原文：
+  “Sending one ten-record ML-DSA-44 batch commitment at the same cadence requires 343.5 bit/s.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：2576×8/60=343.466…，由所选签名与检查点大小算得。加 about 明示舍入，不改变数值或将其包装成实测带宽。
+处理：对应编辑 E32；见后附原句与替换句。
+
+38. 分析原定位：页20
+核对位置：manuscript/sections/07-blockchain.tex:109
+分析所引原文：
+  “The replay also enumerates 63 combinations of validator count (4, 7, 10), responsive count (quorum minus one, quorum, all), and partition duration (0, 10, 30, 58, 59, 60, 120 s).”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：3 个验证者数×3 种响应状态×7 个分区时长确为 63。正文概括分析维度，完整网格保留；将 replay 枚举准确表述为 partition sensitivity calculation。
+处理：对应编辑 E33；见后附原句与替换句。
+
+39. 分析原定位：页20
+核对位置：manuscript/sections/07-blockchain.tex:109
+分析所引原文：
+  “With assumed post-contact delays of 2 s for a ledger path and 1 s for a validating-log path, a 60 s deadline permits partitions of at most 58 and 59 s, respectively, when a quorum is reachable.”
+判断：保留
+依据：58/59 秒来自 60 秒截止期减去明确假设的 2/1 秒延迟。假设是条件性计算的必要前提，不能删除 assumed 或改成实测结果；保留。
+处理：正文不修改。
+
+40. 分析原定位：页20
+核对位置：manuscript/sections/07-blockchain.tex:109
+分析所引原文：
+  “Under these assumed delays, the validating log allows one additional second of partition with the same decision rules.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：前句已经给出 58/59 秒，下一句再写相差一秒没有增加解释，删除；阈值和假设不删。
+处理：对应编辑 E34；见后附原句与替换句。
+
+41. 分析原定位：页4
+核对位置：manuscript/sections/02-scope.tex:21
+分析所引原文：
+  “Empty cells denote no coded claim; mission-specific applicability and global research absence cannot be inferred from a zero.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：与第 24 条逐字重复，按同一处修改处理，不重复计作一处编辑。
+处理：对应编辑 E11；见后附原句与替换句。
+
+42. 分析原定位：页9
+核对位置：manuscript/sections/05-oal.tex:45
+分析所引原文：
+  “The 71 zeros identify combinations without an extracted claim; the denominator includes combinations whose relevance depends on the mission. It is therefore unsuitable as a percentage of scientifically unresolved problems.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：保留 71 个零单元格、样本范围和任务适用性；合并两句重复解释。局限节继续明确不能据此宣布全领域空白。
+处理：对应编辑 E16；见后附原句与替换句。
+
+43. 分析原定位：页9
+核对位置：manuscript/sections/05-oal.tex:45
+分析所引原文：
+  “Cell counts also overlap: one study can protect a record, replicate it and support its later audit.”
+判断：保留
+依据：同一研究在多个单元格重复出现的例子直接解释为何计数不能相加，与零值边界不同；保留。
+处理：正文不修改。
+
+44. 分析原定位：页11
+核对位置：manuscript/sections/05-oal.tex:85
+分析所引原文：
+  “Across the sample, no extracted claim establishes an integrated air-surface-underwater mission with continuity of authority, observation appraisal and dependent-product recovery all validated.”
+判断：保留
+依据：这是 39 篇样本的证据综合结果，带有 Across the sample 限定，非全领域断言；保留。
+处理：正文不修改。
+
+45. 分析原定位：页23 局限
+核对位置：manuscript/sections/10-limitations.tex:3
+分析所引原文：
+  “Neither these absences nor empty heatmap cells establish field-wide gaps.”
+判断：保留
+依据：局限节集中声明不能从样本空白推断全领域空白，防止热图被误读；保留。方法与结果中的重复表述已缩短。
+处理：正文不修改。
+
+46. 分析原定位：页23 局限
+核对位置：manuscript/sections/10-limitations.tex:5
+分析所引原文：
+  “Claims of improved mission outcomes therefore require the matched comparisons in Section 9.2.”
+判断：保留
+依据：改进任务结果必须通过匹配比较验证，是效果主张的证据条件；保留，不能以语言去防御为由暗示已完成任务级验证。
+处理：正文不修改。
+
+47. 分析原定位：页24 局限
+核对位置：manuscript/sections/10-limitations.tex:9
+分析所引原文：
+  “A Merkle root does not recover withheld data or prove that an event was captured.”
+判断：保留
+依据：Merkle 根不能找回被扣留数据，也不能证明漏采事件，是密码承诺的真实能力边界；保留。
+处理：正文不修改。
+
+48. 分析原定位：页24 局限
+核对位置：manuscript/sections/10-limitations.tex:11
+分析所引原文：
+  “Public datasets and component prototypes do not determine the consequences of rare faults in a deployed coalition.”
+判断：保留
+依据：公开数据集和组件原型不足以确定实际联盟中罕见故障的后果，是外部有效性边界；保留。
+处理：正文不修改。
+
+49. 分析原定位：页5
+核对位置：manuscript/sections/03-context.tex:48
+分析所引原文：
+  “A signature can remain valid after key theft; an accurate observation can become stale; and a consistent record can contain an erroneous sensor assertion.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：引言已经有三组签名、陈旧和来源例子；此处保留一个密钥泄露后伪造观测仍可通过验签的具体例子，减少重复排比。
+处理：对应编辑 E13；见后附原句与替换句。
+
+50. 分析原定位：页5
+核对位置：manuscript/sections/03-context.tex:19
+分析所引原文：
+  “A successfully delivered old command is not thereby timely.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：前一句已经说明 store-and-forward 不使旧命令满足时效要求，此句重复；删除。
+处理：对应编辑 E12；见后附原句与替换句。
+
+51. 分析原定位：页5
+核对位置：manuscript/sections/03-context.tex:23
+分析所引原文：
+  “The same image may support broad situational awareness while being unsuitable for collision avoidance.”
+判断：保留
+依据：同一图像对态势感知和避碰有不同适用性，清楚说明 mission-use suitability；保留。
+处理：正文不修改。
+
+52. 分析原定位：页5
+核对位置：manuscript/sections/03-context.tex:34
+分析所引原文：
+  “Zero trust contributes resource-centered policy and enforcement [24]; OAL records the additional observation, lineage, timing, and consequence claims relevant to mission reliance.”
+判断：保留
+依据：零信任负责授权，OAL 记录额外观测、谱系、时间与后果要求，这一定位有助于避免重复发明已有机制；分号并非缺陷，保留。
+处理：正文不修改。
+
+53. 分析原定位：页6
+核对位置：manuscript/sections/04-landscapes.tex:3
+分析所引原文：
+  “The literature connects three kinds of work: operational cooperation, mechanisms that assess or protect evidence, and services that coordinate shared records.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：段落后续已直接讨论相应研究，三分类开场没有增加比较内容，删除。
+处理：对应编辑 E14；见后附原句与替换句。
+
+54. 分析原定位：页6
+核对位置：manuscript/sections/04-landscapes.tex:3
+分析所引原文：
+  “Their use of consensus concerns coordination of physical states. Ledger consensus concerns agreement on a replicated record under a fault model.”
+判断：保留
+依据：控制中的物理状态协调与账本副本一致性是不同共识概念，在跨领域综述中需澄清；保留。
+处理：正文不修改。
+
+55. 分析原定位：页7
+核对位置：manuscript/sections/04-landscapes.tex:7
+分析所引原文：
+  “A trust estimate therefore needs a named property and an uncertainty status: an anomaly may justify restricted use while its cause remains unresolved.”
+判断：保留
+依据：异常与恶意原因不可等同，限制使用可以先于归因；这是模型输出和决策的具体要求，保留。
+处理：正文不修改。
+
+56. 分析原定位：页7
+核对位置：manuscript/sections/04-landscapes.tex:48
+分析所引原文：
+  “The oracle problem remains relevant across these applications: a ledger preserves the accepted assertion and its provenance, while external validity depends on the data source and appraisal [22,23].”
+判断：保留
+依据：账本保存被接受断言而非直接证明物理真值，是有文献支持的 oracle 问题；保留。
+处理：正文不修改。
+
+57. 分析原定位：页8
+核对位置：manuscript/sections/05-oal.tex:3
+分析所引原文：
+  “OAL classifies what is judged, which claim is sought, and when that claim is needed.”
+判断：保留
+依据：what/which/when 对应 Object、Assurance、Lifecycle 三个轴，是框架定义本身，保留。
+处理：正文不修改。
+
+58. 分析原定位：页9
+核对位置：manuscript/sections/05-oal.tex:59
+分析所引原文：
+  “The value of the axes is the distinction between evidence that mechanisms actually supply and evidence needed by the next consumer.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：抽象的 The value of the axes 增加元评价，改为 OAL 轴区分机制已提供证据与下一消费者要求的直接陈述。
+处理：对应编辑 E17；见后附原句与替换句。
+
+59. 分析原定位：页9
+核对位置：manuscript/sections/05-oal.tex:59
+分析所引原文：
+  “Each comparison changes an acceptance requirement rather than assigning a paper a single trust score.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：表格已列依赖要求，额外强调并非给论文打单一信任分数没有必要，删除。
+处理：对应编辑 E18；见后附原句与替换句。
+
+60. 分析原定位：页13
+核对位置：manuscript/sections/06-dependencies.tex:15
+分析所引原文：
+  “Two products derived from one observation do not supply two independent observations. Conversely, a shared relay need not invalidate end-to-end signatures from otherwise independent sources.”
+判断：保留
+依据：共同来源导致不独立，与共享中继不必破坏端到端签名是两个不同依赖关系；对比有实质意义，保留。
+处理：正文不修改。
+
+61. 分析原定位：页16
+核对位置：manuscript/sections/07-blockchain.tex:49
+分析所引原文：
+  “A Byzantine ordering service concerns agreement despite arbitrary behavior of replicas; it does not prevent an authorized producer from supplying a false observation.”
+判断：保留
+依据：拜占庭排序保证与授权传感器的虚假观测属于不同故障层，必须区分；保留。
+处理：正文不修改。
+
+62. 分析原定位：页16
+核对位置：manuscript/sections/07-blockchain.tex:49
+分析所引原文：
+  “Endorsement constrains who approves a proposed state update, while the chaincode defines the deterministic rule being approved.”
+判断：保留
+依据：背书主体与链码判定规则是 Fabric 实现中不同职责，对比解释必要；保留。
+处理：正文不修改。
+
+63. 分析原定位：页17
+核对位置：manuscript/sections/07-blockchain.tex:51
+分析所引原文：
+  “Safety preserves a consistent accepted history when messages are delayed or unavailable. Availability concerns whether a particular request can obtain the needed ordering and application approvals before its deadline.”
+判断：保留
+依据：一致历史的 safety 与请求在截止期前完成的 availability 不同，是断连系统设计核心定义；保留。
+处理：正文不修改。
+
+64. 分析原定位：页19
+核对位置：manuscript/sections/07-blockchain.tex:86
+分析所引原文：
+  “A cached checkpoint remains evidence about a historical commitment after a new policy is issued, but its authority to support a new decision depends on the relying policy and authenticated transition history.”
+判断：保留
+依据：旧检查点的历史证据价值与新决策授权不同，直接关系到撤销时间和受限端验证；保留完整条件。
+处理：正文不修改。
+
+65. 分析原定位：页21
+核对位置：manuscript/sections/08-evaluation.tex:53
+分析所引原文：
+  “Calibration and decision loss answer different questions: a well-calibrated estimate may still be used by an unsuitable policy, while a conservative rule can make safe decisions without producing probabilities.”
+判断：保留
+依据：概率校准不等于策略决策损失，是基线比较的必要区分；保留。
+处理：正文不修改。
+
+66. 分析原定位：页8
+核对位置：manuscript/sections/05-oal.tex:41
+分析所引原文：
+  “For each applicable cell, a specification states the object/version, required property, evidence source, validity interval, acceptance rule, responsible party, and response to missing evidence.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：七项是必要规格字段，问题在一句内承载过多。分为对象/证据和决策责任两句，全部字段保留。
+处理：对应编辑 E15；见后附原句与替换句。
+
+67. 分析原定位：页13
+核对位置：manuscript/sections/06-dependencies.tex:19
+分析所引原文：
+  “An analysis statement records attacker or environmental cause; capability; affected object; propagation relation; mission consequence; control; residual uncertainty.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：七项分号列表阅读负担较大，改为因果追踪、控制和剩余不确定性两个步骤，完整保留信息。
+处理：对应编辑 E20；见后附原句与替换句。
+
+68. 分析原定位：页13
+核对位置：manuscript/sections/06-dependencies.tex:38
+分析所引原文：
+  “CTG organizes context, temporal state, and dependencies through evidence capture, reliability appraisal, object-state inference, dependency propagation, uncertainty expression, policy action, accountable audit, and operational feedback.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：八步骤均已完整显示在图 5，正文重复全部标签不必保留。改为说明组织依据并指图，同时删除重复图引导句；图件不改。
+处理：对应编辑 E21, E22；见后附原句与替换句。
+
+69. 分析原定位：页15
+核对位置：manuscript/sections/07-blockchain.tex:7
+分析所引原文：
+  “In the coalition example, A alone must not replace a sensor-acceptance policy, C must not remove a previously acknowledged batch after a gateway incident, and D must not declare its own data accepted by the coalition.”
+判断：保留
+依据：A、C、D 三项禁止行为对应三种不同组织权力限制，是为何需要联合治理的具体需求；保留。
+处理：正文不修改。
+
+70. 分析原定位：页17
+核对位置：manuscript/sections/07-blockchain.tex:53
+分析所引原文：
+  “A single-agency inspection mission can use an authenticated database or witnessed log, adding Raft replication for crash availability. The four-organization response mission requires Byzantine ordering plus joint application authorization, or an equivalent validating log; current Fabric SmartBFT is a concrete candidate [98]. A disconnected UUV group uses signed local records, store-and-forward transport, and bounded delegation, with no requirement for acoustic consensus.”
+判断：保留
+依据：单机构、四组织和断连 UUV 三种需求导致不同方案，是共识选型的实质比较。为规避排比而合并会降低可读性；保留。
+处理：正文不修改。
+
+71. 分析原定位：页18
+核对位置：manuscript/sections/07-blockchain.tex:57
+分析所引原文：
+  “Five recurring ledger roles are membership/authorization, evidence commitments, policy/model version coordination, accountable audit, and post-partition reconciliation.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：前两句与表 10 重复列举五种角色，合并为所用模式及其他角色关系；表中五类完整保留。
+处理：对应编辑 E27；见后附原句与替换句。
+
+72. 分析原定位：页21
+核对位置：manuscript/sections/08-evaluation.tex:41
+分析所引原文：
+  “Useful outcomes include unsafe acceptance, false isolation of a critical relay, task completion, safety-constraint violations, deadline misses, bytes per evidence event, energy, endorsement/commit latency, time to identify affected descendants, and the fraction of decisions with retrievable provenance.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：十项指标挤在一句，阅读负担真实。按任务结果、资源开销、问责三组拆句，保留全部指标。
+处理：对应编辑 E36；见后附原句与替换句。
+
+73. 分析原定位：页21
+核对位置：manuscript/sections/08-evaluation.tex:43
+分析所引原文：
+  “Scenario factors include compromised entities versus devices, independent versus correlated observations, fading versus jamming, fresh versus stale attestation, lost contacts, collusion, and different authority-expiry periods.”
+判断：保留
+依据：这些变量区分攻击、非恶意退化、相关性和时效，服务于实验设计，清单虽长但各项不重复且可直接使用；保留。
+处理：正文不修改。
+
+74. 分析原定位：页22
+核对位置：manuscript/sections/08-evaluation.tex:47
+分析所引原文：
+  “A reproducible report supplies topology, fault domains, channel/contact models, software versions, payload encodings, cryptographic suites, endorsement rules, policy/model versions, workload, seeds, ground truth, and mission-loss weights.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：十二项复现条件在一句内过密；按场景、实现和评估条件拆成三句，完整保留要素。
+处理：对应编辑 E37；见后附原句与替换句。
+
+75. 分析原定位：页23
+核对位置：manuscript/sections/09-discussion.tex:7
+分析所引原文：
+  “Consortium design must specify admission, contract/model approval, emergency authority, disputes, member exit, and audit responsibility.”
+判断：保留
+依据：准入、审批、紧急权限、争议、退出与审计各有不同治理责任，短句列举清楚且必要；保留。
+处理：正文不修改。
+
+76. 分析原定位：页24
+核对位置：manuscript/sections/10-limitations.tex:7
+分析所引原文：
+  “Full Fabric transaction sizes, provisioning overhead, cryptographic energy, clock rollback resistance, modem behavior, receipt issuance, and operator response remain implementation measurements.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：七项混合大小/开销测量和运行行为测试。拆成两句并明确分类，保留所有尚待测量内容。
+处理：对应编辑 E40；见后附原句与替换句。
+
+77. 分析原定位：页2
+核对位置：manuscript/sections/01-introduction.tex:11
+分析所引原文：
+  “The proposed OAL framework relates four objects—entity, platform/device, link/path, and data product—to four assurance layers—observation validity, commitment and provenance integrity, ledger and governance consistency, and mission-use suitability—across six lifecycle stages.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：四对象、四保障层、六阶段的双重插入语太长。引言保留对象和框架维度，保障层完整定义由正文与图 2 承接。
+处理：对应编辑 E04；见后附原句与替换句。
+
+78. 分析原定位：页3
+核对位置：manuscript/sections/02-scope.tex:17
+分析所引原文：
+  “The coding unit is an explicitly described mechanism claim.”
+判断：保留
+依据：编码单位是读懂 39 篇研究与 89 条记录关系的关键方法信息；保留。
+处理：正文不修改。
+
+79. 分析原定位：页3
+核对位置：manuscript/sections/02-scope.tex:17
+分析所引原文：
+  “A heatmap cell counts each study once for that exact object-layer-stage combination.”
+判断：保留
+依据：每格按研究去重是热图计数算法的必要定义，删除会使计数不可解释；保留。
+处理：正文不修改。
+
+80. 分析原定位：页3
+核对位置：manuscript/sections/02-scope.tex:19
+分析所引原文：
+  “Evidence profiles record conceptual argument (L0), analytical/security reasoning (L1), simulation or recorded-data evaluation (L2), implemented prototype/testbed (L3), physical operating trials (L4), and sustained multi-party operation (L5).”
+判断：保留
+依据：L0–L5 是全文分析实际使用的分类，需一次完整定义。括号编号与枚举并非生成证据，保留。
+处理：正文不修改。
+
+81. 分析原定位：页7
+核对位置：manuscript/sections/04-landscapes.tex:3
+分析所引原文：
+  “The literature connects three kinds of work...”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：与第 53 条重复，已删除同一开场句，不重复计作一处编辑。
+处理：对应编辑 E14；见后附原句与替换句。
+
+82. 分析原定位：页11
+核对位置：manuscript/sections/05-oal.tex:59
+分析所引原文：
+  “The value of the axes is the distinction between evidence that mechanisms actually supply and evidence needed by the next consumer.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：与第 58 条重复，按同一直接陈述改写，不重复计作一处编辑。
+处理：对应编辑 E17；见后附原句与替换句。
+
+83. 分析原定位：页12
+核对位置：manuscript/sections/05-oal.tex:89
+分析所引原文：
+  “Table 6 reports reproducible alternatives.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：reproducible alternatives 不够具体，改为说明表 6 比较纳入和编码选择对覆盖图的影响。
+处理：对应编辑 E19；见后附原句与替换句。
+
+84. 分析原定位：页13
+核对位置：manuscript/sections/06-dependencies.tex:46
+分析所引原文：
+  “The loop is positioned within established architectures.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：下一句已直接进入既有架构比较，删除空泛的定位句。
+处理：对应编辑 E23；见后附原句与替换句。
+
+85. 分析原定位：页13
+核对位置：manuscript/sections/06-dependencies.tex:46
+分析所引原文：
+  “MAPE-K separates monitoring, analysis, planning, execution, and shared knowledge [88,89]; CTG specializes that organization for claim appraisal, event/receipt-time separation, and dependency-triggered reassessment. The JDL fusion model distinguishes object, situation, impact, and process refinement [90]; CTG adds an explicit record...”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：比较关系有内容但两个长分号句节奏重复。拆句并说明 CTG 如何用于估计的依赖决策；MAPE-K/JDL 功能和引用保留。
+处理：对应编辑 E24；见后附原句与替换句。
+
+86. 分析原定位：页20
+核对位置：manuscript/sections/07-blockchain.tex:109
+分析所引原文：
+  “The result motivates measuring both architectures under the same workload, governance, and fault domains.”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：笼统收尾与评估节、P5 的同条件比较要求重复；删除该句，保留实际比较设计。
+处理：对应编辑 E35；见后附原句与替换句。
+
+87. 分析原定位：页2 方法
+核对位置：manuscript/sections/02-scope.tex:5
+分析所引原文：
+  “The retained discovery script queried OpenAlex on 6 August 2026 using 32 English search strings, a publication-date filter starting on 1 January 2016, and the 25 highest-ranked results per query.”
+判断：保留
+依据：脚本有 32 个查询、2016-01-01 起始过滤、每查询 25 条设置，发现记录去重后为 571；日期来自留存检索记录而非正文猜测。保留准确检索报告，不将方法精度当成生成证据。
+处理：正文不修改。
+
+88. 分析原定位：页2 方法
+核对位置：manuscript/sections/02-scope.tex:7
+分析所引原文：
+  “Targeted publisher, author-repository and official-source retrieval checked developments through 25 October 2026.”
+判断：保留
+依据：当前环境日期为 2026-10-25，扩充登记也记录本日补充检查，并非未来日期。保留检索范围日期；该表述指有记录的定向检查，不宣称全面覆盖截至当日所有文献。
+处理：正文不修改。
+
+89. 分析原定位：页24
+核对位置：manuscript/sections/09-discussion.tex:35
+分析所引原文：
+  “As of the revision date, the non-mandatory MASS Code had been adopted in May 2026 and taken effect on 1 July 2026 [119].”
+判断：局部调整（仅认可具体表达可改，不据此判定生成来源）
+依据：IMO 官方来源确认 2026 年 5 月通过、7 月 1 日生效；相对本次核查日不是未来。保留事实与引用，仅将 As of the revision date 改为直接过去时陈述。
+处理：对应编辑 E39；见后附原句与替换句。
+
+Top 15 的交叉核对
+此部分重列既有判断，不能再计为 15 项独立缺陷。依其顺序对应：
+1→正文第 1 条；2→第 3 条；3→第 11 条；4→第 8 条；5→第 25 条；6→第 33 条；7→第 38 条；8→第 18 条；9→第 24/41 条；10→第 42 条；11→第 68 条；12→第 74 条；13→第 76 条；14→第 9 条。
+Top 15 的第 15 项为结论中的 ledger value 条件性结果，与摘要承担不同功能。保留结论总结；实际结论段只出现一次，并不存在第 1 条声称的整段连续复制。
+
+专项复核证据
+1. 排版：从上述基线 PDF 新渲染第 8、11、12、13、14、21、26 页逐页查看，并与源文件标题、caption 和结论段计数核对。未以文本提取中的缺字或换行替代视觉判断。
+2. 编码与预算：重新运行 supplementary/replay_case.py，communication-budget.csv、endorsement-results.csv、example-batch.json、partition-sensitivity.csv、replay-summary.json、trace-results.csv 均与仓库输出一致（统一 CRLF/LF 后）。
+3. 主体编码 struct >BB16s16sIqqI32s32s32s 为 154 字节；签名记录 154+64=218；检查点 154+2=156，单签承诺 156+64=220。
+4. JSON 应用载荷为 525 字节；文件末尾另有 1 字节换行。十叶填充为十六叶后的证明为 4×32=128 字节。
+5. 下行为 218+128+2+156+1+3×64=697 字节。每分钟批次的三项平均净载荷速率分别为 220×8/60≈29.3、2180×8/60≈290.7、2576×8/60≈343.5 bit/s；正文加 about 表明舍入。完整链路开销未被混作这些应用载荷值。
+6. 分区网格 3×3×7=63；58/59 秒阈值基于 60 秒截止期和明确设定的 2/1 秒恢复路径延迟。这是条件性计算，不是测得的 Fabric 性能。
+7. 检索：scripts/discover_sources.py 的查询列表为 32 项，2016-01-01 起始过滤、每查询 25 条；留存的 tmp/source_candidates.tsv 共 571 条。历史筛选缺失和单次编码局限仍明确说明。
+8. 日期：相对本次核查日 2026-10-25，5 月通过及 7 月生效均是过去日期。IMO 官网确认非强制性 MASS Code 的这两个时间点：
+   https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-adopts-mass-code.aspx
+   https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx
+   https://www.imo.org/en/mediacentre/meetingsummaries/pages/temporary-msc-111.aspx
+
+40 处最小编辑：修改前原文、问题、替换及理由
+以下为 LaTeX 源文摘录，保留原始命令，便于复核。空替换表示删去重复语句，不是删除所在段落。
+
+E01 | 分析条目 7 | manuscript/main.tex:31
+原文：A typed dependency graph and context--temporal--graph loop organize reassessment when evidence or authority changes.
+问题及理由：将抽象功能描述落实为受影响产品的定位与重评，不改变框架职责。
+最小替换：The dependency graph identifies products affected by changed inputs or authority, and the context--temporal--graph loop organizes their reassessment.
+
+E02 | 分析条目 8 | manuscript/main.tex:31
+原文：An executable synthetic replay checks cryptographic bindings and temporal/authorization rules; a policy-validating witnessed log produces the same decisions under matched rules.
+问题及理由：拆开验证内容与基线结果，明确密码绑定所指的签名及包含证明；保留合成回放范围。
+最小替换：A synthetic event replay verifies signatures, inclusion proofs, and temporal and authorization rules. Under matched rules, a policy-validating witnessed log yields the same decisions.
+
+E03 | 分析条目 10 | manuscript/main.tex:31
+原文：Requirement-based consensus selection and falsifiable propositions define an evaluation agenda.
+问题及理由：用选择依据和比较对象替代笼统的评价议程；正文可证伪命题保持不变。
+最小替换：Mission fault and communication requirements guide consensus selection; proposed tests compare decision quality and recovery under matched conditions.
+
+E04 | 分析条目 77 | manuscript/sections/01-introduction.tex:11
+原文：The proposed \OAL{} framework relates four objects---entity, platform/device, link/path, and data product---to four assurance layers---observation validity, commitment and provenance integrity, ledger and governance consistency, and mission-use suitability---across six lifecycle stages.
+问题及理由：缩短双重破折号定义；四个保障层在正文和图 2 中仍有完整定义。
+最小替换：The proposed \OAL{} framework relates entities, platforms/devices, links/paths, and data products to four assurance layers across six lifecycle stages.
+
+E05 | 分析条目 12 | manuscript/sections/01-introduction.tex:13
+原文：Together, the mapping, replay, and requirement-based comparisons make claim composition and technology selection traceable.
+问题及理由：前文已逐项说明贡献，删除没有增加事实的总结。
+最小替换：［删除这句/这段重复措辞］
+
+E06 | 分析条目 13 | manuscript/sections/01-introduction.tex:15
+原文：The paper proceeds from review methods and operational context to the literature synthesis, OAL mapping, dependency reasoning, ledger design, evaluation practice, and research agenda.
+问题及理由：删除逐节复述目录的导览，保留应用范围。
+最小替换：［删除这句/这段重复措辞］
+
+E07 | 分析条目 14 | manuscript/sections/01-introduction.tex:15
+原文：Limitations of coverage, implementation evidence, and transfer to operational missions are consolidated in Section~\ref{sec:limitations}.
+问题及理由：删除提前宣告局限章节的过程性导航，局限正文保留。
+最小替换：［删除这句/这段重复措辞］
+
+E08 | 分析条目 17 | manuscript/sections/02-scope.tex:9
+原文：The 571 discovery records, 141 original citations, targeted expansion checks and final bibliography therefore describe different stages of a narrative synthesis, rather than a reconstructed systematic-review flow.
+问题及理由：保留不同阶段不可混算的含义，避免重复数字及对未采用流程的辩解；检索与历史记录边界保留。
+最小替换：The discovery set, original bibliography, targeted checks, and final bibliography document different stages of the narrative review.
+
+E09 | 分析条目 18 | manuscript/sections/02-scope.tex:17
+原文：Several claims can be coded for one paper; unrelated labels are never expanded into an automatic Cartesian product.
+问题及理由：直接说明每条编码所需证据，替换对未做操作的强调。
+最小替换：A paper can contribute several claims, each coded only for the object--layer--stage associations supported by the cited passage.
+
+E10 | 分析条目 23 | manuscript/sections/02-scope.tex:21
+原文：Reproducible sensitivity analyses separate the two strata, remove conceptual-only studies or the four generic consensus comparators, exclude the underwater proxy experiment, vary identity and physical-trial coding, and omit each study in turn. These analyses test map stability under stated choices.
+问题及理由：概括敏感性分析维度；逐项设定及结果仍在第 5.4 节、表 6 和补充数据中。
+最小替换：Sensitivity analyses test the effects of domain balance, study inclusion, identity and evidence-profile coding, and removal of individual studies (Section~\ref{sec:sensitivity}).
+
+E11 | 分析条目 24, 41 | manuscript/sections/02-scope.tex:21
+原文：Empty cells denote no coded claim; mission-specific applicability and global research absence cannot be inferred from a zero.
+问题及理由：方法节保留零值定义；适用性及不可外推全领域的限定在结果、图注与局限中保留。
+最小替换：Empty cells denote no coded claim.
+
+E12 | 分析条目 50 | manuscript/sections/03-context.tex:19
+原文：A successfully delivered old command is not thereby timely.
+问题及理由：前句已经区分存储转发可达性与决策所需时效，删除重复例述。
+最小替换：［删除这句/这段重复措辞］
+
+E13 | 分析条目 49 | manuscript/sections/03-context.tex:48
+原文：A signature can remain valid after key theft; an accurate observation can become stale; and a consistent record can contain an erroneous sensor assertion.
+问题及理由：引言已给出三个类似例子；此处集中解释密钥泄露后的签名验证边界。
+最小替换：A forged observation signed with a stolen key can pass signature verification.
+
+E14 | 分析条目 53, 81 | manuscript/sections/04-landscapes.tex:3
+原文：The literature connects three kinds of work: operational cooperation, mechanisms that assess or protect evidence, and services that coordinate shared records.
+问题及理由：小节已按主题组织，删除无额外内容的三分类开场。
+最小替换：［删除这句/这段重复措辞］
+
+E15 | 分析条目 66 | manuscript/sections/05-oal.tex:41
+原文：For each applicable cell, a specification states the object/version, required property, evidence source, validity interval, acceptance rule, responsible party, and response to missing evidence.
+问题及理由：按对象、证据及决策要求拆句，完整保留七项内容。
+最小替换：A cell specification identifies the object/version and required property, then gives the supporting evidence and validity interval. It also names the acceptance rule, responsible party, and response to missing evidence.
+
+E16 | 分析条目 42 | manuscript/sections/05-oal.tex:45
+原文：The 71 zeros identify combinations without an extracted claim; the denominator includes combinations whose relevance depends on the mission. It is therefore unsuitable as a percentage of scientifically unresolved problems.
+问题及理由：保留样本和任务适用性限定，合并重复的不可外推表述。
+最小替换：The 71 zero cells have no coded claim in this sample; their applicability depends on the mission.
+
+E17 | 分析条目 58, 82 | manuscript/sections/05-oal.tex:59
+原文：The value of the axes is the distinction between evidence that mechanisms actually supply and evidence needed by the next consumer.
+问题及理由：直接陈述比较功能，删去抽象价值评价。
+最小替换：The OAL axes separate the evidence supplied by a mechanism from the requirements of its next consumer.
+
+E18 | 分析条目 59 | manuscript/sections/05-oal.tex:59
+原文：Each comparison changes an acceptance requirement rather than assigning a paper a single trust score.
+问题及理由：表 5 已列出依赖环节及其要求，删去针对另一种评价方式的重复对比。
+最小替换：［删除这句/这段重复措辞］
+
+E19 | 分析条目 83 | manuscript/sections/05-oal.tex:89
+原文：Table~\ref{tab:sensitivity} reports reproducible alternatives.
+问题及理由：让表格引导句说明实际比较内容。
+最小替换：Table~\ref{tab:sensitivity} summarizes how inclusion and coding choices change the coverage map.
+
+E20 | 分析条目 67 | manuscript/sections/06-dependencies.tex:19
+原文：An analysis statement records \emph{attacker or environmental cause; capability; affected object; propagation relation; mission consequence; control; residual uncertainty}.
+问题及理由：将七项分号列表改成因果追踪和控制记录两步，保留全部信息。
+最小替换：An analysis statement identifies the attacker or environmental cause and relevant capability, then traces the affected object and propagation relation to a mission consequence. It also records controls and residual uncertainty.
+
+E21 | 分析条目 68 | manuscript/sections/06-dependencies.tex:38
+原文：CTG organizes context, temporal state, and dependencies through evidence capture, reliability appraisal, object-state inference, dependency propagation, uncertainty expression, policy action, accountable audit, and operational feedback.
+问题及理由：图 5 完整呈现八个步骤，正文集中说明组织依据，避免复述全部标签。
+最小替换：CTG uses context, temporal state, and dependencies to guide appraisal and policy action through the eight-step loop in Figure~\ref{fig:ctg}.
+
+E22 | 分析条目 68 | manuscript/sections/06-dependencies.tex:38
+原文：Figure~\ref{fig:ctg} depicts this information flow.
+问题及理由：图号已并入前句，删除重复引导。
+最小替换：［删除这句/这段重复措辞］
+
+E23 | 分析条目 84 | manuscript/sections/06-dependencies.tex:46
+原文：The loop is positioned within established architectures.
+问题及理由：后文直接展开 MAPE-K 和 JDL 比较，不需额外定位宣告。
+最小替换：［删除这句/这段重复措辞］
+
+E24 | 分析条目 85 | manuscript/sections/06-dependencies.tex:46
+原文：MAPE-K separates monitoring, analysis, planning, execution, and shared knowledge \citep{kephart2003autonomic,ibm2005mapek}; CTG specializes that organization for claim appraisal, event/receipt-time separation, and dependency-triggered reassessment. The JDL fusion model distinguishes object, situation, impact, and process refinement \citep{steinberg1999jdl}; CTG adds an explicit record of which identity, provenance, governance, and temporal evidence supports reliance on those estimates.
+问题及理由：拆开两组过长分号句，保留与既有架构的功能对应、区别和引用。
+最小替换：MAPE-K provides monitoring, analysis, planning, execution, and shared knowledge \citep{kephart2003autonomic,ibm2005mapek}. CTG applies these functions to claim appraisal, separates event time from receipt time, and triggers reassessment through recorded dependencies. The JDL fusion model distinguishes object, situation, impact, and process refinement \citep{steinberg1999jdl}. For these estimates, CTG records the identity, provenance, governance, and temporal evidence needed for a relying decision.
+
+E25 | 分析条目 25 | manuscript/sections/06-dependencies.tex:73
+原文：The supplied Python replay
+问题及理由：去掉交付附件的语气，保留已实际验证的六种到达顺序和十六种签名者组合。
+最小替换：The synthetic replay
+
+E26 | 分析条目 26 | manuscript/sections/06-dependencies.tex:73
+原文：The replay checks deterministic policy consistency for the synthetic events.
+问题及理由：前两句已给出具体验证及一致结果，删除重复概括。
+最小替换：［删除这句/这段重复措辞］
+
+E27 | 分析条目 71 | manuscript/sections/07-blockchain.tex:57
+原文：Five recurring ledger roles are membership/authorization, evidence commitments, policy/model version coordination, accountable audit, and post-partition reconciliation. The specified pattern combines commitments and reconciliation; Table~\ref{tab:blockchain-patterns} places the other roles around it.
+问题及理由：以所用模式为主线，合并两句重复列举；表 10 的五类角色完整保留。
+最小替换：The specified pattern combines evidence commitments and post-partition reconciliation; Table~\ref{tab:blockchain-patterns} relates these to membership, version coordination, and audit.
+
+E28 | 分析条目 27 | manuscript/sections/07-blockchain.tex:57
+原文：The application logic is specified in the supplementary pseudocode, and its temporal and authorization rules are exercised by the replay.
+问题及理由：保留实现入口，删除已经在案例节说明的回放内容。
+最小替换：Pseudocode is provided in the supplementary protocol specification.
+
+E29 | 分析条目 31 | manuscript/sections/07-blockchain.tex:76
+原文：A compact source record has a 154-byte fixed-width body: version (1), kind (1), mission ID (16), producer ID (16), sequence (4), event lower and upper bounds (8 each), authority epoch (4), policy hash (32), payload hash (32), and parent/root commitment (32).
+问题及理由：正文保留总大小和字段语义，逐字段宽度由已有补充协议承接；数值有编码依据，并非伪精确。
+最小替换：A 154-byte fixed-width source body binds type/version, mission/producer identifiers, sequence and event bounds, authority epoch, and policy, payload, and parent/root hashes; the supplementary protocol specifies each field width.
+
+E30 | 分析条目 33 | manuscript/sections/07-blockchain.tex:76
+原文：The released canonical JSON example submitted by a gateway is exactly 525 application bytes, excluding the file's trailing newline.
+问题及理由：删除交付语气及文件换行细节；525 是序列化载荷实际长度，补充协议仍解释文件换行。
+最小替换：The gateway's canonical JSON application payload is 525 bytes.
+
+E31 | 分析条目 36 | manuscript/sections/07-blockchain.tex:107
+原文：the 220-byte commitment needs 29.3 net bit/s on average, whereas sending all ten signed records needs 290.7 bit/s.
+问题及理由：加 about 明示一位小数的舍入；固定每分钟批次下的计算值保持不变。
+最小替换：the 220-byte commitment needs about 29.3 net bit/s on average, whereas sending all ten signed records needs about 290.7 bit/s.
+
+E32 | 分析条目 37 | manuscript/sections/07-blockchain.tex:107
+原文：Sending one ten-record ML-DSA-44 batch commitment at the same cadence requires 343.5 bit/s.
+问题及理由：明示舍入而非实测精度，保留签名大小对带宽的影响。
+最小替换：Sending one ten-record ML-DSA-44 batch commitment at the same cadence requires about 343.5 bit/s.
+
+E33 | 分析条目 38 | manuscript/sections/07-blockchain.tex:109
+原文：The replay also enumerates 63 combinations of validator count (4, 7, 10), responsive count (quorum minus one, quorum, all), and partition duration (0, 10, 30, 58, 59, 60, 120 s).
+问题及理由：准确称作敏感性计算；完整参数网格已有 CSV，正文保留规模和分析维度。
+最小替换：The partition sensitivity calculation covers 63 combinations of validator count (4, 7, 10), quorum availability, and partition duration, listed in the supplementary sensitivity grid.
+
+E34 | 分析条目 40 | manuscript/sections/07-blockchain.tex:109
+原文：Under these assumed delays, the validating log allows one additional second of partition with the same decision rules.
+问题及理由：前句已报告 58/59 秒阈值，删除重复计算结论。
+最小替换：［删除这句/这段重复措辞］
+
+E35 | 分析条目 86 | manuscript/sections/07-blockchain.tex:109
+原文：The result motivates measuring both architectures under the same workload, governance, and fault domains.
+问题及理由：删除笼统收尾；相同条件的比较要求在评估节及 P5 命题中保留。
+最小替换：［删除这句/这段重复措辞］
+
+E36 | 分析条目 72 | manuscript/sections/08-evaluation.tex:41
+原文：Useful outcomes include unsafe acceptance, false isolation of a critical relay, task completion, safety-constraint violations, deadline misses, bytes per evidence event, energy, endorsement/commit latency, time to identify affected descendants, and the fraction of decisions with retrievable provenance.
+问题及理由：按任务、资源和问责分为三句，保留十项指标及其用途。
+最小替换：Mission outcomes include unsafe acceptance, false isolation of a critical relay, task completion, safety-constraint violations, and deadline misses. Resource measures include bytes per evidence event, energy, and endorsement/commit latency. Accountability measures include the time to identify affected descendants and the fraction of decisions with retrievable provenance.
+
+E37 | 分析条目 74 | manuscript/sections/08-evaluation.tex:47
+原文：A reproducible report supplies topology, fault domains, channel/contact models, software versions, payload encodings, cryptographic suites, endorsement rules, policy/model versions, workload, seeds, ground truth, and mission-loss weights.
+问题及理由：按场景、实现和评估条件分组，保留十二项复现要素。
+最小替换：Reproduction requires the topology, fault domains, and channel/contact models. The implementation description should give software and policy/model versions, payload encodings, cryptographic suites, and endorsement rules. Workload, seeds, ground truth, and mission-loss weights define the evaluation conditions.
+
+E38 | 分析条目 28, 29 | manuscript/sections/08-evaluation.tex:47
+原文：The present supplement provides the claim records, heatmap aggregation, replay inputs/results, byte calculations, and chaincode specification. The supplement supports reproduction of the claim mapping, sensitivity analyses, and synthetic policy replay.
+问题及理由：合并相邻的材料清单和用途说明；完整交付清单仍在数据可用性声明及补充材料中。
+最小替换：The supplementary materials contain the data, protocol specification, and scripts used for the mapping, sensitivity analyses, and synthetic replay.
+
+E39 | 分析条目 89 | manuscript/sections/09-discussion.tex:35
+原文：As of the revision date, the non-mandatory MASS Code had been adopted in May 2026 and taken effect on 1 July 2026 \citep{imo2026mass}.
+问题及理由：以 2026-10-25 为核查时点，日期为已发生事实且 IMO 官网支持；仅去掉修订日期的过程性措辞。
+最小替换：The non-mandatory MASS Code was adopted in May 2026 and took effect on 1 July 2026 \citep{imo2026mass}.
+
+E40 | 分析条目 76 | manuscript/sections/10-limitations.tex:7
+原文：Full Fabric transaction sizes, provisioning overhead, cryptographic energy, clock rollback resistance, modem behavior, receipt issuance, and operator response remain implementation measurements.
+问题及理由：拆分大小/开销测量与运行行为测试，保留未验证事项。
+最小替换：Deployment measurements are needed for full Fabric transaction sizes, provisioning overhead, and cryptographic energy. Operational tests must cover clock rollback resistance, modem behavior, receipt issuance, and operator response.

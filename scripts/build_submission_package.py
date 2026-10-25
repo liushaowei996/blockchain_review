@@ -18,7 +18,6 @@ PACKAGE_FILES = (
     "main.tex",
     "main.pdf",
     "main.bbl",
-    "main-marked.tex",
     "references.bib",
     "Definitions/mdpi.cls",
     "Definitions/mdpi.bst",

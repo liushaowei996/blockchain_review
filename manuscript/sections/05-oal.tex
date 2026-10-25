@@ -38,11 +38,11 @@ Recovery/audit (R) & Scope of invalidation and restored authority & Revocation, 
 \end{tabularx}
 \end{table}
 
-Policies, models, and reference values are versioned data products; their deployed instances reside on platforms and their approval belongs to entities. This treatment makes the assurance infrastructure subject to the same analysis as mission observations. For each applicable cell, a specification states the object/version, required property, evidence source, validity interval, acceptance rule, responsible party, and response to missing evidence.
+Policies, models, and reference values are versioned data products; their deployed instances reside on platforms and their approval belongs to entities. This treatment makes the assurance infrastructure subject to the same analysis as mission observations. A cell specification identifies the object/version and required property, then gives the supporting evidence and validity interval. It also names the acceptance rule, responsible party, and response to missing evidence.
 
 \subsection{Observed Coverage in the Coded Sample}\label{sec:coverage}
 
-Figure~\ref{fig:oal} maps 89 claims from 39 studies. Twenty-five of the 96 possible cells contain a coded claim. Data governance during processing/fusion (D/G/F) is the largest cell, with 16 studies. The 71 zeros identify combinations without an extracted claim; the denominator includes combinations whose relevance depends on the mission. It is therefore unsuitable as a percentage of scientifically unresolved problems. Cell counts also overlap: one study can protect a record, replicate it and support its later audit.
+Figure~\ref{fig:oal} maps 89 claims from 39 studies. Twenty-five of the 96 possible cells contain a coded claim. Data governance during processing/fusion (D/G/F) is the largest cell, with 16 studies. The 71 zero cells have no coded claim in this sample; their applicability depends on the mission. Cell counts also overlap: one study can protect a record, replicate it and support its later audit.
 
 The strata expose different emphases. Among 19 studies targeting UAV, maritime AIS or underwater applications, entity governance at admission (E/G/A) is the largest cell, with six studies. Among 20 transferable studies, D/G/F leads with 11. Thus, the overall concentration partly reflects the inclusion of provenance and shared-state infrastructure. Source versions, evaluation settings and claim locators accompany every study so that these distinctions remain inspectable.
 
@@ -56,7 +56,7 @@ The strata expose different emphases. Among 19 studies targeting UAV, maritime A
 
 \subsection{What the Comparison Changes in a Design Review}\label{sec:comparative}
 
-The value of the axes is the distinction between evidence that mechanisms actually supply and evidence needed by the next consumer. Table~\ref{tab:interfaces} compares mechanisms that share an application label or trust vocabulary but support different relying decisions. Each comparison changes an acceptance requirement rather than assigning a paper a single trust score.
+The OAL axes separate the evidence supplied by a mechanism from the requirements of its next consumer. Table~\ref{tab:interfaces} compares mechanisms that share an application label or trust vocabulary but support different relying decisions.
 
 \begin{table}[!htb]
 \begin{adjustwidth}{-\extralength}{0cm}
@@ -86,7 +86,7 @@ Finally, a common cell does not imply interchangeable mechanisms. Raft and the B
 
 \subsection{Sensitivity to Selection and Coding}\label{sec:sensitivity}
 
-Table~\ref{tab:sensitivity} reports reproducible alternatives. Removing the four generic consensus papers leaves all 25 occupied cells and the same leading cell, now with 12 studies. Removing the four conceptual-only studies reduces occupancy to 22. Thus, infrastructure comparators increase counts, while some coverage depends on conceptual mechanisms. The direct-domain pattern remains centered on admission governance when the terrestrial-data proxy study is removed.
+Table~\ref{tab:sensitivity} summarizes how inclusion and coding choices change the coverage map. Removing the four generic consensus papers leaves all 25 occupied cells and the same leading cell, now with 12 studies. Removing the four conceptual-only studies reduces occupancy to 22. Thus, infrastructure comparators increase counts, while some coverage depends on conceptual mechanisms. The direct-domain pattern remains centered on admission governance when the terrestrial-data proxy study is removed.
 
 \begin{table}[!htb]
 \caption{Sensitivity of the coverage map. Occupied cells are descriptive counts, not a completeness score. D/G/F denotes data governance at fusion; E/G/A denotes entity governance at admission.\label{tab:sensitivity}}
