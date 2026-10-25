@@ -12,15 +12,17 @@ The heatmap expands only the lifecycle list within each claim row, then counts d
 
 Coding is a single extraction pass checked against source passages and aggregation rules; no independent duplicate coding or inter-rater agreement is claimed. Some cited full texts are author manuscripts, with locations given by their PDF pagination. The ARCADIAN-IoT stable key retains `2022` although its chapter is cited by the 2023 print/copyright year. The digital-twin paper uses the available author-manuscript version. Interpretation of ambiguous deployment descriptions is deliberately narrow and documented in the scope column.
 
-Reproduce with Python 3.10 or later, `cryptography` and `reportlab`:
+Reproduce the numerical outputs with Python 3.10 or later and `cryptography`:
 
 ```
 python supplementary/replay_case.py
-python supplementary/build_figures.py
+python supplementary/build_figures.py --data-only
 ```
 
 Run from the manuscript directory or use absolute script paths. The replay regenerates the CSV/JSON results and verifies signatures, tamper rejection, Merkle branches, arrival-order invariance and duplicate handling, signer subsets, the local-authority example, and serialization accounting. The public deterministic keys are test fixtures. Consensus and Fabric are not executed; latency sensitivity inputs are assumptions. ML-DSA is included only through standardized signature-length arithmetic.
 
-The figures use vector drawing commands and fonts available on the host; no photographic, stock or image-generation assets are used. Figure 3 is generated from the claim CSV. `oal-cell-counts.csv` and `mapping-summary.json` expose its aggregation. PDF font metrics can vary across hosts if Arial is unavailable, while cell counts remain invariant.
+The editable artwork is supplied in `figures/Figures-revised.vsdx`, with one page per figure. The original Visio layout, colors and diagram geometry are retained where they convey the same content. Figure 3 pairs the OAL framework schematic with a heatmap whose cell values follow `oal-cell-counts.csv`; `mapping-summary.json` exposes its aggregate counts. All 96 displayed cells have been checked against the claim CSV. If the coding changes, update the corresponding heatmap cells in the drawing before re-exporting it.
+
+To export the seven figure pages, run `python supplementary/build_figures.py` on Windows with Microsoft Visio installed, or run `supplementary/export_visio_figures.ps1` directly. The export script opens the drawing read-only and produces PDFs with selectable vector text and diagram geometry. Figure 2 retains the original raster lighthouse illustration; Figures 1 and 3–7 contain no raster images. Figure 7 uses native Visio shapes and connectors in place of the former photo-realistic illustrations, with no photographic, stock or generated-image assets in that figure. The supplied PDFs can be used to compile the manuscript on any OS without Visio.
 
 `protocol-specification.txt` defines the proposed Fabric application, placement, state, endorsement, constrained verification and matched log baseline. `consensus-requirements.csv` records family-specific assumptions and scenario decisions. The schema and byte counts are reproducible; full Fabric envelopes and operational performance require implementation measurement.

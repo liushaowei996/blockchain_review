@@ -1,7 +1,7 @@
 {
-  "revision_date": "2026-10-22",
-  "clean_manuscript_pages": 29,
-  "marked_manuscript_pages": 29,
+  "revision_date": "2026-10-25",
+  "clean_manuscript_pages": 30,
+  "marked_manuscript_pages": 30,
   "reviewer_response_pages": {
     "1": 3,
     "2": 9
@@ -13,30 +13,35 @@
     "word/settings.xml"
   ],
   "libreoffice_version": "26.8.0.3",
-  "source_package_files": 44,
+  "source_package_files": 46,
   "full_text_studies": 23,
   "claim_records": 49,
   "original_mechanism_candidates_not_full_text_coded": 14,
   "word_estimates": {
     "before": 13389,
-    "after": 9743,
-    "reduction_percent": 27.2
+    "after": 9771,
+    "reduction_percent": 27.0
   },
   "validation": [
-    "manuscript static audit passed",
-    "clean and marked LaTeX builds passed",
-    "extracted source package compiled independently",
-    "supplementary outputs reproduced byte for byte",
-    "all publication figures verified as vector graphics without raster images",
-    "all final PDF and response pages visually inspected",
-    "reviewer comments preserved verbatim after whitespace normalization"
+    "manuscript static audit passed; 111 cited entries, seven figures and ten tables",
+    "clean and marked LaTeX builds passed from an isolated copy of the explicit submission manifest",
+    "all 46 final archive members agree byte for byte with the isolated build inputs/results; ZIP CRC passed",
+    "OAL aggregation outputs reproduced byte for byte against the preceding revision package",
+    "all 96 native Visio heatmap cells match the generated CSV",
+    "all seven Visio PDFs contain selectable vector text; raster image counts are 0,1,0,0,0,0,0",
+    "all 30 clean and 30 marked pages inspected in rendered sheets; all seven figure pages inspected at full-page scale",
+    "all 12 response pages visually inspected; final word-count correction affects only reviewer 2 page 8",
+    "reviewer comments and general-evaluation ratings unchanged; only word/document.xml modified in each existing response",
+    "original supplied Visio unchanged; revised drawing and manuscript metadata anonymous",
+    "extraction input, synthetic replay, numerical results and bibliography unchanged"
   ],
   "files": {
-    "output/pdf/blockchain-mission-trust-review-anonymous.pdf": "12d61dbf0ec70a3fb54cb11be76581b7ff7051643ff868eeed3eda828bae9fa5",
-    "output/pdf/blockchain-mission-trust-review-revision-marked.pdf": "cac3fb27e4d986ef08bd59b296deae05ff1d3576ee7dff1b80e390ad5306b209",
-    "review/revision-1/Response-to-Reviewer-1.docx": "9af49dfe04112c9883bfdd2915b607d8d9e5108266e0886f3266b3bd08a28d65",
-    "review/revision-1/Response-to-Reviewer-2.docx": "04d9f687729b8afdbc000c0060d29e8d83d33d0a673625ddad0a9a3fd7911c20",
-    "output/blockchain-review-revision-1-source-20261022.zip": "01bad788a4176234c4a1c237306731114deb8a3235352a639f0a93e326d83dd9"
+    "output/pdf/blockchain-mission-trust-review-anonymous.pdf": "260be7e475b370215260c639ca7e92bf237ca27ce5a5cfc06244b6e84be8459f",
+    "output/pdf/blockchain-mission-trust-review-revision-marked.pdf": "eb33d3df50dea8bffac58491ef9285e0c44a0bde58a38652046ad3e9e9de19d1",
+    "review/revision-1/Response-to-Reviewer-1.docx": "2782e126278a04a98fd5f2f41587488ff3e4845a134a16057e97d731387e5958",
+    "review/revision-1/Response-to-Reviewer-2.docx": "335a67cbfd9b8f414a5615881fb8446d012dec4568cdbcfbf28196dfd41237bb",
+    "output/blockchain-review-revision-1-source-20261025.zip": "98d58470e7c6455ca72cd8b1dd6ce5d9861fe2b103dec4c86624a85ac8f34294",
+    "manuscript/figures/Figures-revised.vsdx": "41390ddb4d240bc84abdea5294234de61183ca1bf237001b32156d3608242c58"
   },
   "general_evaluation": {
     "updated_on": "2026-10-22",
@@ -77,11 +82,134 @@
     "update_preserved_parts": 26,
     "point_by_point_responses_unchanged": true,
     "render_verification": {
-      "reviewer_1_changed_pages": [1, 3],
-      "reviewer_2_changed_pages": [1, 8, 9],
+      "reviewer_1_changed_pages": [
+        1,
+        3
+      ],
+      "reviewer_2_changed_pages": [
+        1,
+        8,
+        9
+      ],
       "all_other_pages_pixel_identical": true,
       "all_12_final_pages_visually_inspected": true,
       "pagination_unchanged": true
     }
+  },
+  "figure_revision": {
+    "date": "2026-10-25",
+    "source": "review/visio-source/Figures.vsdx",
+    "source_sha256": "91304529a425d154163223a774fcee4e22eb62b87cd8483b8683990ced26d17e",
+    "source_unchanged": true,
+    "native_editor": "Microsoft Visio 16.0.20430.20182",
+    "published_drawing": "manuscript/figures/Figures-revised.vsdx",
+    "page_names": [
+      "Figure-01",
+      "Figure-02",
+      "Figure-03",
+      "Figure-04",
+      "Figure-05",
+      "Figure-06",
+      "Figure-07"
+    ],
+    "clean_manuscript_figure_pages": [
+      5,
+      6,
+      10,
+      12,
+      13,
+      15,
+      20
+    ],
+    "original_pdf_raster_image_counts": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      12,
+      13
+    ],
+    "revised_pdf_audit": {
+      "figure-01-reference-architecture.pdf": {
+        "pages": 1,
+        "raster_images": 0,
+        "selectable_text_characters": 383,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "44a81ceef6d3bd97fbb6b7aa496c71e9feb784ec0db58840e1d24e5c6decf763"
+      },
+      "figure-02-assurance-chain.pdf": {
+        "pages": 1,
+        "raster_images": 1,
+        "selectable_text_characters": 231,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "787bfd3be3b4bf5f318fd07c2d479780238a1db186d0a25f41ed2df98faded0e"
+      },
+      "figure-03-oal-framework.pdf": {
+        "pages": 1,
+        "raster_images": 0,
+        "selectable_text_characters": 891,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "d58938b7ab268eda462bee643e17afe4aa54f6e73a6bb09ad1afcfe13a9a5eea"
+      },
+      "figure-04-dependency-threat.pdf": {
+        "pages": 1,
+        "raster_images": 0,
+        "selectable_text_characters": 369,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "3d8b815dfcf37a7c618fbc44ce499014c65a7c0447f54861759518a4daa3adb3"
+      },
+      "figure-05-ctg-reasoning-loop.pdf": {
+        "pages": 1,
+        "raster_images": 0,
+        "selectable_text_characters": 181,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "1b03dc575dcd6ecc2da52466fc1cd6d7276693ecd545901934f1136326608e8f"
+      },
+      "figure-06-blockchain-boundary.pdf": {
+        "pages": 1,
+        "raster_images": 0,
+        "selectable_text_characters": 522,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "439227bd694d975179e31e13f334b3ec0ead4b7e8fa3b59f9afa4284e44bc294"
+      },
+      "figure-07-evidence-maturity.pdf": {
+        "pages": 1,
+        "raster_images": 0,
+        "selectable_text_characters": 495,
+        "creator": "Microsoft® Visio® 2021",
+        "sha256": "031e58d8da83b414f1a160eb5f592858daf453f4c9e1ab92eedf3b336dbc4a54"
+      }
+    },
+    "original_vector_provenance_confirmed": true,
+    "retained_raster_detail": "Figure 2 lighthouse illustration",
+    "figure_7_provenance": "Native Visio shapes and connectors replace the six photo-realistic illustrations.",
+    "native_heatmap_cells_checked": 96,
+    "response_structural_checks": {
+      "1": {
+        "modified_parts": [
+          "word/document.xml"
+        ],
+        "preserved_parts": 26,
+        "changed_paragraph_indices": [
+          24
+        ],
+        "black_comment_paragraphs_unchanged": true
+      },
+      "2": {
+        "modified_parts": [
+          "word/document.xml"
+        ],
+        "preserved_parts": 26,
+        "changed_paragraph_indices": [
+          27,
+          68,
+          75,
+          76
+        ],
+        "black_comment_paragraphs_unchanged": true
+      }
+    },
+    "general_evaluation_unchanged": true
   }
 }

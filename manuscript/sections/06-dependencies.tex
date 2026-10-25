@@ -5,9 +5,11 @@
 Let $G_t=(V_t,E_t)$ be a time-indexed directed multigraph over OAL objects and their versions or state intervals. Relations name their semantics: an entity \emph{controls} a platform; a platform \emph{hosts} a model or \emph{produces} an observation; a path \emph{transmits} a product; an entity \emph{endorses} or \emph{consumes} a product; and a record \emph{commits to} another product. A transformation links its inputs, output, executing platform, responsible entity, code/model version, and event interval. In PROV, this transformation can be serialized as an activity \citep{w3c2013provdm}.
 
 \begin{figure}[!htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
 \centering
-\includegraphics[width=\textwidth]{figures/figure-04-dependency-threat.pdf}
+\includegraphics[width=\fulllength]{figures/figure-04-dependency-threat.pdf}
 \caption{Typed dependencies and evidence states. Operational relations identify claims affected by a changed assumption. Benign degradation and adversarial intervention are causal hypotheses; unknown is an epistemic outcome.\label{fig:dependency}}
+\end{adjustwidth}
 \end{figure}
 
 Traversal identifies claims for reassessment when a key, endpoint, model, or input becomes disputed. A graph edge alone does not quantify causal influence or justify a probability update. Corroboration must account for shared sources, clocks, transformations, and administrative roots. Two products derived from one observation do not supply two independent observations. Conversely, a shared relay need not invalidate end-to-end signatures from otherwise independent sources.
@@ -33,7 +35,7 @@ Unavailable governance quorum & Shared policy to fresh global authority & Retain
 
 \subsection{The CTG Reasoning Loop}
 
-CTG organizes context, temporal state, and dependencies: collect evidence; verify bindings; appraise claims and uncertainty; identify affected descendants; apply the relying policy; record the decision; and revisit it when evidence or context changes. Figure~\ref{fig:ctg} depicts this information flow.
+CTG organizes context, temporal state, and dependencies through evidence capture, reliability appraisal, object-state inference, dependency propagation, uncertainty expression, policy action, accountable audit, and operational feedback. Evidence capture includes binding verification; propagation identifies affected descendants for reassessment under an explicit inference rule. Figure~\ref{fig:ctg} depicts this information flow.
 
 \begin{figure}[!htbp]
 \centering

@@ -14,13 +14,13 @@ The user confirmed unpublished status, exclusive submission, all-author approval
 
 To rebuild the letter, run `python scripts/build_cover_letter.py` from the repository root with ReportLab installed. The renderer embeds the Windows Times New Roman fonts; `--font-dir` can specify another directory containing those font files.
 
-## Current version: first review revision, 22 October 2026
+## Current version: first review revision with retained Visio artwork, 25 October 2026
 
-The current clean manuscript has 29 pages, 111 cited references, seven vector figures and ten tables. A disclosed full-text sample of 23 mechanism studies supplies 49 OAL claim records. The revision adds a partition/revocation/reconciliation illustration, a coalition ledger specification, a matched validating-log baseline, a requirement-driven consensus comparison and reproducible supplemental calculations. The source-text estimate falls from 13,389 to 9,743 words (27.2%) using the same procedure on both versions.
+The current clean manuscript has 30 pages, 111 cited references, seven Visio-exported figures and ten tables. A disclosed full-text sample of 23 mechanism studies supplies 49 OAL claim records. The revision adds a partition/revocation/reconciliation illustration, a coalition ledger specification, a matched validating-log baseline, a requirement-driven consensus comparison and reproducible supplemental calculations. The source-text estimate falls from 13,389 to 9,771 words (27.0%) using the same procedure on both versions.
 
-Use `../../output/blockchain-review-revision-1-source-20261022.zip` for the current anonymous source package. It contains the clean manuscript and supplementary files. The independent reviewer replies are in `../../review/revision-1/`. The clean PDF is `../../output/pdf/blockchain-mission-trust-review-anonymous.pdf`; the companion `blockchain-mission-trust-review-revision-marked.pdf` highlights rewritten body text in blue, with figures and tables retaining publication styling. It omits deletions and is not a word-level redline. Detailed change locations and the evidence boundaries are recorded in `../../review/revision-1/README.md`.
+Use `../../output/blockchain-review-revision-1-source-20261025.zip` for the current anonymous source package. It contains the clean manuscript and supplementary files. The independent reviewer replies are in `../../review/revision-1/`. The clean PDF is `../../output/pdf/blockchain-mission-trust-review-anonymous.pdf`; the companion `blockchain-mission-trust-review-revision-marked.pdf` highlights rewritten body text in blue, with figures and tables retaining publication styling. It omits deletions and is not a word-level redline. Detailed change locations and the evidence boundaries are recorded in `../../review/revision-1/README.md`.
 
-The September archives and cover letter remain historical submission records. The present revision does not update or submit the cover letter. The published figure PDFs have been replaced by programmatic vector drawings; older raster masters, wrappers and slide files elsewhere in the repository describe earlier versions and are not used by the current manuscript.
+The September archives and cover letter remain historical submission records. The present revision does not update or submit the cover letter. The current figure PDFs are exported from the supplied multipage Visio source. The original layout, colors and icons are retained, with larger labels, corrected wording, a populated heatmap paired with the OAL schematic, revised comparator labels and schematic replacements for the six photo-realistic illustrations in Figure 7. The October 22 simplified drawings are superseded. Earlier image masters and slide files elsewhere in the repository describe historical versions.
 
 ## Build
 
@@ -37,10 +37,10 @@ The official MDPI template was obtained on 6 August 2026. Its archived download 
 - `main.tex`, `sections/`, `references.bib`, `main.bbl`, and `main.pdf`: editable clean source and compiled manuscript.
 - `main-marked.tex`: generated companion with section-level blue highlighting; compile separately when needed.
 - `Definitions/`: MDPI class, bibliography style, and template assets.
-- `figures/`: seven publication PDFs containing vector drawing commands and text.
-- `supplementary/`: claim and citation-role CSVs, codebook, query list, consensus requirements, application specification, executable replay, computed results and vector-figure generation script.
+- `figures/`: seven publication PDFs with vector geometry and text, plus the editable `Figures-revised.vsdx`. Figure 2 retains one raster lighthouse illustration; Figures 1 and 3–7 contain no raster images.
+- `supplementary/`: claim and citation-role CSVs, codebook, query list, consensus requirements, application specification, executable replay, computed results, OAL aggregation script and Visio PDF export script.
 
-Run `python supplementary/replay_case.py` and `python supplementary/build_figures.py` from an extracted manuscript package with Python 3.10 or later, `cryptography`, and `reportlab` installed. The scripts identify their own paths. The replay runs synthetic rule checks; it does not run Fabric, consensus or a field trial. Full texts, temporary extraction files, credentials, identifying cover letters and Git history are excluded from the archive.
+Run `python supplementary/replay_case.py` and `python supplementary/build_figures.py --data-only` from an extracted manuscript package with Python 3.10 or later and `cryptography` installed. Exporting the editable figure pages additionally requires Microsoft Visio for Windows: run `python supplementary/build_figures.py` without `--data-only`, or invoke `supplementary/export_visio_figures.ps1`. Manuscript compilation uses the supplied PDFs and does not require Visio. The scripts identify their own paths. The replay runs synthetic rule checks; it does not run Fabric, consensus or a field trial. Full texts, temporary extraction files, credentials, identifying cover letters and Git history are excluded from the archive.
 
 ## Evidence status
 

@@ -9,9 +9,11 @@ Consider a civil coastal-response coalition comprising authority A, research ope
 A USV may simultaneously relay acoustic traffic, cache data, provide time, and host fusion. Failure at that shared dependency affects several apparently independent products. End-to-end source signatures can preserve origin integrity through an untrusted relay, while selective withholding and common clock or transformation errors remain relevant. Figure~\ref{fig:architecture} separates the constrained evidence path from shore-based shared-state services.
 
 \begin{figure}[!htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
 \centering
-\includegraphics[width=\textwidth]{figures/figure-01-reference-architecture.pdf}
-\caption{Cross-domain reference architecture and coalition roles. Shore organizations host peers and ordering nodes; the USV is a forwarding/cache dependency. Local sensing and safety continue within delegated authority during a gateway partition.\label{fig:architecture}}
+\includegraphics[width=\fulllength]{figures/figure-01-reference-architecture.pdf}
+\caption{Cross-domain reference architecture. Shore organizations host peers and ordering nodes; the USV is a forwarding/cache dependency. Local sensing and safety continue within delegated authority during a gateway partition.\label{fig:architecture}}
+\end{adjustwidth}
 \end{figure}
 
 Raw imagery, sonar, detailed telemetry, and attestation evidence remain encrypted off chain. Shared records contain commitments, membership, policy/model versions, revocations, and audit judgments. Delay-tolerant forwarding can use Bundle Protocol version 7 and BPSec integrity/confidentiality services \citep{rfc9171,rfc9172}. Store-and-forward delivery preserves messages across contacts; authority expiry and evidence-age policy are separate application rules. A successfully delivered old command is not thereby timely.
@@ -36,9 +38,11 @@ A \emph{trusted data environment} is the socio-technical setting that produces, 
 Observation validity concerns correspondence with the physical world. Commitment and provenance integrity concerns protected bytes and recorded origins or transformations. Ledger and governance consistency concerns authorized shared-state transitions. Mission-use suitability concerns the particular decision and consequence. Figure~\ref{fig:assurance-chain} shows the distinct questions and supporting evidence.
 
 \begin{figure}[!htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
 \centering
-\includegraphics[width=\textwidth]{figures/figure-02-assurance-chain.pdf}
+\includegraphics[width=\fulllength]{figures/figure-02-assurance-chain.pdf}
 \caption{Four assurance claims and their evidence. The relation is an argument structure; an implementation may evaluate the checks in a different order.\label{fig:assurance-chain}}
+\end{adjustwidth}
 \end{figure}
 
 A signature can remain valid after key theft; an accurate observation can become stale; and a consistent record can contain an erroneous sensor assertion. RATS appraisals support scoped measured-state claims \citep{birkholz2023remote}, while physical diagnostics and corroboration support observation claims. The relying policy composes the applicable results, with explicit responses to failed or unknown requirements.
