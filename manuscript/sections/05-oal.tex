@@ -6,7 +6,7 @@ OAL classifies \emph{what is judged}, \emph{which claim is sought}, and \emph{wh
 
 An \emph{entity} is an accountable principal: an organization, operator, service, or autonomous agent with delegated authority. A \emph{platform/device} is the endpoint executing a function, including vehicles, gateways, sensors, and hosted compute instances. A vehicle can be considered an entity when exercising delegated authority and a platform when its firmware is measured. A \emph{link/path} comprises physical media, intermediate nodes, security associations, and changing quality along an end-to-end route. A \emph{data product} is an identified version of an observation, track, map, model, command, policy, or audit record. Corrections and transformations create new version identifiers.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \caption{OAL objects and claim-specific evidence.\label{tab:objects}}
 \begin{tabularx}{\textwidth}{@{}P{28mm}YY@{}}
 \toprule
@@ -22,7 +22,7 @@ Data product (D) & Signature, content ID, times, lineage, uncertainty, residuals
 
 The assurance axis uses O (observation validity), C (commitment and provenance integrity), G (ledger and governance consistency), and M (mission-use suitability). O uses physical bounds, calibration, diagnostics, and corroboration. C binds producer, version, and transformation assertions through signatures and provenance. G addresses jointly authorized membership, order, policy, and recovery state. M applies purpose, freshness, consequence, uncertainty, and authority requirements. When a shared-state service is not needed, ledger-specific claims are inapplicable; equivalent governance claims may be met by another service.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \caption{Lifecycle stages and relevant state transitions.\label{tab:lifecycle}}
 \begin{tabularx}{\textwidth}{@{}P{35mm}YY@{}}
 \toprule
@@ -58,10 +58,10 @@ The strata expose different emphases. Among 19 studies targeting UAV, maritime A
 
 The value of the axes is the distinction between evidence that mechanisms actually supply and evidence needed by the next consumer. Table~\ref{tab:interfaces} compares mechanisms that share an application label or trust vocabulary but support different relying decisions. Each comparison changes an acceptance requirement rather than assigning a paper a single trust score.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \begin{adjustwidth}{-\extralength}{0cm}
 \small
-\caption{Claim boundaries exposed by the OAL comparison. The final column states an additional design obligation, not a measured effect of OAL.\label{tab:interfaces}}
+\caption{Claim boundaries exposed by the OAL comparison. The final column states the additional requirements for composing these mechanisms.\label{tab:interfaces}}
 \begin{tabularx}{\fulllength}{@{}P{34mm}YY@{}}
 \toprule
 \textbf{Mechanism comparison} & \textbf{Evidence supplied} & \textbf{Consequence for composition}\\
@@ -78,17 +78,17 @@ Replicated-state protocols (S35--S38) & Similar D/G/F or D/G/R cells retain diff
 
 The AIS comparison illustrates an assurance handover. The maritime monitoring prototype records observations submitted by authorized receivers \citep{maritime2022monitoring}; pAIS and SecAIS instead examine protection of AIS messages \citep{kessler2020protected,goudossis2022secais}. The pAIS demonstration uses weak demonstration parameters, while SecAIS implements selected modes with simulated AIS devices. Their L3 profiles identify software implementation, not equivalent security strength or on-air validation. A relying navigation service still needs evidence about the reported position. Visual-odometry cross-checking supplies one such mechanism, with recorded-data evaluation and limitations over low-texture water or at night \citep{varshosaz2019spoofing}. Multi-UAV corroboration supplies another under assumptions about observers and malicious participants \citep{garcamagario2019security,barka2022towards}. OAL exposes where a signed, consistently stored but erroneous position could otherwise pass an underspecified acceptance rule.
 
-The expanded sample also supplies positive precedents for continuity. Hierarchical drone trust and blockchain-assisted routing update reputation and restrict cooperation as behavior changes \citep{hierarchical2023trust,yang2023trusted}. Yang et al. report a bounded experiment with eight physical UAV nodes, timed malicious forwarding and a link interruption. This supports cooperation/path adaptation (L3/L4); their larger consensus benchmark uses a separate container environment. These mechanisms already connect observations of behavior to continued use. The additional coalition question concerns how a partitioned participant interprets changed authority and propagates invalidation to dependent products, as developed in Section~\ref{sec:trace}.
+UAV trust and routing studies provide precedents for continuity. Hierarchical drone trust and blockchain-assisted routing update reputation and restrict cooperation as behavior changes \citep{hierarchical2023trust,yang2023trusted}. Yang et al. report a bounded experiment with eight physical UAV nodes, timed malicious forwarding and a link interruption. This supports cooperation/path adaptation (L3/L4); their larger consensus benchmark uses a separate container environment. These mechanisms already connect observations of behavior to continued use. The additional coalition question concerns how a partitioned participant interprets changed authority and propagates invalidation to dependent products, as developed in Section~\ref{sec:trace}.
 
 Task suitability is equally specific. COMITMENT combines partner history with workload/capacity criteria for fog offloading \citep{alkhafajiy2020comitment}. Underwater signcryption evaluates cryptographic operations on a desktop, while trust/energy routing uses simulation \citep{zhang2026underwater,eetauv2025trust}. TAFL-UWSN filters federated participants and updates, but its detailed evaluation uses terrestrial UNSW-NB15 data \citep{tafl2026underwater}. These results support distinct commitments or processing decisions; transferring them to an acoustic mission additionally requires channel, energy and data-distribution evidence.
 
-Finally, a common cell does not imply interchangeable mechanisms. Raft and the Byzantine protocols differ in fault assumptions \citep{raft2014,pbft1999,hotstuff2019,narwhal2022}. The original PBFT prototype did not implement view changes or retransmissions, so its normal-operation claim receives L1/L3 and recovery receives L1. This claim-level distinction prevents a prototype label from spreading to an untested path. Across the sample, no extracted claim establishes an integrated air--surface--underwater mission with continuity of authority, observation appraisal and dependent-product recovery all validated. This conclusion is scoped to the inspected evidence.
+Finally, a common cell does not imply interchangeable mechanisms. Raft and the Byzantine protocols differ in fault assumptions \citep{raft2014,pbft1999,hotstuff2019,narwhal2022}. The original PBFT prototype did not implement view changes or retransmissions, so its normal-operation claim receives L1/L3 and recovery receives L1. This claim-level distinction prevents a prototype label from spreading to an untested path. Across the sample, no extracted claim establishes an integrated air--surface--underwater mission with continuity of authority, observation appraisal and dependent-product recovery all validated.
 
 \subsection{Sensitivity to Selection and Coding}\label{sec:sensitivity}
 
 Table~\ref{tab:sensitivity} reports reproducible alternatives. Removing the four generic consensus papers leaves all 25 occupied cells and the same leading cell, now with 12 studies. Removing the four conceptual-only studies reduces occupancy to 22. Thus, infrastructure comparators increase counts, while some coverage depends on conceptual mechanisms. The direct-domain pattern remains centered on admission governance when the terrestrial-data proxy study is removed.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \caption{Sensitivity of the coverage map. Occupied cells are descriptive counts, not a completeness score. D/G/F denotes data governance at fusion; E/G/A denotes entity governance at admission.\label{tab:sensitivity}}
 \begin{tabularx}{\textwidth}{@{}YrrP{33mm}@{}}
 \toprule
@@ -106,4 +106,4 @@ Leave one study out (39 runs) & 38 & 23--25 & D/G/F (15--16)\\
 \end{tabularx}
 \end{table}
 
-Reassigning the S01--S03 platform-identity rows to entity identity changes individual cell counts without changing occupancy or the leading cell. Every leave-one-out map retains D/G/F as its largest cell, with 23--25 occupied cells overall. The L4 count depends on S31: coding its bounded physical-node experiment conservatively as a testbed removes L4 without changing the heatmap. These checks expose classification and inclusion effects; they do not establish predictive validity or eliminate availability bias. The stronger analytical result is the traceable distinction among claim boundaries and the resulting requirements for composition.
+Reassigning the S01--S03 platform-identity rows to entity identity changes individual cell counts without changing occupancy or the leading cell. Every leave-one-out map retains D/G/F as its largest cell, with 23--25 occupied cells overall. The L4 count depends on S31: coding its bounded physical-node experiment conservatively as a testbed removes L4 without changing the heatmap. The leading cell is stable to individual-study removal, while domain stratification and claim-level comparisons expose distinct composition requirements.

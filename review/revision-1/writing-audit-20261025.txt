@@ -1,0 +1,202 @@
+反防御写作检查与最小修改记录（2026-10-25）
+范围：摘要及正文第 1—11 节；按 anti-defensive-writing-skill 逐处检查。
+原则：保持段落顺序、数据、引用、对照结果、方法假设和实质局限；删除重复辩解与修订过程语言。
+保留项：123 篇参考文献、39 篇研究、89 条主张及统计结果；可获得性和单人编码限制；零值的解释；合成回放未运行 Fabric；等价日志和标量基线；P1—P6 的证伪条件。
+
+1. 位置：manuscript/main.tex（修改前第 31 行）
+原文：The synthesis makes evidence boundaries and composition requirements traceable; comparative deployment performance and integrated mission effectiveness remain empirical questions.
+问题：摘要结尾转为预先辩解，冲淡已完成的贡献。
+最小修改：The synthesis connects mechanism evidence to explicit composition requirements for cross-domain mission decisions.
+理由：以已有比较分析支持的贡献收束；部署和任务验证的边界保留在局限章节。
+
+2. 位置：manuscript/sections/01-introduction.tex（修改前第 13 行）
+原文：The analytical contribution concerns evidence organization and conditional technology selection; the replay evaluates specified rules rather than an integrated vehicle deployment.
+问题：贡献段末重复否认未开展的部署验证。
+最小修改：Together, the mapping, replay, and requirement-based comparisons make claim composition and technology selection traceable.
+理由：保留前文对合成回放的定性，直接说明三项贡献如何相连。
+
+3. 位置：manuscript/sections/02-scope.tex（修改前第 7 行）
+原文：official-source retrieval during revision checked developments
+问题：方法中混入修订过程措辞。
+最小修改：official-source retrieval checked developments
+理由：保留检索方式与截至日期。
+
+4. 位置：manuscript/sections/02-scope.tex（修改前第 15 行）
+原文：The revised bibliography contains 123 references.
+问题：用版本状态描述研究材料。
+最小修改：The bibliography contains 123 references.
+理由：参考文献数量和分工不变。
+
+5. 位置：manuscript/sections/02-scope.tex（修改前第 24 行）
+原文：Scope and evidence roles in the revised synthesis.
+问题：表题带有修订汇报口吻。
+最小修改：Scope and evidence roles in the synthesis.
+理由：表题直接描述当前内容。
+
+6. 位置：manuscript/sections/02-scope.tex（修改前第 33 行）
+原文：Revision case & Executable policy replay
+问题：把案例定位为审稿修订产物。
+最小修改：Worked case & Executable policy replay
+理由：突出案例在论证中的用途。
+
+7. 位置：manuscript/sections/04-landscapes.tex（修改前第 9 行）
+原文：Their evidence addresses the specified inference settings, rather than integrated coalition operation.
+问题：评价相关研究时引入并非该实验目标的整体部署对照。
+最小修改：These studies support trust inference within their specified network and observation models.
+理由：明确其证据适用范围，保留前述实验设置和规模。
+
+8. 位置：manuscript/sections/05-oal.tex（修改前第 64 行）
+原文：The final column states an additional design obligation, not a measured effect of OAL.
+问题：图表说明预先否认正文未声称的效果。
+最小修改：The final column states the additional requirements for composing these mechanisms.
+理由：直接命名该列的设计要求；效果验证条件保留在研究议程。
+
+9. 位置：manuscript/sections/05-oal.tex（修改前第 81 行）
+原文：The expanded sample also supplies positive precedents for continuity.
+问题：以扩样过程和自我评价引出证据。
+最小修改：UAV trust and routing studies provide precedents for continuity.
+理由：由研究对象和其支持的连续性机制引出具体结果。
+
+10. 位置：manuscript/sections/05-oal.tex（修改前第 85 行）
+原文： This conclusion is scoped to the inspected evidence.
+问题：紧接“no extracted claim”的重复限定。
+最小修改：删除上述句子。
+理由：前句已限定为样本中提取的主张，删除重复句不扩大结论。
+
+11. 位置：manuscript/sections/05-oal.tex（修改前第 109 行）
+原文：These checks expose classification and inclusion effects; they do not establish predictive validity or eliminate availability bias. The stronger analytical result is the traceable distinction among claim boundaries and the resulting requirements for composition.
+问题：以不证明什么及“更强结果”的自我评价结束分析。
+最小修改：The leading cell is stable to individual-study removal, while domain stratification and claim-level comparisons expose distinct composition requirements.
+理由：改为直接概括已计算的稳定性和分层差异；可获得性偏差保留在局限章节。
+
+12. 位置：manuscript/sections/06-dependencies.tex（修改前第 46 行）
+原文： Neither relationship implies a new general-purpose control or fusion algorithm.
+问题：在说明与 MAPE-K、JDL 的关系后预先否认算法创新。
+最小修改：删除上述句子。
+理由：前文已经明确 CTG 的组织与专门化作用。
+
+13. 位置：manuscript/sections/06-dependencies.tex（修改前第 69 行）
+原文：Thus this example demonstrates the effect of the chosen semantics, rather than an inherent advantage of a vector representation. Comparative inference quality remains an empirical question.
+问题：对照结果后连续添加防御性解释。
+最小修改：The decision difference follows from whether the policy enforces temporal authority as a veto.
+理由：保留标量否决策略与类型规则完全一致的结果，直接解释差异的来源。
+
+14. 位置：manuscript/sections/06-dependencies.tex（修改前第 73 行）
+原文：These are deterministic rule checks with synthetic events; the script runs no Fabric network or consensus protocol.
+问题：正文再次罗列未执行的实现。
+最小修改：The replay checks deterministic policy consistency for the synthetic events.
+理由：保留合成事件及规则一致性的范围；未运行 Fabric 的事实集中保留在局限章节。
+
+15. 位置：manuscript/sections/07-blockchain.tex（修改前第 7 行）
+原文： Its value is confined to such shared-governance conditions and the operational services supplied by the chosen implementation.
+问题：紧接“一种实现”的重复收缩，未增加选择条件。
+最小修改：删除上述句子。
+理由：本段已明确联合治理需求，后段继续比较满足相同要求的替代服务。
+
+16. 位置：manuscript/sections/07-blockchain.tex（修改前第 9 行）
+原文： No intrinsic ledger superiority is inferred.
+问题：等价决策和成本比较之后再次否认优越性。
+最小修改：删除上述句子。
+理由：保留见证日志获得相同决策的对照结果及选择指标。
+
+17. 位置：manuscript/sections/07-blockchain.tex（修改前第 11 行）
+原文： It does not establish a failure of a particular consensus protocol.
+问题：TradeLens 段落预先回应并未提出的协议失败解释。
+最小修改：删除上述句子。
+理由：前句已把证据落在参与、激励与经营责任。
+
+18. 位置：manuscript/sections/07-blockchain.tex（修改前第 23 行）
+原文： These are design requirements, rather than measurements of a deployed mission.
+问题：场景段末重复否认部署测量。
+最小修改：删除上述句子。
+理由：段首的设计假设和 illustrative deadline 已明确性质，局限章节保留实现边界。
+
+19. 位置：manuscript/sections/07-blockchain.tex（修改前第 74 行）
+原文：Administrative separation, rather than merely four processes, supplies the independence.
+问题：用贬低性对照解释独立性。
+最小修改：Administrative separation supplies the independent fault domains.
+理由：直接给出真正决定故障独立性的条件。
+
+20. 位置：manuscript/sections/07-blockchain.tex（修改前第 88 行）
+原文：These are alternative compact application profiles, not claims that either encoding is the default Fabric transaction-signature format.
+问题：对签名编码的说明采用“不是在声称”的辩解句式。
+最小修改：The budget compares these two compact application signature profiles.
+理由：直接界定应用签名口径，后文保留 Fabric 外层开销。
+
+21. 位置：manuscript/sections/07-blockchain.tex（修改前第 88 行）
+原文：Their total size and resource cost require a configured implementation; the 525-byte JSON value is not presented as a measured Fabric transaction size.
+问题：通过否认误读来解释 525 字节。
+最小修改：Full transaction sizes and resource costs depend on the configured Fabric implementation; the 525-byte JSON value covers the gateway's application payload.
+理由：明确测量对象及完整事务所需的额外配置，数值含义不变。
+
+22. 位置：manuscript/sections/07-blockchain.tex（修改前第 109 行）
+原文：This sensitivity calculation exhibits a regime in which the log is faster and no ledger safety gain exists; its delays are illustrative inputs, not benchmarks.
+问题：把假设时延计算写成架构胜负，再补充自我否定。
+最小修改：Under these assumed delays, the validating log allows one additional second of partition with the same decision rules.
+理由：保留 58/59 s 对照，明确它是给定时延和相同规则下的计算结果。
+
+23. 位置：manuscript/sections/08-evaluation.tex（修改前第 5 行）
+原文：Figure~\ref{fig:maturity} presents these complementary evidence forms using schematic representations.
+问题：正文介绍制图形式，未说明图的论证作用。
+最小修改：Figure~\ref{fig:maturity} relates each evidence form to its inputs, reasoning or evaluation, and outputs.
+理由：与新的文字框图对应，说明读者应从图中读出什么。
+
+24. 位置：manuscript/sections/08-evaluation.tex（修改前第 11 行）
+原文：Complementary evidence forms and the scope each can support. The schematics are drawn as native Visio shapes; no photographic or generated-image assets are used in this figure.
+问题：图注汇报制图工具及素材来源，偏离学术内容。
+最小修改：Complementary evidence forms and their claim-specific support. Each panel relates inputs, reasoning or evaluation, and outputs; rigor, environmental fit, and scope are assessed separately.
+理由：图注说明证据结构；Visio 和素材来源信息保留在审稿回复。
+
+25. 位置：manuscript/sections/08-evaluation.tex（修改前第 15 行）
+原文：Profiles overlap, and only four studies are conceptual-only.
+问题：only 给客观计数附加不必要的评价语气。
+最小修改：Profiles overlap; four studies are conceptual-only.
+理由：四篇纯概念研究的数量及证据类型重叠关系不变。
+
+26. 位置：manuscript/sections/08-evaluation.tex（修改前第 47 行）
+原文：It enables reproduction of the analytical illustration; deploying and benchmarking the specified Fabric and witnessed-log implementations is a subsequent evaluation stage.
+问题：复现说明以尚未开展的实现工作收尾。
+最小修改：The supplement supports reproduction of the claim mapping, sensitivity analyses, and synthetic policy replay.
+理由：明确当前可复现的内容；部署要求保留在议程和局限章节。
+
+27. 位置：manuscript/sections/09-discussion.tex（修改前第 17 行）
+原文： Representation alone does not guarantee improvement.
+问题：P1 已给出可证伪条件，末句再次预先否认优势。
+最小修改：删除上述句子。
+理由：保留公平基线、同等预算和相等或更好对照结果的证伪条件。
+
+28. 位置：manuscript/sections/09-discussion.tex（修改前第 31 行）
+原文：It does not replace those standards or establish compliance with them.
+问题：采用“不替代、不证明合规”的预先辩解句式。
+最小修改：Conformance assessment remains tied to the requirements of the applicable standard.
+理由：保留合规必须依据适用标准独立评估的实质边界。
+
+29. 位置：manuscript/sections/10-limitations.tex（修改前第 3 行）
+原文：Released sensitivity variants expose changes caused by domain balance, conceptual studies and selected coding choices;
+问题：局限章节使用材料发布过程措辞。
+最小修改：Sensitivity analyses characterize changes caused by domain balance, conceptual studies and selected coding choices;
+理由：直接说明敏感性分析的作用，保留无法测量缺失文献偏差的限制。
+
+30. 位置：manuscript/sections/10-limitations.tex（修改前第 5 行）
+原文：They do not supply a general inference theorem, calibrated trust model, or proof that every consequence-relevant dependency has been identified. Correlation estimates, causal interpretations, model transfer, and evidence sufficiency require application-specific validation.
+问题：以未提供的理论和证明清单定义框架。
+最小修改：Application-specific validation is needed for inference rules, calibration, dependency completeness, correlation estimates, causal interpretations, model transfer, and evidence sufficiency.
+理由：以应用验证要求表达框架边界，明确保留推断、校准、依赖完整性、相关性、因果解释、迁移及证据充分性的限制。
+
+31. 位置：manuscript/sections/10-limitations.tex（修改前第 7 行）
+原文：The revision case uses synthetic events,
+问题：将案例写成修订产物。
+最小修改：The worked case uses synthetic events,
+理由：保留合成事件和全部实验假设。
+
+32. 位置：manuscript/sections/10-limitations.tex（修改前第 7 行）
+原文： These distinctions define what the reproducible illustration establishes.
+问题：实现边界已列明，末句再次总结自我限定。
+最小修改：删除上述句子。
+理由：删除无新增信息的重复收尾。
+
+33. 位置：manuscript/sections/11-conclusions.tex（修改前第 7 行）
+原文：These steps can determine where the proposed organization improves decisions and accountability, and where a simpler implementation satisfies the same claims.
+问题：结尾转向尚未完成的效果判断，削弱已论证贡献的记忆点。
+最小修改：The framework provides a traceable basis for matching mechanism evidence to mission requirements and selecting the governance service that those requirements justify.
+理由：收束到已完成的证据匹配和有条件的技术选择，不新增性能优势。

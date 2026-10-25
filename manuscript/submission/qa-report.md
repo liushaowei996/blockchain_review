@@ -1,6 +1,18 @@
 # Build and Quality Report
 
-## 25 October 2026: Expanded OAL synthesis (current)
+## 25 October 2026: Layout, writing and Figure 7 refinement (current)
+
+Both final manuscript versions compile from the isolated submission inputs and contain 31 pages, seven figures, twelve tables and 123 used references. Figure 5 shares page 14 with the CTG discussion and case text at 90% of the text width; its vector artwork is unchanged. Tables 2 and 9 now share pages with body text. All 62 final manuscript pages were visually inspected in rendered sheets, with full-page checks of the affected layout and full-size inspection of Figure 7. The build logs contain no overfull boxes, oversized floats, undefined citations or unresolved references. The existing LaTeX release notice and one underfull box remain without visible layout defects.
+
+Thirty-three local writing edits retain the manuscript's paragraph order, scientific data, bibliography, evidence boundaries and falsification conditions. The source-text estimate is 9,936 words, 25.8% below the 13,389-word original baseline; the abstract has 164 words. The itemized audit records the original, issue, replacement and reason for each change in `../../review/revision-1/writing-audit-20261025.txt`.
+
+Figure 7 consists of six colored text-and-box panels: 47 native rectangles/text boxes and 12 straight connectors, with 654 selectable text characters and no raster images or pictograms. Its native-page builder reproduces the supplied VSDX byte for byte. Only the Figure 7 page XML and its page dimensions change; all other native pages and Figures 1–6 PDFs are byte-identical to the preceding expanded OAL revision. The original uploaded Visio remains unchanged. The bibliography and all scientific CSV/JSON data also remain unchanged after Git line-ending normalization.
+
+Reviewer 2's response changes only three related paragraphs in `word/document.xml`; comments, ratings and all other DOCX parts are preserved. It was rendered with installed LibreOffice 26.8.0.3, and all nine final pages were visually inspected. Reviewer 1's three-page response is byte-identical to the preceding verified version. The official template and general-evaluation content remain intact.
+
+The current anonymous archive is `../../output/blockchain-review-layout-refined-source-20261025.zip`, with 59 explicitly listed files, including the Figure 7 builder and selective PDF export script. CRC, manifest, source-byte and isolated-build agreement checks pass. Full texts and temporary working files are excluded. Final hashes and structural checks are recorded in `../../review/revision-1/verification.json`. Earlier records below describe their dated artifact states.
+
+## 25 October 2026: Expanded OAL synthesis (previous)
 
 The analytical sample expands from 23 to 39 studies and from 49 to 89 scoped claims. The bibliography has 123 used references, with a complete role register separating 39 mapped mechanisms from 84 contextual/evaluation references. The sample separates 19 direct-domain studies and 20 transferable studies. Four original candidates were recovered; ten remain incompletely accessible. Source/version registers, screening dispositions and coding decisions accompany eight sensitivity variants and 39 leave-one-out maps. Occupied cells increase from 20 to 25; overlapping profiles are L0=6, L1=11, L2=20, L3=20, L4=1, L5=0. The physical UAV-node L4 assignment is scoped and tested under a conservative L3-only reading.
 

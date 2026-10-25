@@ -1,7 +1,7 @@
 {
   "revision_date": "2026-10-25",
-  "clean_manuscript_pages": 33,
-  "marked_manuscript_pages": 33,
+  "clean_manuscript_pages": 31,
+  "marked_manuscript_pages": 31,
   "reviewer_response_pages": {
     "1": 3,
     "2": 9
@@ -13,34 +13,37 @@
     "word/settings.xml"
   ],
   "libreoffice_version": "26.8.0.3",
-  "source_package_files": 58,
+  "source_package_files": 59,
   "full_text_studies": 39,
   "claim_records": 89,
   "original_mechanism_candidates_not_full_text_coded": 10,
   "word_estimates": {
     "before": 13389,
-    "after": 10109,
-    "reduction_percent": 24.5
+    "after": 9936,
+    "reduction_percent": 25.8
   },
   "validation": [
     "static manuscript audit passed: 123 used/resolved references, seven figures and twelve tables",
-    "clean and marked builds passed from the explicit isolated package; 33 pages each; no overfull boxes, oversized floats or unresolved references",
-    "all clean/marked pages visually inspected in rendered sheets; native Figure 3 inspected at full size",
-    "both replies rendered with installed LibreOffice 26.8.0.3 and all 12 pages visually inspected",
-    "reviewer comments, ratings and all unedited paragraphs preserved; only word/document.xml changed in each response",
-    "all 96 native Figure 3 cells match generated CSV; all six other figure PDFs and native page XML remain unchanged",
-    "original supplied Visio unchanged; revised document and manuscript metadata anonymous",
-    "eight sensitivity variants, 39 leave-one-out maps and layer co-occurrences reproduce byte for byte",
-    "synthetic cryptographic/policy replay and numerical aggregation reproduce byte for byte in the isolated package",
-    "source archive CRC, explicit manifest, source-byte and isolated-build agreement checks passed; no full texts or temporary working files included"
+    "clean and marked builds passed from the isolated submission inputs; 31 pages each; no overfull boxes, oversized floats or unresolved references",
+    "all 62 final manuscript pages visually inspected in rendered sheets; affected layouts and Figure 7 inspected at full size",
+    "Figure 5 shares page 14 with CTG discussion and case text; Tables 2 and 9 also share pages with body text",
+    "33 local prose edits recorded with original wording, issue, replacement and reason; scientific limitations and falsification conditions retained",
+    "reviewer 2 reply rendered with LibreOffice 26.8.0.3; all nine pages visually inspected; reviewer 1 unchanged from the preceding verified version",
+    "only paragraphs 68, 75 and 76 in reviewer 2 word/document.xml changed; comments, ratings and all other DOCX parts unchanged",
+    "Figure 7 uses 47 native rectangles/text boxes and 12 straight connectors; no pictograms or raster images; native regeneration is byte-identical",
+    "Figures 1 through 6 PDFs and other native Visio pages unchanged; original supplied Visio unchanged",
+    "scientific CSV/JSON data and bibliography unchanged after Git line-ending normalization; prior numerical verification remains applicable",
+    "source archive CRC, explicit 59-file manifest, source-byte and isolated-build agreement checks passed; no full texts or temporary working files included"
   ],
   "files": {
-    "output/pdf/blockchain-mission-trust-review-oal-expanded.pdf": "5468e0a692c2695d1c5befbf93573591321e0b4748f9874c9642e745682108f8",
-    "output/pdf/blockchain-mission-trust-review-oal-expanded-marked.pdf": "73af4916a696908f187e65d170f1d4c9290e621c8bbcb24fe57f150915bea518",
+    "output/pdf/blockchain-mission-trust-review-layout-refined.pdf": "3cc96282411ddfe818f09898ba9c8caa11a526b170d1cdb9234b73ea57b034e8",
+    "output/pdf/blockchain-mission-trust-review-layout-refined-marked.pdf": "e3829def46d4ab1d4c94944d2c646f5044f184f1e5a6dcea4e4c524d43ac1060",
     "review/revision-1/Response-to-Reviewer-1.docx": "3537879503214046e006493d486b9d8908ad443b89b76695612c522e459689f6",
-    "review/revision-1/Response-to-Reviewer-2.docx": "5724c845938c8c2fc570764d30203c33bba1bbed322bb8ea8bbefccb93fb4436",
-    "output/blockchain-review-oal-expanded-source-20261025.zip": "8fbc967d69f68d5865589072b9271a4dc395cbc889003ae9fe4d7b9f6e797b25",
-    "manuscript/figures/Figures-revised.vsdx": "dd1a6dff93e37103909b5c0076b29f1510c4ca59078620cfd3df4da40e22b01a"
+    "review/revision-1/Response-to-Reviewer-2.docx": "d51d3e960dd98a59df1f4b19e3daa3a693bc9cd121e01cff9436bbbf2f64d88c",
+    "output/blockchain-review-layout-refined-source-20261025.zip": "4fc8c40ea2cf5b29bedb67a9d0528e3e46b6dc40457626be17114bc7dd287c15",
+    "manuscript/figures/Figures-revised.vsdx": "a5286258cf77bc22f3606a328778226699d29ee60e6f12635056855ac3b305db",
+    "manuscript/figures/figure-07-evidence-maturity.pdf": "396fc1d18c9b3e44086527c2a6eb56e26484cde6c39d20b9f3f491c37a8a5a32",
+    "review/revision-1/writing-audit-20261025.txt": "52a504a54390f6ffaf49ade57e27026057ad4ab675a728ca6dcdc95664c8c188"
   },
   "general_evaluation": {
     "updated_on": "2026-10-22",
@@ -115,10 +118,10 @@
       5,
       6,
       10,
-      12,
       13,
-      15,
-      20
+      14,
+      16,
+      21
     ],
     "original_pdf_raster_image_counts": [
       0,
@@ -175,25 +178,18 @@
       "figure-07-evidence-maturity.pdf": {
         "pages": 1,
         "raster_images": 0,
-        "selectable_text_characters": 495,
+        "selectable_text_characters": 654,
         "creator": "Microsoft® Visio® 2021",
-        "sha256": "031e58d8da83b414f1a160eb5f592858daf453f4c9e1ab92eedf3b336dbc4a54"
+        "sha256": "396fc1d18c9b3e44086527c2a6eb56e26484cde6c39d20b9f3f491c37a8a5a32"
       }
     },
     "original_vector_provenance_confirmed": true,
     "retained_raster_detail": "Figure 2 lighthouse illustration",
-    "figure_7_provenance": "Native Visio shapes and connectors replace the six photo-realistic illustrations.",
+    "figure_7_provenance": "Six color-coded native Visio text-and-box panels with straight arrows; no pictograms, photographic, stock or generated-image assets.",
     "native_heatmap_cells_checked": 96,
     "response_structural_checks": {
       "1": {
-        "modified_parts": [
-          "word/document.xml"
-        ],
-        "preserved_parts": 26,
-        "changed_paragraph_indices": [
-          24
-        ],
-        "black_comment_paragraphs_unchanged": true
+        "unchanged_from_comparison_baseline": true
       },
       "2": {
         "modified_parts": [
@@ -201,17 +197,32 @@
         ],
         "preserved_parts": 26,
         "changed_paragraph_indices": [
-          27,
           68,
           75,
           76
         ],
-        "black_comment_paragraphs_unchanged": true
+        "black_comment_paragraphs_unchanged": true,
+        "general_evaluation_unchanged": true
       }
     },
-    "general_evaluation_unchanged": true
+    "general_evaluation_unchanged": true,
+    "comparison_baseline": "f0cd73f",
+    "marked_manuscript_figure_pages": [
+      5,
+      6,
+      10,
+      13,
+      14,
+      16,
+      21
+    ],
+    "figure_7_builder": "manuscript/supplementary/update_evidence_visio.py",
+    "figure_7_shapes": {
+      "rectangles_and_text_boxes": 47,
+      "straight_connectors": 12
+    }
   },
-  "revision_focus": "Expanded OAL evidence and sensitivity synthesis",
+  "revision_focus": "Layout, direct evidence-based writing and Figure 7 text-and-box schematic",
   "bibliography_references": 123,
   "direct_domain_studies": 19,
   "transferable_studies": 20,
@@ -228,15 +239,14 @@
     "unchanged_figure_pdfs": [
       "figure-01-reference-architecture.pdf",
       "figure-02-assurance-chain.pdf",
+      "figure-03-oal-framework.pdf",
       "figure-04-dependency-threat.pdf",
       "figure-05-ctg-reasoning-loop.pdf",
-      "figure-06-blockchain-boundary.pdf",
-      "figure-07-evidence-maturity.pdf"
+      "figure-06-blockchain-boundary.pdf"
     ],
     "changed_visio_parts": [
-      "visio/pages/page4.xml",
-      "docProps/core.xml",
-      "docProps/app.xml"
+      "visio/pages/pages.xml",
+      "visio/pages/page8.xml"
     ],
     "native_cells_verified": 96,
     "original_visio_sha256": "91304529a425d154163223a774fcee4e22eb62b87cd8483b8683990ced26d17e",
@@ -249,8 +259,8 @@
       0,
       0
     ],
-    "main_pages": 33,
-    "main-marked_pages": 33,
+    "main_pages": 31,
+    "main-marked_pages": 31,
     "table_labels": {
       "tab:scope": "1",
       "tab:reviews": "2",
@@ -265,6 +275,60 @@
       "tab:budget": "11",
       "tab:evaluation": "12"
     },
-    "bibliography_items": 123
+    "bibliography_items": 123,
+    "other_six_native_pages_unchanged": true,
+    "figure_7_shapes": "47 rectangles/text boxes and 12 straight connectors; no pictograms or image objects",
+    "figure_7_text_characters": 654,
+    "figure_7_raster_images": 0,
+    "figure_7_metadata": {
+      "/Producer": "Microsoft® Visio® 2021",
+      "/Creator": "Microsoft® Visio® 2021",
+      "/CreationDate": "D:20261025103450+08'00'",
+      "/ModDate": "D:20261025103450+08'00'"
+    },
+    "scientific_data_and_bibliography_unchanged_after_git_line_ending_normalization": true,
+    "native_figure_7_regeneration_identical": true,
+    "reviewer_2_updated_paragraphs": [
+      68,
+      75,
+      76
+    ],
+    "reviewer_2_comments_ratings_and_other_parts_unchanged": true,
+    "reviewer_1_unchanged": true,
+    "table_pages": {
+      "1": 4,
+      "2": 8,
+      "3": 9,
+      "4": 9,
+      "5": 11,
+      "6": 12,
+      "7": 13,
+      "8": 15,
+      "9": 17,
+      "10": 18,
+      "11": 20,
+      "12": 22
+    },
+    "native_cells_verification_scope": "Verified in the preceding OAL expansion; Figure 3 native page, PDF and data are unchanged in this round.",
+    "source_archive_crc_passed": true,
+    "source_archive_manifest_and_source_bytes_match": true,
+    "source_archive_isolated_build_bytes_match": true,
+    "anonymous_manuscript_metadata": true
+  },
+  "comparison_baseline": "f0cd73f",
+  "abstract_words": 164,
+  "layout_writing_revision": {
+    "writing_edits": 33,
+    "audit": "review/revision-1/writing-audit-20261025.txt",
+    "figure_5_page": 14,
+    "figure_5_width_relative_to_text": 0.9,
+    "figure_5_pdf_unchanged": true,
+    "figure_7_page": 21,
+    "visual_pages_checked": {
+      "clean": 31,
+      "marked": 31,
+      "reviewer_2": 9
+    },
+    "reviewer_1": "Unchanged from the preceding three-page version already visually verified."
   }
 }

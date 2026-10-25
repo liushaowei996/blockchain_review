@@ -51,6 +51,7 @@ PACKAGE_FILES = (
     "supplementary/export_visio_figures.ps1",
     "supplementary/update_oal_visio.ps1",
     "supplementary/update_oal_visio.py",
+    "supplementary/update_evidence_visio.py",
     "supplementary/CODING-DECISIONS.md",
     "supplementary/oal-study-mapping.csv",
     "supplementary/oal-study-register.csv",

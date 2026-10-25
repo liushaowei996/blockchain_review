@@ -1,6 +1,8 @@
 param(
     [string]$SourcePath = (Join-Path (Split-Path $PSScriptRoot -Parent) 'figures\Figures-revised.vsdx'),
-    [string]$OutputDirectory = (Join-Path (Split-Path $PSScriptRoot -Parent) 'figures')
+    [string]$OutputDirectory = (Join-Path (Split-Path $PSScriptRoot -Parent) 'figures'),
+    [ValidateRange(1, 7)]
+    [int[]]$FigureNumbers = @(1, 2, 3, 4, 5, 6, 7)
 )
 # Export the retained, editable Visio pages without changing the source drawing.
 # Requires Microsoft Visio for Windows. The supplied PDFs compile on any OS.
@@ -20,7 +22,8 @@ try {
     $application = New-Object -ComObject Visio.InvisibleApp
     $application.AlertResponse = 7
     $document = $application.Documents.OpenEx($source, 2 + 64 + 128)
-    for ($i = 0; $i -lt $names.Count; $i++) {
+    foreach ($number in $FigureNumbers) {
+        $i = $number - 1
         $page = $document.Pages.Item(('Figure-{0:D2}' -f ($i + 1)))
         $pdf = Join-Path $destination ($names[$i] + '.pdf')
         # PDF, print intent, explicit page range; omit document properties.

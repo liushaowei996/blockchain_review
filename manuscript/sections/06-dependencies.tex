@@ -4,7 +4,7 @@
 
 Let $G_t=(V_t,E_t)$ be a time-indexed directed multigraph over OAL objects and their versions or state intervals. Relations name their semantics: an entity \emph{controls} a platform; a platform \emph{hosts} a model or \emph{produces} an observation; a path \emph{transmits} a product; an entity \emph{endorses} or \emph{consumes} a product; and a record \emph{commits to} another product. A transformation links its inputs, output, executing platform, responsible entity, code/model version, and event interval. In PROV, this transformation can be serialized as an activity \citep{w3c2013provdm}.
 
-\begin{figure}[!htbp]
+\begin{figure}[!htb]
 \begin{adjustwidth}{-\extralength}{0cm}
 \centering
 \includegraphics[width=\fulllength]{figures/figure-04-dependency-threat.pdf}
@@ -18,7 +18,7 @@ Traversal identifies claims for reassessment when a key, endpoint, model, or inp
 
 An analysis statement records \emph{attacker or environmental cause; capability; affected object; propagation relation; mission consequence; control; residual uncertainty}. For example, a compromised USV can withhold UUV batches, delaying the consumer's evidence and audit; independent contacts and protected local counters may expose gaps after reconnection. Acoustic fading can create the same delivery symptom with a different cause. The response can restrict freshness-sensitive use while attribution remains unknown.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \caption{Cross-object analysis of selected failure paths.\label{tab:threats}}
 \begin{tabularx}{\textwidth}{@{}P{29mm}YY@{}}
 \toprule
@@ -37,13 +37,13 @@ Unavailable governance quorum & Shared policy to fresh global authority & Retain
 
 CTG organizes context, temporal state, and dependencies through evidence capture, reliability appraisal, object-state inference, dependency propagation, uncertainty expression, policy action, accountable audit, and operational feedback. Evidence capture includes binding verification; propagation identifies affected descendants for reassessment under an explicit inference rule. Figure~\ref{fig:ctg} depicts this information flow.
 
-\begin{figure}[!htbp]
+\begin{figure}[!htb]
 \centering
-\includegraphics[width=\textwidth]{figures/figure-05-ctg-reasoning-loop.pdf}
+\includegraphics[width=0.90\textwidth]{figures/figure-05-ctg-reasoning-loop.pdf}
 \caption{CTG appraisal and action loop, with policy, temporal state, and dependency knowledge shared across its steps.\label{fig:ctg}}
 \end{figure}
 
-The loop is positioned within established architectures. MAPE-K separates monitoring, analysis, planning, execution, and shared knowledge \citep{kephart2003autonomic,ibm2005mapek}; CTG specializes that organization for claim appraisal, event/receipt-time separation, and dependency-triggered reassessment. The JDL fusion model distinguishes object, situation, impact, and process refinement \citep{steinberg1999jdl}; CTG adds an explicit record of which identity, provenance, governance, and temporal evidence supports reliance on those estimates. Neither relationship implies a new general-purpose control or fusion algorithm.
+The loop is positioned within established architectures. MAPE-K separates monitoring, analysis, planning, execution, and shared knowledge \citep{kephart2003autonomic,ibm2005mapek}; CTG specializes that organization for claim appraisal, event/receipt-time separation, and dependency-triggered reassessment. The JDL fusion model distinguishes object, situation, impact, and process refinement \citep{steinberg1999jdl}; CTG adds an explicit record of which identity, provenance, governance, and temporal evidence supports reliance on those estimates.
 
 Implementations can use Bayesian models, subjective logic, hidden-state inference, rules, or learned classifiers. Their outputs retain the named property, context, evidence lineage, uncertainty, and permitted use. Re-estimating trust after a change requires a specified update rule, rather than an arbitrary decrement along graph edges. A hard authorization condition can coexist with a graded quality estimate; the choice to make one condition non-compensable belongs to the mission policy.
 
@@ -53,7 +53,7 @@ The coalition in Section~\ref{sec:coalition} has jointly approved policy version
 
 Three signed records have intervals $[114,126]$, $[234,246]$, and $[294,306]$ s. On reconnection, a verifier checks their source signatures, batch inclusion, policy epoch, and the revocation history. A record whose interval ends before 240 s can be eligible for the historical audit. One beginning at or after 240 s is revoked at event time. An interval crossing 240 s is quarantined for review. Historical eligibility does not authorize a new physical action or refresh the observation.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \caption{Executable replay outcomes. Ledger and policy-validating witnessed-log paths use identical evidence and authorization rules. The scalar examples use the same input features.\label{tab:trace}}
 \begin{tabularx}{\textwidth}{@{}P{23mm}YP{22mm}Y@{}}
 \toprule
@@ -66,8 +66,8 @@ Three signed records have intervals $[114,126]$, $[234,246]$, and $[294,306]$ s.
 \end{tabularx}
 \end{table}
 
-The illustrative mean averages signature validity, observation quality, lineage, cached policy match, and temporal authority, using $[1,0.95,1,1,a]$ with $a=1,0.5,0$ and threshold 0.75. Its compensating aggregation accepts all three records. A scalar policy with an explicit authority veto produces exactly the typed rule's decisions. Thus this example demonstrates the effect of the chosen semantics, rather than an inherent advantage of a vector representation. Comparative inference quality remains an empirical question.
+The illustrative mean averages signature validity, observation quality, lineage, cached policy match, and temporal authority, using $[1,0.95,1,1,a]$ with $a=1,0.5,0$ and threshold 0.75. Its compensating aggregation accepts all three records. A scalar policy with an explicit authority veto produces exactly the typed rule's decisions. The decision difference follows from whether the policy enforces temporal authority as a veto.
 
 During disconnection, an action at 420 s can have restricted local authority under the cached envelope even though later audit identifies a conflict with effective global revocation; at 540 s the envelope has expired and the local policy denies the action. Reconciliation retains both the locally available authority and the later global judgment. Rewriting the old decision as if the vehicle had received the revocation at 240 s would erase this distinction.
 
-The supplied Python replay verifies Ed25519 signatures and Merkle inclusion, rejects altered records/proofs, checks all six arrival orders with duplicate delivery, and enumerates all 16 coalition signer subsets. The ledger-policy and validating-log decision functions agree throughout. These are deterministic rule checks with synthetic events; the script runs no Fabric network or consensus protocol. Section~\ref{sec:pattern} specifies how the same application rules map to Fabric and how the constrained vehicle receives an auditable result.
+The supplied Python replay verifies Ed25519 signatures and Merkle inclusion, rejects altered records/proofs, checks all six arrival orders with duplicate delivery, and enumerates all 16 coalition signer subsets. The ledger-policy and validating-log decision functions agree throughout. The replay checks deterministic policy consistency for the synthetic events. Section~\ref{sec:pattern} specifies how the same application rules map to Fabric and how the constrained vehicle receives an auditable result.

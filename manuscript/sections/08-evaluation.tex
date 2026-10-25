@@ -2,17 +2,17 @@
 
 \subsection{A Claim-Specific Evidence Profile}
 
-L0--L5 record how a claim is supported: concept, analysis, simulation/data, prototype, field trial, and sustained operation. Figure~\ref{fig:maturity} presents these complementary evidence forms using schematic representations. Formal soundness, experimental control, environmental representativeness, and operational duration remain separate assessment dimensions.
+L0--L5 record how a claim is supported: concept, analysis, simulation/data, prototype, field trial, and sustained operation. Figure~\ref{fig:maturity} relates each evidence form to its inputs, reasoning or evaluation, and outputs. Formal soundness, experimental control, environmental representativeness, and operational duration remain separate assessment dimensions.
 
-\begin{figure}[!htbp]
+\begin{figure}[!htb]
 \begin{adjustwidth}{-\extralength}{0cm}
 \centering
 \includegraphics[width=\fulllength]{figures/figure-07-evidence-maturity.pdf}
-\caption{Complementary evidence forms and the scope each can support. The schematics are drawn as native Visio shapes; no photographic or generated-image assets are used in this figure.\label{fig:maturity}}
+\caption{Complementary evidence forms and their claim-specific support. Each panel relates inputs, reasoning or evaluation, and outputs; rigor, environmental fit, and scope are assessed separately.\label{fig:maturity}}
 \end{adjustwidth}
 \end{figure}
 
-Within the 39-study sample, six profiles include L0, eleven L1, twenty L2, twenty L3, and one L4; none includes L5. Profiles overlap, and only four studies are conceptual-only. The L4 assignment concerns S31's bounded physical UAV-node cooperation/routing experiment; its container consensus benchmark remains L3. Treating that experiment as L3 only is a released sensitivity variant. BUS supplies hardware-prototype evidence, while recorded GNSS trajectories support L2. These settings answer different questions about implementation, physical operation and transfer.
+Within the 39-study sample, six profiles include L0, eleven L1, twenty L2, twenty L3, and one L4; none includes L5. Profiles overlap; four studies are conceptual-only. The L4 assignment concerns S31's bounded physical UAV-node cooperation/routing experiment; its container consensus benchmark remains L3. Treating that experiment as L3 only is a released sensitivity variant. BUS supplies hardware-prototype evidence, while recorded GNSS trajectories support L2. These settings answer different questions about implementation, physical operation and transfer.
 
 As the comparisons in Section~\ref{sec:comparative} show, evidence form, parameter strength, exercised mechanism and environmental relevance jointly determine the supported claim.
 
@@ -20,7 +20,7 @@ As the comparisons in Section~\ref{sec:comparative} show, evidence form, paramet
 
 Public resources support complementary evaluation tasks. CICIoT2023, TON\_IoT, and Edge-IIoTset supply attack and telemetry data for classification and robustness tests \citep{neto2023ciciot2023,alsaedi2020ton,ferrag2022edge}. SeaDronesSee supplies maritime visual data \citep{varga2022seadronessee}. AirSim, UUV Simulator, and Aqua-Sim NG address vehicle/sensor simulation, underwater dynamics, and underwater communication, respectively \citep{shah2018airsim,manhaes2016uuv,martin2017aqua}. Their use in one experiment requires compatible clocks, geometry, mobility, and event interfaces, together with a separately validated mission-loss model.
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
 \caption{Evaluation resources and required transfer checks.\label{tab:evaluation}}
 \begin{tabularx}{\textwidth}{@{}P{37mm}YY@{}}
 \toprule
@@ -44,7 +44,7 @@ Scenario factors include compromised entities versus devices, independent versus
 
 Baselines receive the same raw evidence, action set, mission objectives, and tuning budget. Appraisal comparisons include a scalar model with explicit authorization vetoes, and component ablations for lineage, shared causes, and uncertainty. Storage/governance comparisons include an authenticated database, an independently witnessed consistency log, and a policy-validating jointly cosigned log. The strongest baseline matches administrative independence, quorum, retention, and effective-time semantics. Differences in guarantees are reported before interpreting differences in cost.
 
-A reproducible report supplies topology, fault domains, channel/contact models, software versions, payload encodings, cryptographic suites, endorsement rules, policy/model versions, workload, seeds, ground truth, and mission-loss weights. The present supplement provides the claim records, heatmap aggregation, replay inputs/results, byte calculations, and chaincode specification. It enables reproduction of the analytical illustration; deploying and benchmarking the specified Fabric and witnessed-log implementations is a subsequent evaluation stage.
+A reproducible report supplies topology, fault domains, channel/contact models, software versions, payload encodings, cryptographic suites, endorsement rules, policy/model versions, workload, seeds, ground truth, and mission-loss weights. The present supplement provides the claim records, heatmap aggregation, replay inputs/results, byte calculations, and chaincode specification. The supplement supports reproduction of the claim mapping, sensitivity analyses, and synthetic policy replay.
 
 Evaluation should also distinguish collection completeness from record consistency. A test can maintain an independent event oracle, then inject omission before signing, deletion of an unwitnessed suffix, relay withholding after commitment, and loss of an off-chain object after its root has been accepted. These failures have different observability. A retained receipt exposes the absence of an acknowledged batch; it cannot reveal an event never captured by any trusted observer. Metrics should therefore report the denominator of events expected to be captured, those acknowledged by a witness, those committed under joint policy, and those whose payloads remain retrievable. This separates preservation, detection, and recovery rather than treating all three as one audit-success rate.
 
