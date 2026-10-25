@@ -1,0 +1,44 @@
+Targeted full-text expansion completed 25 October 2026
+
+Purpose: deepen the OAL synthesis by recovering uncoded original mechanism
+candidates and adding directly relevant mechanisms and explicit comparators.
+This is an extension of a structured narrative review, not a new systematic
+database search or a retrospective PRISMA flow.
+
+Retrieval routes used:
+1. Exact-title/DOI checks for all 14 original mechanism candidates outside the
+   initial 23-study map. Publisher pages, author/institutional repositories and
+   OpenAlex access-location metadata were consulted. Four were fully coded;
+   ten remained inaccessible or only partly inspectable. See the individual
+   dispositions in expansion-screening.csv.
+2. Targeted publisher and citation-following retrieval for maritime AIS message
+   authentication (pAIS, SecAIS), receiver/ledger monitoring, UAV hierarchical
+   trust and trust-aware routing, underwater signcryption, trust/energy routing,
+   and trust-aware federated aggregation. Eight original domain studies were
+   inspected and added. Their intended domains and actual settings are separate
+   fields in oal-study-register.csv.
+3. Full-text inspection of four already cited protocol comparators: PBFT, Raft,
+   HotStuff, and Narwhal/Tusk. These form a removable transferable-infrastructure
+   subset; they are not counted as maritime deployments.
+4. Crossref DOI metadata checking for the eight newly added domain references.
+   Previously cited candidates retain stable bibliography keys. The Varshosaz
+   key retains 2019, while the citation uses its 2020 journal issue.
+
+Thirty individually checked leads are recorded: 16 included additions, ten
+original candidates with incomplete full-text access, and four contextual leads.
+The four contextual leads are three reviews and the unavailable exact Sigstore
+paper. This register describes these targeted checks; it is not a count of every
+search-engine hit encountered. Search ranking and a complete historical list of
+discarded web results were not retained. An inaccessible result is not a finding
+of scientific ineligibility.
+
+Source versions and successful retrieval URLs are retained in the study register.
+Publisher HTML supplied the full Yang et al. article. Publisher PDFs and lawful
+author manuscripts supplied the other additions. Supporting section/page locators
+and narrow evaluation scopes are attached to every claim. Full texts remain
+private and are excluded from Git and the submission archive.
+
+Resulting sample: 39 studies and 89 claim records; 19 intended-domain studies
+(11 UAV, 3 maritime AIS, 5 underwater) and 20 transferable studies. The revised
+bibliography has 123 entries: 39 numerically coded mechanisms and 84 contextual,
+methodological or evaluation references. These denominators serve different roles.

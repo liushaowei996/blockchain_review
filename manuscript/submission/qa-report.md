@@ -1,5 +1,16 @@
 # Build and Quality Report
 
+## 25 October 2026: Expanded OAL synthesis (current)
+
+The analytical sample expands from 23 to 39 studies and from 49 to 89 scoped claims. The bibliography has 123 used references, with a complete role register separating 39 mapped mechanisms from 84 contextual/evaluation references. The sample separates 19 direct-domain studies and 20 transferable studies. Four original candidates were recovered; ten remain incompletely accessible. Source/version registers, screening dispositions and coding decisions accompany eight sensitivity variants and 39 leave-one-out maps. Occupied cells increase from 20 to 25; overlapping profiles are L0=6, L1=11, L2=20, L3=20, L4=1, L5=0. The physical UAV-node L4 assignment is scoped and tested under a conservative L3-only reading.
+
+The clean and marked PDFs both compile from the isolated submission manifest, have 33 pages, seven figures and twelve tables. The static source estimate is 10,109 words versus the 13,389-word original baseline (24.5% shorter). There are no missing citations, duplicate labels, unresolved references, overfull boxes or oversized floats. The pre-existing LaTeX release notice and one underfull box remain. All 66 manuscript pages and all 12 reply pages were inspected in rendered sheets; the updated figure was inspected at full size. Responses remain three and nine pages, use the official template and preserve reviewer comments and general-evaluation ratings. Table references were checked against the final LaTeX labels.
+
+Only Figure 3 was updated and re-exported. Its 96 native values match the data. All six other figure PDFs and all other native Visio page XML are byte-identical to the preceding retained-artwork version. Only the Figure 3 page XML and anonymous document properties change in the VSDX. Original uploaded Visio hash remains `91304529a425d154163223a774fcee4e22eb62b87cd8483b8683990ced26d17e`. Raster-image counts remain 0,1,0,0,0,0,0.
+
+The current archive is `../../output/blockchain-review-oal-expanded-source-20261025.zip`, with 58 explicitly listed files. CRC, manifest, source bytes and isolated-build agreement pass. The replay, aggregation and sensitivity outputs reproduce byte for byte from the isolated copy. Full texts and temporary files are excluded. Detailed checks and hashes are recorded in `../../review/revision-1/verification.json`. Earlier verification records below describe superseded artifacts.
+
+
 ## 25 October 2026: Retained Visio Artwork and Targeted Figure Revisions
 
 The seven publication figures are exported from the supplied multipage Visio source. Inspection confirms that the original PDFs already contained vector text and diagram geometry. The revised drawing preserves the original architecture, claim gates, dependency icons, eight-stage CTG loop, two-hub ledger/control structure, and six evidence-profile cards. Labels and spacing are enlarged in Figures 1, 4, 5 and 6; Figure 2 and Figure 4 spelling is corrected. Figure 3 combines the original OAL schematic with the populated heatmap, and Figure 6 uses the matched policy-validating witnessed-log comparator. Figure 7 replaces only the six photo-realistic illustrations with native Visio schematics. The response to Reviewer 2, Comment 9, describes this provenance and the actual changes.

@@ -1,0 +1,124 @@
+reference_key,title,role,study_id,numerically_coded
+hafeez2023blockchain,Blockchain-Assisted UAV Communication Systems: A Comprehensive Survey,contextual synthesis,,false
+alladi2020applications,Applications of blockchain in unmanned aerial vehicles: A review,contextual synthesis,,false
+mehta2020blockchain,"Blockchain envisioned UAV networks: Challenges, solutions, and comparisons",contextual synthesis,,false
+mekdad2023survey,A survey on security and privacy issues of UAVs,contextual synthesis,,false
+wang2025survey,A Survey on Security of UAV Swarm Networks: Attacks and Countermeasures,contextual synthesis,,false
+hadi2023comprehensive,"A comprehensive survey on security, privacy issues and emerging defence technologies for UAVs",contextual synthesis,,false
+hayat2016survey,Survey on Unmanned Aerial Vehicle Networks for Civil Applications: A Communications Viewpoint,contextual synthesis,,false
+shakhatreh2019unmanned,Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges,contextual synthesis,,false
+yahuza2021internet,Internet of Drones Security and Privacy Issues: Taxonomy and Open Challenges,contextual synthesis,,false
+karmakar2024blockchain,A Blockchain-Based Distributed and Intelligent Clustering-Enabled Authentication Protocol for UAV Swarms,full-text mechanism mapping,S03,true
+han2022identity,Identity Management and Authentication of a UAV Swarm Based on a Blockchain,full-text mechanism mapping,S01,true
+tan2022blockchain,Blockchain-Assisted Distributed and Lightweight Authentication Service for Industrial Unmanned Aerial Vehicles,full-text mechanism mapping,S02,true
+islam2019bus,BUS: A Blockchain-Enabled Data Acquisition Scheme With the Assistance of UAV Swarm in Internet of Things,full-text mechanism mapping,S04,true
+nomikos2023survey,"A Survey on UAV-Aided Maritime Communications: Deployment Considerations, Applications, and Future Challenges",contextual synthesis,,false
+wei20233u,3U: Joint Design of UAV-USV-UUV Networks for Cooperative Target Hunting,operational context,,false
+li2023survey,"A survey of maritime unmanned search system: Theory, applications and future directions",contextual synthesis,,false
+bae2023survey,Survey on the Developments of Unmanned Marine Vehicles: Intelligence and Cooperation,contextual synthesis,,false
+jahanbakht2021internet,Internet of Underwater Things and Big Marine Data Analytics---A Comprehensive Survey,contextual synthesis,,false
+mohsan2022towards,Towards the internet of underwater things: a comprehensive survey,contextual synthesis,,false
+jouhari2019underwater,"Underwater Wireless Sensor Networks: A Survey on Enabling Technologies, Localization Protocols, and Internet of Underwater Things",contextual synthesis,,false
+gonzlezgarca2020autonomous,"Autonomous Underwater Vehicles: Localization, Navigation, and Communication for Collaborative Missions",contextual synthesis,,false
+wu2020cooperative,Cooperative Path Planning for Heterogeneous Unmanned Vehicles in a Search-and-Track Mission Aiming at an Underwater Target,operational context,,false
+ke2022cooperative,Cooperative path planning for air--sea heterogeneous unmanned vehicles using search-and-tracking mission,operational context,,false
+xue2021distributed,Distributed Consensus of USVs under Heterogeneous UAV-USV Multi-Agent Systems Cooperative Control Scheme,operational context,,false
+liu2023formation,Formation Control for Mixed-Order UAVs--USVs--UUVs Systems under Cooperative and Optimal Control,operational context,,false
+pang2026cooperative,A cooperative heterogeneous formation control and motion planning design of 3U: UAV-USV-UUV systems,operational context,,false
+farah2024survey,A survey on blockchain technology in the maritime industry: Challenges and future perspectives,contextual synthesis,,false
+li2021survey,A survey of blockchain with applications in maritime and shipping industry,contextual synthesis,,false
+jiang2019securing,On Securing Underwater Acoustic Networks: A Survey,contextual synthesis,,false
+yisa2021security,Security challenges of Internet of Underwater Things: A systematic literature review,contextual synthesis,,false
+adam2024state,State-of-the-Art Security Schemes for the Internet of Underwater Things: A Holistic Survey,contextual synthesis,,false
+ali2020recent,Recent Advances and Future Directions on Underwater Wireless Communications,contextual synthesis,,false
+saeed2019underwater,"Underwater optical wireless communications, networking, and localization: A survey",contextual synthesis,,false
+jiang2020dynamic,A Dynamic Trust Evaluation and Update Mechanism Based on C4.5 Decision Tree in Underwater Wireless Sensor Networks,full-text mechanism mapping,S05,true
+arifeen2020hidden,Hidden Markov Model based Trust Management Model for Underwater Wireless Sensor Networks,full-text mechanism mapping,S06,true
+liu2023survey,A Survey on Blockchain-Based Trust Management for Internet of Things,contextual synthesis,,false
+ahmed2019trust,"Trust and reputation for Internet of Things: Fundamentals, taxonomy, and open research challenges",contextual synthesis,,false
+aaqib2023iot,IoT trust and reputation: a survey and taxonomy,contextual synthesis,,false
+junior2021survey,A Survey on Trustworthiness for the Internet of Things,contextual synthesis,,false
+syed2022zero,Zero Trust Architecture (ZTA): A Comprehensive Survey,contextual synthesis,,false
+rose2020zero,Zero Trust Architecture,foundation/specification,,false
+fagan2020iot,IoT device cybersecurity capability core baseline,foundation/specification,,false
+birkholz2023remote,Remote ATtestation procedureS (RATS) Architecture,foundation/specification,,false
+jsang2016subjective,Subjective Logic,foundation/specification,,false
+mui2003computational,A computational model of trust and reputation,foundation/specification,,false
+kamvar2003eigentrust,The Eigentrust algorithm for reputation management in P2P networks,full-text mechanism mapping,S07,true
+androulaki2018hyperledger,Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains,full-text mechanism mapping,S08,true
+reyna2018blockchain,On blockchain and its integration with IoT. Challenges and opportunities,contextual synthesis,,false
+dorri2017towards,Towards an Optimized BlockChain for IoT,not mapped in the revision,,false
+hang2019design,Design and Implementation of an Integrated IoT Blockchain Platform for Sensing Data Integrity,full-text mechanism mapping,S09,true
+honarpajooh2021iot,IoT Big Data provenance scheme using blockchain on Hadoop ecosystem,full-text mechanism mapping,S10,true
+singh2019decision,Decision Provenance: Harnessing Data Flow for Accountable Systems,full-text mechanism mapping,S18,true
+hardjono2021towards,Towards an attestation architecture for blockchain networks,full-text mechanism mapping,S11,true
+ott2023universal,Universal Remote Attestation for Cloud and Edge Platforms,full-text mechanism mapping,S12,true
+figueiredo2022arcadian,"ARCADIAN-IoT - Enabling Autonomous Trust, Security and Privacy Management for IoT",full-text mechanism mapping,S13,true
+baciu2025secure,Secure Tiny Machine Learning on Edge Devices: A Lightweight Dual Attestation Mechanism for Machine Learning,full-text mechanism mapping,S14,true
+suhail2022trustworthy,Trustworthy Digital Twins in the Industrial Internet of Things With Blockchain,full-text mechanism mapping,S19,true
+khan2020iot,IoT-Blockchain Enabled Optimized Provenance System for Food Industry 4.0 Using Advanced Deep Learning,full-text mechanism mapping,S15,true
+rahman2020secure,Secure and Provenance Enhanced Internet of Health Things Framework: A Blockchain Managed Federated Learning Approach,full-text mechanism mapping,S16,true
+lnes2017blockchain,Blockchain in government: Benefits and implications of distributed ledger technology for information sharing,contextual perspective,,false
+zhou2020key,The key challenges and critical success factors of blockchain implementation: Policy implications for Singapore’s maritime industry,contextual perspective,,false
+liu2020fabric,Fabric-iot: A Blockchain-Based Access Control System in IoT,full-text mechanism mapping,S17,true
+kshetri20181,Blockchain’s roles in meeting key supply chain management objectives,contextual perspective,,false
+kshetri2017can,Can Blockchain Strengthen the Internet of Things?,contextual perspective,,false
+shafique2021detecting,Detecting Signal Spoofing Attack in UAVs Using Machine Learning Models,full-text mechanism mapping,S20,true
+dang2022deep,Deep-Ensemble-Learning-Based GPS Spoofing Detection for Cellular-Connected UAVs,full-text mechanism mapping,S21,true
+semanjski2020use,Use of Supervised Machine Learning for GNSS Signal Spoofing Detection with Validation on Real-World Meaconing and Spoofing Data---Part I,full-text mechanism mapping,S22,true
+liu2022trusted,Trusted Multi-View Deep Learning with Opinion Aggregation,full-text mechanism mapping,S23,true
+neto2023ciciot2023,CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale Attacks in IoT Environment,evaluation resource,,false
+alsaedi2020ton,TON\_IoT Telemetry Dataset: A New Generation Dataset of IoT and IIoT for Data-Driven Intrusion Detection Systems,evaluation resource,,false
+ferrag2022edge,Edge-IIoTset: A New Comprehensive Realistic Cyber Security Dataset of IoT and IIoT Applications for Centralized and Federated Learning,evaluation resource,,false
+martin2017aqua,Aqua-Sim Next Generation,evaluation resource,,false
+shah2018airsim,AirSim: High-Fidelity Visual and Physical Simulation for Autonomous Vehicles,evaluation resource,,false
+manhaes2016uuv,UUV Simulator: A Gazebo-based package for underwater intervention and multi-robot simulation,evaluation resource,,false
+w3c2013provdm,PROV-DM}: The {PROV} Data Model,foundation/specification,,false
+w3c2013provo,PROV-O}: The {PROV} Ontology,foundation/specification,,false
+threegpp22125,Unmanned Aerial System ({UAS}) Support in {3GPP}; Stage 1,foundation/specification,,false
+threegpp22119,Maritime Communication Services over {3GPP} System,foundation/specification,,false
+hyperledger2026fabric,Hyperledger Fabric Documentation: Ordering Service,foundation/specification,,false
+ietf2020suit,A Firmware Update Architecture for Internet of Things,foundation/specification,,false
+gilbert2002brewer,"Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services",foundation/specification,,false
+varga2022seadronessee,SeaDronesSee}: A Maritime Benchmark for Detecting Humans in Open Water,evaluation resource,,false
+wust2018need,Do you Need a Blockchain?,contextual foundation or evaluation resource,,false
+locher2018when,When Can a Distributed Ledger Replace a Trusted Third Party?,contextual foundation or evaluation resource,,false
+svarcmajer2026consensus,Consensus-Driven Framework for Data-Driven Optimization of Distributed Systems Through Blockchain Consensus Mechanism Selection,contextual foundation or evaluation resource,,false
+caldarelli2020oracle,Understanding the Blockchain Oracle Problem: A Call for Action,contextual foundation or evaluation resource,,false
+albreiki2020oracles,"Trustworthy Blockchain Oracles: Review, Comparison, and Open Research Challenges",contextual foundation or evaluation resource,,false
+sigstore2022,Sigstore: Software Signing for Everybody,contextual foundation or evaluation resource,,false
+kephart2003autonomic,The vision of autonomic computing,contextual foundation or evaluation resource,,false
+steinberg1999jdl,Revisions to the JDL data fusion model,contextual foundation or evaluation resource,,false
+hotstuff2019,HotStuff: BFT Consensus with Linearity and Responsiveness,full-text mechanism mapping,S35,true
+narwhal2022,Narwhal and Tusk: a DAG-based mempool and efficient BFT consensus,full-text mechanism mapping,S36,true
+maersk2022tradelens,"Maersk and IBM to Discontinue TradeLens, a Blockchain-Enabled Global Trade Platform",contextual foundation or evaluation resource,,false
+rfc6962,Certificate Transparency. RFC 6962,contextual foundation or evaluation resource,,false
+rfc9162,Certificate Transparency Version 2.0. RFC 9162,contextual foundation or evaluation resource,,false
+rfc9171,Bundle Protocol Version 7. RFC 9171,contextual foundation or evaluation resource,,false
+rfc9172,Bundle Protocol Security. RFC 9172,contextual foundation or evaluation resource,,false
+rfc8032,Edwards-Curve Digital Signature Algorithm (EdDSA). RFC 8032,contextual foundation or evaluation resource,,false
+fips204,Module-Lattice-Based Digital Signature Standard. FIPS 204,contextual foundation or evaluation resource,,false
+gsn2021,"GSN Community Standard, Version 3. SCSC-141C",contextual foundation or evaluation resource,,false
+sacm2023,"Structured Assurance Case Metamodel (SACM), Version 2.3",contextual foundation or evaluation resource,,false
+ul4600,"UL 4600: Evaluation of Autonomous Products, Third Edition",contextual foundation or evaluation resource,,false
+ibm2005mapek,"An Architectural Blueprint for Autonomic Computing, Third Edition",contextual foundation or evaluation resource,,false
+imo2019trials,Interim Guidelines for MASS Trials. MSC.1/Circ.1604,contextual foundation or evaluation resource,,false
+imo2021scoping,Outcome of the Regulatory Scoping Exercise for the Use of Maritime Autonomous Surface Ships (MASS). MSC.1/Circ.1638,contextual foundation or evaluation resource,,false
+imo2026mass,International Code of Safety for Maritime Autonomous Surface Ships (MASS Code). Resolution MSC.595(111),contextual foundation or evaluation resource,,false
+dnv2024autonomous,Autonomous and Remotely Operated Ships. DNV-CG-0264,contextual foundation or evaluation resource,,false
+cometbft2026,Consensus Specification,contextual foundation or evaluation resource,,false
+fabric2026bft,Configuring and Operating a BFT Ordering Service,contextual foundation or evaluation resource,,false
+raft2014,In Search of an Understandable Consensus Algorithm,full-text mechanism mapping,S37,true
+pbft1999,Practical Byzantine Fault Tolerance,full-text mechanism mapping,S38,true
+varshosaz2019spoofing,Spoofing Detection of Civilian UAVs Using Visual Odometry,full-text mechanism mapping,S24,true
+garcamagario2019security,Security in networks of unmanned aerial vehicles for surveillance with an agent-based approach inspired by the principles of blockchain,full-text mechanism mapping,S25,true
+alkhafajiy2020comitment,COMITMENT: A Fog Computing Trust Management Approach,full-text mechanism mapping,S26,true
+barka2022towards,Towards a trusted unmanned aerial system using blockchain for the protection of critical infrastructure,full-text mechanism mapping,S39,true
+maritime2022monitoring,Towards a Secure and Scalable Maritime Monitoring System Using Blockchain and Low-Cost IoT Technology,full-text mechanism mapping,S27,true
+hierarchical2023trust,A Hierarchical Blockchain-Based Trust Measurement Method for Drone Cluster Nodes,full-text mechanism mapping,S30,true
+zhang2026underwater,A Lattice-Based Underwater Aggregate Signcryption Scheme,full-text mechanism mapping,S32,true
+kessler2020protected,Protected AIS: A Demonstration of Capability Scheme to Provide Authentication and Message Integrity,full-text mechanism mapping,S28,true
+goudossis2022secais,Secure Automatic Identification System (SecAIS): Proof-of-Concept Implementation,full-text mechanism mapping,S29,true
+tafl2026underwater,TAFL-UWSN: A Trust-Aware Federated Learning Framework for Securing Underwater Sensor Networks,full-text mechanism mapping,S34,true
+eetauv2025trust,Energy-Efficient and Trust-Based Autonomous Underwater Vehicle Scheme for 6G-Enabled Internet of Underwater Things,full-text mechanism mapping,S33,true
+yang2023trusted,Toward Trusted Unmanned Aerial Vehicle Swarm Networks: A Blockchain-Based Approach,full-text mechanism mapping,S31,true

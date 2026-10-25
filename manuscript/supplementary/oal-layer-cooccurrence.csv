@@ -1,0 +1,6 @@
+layer_pair,study_count,study_ids,interpretation
+O/C,2,S19;S25,Study-level co-occurrence only; no inferred validation of a cross-layer transition
+O/M,3,S19;S25;S39,Study-level co-occurrence only; no inferred validation of a cross-layer transition
+C/G,11,S01;S02;S03;S04;S09;S10;S15;S16;S19;S27;S36,Study-level co-occurrence only; no inferred validation of a cross-layer transition
+C/M,5,S13;S15;S16;S19;S25,Study-level co-occurrence only; no inferred validation of a cross-layer transition
+G/M,7,S15;S16;S17;S19;S30;S31;S39,Study-level co-occurrence only; no inferred validation of a cross-layer transition

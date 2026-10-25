@@ -1,0 +1,24 @@
+{
+  "references": 123,
+  "coded_studies": 39,
+  "contextual_references": 84,
+  "direct_domain_studies": 19,
+  "transferable_studies": 20,
+  "concept_only_studies": [
+    "S11",
+    "S13",
+    "S18",
+    "S19"
+  ],
+  "leave_one_out_nonempty_cells": [
+    23,
+    25
+  ],
+  "leave_one_out_top_cells": [
+    "D/G/F"
+  ],
+  "L4_studies": [
+    "S31"
+  ],
+  "interpretation": "Descriptive inclusion/coding sensitivity; not a confidence interval, meta-analysis, or validation of OAL effectiveness."
+}

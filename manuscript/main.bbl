@@ -539,6 +539,131 @@ Newman, Z.; Meyers, J.S.; Torres-Arias, S.
   Communications Security,  2022, pp. 2353--2367.
 \newblock {\url{https://doi.org/10.1145/3548606.3560596}}.
 
+\bibitem[Freire et~al.(2022)Freire, Melo, do~Nascimento, Nascimento, and
+  de~Sá]{maritime2022monitoring}
+Freire, W.P.; Melo, Jr., W.S.; do~Nascimento, V.D.; Nascimento, P.R.M.; de~Sá,
+  A.O.
+\newblock {Towards a Secure and Scalable Maritime Monitoring System Using
+  Blockchain and Low-Cost IoT Technology}.
+\newblock {\em Sensors} {\bf 2022}, {\em 22},~4895.
+\newblock {\url{https://doi.org/10.3390/s22134895}}.
+
+\bibitem[Kessler(2020)]{kessler2020protected}
+Kessler, G.C.
+\newblock {Protected AIS: A Demonstration of Capability Scheme to Provide
+  Authentication and Message Integrity}.
+\newblock {\em TransNav, the International Journal on Marine Navigation and
+  Safety of Sea Transportation} {\bf 2020}, {\em 14},~279--286.
+\newblock {\url{https://doi.org/10.12716/1001.14.02.02}}.
+
+\bibitem[Goudosis and Katsikas(2022)]{goudossis2022secais}
+Goudosis, A.; Katsikas, S.
+\newblock {Secure Automatic Identification System (SecAIS): Proof-of-Concept
+  Implementation}.
+\newblock {\em Journal of Marine Science and Engineering} {\bf 2022}, {\em
+  10},~805.
+\newblock {\url{https://doi.org/10.3390/jmse10060805}}.
+
+\bibitem[Varshosaz et~al.(2020)Varshosaz, Afary, Mojaradi, Saadatseresht, and
+  Ghanbari~Parmehr]{varshosaz2019spoofing}
+Varshosaz, M.; Afary, A.; Mojaradi, B.; Saadatseresht, M.; Ghanbari~Parmehr, E.
+\newblock {Spoofing Detection of Civilian UAVs Using Visual Odometry}.
+\newblock {\em ISPRS International Journal of Geo-Information} {\bf 2020}, {\em
+  9},~6.
+\newblock {\url{https://doi.org/10.3390/ijgi9010006}}.
+
+\bibitem[García-Magariño et~al.(2019)García-Magariño, Lacuesta, Rajarajan,
+  and Lloret]{garcamagario2019security}
+García-Magariño, I.; Lacuesta, R.; Rajarajan, M.; Lloret, J.
+\newblock {Security in networks of unmanned aerial vehicles for surveillance
+  with an agent-based approach inspired by the principles of blockchain}.
+\newblock {\em Ad Hoc Networks} {\bf 2019}, {\em 86},~72--82.
+\newblock {\url{https://doi.org/10.1016/j.adhoc.2018.11.010}}.
+
+\bibitem[Barka et~al.(2022)Barka, Kerrache, Benkraouda, Shuaib, Ahmad, and
+  Kurugollu]{barka2022towards}
+Barka, E.; Kerrache, C.A.; Benkraouda, H.; Shuaib, K.; Ahmad, F.; Kurugollu, F.
+\newblock {Towards a trusted unmanned aerial system using blockchain for the
+  protection of critical infrastructure}.
+\newblock {\em Transactions on Emerging Telecommunications Technologies} {\bf
+  2022}, {\em 33}.
+\newblock {\url{https://doi.org/10.1002/ett.3706}}.
+
+\bibitem[Zuo et~al.(2023)Zuo, Cao, Qi, Gao, Wang, Li, Zhang, and
+  Lu]{hierarchical2023trust}
+Zuo, J.; Cao, R.; Qi, J.; Gao, P.; Wang, Z.; Li, J.; Zhang, L.; Lu, Y.
+\newblock {A Hierarchical Blockchain-Based Trust Measurement Method for Drone
+  Cluster Nodes}.
+\newblock {\em Drones} {\bf 2023}, {\em 7},~627.
+\newblock {\url{https://doi.org/10.3390/drones7100627}}.
+
+\bibitem[Yang et~al.(2023)Yang, Liu, Jiang, Zhang, Chen, and
+  He]{yang2023trusted}
+Yang, J.; Liu, X.; Jiang, X.; Zhang, Y.; Chen, S.; He, H.
+\newblock {Toward Trusted Unmanned Aerial Vehicle Swarm Networks: A
+  Blockchain-Based Approach}.
+\newblock {\em IEEE Vehicular Technology Magazine} {\bf 2023}, {\em
+  18},~98--108.
+\newblock {\url{https://doi.org/10.1109/mvt.2023.3242834}}.
+
+\bibitem[Al-khafajiy et~al.(2020)Al-khafajiy, Baker, Asim, Guo, Ranjan, Longo,
+  Puthal, and Taylor]{alkhafajiy2020comitment}
+Al-khafajiy, M.; Baker, T.; Asim, M.; Guo, Z.; Ranjan, R.; Longo, A.; Puthal,
+  D.; Taylor, M.
+\newblock {COMITMENT: A Fog Computing Trust Management Approach}.
+\newblock {\em Journal of Parallel and Distributed Computing} {\bf 2020}, {\em
+  137},~1--16.
+\newblock {\url{https://doi.org/10.1016/j.jpdc.2019.10.006}}.
+
+\bibitem[Zhang and Xu(2026)]{zhang2026underwater}
+Zhang, Z.; Xu, M.
+\newblock {A Lattice-Based Underwater Aggregate Signcryption Scheme}.
+\newblock {\em Electronics} {\bf 2026}, {\em 15},~3163.
+\newblock {\url{https://doi.org/10.3390/electronics15143163}}.
+
+\bibitem[Hussain et~al.(2025)Hussain, Li, Hussain, Attar, Alhomoud, Alsagri,
+  and Zaman]{eetauv2025trust}
+Hussain, A.; Li, S.; Hussain, T.; Attar, R.W.; Alhomoud, A.; Alsagri, R.;
+  Zaman, K.
+\newblock {Energy-Efficient and Trust-Based Autonomous Underwater Vehicle
+  Scheme for 6G-Enabled Internet of Underwater Things}.
+\newblock {\em Sensors} {\bf 2025}, {\em 25},~286.
+\newblock {\url{https://doi.org/10.3390/s25010286}}.
+
+\bibitem[Anwar et~al.(2026)Anwar, Abrar, Salam, and Ullah]{tafl2026underwater}
+Anwar, R.W.; Abrar, M.; Salam, A.; Ullah, F.
+\newblock {TAFL-UWSN: A Trust-Aware Federated Learning Framework for Securing
+  Underwater Sensor Networks}.
+\newblock {\em Network} {\bf 2026}, {\em 6},~18.
+\newblock {\url{https://doi.org/10.3390/network6010018}}.
+
+\bibitem[Ongaro and Ousterhout(2014)]{raft2014}
+Ongaro, D.; Ousterhout, J.
+\newblock {In Search of an Understandable Consensus Algorithm}.
+\newblock In Proceedings of the 2014 USENIX Annual Technical Conference,  2014,
+  pp. 305--319.
+
+\bibitem[Castro and Liskov(1999)]{pbft1999}
+Castro, M.; Liskov, B.
+\newblock {Practical Byzantine Fault Tolerance}.
+\newblock In Proceedings of the Third Symposium on Operating Systems Design and
+  Implementation,  1999, pp. 173--186.
+
+\bibitem[Yin et~al.(2019)Yin, Malkhi, Reiter, Gueta, and Abraham]{hotstuff2019}
+Yin, M.; Malkhi, D.; Reiter, M.K.; Gueta, G.G.; Abraham, I.
+\newblock {HotStuff: BFT Consensus with Linearity and Responsiveness}.
+\newblock In Proceedings of the 2019 ACM Symposium on Principles of Distributed
+  Computing,  2019, pp. 347--356.
+\newblock {\url{https://doi.org/10.1145/3293611.3331591}}.
+
+\bibitem[Danezis et~al.(2022)Danezis, Kokoris-Kogias, Sonnino, and
+  Spiegelman]{narwhal2022}
+Danezis, G.; Kokoris-Kogias, L.; Sonnino, A.; Spiegelman, A.
+\newblock {Narwhal and Tusk: a DAG-based mempool and efficient BFT consensus}.
+\newblock In Proceedings of the Seventeenth European Conference on Computer
+  Systems,  2022, pp. 34--50.
+\newblock {\url{https://doi.org/10.1145/3492321.3519594}}.
+
 \bibitem[Kephart and Chess(2003)]{kephart2003autonomic}
 Kephart, J.; Chess, D.
 \newblock {The vision of autonomic computing}.
@@ -587,37 +712,10 @@ Maersk.
 \newblock {\em Big Data and Cognitive Computing} {\bf 2026}, {\em 10},~154.
 \newblock {\url{https://doi.org/10.3390/bdcc10050154}}.
 
-\bibitem[Ongaro and Ousterhout(2014)]{raft2014}
-Ongaro, D.; Ousterhout, J.
-\newblock {In Search of an Understandable Consensus Algorithm}.
-\newblock In Proceedings of the 2014 USENIX Annual Technical Conference,  2014,
-  pp. 305--319.
-
-\bibitem[Castro and Liskov(1999)]{pbft1999}
-Castro, M.; Liskov, B.
-\newblock {Practical Byzantine Fault Tolerance}.
-\newblock In Proceedings of the Third Symposium on Operating Systems Design and
-  Implementation,  1999, pp. 173--186.
-
-\bibitem[Yin et~al.(2019)Yin, Malkhi, Reiter, Gueta, and Abraham]{hotstuff2019}
-Yin, M.; Malkhi, D.; Reiter, M.K.; Gueta, G.G.; Abraham, I.
-\newblock {HotStuff: BFT Consensus with Linearity and Responsiveness}.
-\newblock In Proceedings of the 2019 ACM Symposium on Principles of Distributed
-  Computing,  2019, pp. 347--356.
-\newblock {\url{https://doi.org/10.1145/3293611.3331591}}.
-
 \bibitem[{CometBFT Contributors}(2026)]{cometbft2026}
 {CometBFT Contributors}.
 \newblock {Consensus Specification},  2026.
 \newblock Accessed 22 October 2026.
-
-\bibitem[Danezis et~al.(2022)Danezis, Kokoris-Kogias, Sonnino, and
-  Spiegelman]{narwhal2022}
-Danezis, G.; Kokoris-Kogias, L.; Sonnino, A.; Spiegelman, A.
-\newblock {Narwhal and Tusk: a DAG-based mempool and efficient BFT consensus}.
-\newblock In Proceedings of the Seventeenth European Conference on Computer
-  Systems,  2022, pp. 34--50.
-\newblock {\url{https://doi.org/10.1145/3492321.3519594}}.
 
 \bibitem[Dorri et~al.(2017)Dorri, Kanhere, and Jurdak]{dorri2017towards}
 Dorri, A.; Kanhere, S.S.; Jurdak, R.
