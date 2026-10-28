@@ -1,0 +1,83 @@
+Response to Reviewer 2 Comments
+
+1 Summary
+
+Thank you for reviewing the manuscript. We have applied OAL to the reviewed studies, added a coalition mission case and a concrete ledger application design, and strengthened the comparison with witnessed logs. We have also shortened the text and revised the figures and references. All locations below refer to the revised manuscript.
+
+2 Point by point response
+
+Comment 1: The paper gives no information on how the 141 references were identified or selected (databases, search strings, inclusion criteria). Please add a brief methods subsection so that readers can judge the coverage of the synthesis.
+
+Response 1: Sections 2.1–2.2 now describe the search sources and dates, queries, screening criteria, deduplication, and full-text coding procedure. They distinguish the 39-study analytical sample from the 123-reference bibliography and explain the roles of citation following and targeted retrieval. The purposive selection and single-extraction limits are stated in Sections 2 and 10.
+
+Comment 2: The framework is not applied to the reviewed literature
+
+This is the main weakness. OAL is presented as a tool to locate mechanisms and identify unprotected transitions, yet Figure 3 is an empty grid and Table 2 lists only representative sources. Please map the reviewed primary studies to OAL cells and lifecycle stages, together with their evidence level (L0–L5). A coverage heatmap could replace Figure 3. It would show where the field is crowded, where it is empty, and where cross-domain evidence is missing. Without it, OAL’s usefulness rests on assertion.
+
+Response 2: OAL is now applied to 39 full-text studies through 89 claim records. Figure 3 adds a coverage heatmap and L0–L5 evidence summary, and Table 2 identifies the study groups and sources. Sections 5.3–5.4 and Tables 5–6 compare mechanisms and report sensitivity to study selection and coding. Zero cells indicate no coded claim in this sample.
+
+Comment 3: The need for blockchain is insufficiently justified
+
+The paper repeatedly concedes that witnessed signed logs or replicated databases may suffice (Sections 7.1, 9.7, 11), but never presents a concrete mission scenario in which a permissioned ledger is demonstrably preferable to an independently witnessed transparency log. Please either construct such a scenario (parties, fault model, which unilateral changes must be prevented) or state plainly that the ledger’s value is confined to specific governance conditions.
+
+Section 7.1 should also engage ledger-adoption decision frameworks (Wüst and Gervais, CVCBT 2018; Locher et al., IEEE Blockchain 2018). The discontinuation of TradeLens (Maersk/IBM, 2022) is a directly relevant maritime case of a permissioned platform failing for governance reasons, and it supports the argument in Section 9.3.
+
+Consensus selection is likewise treated only illustratively: the paper names Raft and BFT ordering in Fabric and cites three general surveys [87, 88, 107]. The choice should instead follow from a systematic, requirement-driven evaluation (e.g., Švarcmajer et al., BDCC 2026). First, the mission requirements should be derived explicitly: fault model, partition tolerance, finality latency, membership dynamics, node heterogeneity, energy budget, and message complexity over constrained links. Second, a representative range of mechanism families should be assessed against them, not only crash-fault-tolerant and classical BFT ordering, but also pipelined BFT (e.g., HotStuff, CometBFT), authority-based, DAG-based, and lightweight IoT-oriented protocols. The result should be a traceable mapping from requirements to candidate mechanisms for each mission scenario, so that readers can see why a mechanism is suitable rather than merely that it exists.
+
+Response 3: Section 7.1 now defines the coalition, the unilateral changes to prevent, and the governance conditions for ledger adoption. It includes the requested decision frameworks and a witnessed-log baseline with matched rules. Sections 7.1 and 9.1 discuss TradeLens. Section 7.2 and Table 9 compare seven consensus families against mission requirements and map suitable options to the mission scenarios. The comparison supports a conditional choice based on governance and implementation cost.
+
+Comment 4: Section 7 names Hyperledger Fabric but specifies none of the following:
+
+•    the on-chain data model and transaction sizes;
+
+•    an endorsement policy mapped to the coalition in Section 3.1;
+
+•    chaincode logic for any pattern in Table 7;
+
+•    what “verify supported proofs” (line 603) means on a constrained vehicle;
+
+•    peer and orderer placement and behavior when the USV gateway is partitioned.
+
+A communication budget for acoustic links (hundreds of bit/s to a few kbit/s) is also needed. Signature choice alone matters here: an Ed25519 signature is 64 B, whereas an ML-DSA-44 signature is about 2.4 KB. Fully specifying even one pattern would substantially strengthen the paper.
+
+Response 4: Sections 7.3–7.4 now specify a coalition provenance-and-revocation design, covering the data model, endorsement policy, chaincode operations, constrained-vehicle verification, and node placement during partitions. Table 11 provides application payload sizes and acoustic-link budgets for Ed25519 and ML-DSA-44. These are design specifications and payload calculations; full Fabric transaction sizes and deployment performance remain to be measured.
+
+Comment 5: The following bodies of work are directly relevant but absent:
+
+•    the blockchain oracle problem, which lines 346–347 describe without naming (e.g., Caldarelli, 2020; Al-Breiki et al., 2020);
+
+•    transparency logs as the natural baseline (RFC 6962/9162; Sigstore, CCS 2022);
+
+•    delay/disruption-tolerant networking (RFC 9171, RFC 9172);
+
+•    assurance-case notations, which Section 9.5 effectively reinvents (GSN, SACM, UL 4600);
+
+•    MAPE-K and the JDL fusion model, against which the CTG loop should be positioned;
+
+•    maritime autonomy regulation (IMO MSC.1/Circ.1604 and 1638, the ongoing MASS Code, DNV-CG-0264).
+
+Response 5: We added the requested literature on oracles and transparency logs (Introduction and Section 4.3), disruption-tolerant networking (Section 3.1), MAPE-K and JDL (Section 6.3), and assurance cases and maritime autonomy regulation (Section 9.3). The revised discussion explains how these established approaches relate to OAL and the CTG loop.
+
+Comment 6: The trace in Section 6.4 reduces to freshness and lineage checks whose outcome is evident without OAL, and the ledger plays no role. Please use an example that exercises the blockchain-relevant machinery, such as partition and reconciliation or the revocation-timing case in Section 7.4. The example should also show what a single-score baseline would have concluded.
+
+Response 6: Section 6.4 now uses a partition, key-revocation and reconciliation case that distinguishes local authorization from later audit decisions. Table 8 compares the structured rule with a mean-score baseline and a scalar policy using the same veto rules; the latter gives the same outcomes. Sections 7.3–7.4 connect the case to the ledger design and synthetic replay.
+
+Comment 7: Several propositions hold largely by construction. P5 follows from its own fault model, and P1 compares against a baseline that discards information. Please reformulate them so they can fail informatively. For example, P5 could predict under which partition durations or validator counts a ledger outperforms a witnessed transparency log.
+
+Response 7: Section 9.2 now gives explicit null or adverse outcomes for the propositions. P1 uses a scalar baseline with the same evidence and decision rules, while P5 compares the ledger and witnessed log under matched governance and workload conditions. Section 7.4 adds a partition and quorum sensitivity analysis using stated delay assumptions, including conditions that favor the log.
+
+Comment 8: Caveats are repeated to the point of obscuring the contributions. For example, the calibration requirement appears at lines 201–204 (twice), 577–581, and 1110–1112. I recommend shortening the manuscript by about 25–30% and consolidating limitations in Section 10, which should be retitled accordingly.
+
+Response 8: The manuscript has been shortened by approximately 28.5%, from 13,389 to 9,570 words using the same counting method, excluding references. Repeated explanations and qualifications have been consolidated, the duplicate calibration statement removed, and Section 10 retitled “Limitations”.
+
+Comment 9: There are some minor typos.
+
+•    Figure typos. Figure 4: “Casual hypotheses”, “degration”, “coexit”. Figure 2: “Suitablity”.
+
+•    Legibility. Text in Figures 1, 4, 5, and 6 is too small to read. Please enlarge it and export the figures as vector graphics.
+
+•    Figure 7. The photo-realistic illustrations add no information. Please replace them with a schematic and confirm image provenance.
+
+•    References. The list needs a careful pass, e.g., Ref. 52 should be dated 2002, Ref. 134 has a stray “1”, and several entries contain “Proceedings of the Proceedings”.
+
+Response 9: We corrected the figure typos and enlarged labels and spacing in Figures 1, 4, 5 and 6, retaining vector text and diagram geometry in the PDF exports. Figure 7 now uses native Visio text-and-box diagrams, with no photographic, stock or generated-image assets. The cited reference errors, including the Mui year, stray “1” and duplicated “Proceedings of”, have been corrected.

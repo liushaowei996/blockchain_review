@@ -1,0 +1,11 @@
+Response to Reviewer 1 Comments
+
+1 Summary
+
+Thank you for reviewing the manuscript. We have applied OAL to the reviewed studies, added a coalition mission case and a concrete ledger application design, and strengthened the comparison with witnessed logs. We have also shortened the text and revised the figures and references. All locations below refer to the revised manuscript.
+
+2 Point by point response
+
+Comment 1: The paper is solid work and suggests a very useful Object-Assurance-Lifecycle framework based on careful literature analysis. It honestly admits that the blockchain, or any ledger, is only one of the layers providing security. However, no further validation is provided except a small example using no ledger at all.  This makes the title "Blockchain-assisted mission " without support from examples. Also, the suggested framework is not applied to their own literature analysis
+
+Response 1: Sections 2 and 5 now apply OAL to 39 full-text studies through 89 claim records, with a coverage heatmap, evidence levels and sensitivity analyses (Figure 3; Tables 2, 5 and 6). Sections 6.4 and 7 add a partition–revocation–reconciliation case, specify a Fabric-oriented application design, and compare it with a policy-validating witnessed log. A synthetic replay checks the rules and payload requirements; Fabric deployment and integrated mission trials remain future validation. The revised text links ledger value to shared-governance requirements and reports equal decisions for the log under matched rules.
