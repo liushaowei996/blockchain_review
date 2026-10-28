@@ -1,0 +1,606 @@
+{
+  "audit_date": "2026-10-28",
+  "timezone": "Asia/Singapore",
+  "baseline_commit": "e1bb116059eb175ef29fd0d3b3a2df16f6e5ac5b",
+  "scope": "Submission audit; manuscript and response changes are recommended in the report but have not been applied.",
+  "overall_status": "Open findings; not certified submission-ready.",
+  "report": {
+    "path": "review/revision-1/final-submission-audit-20261028.txt",
+    "sha256": "c934e03959c85055d12464e79dd8c24b9bea1f7566f6c54e1190297caa46277b"
+  },
+  "input_sha256": {
+    "manuscript/main.tex": "0fc4f33fb8fbb74c3dfbf3299fedabe37ab3f53babe50f6ddd91d57769314c28",
+    "manuscript/main.pdf": "0451fcb8325ae5880beba74347786a9aa14fda51a9e94836a81ac4de0f3f19c1",
+    "manuscript/references.bib": "abe66ec00519da9d6e18aba9e05d20de15209ea5abf3c9421dfe0591a3bd3f11",
+    "output/pdf/blockchain-mission-trust-review-content-refined.pdf": "0451fcb8325ae5880beba74347786a9aa14fda51a9e94836a81ac4de0f3f19c1",
+    "output/blockchain-review-anonymous-submission-package-20260930.zip": "e475b93a3146cdf22c592dafd394c2186dcd861b7238c0041f2c1e90c8e3c0a3",
+    "output/blockchain-review-content-refined-source-20261025.zip": "6508a2013e4676c4241c4b48d3c4750e3cbca020d4d2bf7ca6bc1584b12cd51d",
+    "review/reviewer-comments.md": "9be5e15d19a9d5c0e8202b88e0e103b71bbfc52641187548bb8d5c19bdf62740",
+    "review/reviewer1.png": "ba76e93a15c12ceb5eeadf99d7941473b068f28c82edff73caaf6df1d2ab8eff",
+    "review/reviewer2.png": "80363936f64c98d26360bca494d45fd30f48690492d1f543b4da3dbb6ef2c05f",
+    "review/revision-1/Response-to-Reviewer-1-EN-ZH.docx": "3d3369117ec5a9a1b9d9a7a80f4ef50d814ea0f9f04034798ed6e41cbb5e10d1",
+    "review/revision-1/Response-to-Reviewer-1.docx": "0be7008d8cf64ce2dc1214818699e6ef887b1a5cb756e3792121b417ad6955a8",
+    "review/revision-1/Response-to-Reviewer-2-EN-ZH.docx": "6a151eb07a357c19026e02faca33639536a296c93ed4998548d0edd56549a1f4",
+    "review/revision-1/Response-to-Reviewer-2.docx": "2134a99d515d9a6cd261071feaecfb0d6dbf9ecd952c7380e7800a0b12d3da46"
+  },
+  "original_manuscript": {
+    "pages": 37,
+    "sha256": "bc139dc08e7b4b1dfa170b9cc28b3b1fa3be46636154401d70d6ccbdc60c31e4",
+    "bibitems": 141
+  },
+  "source_archive": {
+    "path": "output/blockchain-review-content-refined-source-20261025.zip",
+    "files": 58,
+    "crc_valid": true,
+    "all_members_exist_and_match_current_manuscript_bytes": true
+  },
+  "document_checks": {
+    "Response-to-Reviewer-1-EN-ZH.docx": {
+      "sha256": "3d3369117ec5a9a1b9d9a7a80f4ef50d814ea0f9f04034798ed6e41cbb5e10d1",
+      "paragraphs": 66,
+      "ins": 0,
+      "del": 0,
+      "commentRangeStart": 0,
+      "comments_part": false,
+      "parts": 27,
+      "english_matches": true
+    },
+    "Response-to-Reviewer-1.docx": {
+      "sha256": "0be7008d8cf64ce2dc1214818699e6ef887b1a5cb756e3792121b417ad6955a8",
+      "paragraphs": 33,
+      "ins": 0,
+      "del": 0,
+      "commentRangeStart": 0,
+      "comments_part": false,
+      "parts": 27
+    },
+    "Response-to-Reviewer-2-EN-ZH.docx": {
+      "sha256": "6a151eb07a357c19026e02faca33639536a296c93ed4998548d0edd56549a1f4",
+      "paragraphs": 166,
+      "ins": 0,
+      "del": 0,
+      "commentRangeStart": 0,
+      "comments_part": false,
+      "parts": 27,
+      "english_matches": true
+    },
+    "Response-to-Reviewer-2.docx": {
+      "sha256": "2134a99d515d9a6cd261071feaecfb0d6dbf9ecd952c7380e7800a0b12d3da46",
+      "paragraphs": 83,
+      "ins": 0,
+      "del": 0,
+      "commentRangeStart": 0,
+      "comments_part": false,
+      "parts": 27
+    }
+  },
+  "document_core_properties": {
+    "Response-to-Reviewer-1-EN-ZH.docx": {
+      "creator": "",
+      "last_modified_by": ""
+    },
+    "Response-to-Reviewer-1.docx": {
+      "creator": "",
+      "last_modified_by": ""
+    },
+    "Response-to-Reviewer-2-EN-ZH.docx": {
+      "creator": "",
+      "last_modified_by": ""
+    },
+    "Response-to-Reviewer-2.docx": {
+      "creator": "",
+      "last_modified_by": ""
+    }
+  },
+  "manual_response_checks": {
+    "reviewer_1_composite_comment": "Quoted text matches after whitespace normalization; response checked against original and revised files.",
+    "reviewer_2_numbered_comments": 9,
+    "reviewer_2_quoted_comments_match_after_whitespace_normalization": true,
+    "reviewer_screenshot_ratings": {
+      "reviewer_1": [
+        3,
+        4,
+        4,
+        5
+      ],
+      "reviewer_2": [
+        4,
+        4,
+        3,
+        3
+      ]
+    },
+    "bilingual_substantive_mistranslations_found": 0,
+    "coverage_and_remaining_issues": "See the report for the 1+9 comment matrix; coverage does not imply acceptance or complete fulfillment."
+  },
+  "numerical_reproduction": {
+    "word_count_original": 13389,
+    "word_count_revision": 9570,
+    "reduction_percent": 28.52,
+    "replay_case.py": {
+      "exit_code": 0
+    },
+    "analyze_oal.py": {
+      "exit_code": 0
+    },
+    "regenerated_output_matches": {
+      "trace-results.csv": true,
+      "endorsement-results.csv": true,
+      "partition-sensitivity.csv": true,
+      "communication-budget.csv": true,
+      "replay-summary.json": true,
+      "example-batch.json": true,
+      "oal-sensitivity.csv": true,
+      "oal-leave-one-out.csv": true,
+      "oal-layer-cooccurrence.csv": true,
+      "oal-analysis-summary.json": true
+    },
+    "independent_aggregation": {
+      "studies": 39,
+      "claims": 89,
+      "occupied": 25,
+      "zero": 71,
+      "D/G/F": 16,
+      "levels": {
+        "L0": 6,
+        "L1": 11,
+        "L2": 20,
+        "L3": 20,
+        "L4": 1,
+        "L5": 0
+      }
+    },
+    "table2_matches_all_studies": true,
+    "discovery_candidates": 571,
+    "replay_summary": {
+      "record_body_bytes": 154,
+      "ed25519_record_bytes": 218,
+      "checkpoint_body_bytes": 156,
+      "ed25519_checkpoint_bytes": 220,
+      "canonical_json_application_bytes": 525,
+      "merkle_branch_bytes": 128,
+      "trace_records": 3,
+      "arrival_permutations": 6,
+      "signer_subsets": 16,
+      "quorum_sensitivity_rows": 63,
+      "local_authority_expiry_s": 480,
+      "local_action_at_420_s": "restricted delegated use",
+      "local_action_at_540_s": "deny: delegation expired",
+      "consensus_execution": false,
+      "fabric_execution": false,
+      "latencies": "assumed sensitivity inputs, not measurements"
+    },
+    "compile_warnings": [],
+    "table_figure_locations": [
+      [
+        "tab:scope",
+        "1",
+        "4"
+      ],
+      [
+        "fig:architecture",
+        "1",
+        "5"
+      ],
+      [
+        "fig:assurance-chain",
+        "2",
+        "6"
+      ],
+      [
+        "tab:reviews",
+        "2",
+        "7"
+      ],
+      [
+        "tab:objects",
+        "3",
+        "8"
+      ],
+      [
+        "tab:lifecycle",
+        "4",
+        "8"
+      ],
+      [
+        "tab:interfaces",
+        "5",
+        "9"
+      ],
+      [
+        "fig:oal",
+        "3",
+        "10"
+      ],
+      [
+        "tab:sensitivity",
+        "6",
+        "11"
+      ],
+      [
+        "fig:dependency",
+        "4",
+        "12"
+      ],
+      [
+        "tab:threats",
+        "7",
+        "13"
+      ],
+      [
+        "fig:ctg",
+        "5",
+        "13"
+      ],
+      [
+        "tab:trace",
+        "8",
+        "14"
+      ],
+      [
+        "fig:blockchain-boundary",
+        "6",
+        "15"
+      ],
+      [
+        "tab:consensus",
+        "9",
+        "16"
+      ],
+      [
+        "tab:blockchain-patterns",
+        "10",
+        "17"
+      ],
+      [
+        "tab:budget",
+        "11",
+        "19"
+      ],
+      [
+        "fig:maturity",
+        "7",
+        "20"
+      ],
+      [
+        "tab:evaluation",
+        "12",
+        "21"
+      ]
+    ]
+  },
+  "additional_numerical_checks": {
+    "heatmap_cells_checked_against_mapping": 96,
+    "heatmap_discrepancies": 0,
+    "references": {
+      "original": 141,
+      "retained": 86,
+      "removed": 55,
+      "added": 37,
+      "current": 123
+    },
+    "direct_domain_studies": 19,
+    "transferable_mechanism_studies": 20,
+    "merkle_proof_download_bytes": 697,
+    "mldsa44_signature_bytes": 2420,
+    "mldsa44_signed_checkpoint_bytes": 2576
+  },
+  "latex_verification": {
+    "audit_manuscript_exit_code": 0,
+    "isolated_copy_compile_steps": [
+      "pdflatex",
+      "bibtex",
+      "pdflatex",
+      "pdflatex"
+    ],
+    "compile_step_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_and_recompiled_pdf_pages": 30,
+    "page_text_equal_after_build_date_normalization": true,
+    "figure_pages": {
+      "1": 5,
+      "2": 6,
+      "3": 10,
+      "4": 12,
+      "5": 13,
+      "6": 15,
+      "7": 20
+    },
+    "table_pages": {
+      "1": 4,
+      "2": 7,
+      "3": 8,
+      "4": 8,
+      "5": 9,
+      "6": 11,
+      "7": 13,
+      "8": 14,
+      "9": 16,
+      "10": 17,
+      "11": 19,
+      "12": 21
+    },
+    "missing_or_unused_citations": 0,
+    "duplicate_labels": 0,
+    "undefined_references": 0,
+    "missing_figures": 0
+  },
+  "visual_review": {
+    "inputs": [
+      {
+        "label": "manuscript",
+        "pdf": "C:\\Users\\survivor\\workspace\\blockchain_review\\output\\pdf\\blockchain-mission-trust-review-content-refined.pdf",
+        "pages": 30,
+        "source": "current_pdf"
+      },
+      {
+        "label": "reviewer-1-en",
+        "pdf": "C:\\Users\\survivor\\workspace\\blockchain_review\\tmp\\content-presentation-20261025\\render-en-1\\Response-to-Reviewer-1.pdf",
+        "pages": 3,
+        "source": "cached_render_verified_against_unchanged_docx_sha256"
+      },
+      {
+        "label": "reviewer-1-zh",
+        "pdf": "C:\\Users\\survivor\\workspace\\blockchain_review\\tmp\\content-presentation-20261025\\final5-zh-1\\Response-to-Reviewer-1-EN-ZH.pdf",
+        "pages": 4,
+        "source": "cached_render_verified_against_unchanged_docx_sha256"
+      },
+      {
+        "label": "reviewer-2-en",
+        "pdf": "C:\\Users\\survivor\\workspace\\blockchain_review\\tmp\\content-presentation-20261025\\final-en-2\\Response-to-Reviewer-2.pdf",
+        "pages": 9,
+        "source": "cached_render_verified_against_unchanged_docx_sha256"
+      },
+      {
+        "label": "reviewer-2-zh",
+        "pdf": "C:\\Users\\survivor\\workspace\\blockchain_review\\tmp\\content-presentation-20261025\\final5-zh-2\\Response-to-Reviewer-2-EN-ZH.pdf",
+        "pages": 14,
+        "source": "cached_render_verified_against_unchanged_docx_sha256"
+      }
+    ],
+    "page_overviews_reviewed": 60,
+    "manuscript_pages_reviewed_at_full_page_scale": [
+      5,
+      10,
+      12,
+      13,
+      15,
+      20
+    ],
+    "clipping_or_overlap_observed": false,
+    "docx_render_method": "Cached PDF renders whose recorded source DOCX SHA-256 values match the unchanged current DOCX files.",
+    "fresh_docx_render_limitation": "Bundled render_docx.py could not find LibreOffice on this Windows host.",
+    "raster_image_objects_per_figure": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bibliography_urls_present_in_bib_but_not_rendered": {
+    "misc_count": 22,
+    "other_non_doi_proceedings_count": 3,
+    "entries": [
+      {
+        "reference": 27,
+        "key": "w3c2013provdm",
+        "type": "misc",
+        "url": "https://www.w3.org/TR/prov-dm/"
+      },
+      {
+        "reference": 28,
+        "key": "w3c2013provo",
+        "type": "misc",
+        "url": "https://www.w3.org/TR/prov-o/"
+      },
+      {
+        "reference": 36,
+        "key": "rfc9171",
+        "type": "misc",
+        "url": "https://www.rfc-editor.org/rfc/rfc9171"
+      },
+      {
+        "reference": 37,
+        "key": "rfc9172",
+        "type": "misc",
+        "url": "https://www.rfc-editor.org/rfc/rfc9172"
+      },
+      {
+        "reference": 83,
+        "key": "raft2014",
+        "type": "inproceedings",
+        "url": "https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro"
+      },
+      {
+        "reference": 84,
+        "key": "pbft1999",
+        "type": "inproceedings",
+        "url": "https://www.usenix.org/conference/osdi-99/presentation/practical-byzantine-fault-tolerance"
+      },
+      {
+        "reference": 85,
+        "key": "rfc6962",
+        "type": "misc",
+        "url": "https://www.rfc-editor.org/rfc/rfc6962"
+      },
+      {
+        "reference": 86,
+        "key": "rfc9162",
+        "type": "misc",
+        "url": "https://www.rfc-editor.org/rfc/rfc9162"
+      },
+      {
+        "reference": 89,
+        "key": "ibm2005mapek",
+        "type": "misc",
+        "url": "https://users.cs.fiu.edu/~sadjadi/Teaching/Autonomic%20Grid%20Computing/CIS-6612-Summer-2006/AC-Blueprint-WhitePaper-V7.pdf"
+      },
+      {
+        "reference": 93,
+        "key": "maersk2022tradelens",
+        "type": "misc",
+        "url": "https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens"
+      },
+      {
+        "reference": 95,
+        "key": "cometbft2026",
+        "type": "misc",
+        "url": "https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md"
+      },
+      {
+        "reference": 98,
+        "key": "fabric2026bft",
+        "type": "misc",
+        "url": "https://hyperledger-fabric.readthedocs.io/en/latest/bft_configuration.html"
+      },
+      {
+        "reference": 99,
+        "key": "hyperledger2026fabric",
+        "type": "misc",
+        "url": "https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html"
+      },
+      {
+        "reference": 100,
+        "key": "rfc8032",
+        "type": "misc",
+        "url": "https://www.rfc-editor.org/rfc/rfc8032"
+      },
+      {
+        "reference": 101,
+        "key": "fips204",
+        "type": "misc",
+        "url": "https://doi.org/10.6028/NIST.FIPS.204"
+      },
+      {
+        "reference": 105,
+        "key": "varga2022seadronessee",
+        "type": "inproceedings",
+        "url": "https://openaccess.thecvf.com/content/WACV2022/html/Varga_SeaDronesSee_A_Maritime_Benchmark_for_Detecting_Humans_in_Open_Water_WACV_2022_paper.html"
+      },
+      {
+        "reference": 114,
+        "key": "gsn2021",
+        "type": "misc",
+        "url": "https://scsc.uk/gsn-standard"
+      },
+      {
+        "reference": 115,
+        "key": "sacm2023",
+        "type": "misc",
+        "url": "https://www.omg.org/spec/SACM/2.3"
+      },
+      {
+        "reference": 116,
+        "key": "ul4600",
+        "type": "misc",
+        "url": "https://www.ul.com/news/ul-4600-edition-3-updates-incorporate-autonomous-trucking"
+      },
+      {
+        "reference": 117,
+        "key": "imo2019trials",
+        "type": "misc",
+        "url": "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+      },
+      {
+        "reference": 118,
+        "key": "imo2021scoping",
+        "type": "misc",
+        "url": "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+      },
+      {
+        "reference": 119,
+        "key": "imo2026mass",
+        "type": "misc",
+        "url": "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+      },
+      {
+        "reference": 120,
+        "key": "dnv2024autonomous",
+        "type": "misc",
+        "url": "https://www.dnv.no/maritime/autonomous-and-remotely-operated-ships---introduction/aros-class-notation/"
+      },
+      {
+        "reference": 122,
+        "key": "threegpp22125",
+        "type": "misc",
+        "url": "https://www.3gpp.org/dynareport/22125.htm"
+      },
+      {
+        "reference": 123,
+        "key": "threegpp22119",
+        "type": "misc",
+        "url": "https://www.3gpp.org/dynareport/22119.htm"
+      }
+    ],
+    "cause": "The MDPI bst misc function does not print the url field; it does print howpublished, note and doi."
+  },
+  "open_findings": [
+    {
+      "id": "F1",
+      "type": "definition_consistency",
+      "summary": "Clarify the 60-second deadline origin to include the modeled partition wait."
+    },
+    {
+      "id": "F2",
+      "type": "response_manuscript_mismatch",
+      "summary": "State the promised signed-count and leaf-index bound check in the main text."
+    },
+    {
+      "id": "F3",
+      "type": "bibliography_rendering",
+      "summary": "Make URLs or DOI links render for 22 online misc references."
+    },
+    {
+      "id": "F4",
+      "type": "conditional_delivery_risk",
+      "summary": "Confirm reviewer access to the complete per-study OAL mapping and add an accurate location pointer."
+    },
+    {
+      "id": "W1",
+      "type": "optional_style_edit",
+      "summary": "Remove the arbitrary-decrement comparison while retaining the update-rule requirement."
+    },
+    {
+      "id": "W2",
+      "type": "argumentative_style",
+      "summary": "Remove the rebuttal-like HotStuff classification clause from the scenario-fit table cell."
+    },
+    {
+      "id": "W3",
+      "type": "argumentative_style",
+      "summary": "Remove the colloquial acoustic-partition shortcut clause from the scenario-fit table cell."
+    },
+    {
+      "id": "V1",
+      "type": "historical_file_selection_risk",
+      "summary": "Do not treat historical anonymous/marked PDFs, checklist or first-submission cover letter as current revision artifacts."
+    }
+  ],
+  "primary_sources_spot_checked": [
+    "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx",
+    "https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html",
+    "https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens",
+    "https://read.nxtbook.com/ieee/vehicular_technology/vehiculartechnology_june_2023/toward_trusted_unmanned_aeria.html",
+    "https://www.rfc-editor.org/info/rfc8032/",
+    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"
+  ],
+  "limits": [
+    "No independent recoding of all 39 full-text studies was undertaken.",
+    "Not every substantive claim in all 123 cited references was rechecked against full text.",
+    "The replay does not execute Fabric, a consensus protocol, or two independently deployed ledger/log services.",
+    "The journal submission portal and actual reviewer-visible attachment list were not inspected."
+  ],
+  "preservation": {
+    "baseline_files_hash_checked": 120,
+    "baseline_files_changed": [],
+    "manuscript_and_response_edits_applied": false,
+    "reference_full_texts_or_temporary_files_added_to_git": false
+  }
+}

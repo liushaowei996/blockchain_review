@@ -1,0 +1,251 @@
+返修提交前终检
+检查日期：2026-10-28（Asia/Singapore）
+检查基线：e1bb116；检查对象为当前 content-refined 清稿及配套回复。
+
+结论
+
+主要返修工作已经落实，所有审稿意见均有对应回复。当前清稿、LaTeX 源文件和 content-refined 源文件包一致，两份中英对照回复的英文也与独立英文回复逐段一致。
+
+尚不能认定“回复描述与正文完全匹配”。提交前建议处理三项明确问题：统一 60 秒期限的起算点（F1）；在正文补明回复已承诺的 Merkle 索引/计数检查（F2）；修复在线参考文献 URL 在最终 PDF 中丢失的问题（F3）。另有一项与审稿人可见材料有关的可核查性风险（F4）、两处明确的争辩式措辞残留和一处可选精简（W1–W3）。旧标记稿、旧匿名 PDF、旧投稿检查表和首次投稿封面信应按历史文件识别（V1）。
+
+本轮交付为检查报告及核验记录。以下替换建议尚未改入论文或回复文件。
+
+一、文件基线与检查范围
+
+原稿：
+C:/Users/survivor/workspace/blockchain_review/output/blockchain-review-anonymous-submission-package-20260930.zip
+其中 main.pdf 为 37 页，参考文献 141 条；main.pdf SHA-256：
+bc139dc08e7b4b1dfa170b9cc28b3b1fa3be46636154401d70d6ccbdc60c31e4
+原稿用于核对审稿意见涉及的旧章节、旧案例、旧参考文献及修改前后变化。
+
+当前清稿：
+C:/Users/survivor/workspace/blockchain_review/output/pdf/blockchain-mission-trust-review-content-refined.pdf
+与 C:/Users/survivor/workspace/blockchain_review/manuscript/main.pdf 完全相同，均为 30 页。
+SHA-256：0451fcb8325ae5880beba74347786a9aa14fda51a9e94836a81ac4de0f3f19c1
+
+当前源码包：
+C:/Users/survivor/workspace/blockchain_review/output/blockchain-review-content-refined-source-20261025.zip
+58 个文件，CRC 检查通过；归档内每个文件与当前 manuscript 对应文件逐字节一致。
+
+审稿材料：
+C:/Users/survivor/workspace/blockchain_review/review/reviewer-comments.md
+C:/Users/survivor/workspace/blockchain_review/review/reviewer1.png
+C:/Users/survivor/workspace/blockchain_review/review/reviewer2.png
+
+回复材料：
+C:/Users/survivor/workspace/blockchain_review/review/revision-1/Response-to-Reviewer-1.docx
+C:/Users/survivor/workspace/blockchain_review/review/revision-1/Response-to-Reviewer-2.docx
+C:/Users/survivor/workspace/blockchain_review/review/revision-1/Response-to-Reviewer-1-EN-ZH.docx
+C:/Users/survivor/workspace/blockchain_review/review/revision-1/Response-to-Reviewer-2-EN-ZH.docx
+
+检查同时覆盖摘要、11 节正文、声明、7 幅图、12 个表、参考文献输出、分析脚本和结果，以及旧标记稿、提交清单与封面信。正文及回复按反防御性写作 skill 逐段审阅。参考文献检查包括全部引用键与输出结构、审稿人点名的问题和关键论据的来源抽核；本轮没有重新独立编码全部 39 篇论文，也没有逐条重新验证全部 123 篇文献的每项论断。
+
+二、提交前应处理的明确问题
+
+F1  60 秒期限的起算点与敏感性计算不一致
+优先级：提交前修正。性质：正文内部的定义/计算口径问题。
+位置：清稿第 16 页，第 7.2 节第一段；第 19 页，第 7.4 节末段；第 23 页 P5。
+源文件：C:/Users/survivor/workspace/blockchain_review/manuscript/sections/07-blockchain.tex:23、109。
+
+原句：
+“The illustrative reconciliation deadline is 60 s after an event becomes available for shore processing.”
+
+后文却把分区时长 D 加入截止期：账本 D+2≤60、日志 D+1≤60，分别得到 58/59 秒。若“available for shore processing”指事件已经抵达岸端，分区等待就发生在计时开始之前，这两个边界不能由该定义推出。脚本计算本身与 58/59 秒一致，问题在期限的文字定义。
+
+与现有计算一致的最小替换：
+“For the sensitivity scenario, the 60 s reconciliation deadline starts when an event is ready for transmission to shore and includes the remaining partition interval.”
+
+第 7.4 节可在第一句后补：
+“The event is ready for transmission at the start of the modeled partition interval.”
+
+理由：明确 D 是该事件经历的剩余分区等待时间，保留全部已有数值。审稿人 2 回复 7 的 58/59 秒及假设性定位无需改成实测结论；如补充期限定义，英文回复与中英对照版应同步。
+
+F2  回复信列出的 index/count 检查没有在正文明确落实
+优先级：提交前修正。性质：回复—正文匹配问题，兼具协议准确性意义。
+位置：审稿人 2 英文回复第 5 页 Response 4，段落“Verify supported proofs”；清稿第 18 页，第 7.3 节“Commit status and constrained verification”。
+源文件：C:/Users/survivor/workspace/blockchain_review/manuscript/sections/07-blockchain.tex:80。
+
+回复原文列出了：
+“source-record signature, index/count and a four-hash Merkle branch.”
+
+正文列出签名者、签名、检查点序列、源记录签名及 Merkle 分支，并说明十叶填充至十六叶；没有明确要求索引小于原始记录数。第 7.4 节出现“两字节索引”是载荷构成，不等同于检查规则。协议说明和 replay_case.py 已执行此边界检查，因此这不是未做验证，而是正文漏写。
+
+在正文检查列表之后增加一句即可：
+“It also checks that the leaf index is non-negative and smaller than the signed record count, rejecting padded-leaf indices.”
+
+理由：重复末叶填充会使填充位置具有可计算的包含路径；签名计数与索引边界用于排除这些位置。该补充与现有脚本一致，并使回复中的具体承诺可直接在正文找到。
+
+F3  在线参考文献的 URL 未进入最终 PDF
+优先级：提交前修正在线文档条目。性质：参考文献可检索性及模板输出问题。
+位置：清稿参考文献，尤其 [93] TradeLens、[95] CometBFT、[98–99] Fabric。
+证据文件：
+C:/Users/survivor/workspace/blockchain_review/manuscript/references.bib
+C:/Users/survivor/workspace/blockchain_review/manuscript/main.bbl:714
+C:/Users/survivor/workspace/blockchain_review/manuscript/Definitions/mdpi.bst:996
+
+例如当前 [95] 实际输出仅有机构、Consensus Specification、2026 及访问日期；.bib 中的具体网址没有输出。当前 bst 的 misc 函数输出 howpublished、note、doi，却不输出 url；www 函数才调用 format.website。仅检查 .bib 有 URL 无法发现此问题。
+
+共发现 22 个带 URL 的 @misc 条目在输出中没有 URL 或 DOI 链接：
+[27] w3c2013provdm；[28] w3c2013provo；[36] rfc9171；[37] rfc9172；
+[85] rfc6962；[86] rfc9162；[89] ibm2005mapek；[93] maersk2022tradelens；
+[95] cometbft2026；[98] fabric2026bft；[99] hyperledger2026fabric；
+[100] rfc8032；[101] fips204；[114] gsn2021；[115] sacm2023；[116] ul4600；
+[117] imo2019trials；[118] imo2021scoping；[119] imo2026mass；[120] dnv2024autonomous；
+[122] threegpp22125；[123] threegpp22119。
+
+最小修复方向：对网页型来源使用模板支持的 @www 与 urldate；或保留 @misc，将已核实 URL 放入 howpublished 的 \url{...} 中，保留既有访问日期。FIPS 204 可补正确 doi 字段。应以重新生成的 .bbl 和 PDF 为验收对象，不必修改期刊 bst。
+
+另外 [83] Raft、[84] PBFT、[105] SeaDronesSee 的非 DOI URL 也未输出，但其会议、题名和页码已构成常规书目定位；可一并改善，不将“每条会议文献没有 URL”本身判作错误。
+
+审稿人点名的 Mui 年份 2002、Kshetri 标题前多余“1”、重复“Proceedings of the Proceedings”均已修正。Fabric 标题、ARCADIAN-IoT 2023 印刷年、Varshosaz 2020 卷期在当前输出中也与回复一致。F3 是这些修正之外的剩余问题。
+
+三、审稿材料可见性与验证范围
+
+F4  完整的逐研究 OAL 映射存在，但正文及回复没有给出可访问入口
+优先级：提交前确认交付方式。性质：有条件的可核查性风险，不是计数错误。
+位置：第 2.2 节、表 2、图 3、Data Availability Statement；审稿人 1 Response 1、审稿人 2 Response 2。
+完整数据实际位于：
+C:/Users/survivor/workspace/blockchain_review/manuscript/supplementary/oal-study-mapping.csv
+C:/Users/survivor/workspace/blockchain_review/manuscript/supplementary/oal-study-register.csv
+
+图 3 给出聚合数量，表 2 按研究组列出合并后的证据类型，表 5 展示部分机制比较；它们不能独立恢复每篇论文的 O/A/L 单元格与每条主张的证据类型。89 条完整记录和出处定位在 CSV 中，并已随 58 文件源码包打包。当前 README 明确这些本地分析文件不代表已经向期刊提交独立补充材料，正文和回复也没有声明这些 CSV 的交付位置。
+
+如果审稿人只能看到清稿 PDF 和回复 DOCX，核心意见“将原始研究逐项映射到 OAL 和证据类型”仍缺少完整可核查的交付。若系统确实让审稿人访问源码包，则数据并未缺失，但仍缺少明确导航。不能仅凭本地 ZIP 含 CSV 就认定审稿人已经获得它。
+
+建议在提交预览中确认审稿人可见文件；若仅交付 PDF，可把逐研究映射整理为正文附录。若另行提供映射文件，应在实际交付后同步写明准确附件名及位置。不能在尚未附上材料时写“已提供补充材料”。同样，精确的 525 字节 JSON 依赖字段名与序列化实例；相关实例目前也仅在源码包中，宜使用同一明确入口承接复核。
+
+R1 / R2-4 的剩余验证范围
+
+审稿人 1 关于框架未用于文献的意见已获得实质回应；例子也已改为明确的联合治理、撤销与恢复模式。需要保留一个判断边界：当前脚本没有运行 Fabric 节点，没有实现独立的账本和日志服务。它把同一确定性规则用于两个架构的模型输出，说明在相同规则下可以得到相同决策，并检验签名、证明和载荷；这不是两套部署的实测等价性试验。
+
+审稿人 2 意见 4 的数据模型、背书、链码操作、节点放置和应用载荷预算已有明确内容；完整 Fabric 交易封装大小仍未测量，525 字节是 JSON 应用载荷。两份回复及第 10 节均准确披露了这一点，没有发现把合成回放写成 Fabric/海试结果的情况。审稿人是否接受这种设计与规则层面的验证仍有不确定性，不应将其概括为“已完成账本实证验证”。
+
+四、反防御性写作检查
+
+摘要、引言和结论以贡献和证据组织叙述，未发现需要整段重写的自我贬低。必要的样本边界、零值解释、单次抽取、日志等价结果及未进行实机部署等内容应保留。以下按原文顺序列出局部建议。
+
+W1  可选精简：去掉“任意递减”的预设反面做法
+位置：清稿第 14 页，第 6.3 节末段。
+C:/Users/survivor/workspace/blockchain_review/manuscript/sections/06-dependencies.tex:48
+原句：
+“Re-estimating trust after a change requires a specified update rule, rather than an arbitrary decrement along graph edges.”
+问题：前半句已明确方法要求，后半句带有预先反驳一种未在此处采用的做法的语气。这是可选精简，不是科学错误。
+最小修改：
+“Re-estimating trust after a change requires a specified update rule.”
+理由：保留更新规则必须明确的技术要求。
+
+W2  建议修改：共识表中残留对审稿分类的直接反驳
+位置：清稿第 16 页，表 9，CometBFT 的 Scenario fit 单元格。
+C:/Users/survivor/workspace/blockchain_review/manuscript/sections/07-blockchain.tex:38
+原文：
+“Application-specific replicated state machine; not classified as HotStuff merely because both use BFT”
+问题：后半句在回应一种分类错误，读起来像对审稿意见的反驳；它没有补充“适用场景”信息。前一列及表后正文已准确说明 CometBFT 的轮次、投票和 gossip 特征。
+最小修改：
+“Application-specific replicated state machine”
+理由：删除争辩性分句，保留已有技术区分。
+
+W3  建议修改：用具体适用条件替代“捷径”式表述
+位置：清稿第 16 页，表 9，DAG-based 的 Scenario fit 单元格。
+C:/Users/survivor/workspace/blockchain_review/manuscript/sections/07-blockchain.tex:40
+原文：
+“High-throughput shore service with resource evidence; no acoustic-partition shortcut”
+问题：“no ... shortcut”是口语化、反驳式表达；前一列、章节需求和部署说明已经交代传播、排序及连通性条件。
+最小修改：
+“High-throughput shore service with resource evidence”
+理由：保留岸端高吞吐场景及资源证据条件，不删除协议故障假设。
+
+不应以“反防御性”为由删除的内容包括：
+第 2 节目的性选样和单次抽取；第 5 节零单元格不是全领域空白；第 6.4 节标量否决策略得到相同结论；第 7 节见证日志在匹配条件下等价、排序不等于有效提交；第 10 节合成事件与未执行 Fabric/海试的范围。这些直接决定结果含义。回复信中的致谢、修改说明以及如实说明验证范围也不是正文式自我辩护。
+
+五、逐条审稿意见响应情况
+
+审稿人 1（一个综合意见）
+回应位置：第 2、5、6.4、7 节；图 3；表 2、5、6、8–11。
+核对：39/89 的映射、分层敏感性、联合治理案例和载荷预算真实存在；回复未声称完成 Fabric 部署。剩余事项为 F2、F4 及上述验证范围判断。
+
+审稿人 2–1：文献识别与筛选
+回应位置：第 2.1–2.2 节，清稿第 2–3 页。
+核对：32 条检索式、每条前 25 项、2016 起始过滤、571 条去重候选与保留的检索脚本/候选记录一致；39 篇分析样本、19/20 分层、123/84 文献角色一致。回复中的方法名称和章节定位正确。属于结构化叙述综述，没有虚称系统综述或独立双人编码。
+
+审稿人 2–2：OAL 应用于文献
+回应位置：第 5.2–5.4 节，表 2、5、6、图 3。
+核对：39 篇研究、89 条记录、25 个非零单元格、71 个零单元格、D/G/F=16 均复算一致。去除四篇共识、去除概念研究、直接领域、代理数据、身份重编码和逐一删除的结果一致。每个热图数值均逐项核对。需处理 F4 的逐研究记录可达性。
+
+审稿人 2–3：账本必要性与共识选择
+回应位置：第 7.1–7.2 节，表 9，第 9.1 节。
+核对：明确选择“价值取决于治理条件”的回应路径；A–D 角色和禁止单方变更事项齐备；日志基线具有相同策略；Wüst/Gervais、Locher、TradeLens、需求驱动选型文献已引用；列出七类机制及三类任务选择。需修正 F1、W2、W3。性能与能耗仍是设计比较而非部署测量，回复没有相反声称。
+
+审稿人 2–4：具体 Fabric 模式
+回应位置：第 7.3–7.4 节，表 10–11，清稿第 17–19 页。
+核对：A AND B AND (C OR D)、岸端 peer/orderer、USV 转发缓存、四项链码操作、有效提交后的联合回执均匹配。154/218/220/525/697/2576 字节成立，100/1000/5000 bit/s 的串行化结果一致。F2 为明确的正文漏项；完整交易封装仍留作部署测量，不能将应用载荷称为 Fabric 完整交易大小。
+
+审稿人 2–5：相关研究
+回应位置：引言与第 4.3、3.1、6.3、9.3 节。
+核对：预言机、透明日志/Sigstore、BPv7/BPSec、MAPE-K/JDL、GSN/SACM/UL4600 和海事规范均出现于回复所指位置。MASS Code 的 2026 年 5 月通过、7 月 1 日生效与 IMO 当前官方说明一致。需解决 F3 的在线来源输出。
+
+审稿人 2–6：案例及标量基线
+回应位置：第 6.4 节，表 8，清稿第 14 页。
+核对：240 秒撤销、600 秒获知、480 秒委托到期、420/540 秒动作；三个时间区间及 0.99/0.89/0.79、0.75 阈值均匹配。否决式标量与结构化规则一致，没有把均值策略结果推广成所有标量策略均较差。
+
+审稿人 2–7：可证伪命题
+回应位置：第 9.2 节 P1–P6，第 7.4 节。
+核对：P1 使用完整信息、相同动作、预算和否决规则；P5 使用相同治理条件的日志；各命题有无改善或反向结果。63 个配置及假定时延 2/1 秒的结果一致。F1 的计时定义需统一。
+
+审稿人 2–8：压缩篇幅、集中局限
+回应位置：全文，第 10 节。
+核对：同一源文本统计法得到 13,389→9,570，缩减 28.52%，与回复 28.5% 一致；当前 30 页；Section 10 确为 Limitations。校准要求在第 3.2 节保留一次基本定义，评估和局限中对校准的具体讨论有独立技术作用，不作为重复自辩机械删除。
+
+审稿人 2–9：图件、拼写、文献
+回应位置：图 1–7 和参考文献。
+核对：图 2/4 指定拼写正确；图 1/4/5/6 在当前稿中可读；图 5 位于第 13 页正文页。图 7 已为六面板文字框图，无栅格图像对象；图 2 保留灯塔位图，因此回复“矢量文字和图形”比“七图均纯矢量”准确。书目点名修正均存在，尚有 F3。
+
+回复文件自身：
+两位审稿人的意见原文经空白归一化后与对应回复引文一致；Reviewer 2 九项均无漏引。一般评价与截图一致：Reviewer 1 为 3/4/4/5，Reviewer 2 为 4/4/3/3；均为英语无需改进。33 组和 83 组中英段落的英文逐字一致；中文保留主要数值与范围，未发现实质性误译。四份 DOCX 均无遗留修订插入/删除标记或批注，作者及最后修改者元数据字段为空。核对的章节和表号均对应当前清稿，不应把审稿人引文中的旧编号擅自改成新编号。
+
+六、版本选择与历史材料
+
+V1  当前目录内存在容易误选的历史文件
+
+1. C:/Users/survivor/workspace/blockchain_review/output/pdf/blockchain-mission-trust-review-anonymous.pdf
+该文件不是本轮清稿，也不是本报告使用的原始 37 页稿件；其摘要仍为 23 篇研究、49 条记录。不能仅凭 anonymous 文件名选为最终上传件。
+
+2. C:/Users/survivor/workspace/blockchain_review/manuscript/main-marked.tex
+其摘要尚未与当前 main.tex 同步，且第 53、58 行仍声明提供 supplementary materials，当前清稿已没有这项交付声明。现有 layout-refined-marked PDF 为 31 页，同样不是当前 30 页清稿的对应标记版。当前 README 已将这些标记稿作为历史材料；若本轮需要标记稿，必须从最终清稿重新生成并核对，不能沿用旧件。是否要求上传标记稿由本次编辑通知/系统字段决定，本报告不假定其必需。
+
+3. C:/Users/survivor/workspace/blockchain_review/manuscript/submission/submission-checklist.md
+仍写 111 条文献、10 个表，而当前为 123 条、12 个表；不能用它判断本轮状态。当前版本导航应以 revision-1/README.md 的“文件”清单为准。
+
+4. C:/Users/survivor/workspace/blockchain_review/manuscript/submission/cover-letter.txt
+日期为 2026-09-30，含“The manuscript has not previously been submitted to an MDPI journal”。这是首次投稿历史信，不是本轮返修信；若本次提交需要新的 cover letter，应改为返修语境并填写真实稿件编号与日期。当前 README 已说明其为历史材料，因此这是误上传风险，不是当前回复文件的错误。
+
+当前应识别的配套文件为本报告第一节列出的 content-refined PDF、两份英文回复和 content-refined 源码 ZIP。中英对照版用于作者核对。落实本报告修改后，需重新生成相应清稿/源码包并更新版本指向；本报告不把检查前文件标记为“已修复终稿”。
+
+七、执行过的核验与检查边界
+
+1. scripts/audit_manuscript.py：通过。123 条引用全部有条目；无未引用条目、重复标签、未定义引用、缺失图件或工具占位符。
+2. 在 tmp 隔离目录解包当前源码，依次 pdflatex、bibtex、pdflatex、pdflatex：四步均通过。最终日志没有 Overfull、Float too large、undefined、multiply defined 或 LaTeX Error。重新生成的 PDF 为 30 页；排除编译日期后，逐页提取文字与当前清稿一致。
+3. 在隔离副本执行 replay_case.py、analyze_oal.py：10 个重生成结果文件均与仓库版本逐字节相同。独立汇总再次核对 39 篇、89 条、25/71 单元格和 L0–L5 的 6/11/20/20/1/0 计数；图 3 的 96 个单元格逐项一致。
+4. 源码包全部 58 文件与当前源码匹配。原稿和当前稿按同一方法计词，28.52% 缩减成立。参考文献保留原稿 86 条、删除 55 条、新增 37 条，得到 123 条；不是把原稿所有 141 条都纳入了数值编码。
+5. 核对 7 幅图和 12 个表的编号与位置。图页：1→5、2→6、3→10、4→12、5→13、6→15、7→20。表页：1→4、2→7、3→8、4→8、5→9、6→11、7→13、8→14、9→16、10→17、11→19、12→21。
+6. 查看清稿 30 页、英文回复 3+9 页、中英回复 4+14 页的逐页总览；对图 1、3、4、5、6、7 的整页图像放大复核。未见裁切、重叠或缺字。图 2 保留一个栅格插图，其余六幅 PDF 没有栅格图像对象。
+7. 本机 packaged render_docx.py 因缺少 LibreOffice 无法新渲染。本轮使用上轮保存的对应 PDF 渲染，其源 DOCX SHA-256 与当前四份 DOCX 及此前核验记录完全一致；本轮未改动 DOCX。故版面检查针对相同文件的已有渲染，而非宣称本轮重新导出了 Word。
+8. 来源抽核确认：PBFT 原论文第 6.1 节（PDF 第 9 页）明确原复制库尚未实现 view changes/retransmissions；Yang 等研究分别描述六个正常与两个恶意 UAV 节点的实验，以及独立 Kubernetes 共识试验。稿件保留其证据范围是适当的。MASS 生效时间、TradeLens 停运依据、Fabric 排序/验证边界、Ed25519 与 ML-DSA-44 签名长度也与一手来源一致。
+9. 提交前应修复 F1–F3、清理 W2–W3、明确 F4 的实际交付，并核对上传预览。本轮未操作期刊投稿系统。
+
+来源抽核链接（检查日期 2026-10-28）
+
+IMO MASS Code 当前说明（支持通过和生效时间）：
+https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx
+Fabric 官方 Ordering Service（支持排序之后仍须验证、BFT ordering 的区分）：
+https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html
+Maersk 2022-11-29 公告（支持行业协作与商业可行性的表述）：
+https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens
+IEEE Vehicular Technology Magazine 原文（支持八节点实验与容器试验的区分）：
+https://read.nxtbook.com/ieee/vehicular_technology/vehiculartechnology_june_2023/toward_trusted_unmanned_aeria.html
+RFC 8032 第 7 节（64 octets）：
+https://www.rfc-editor.org/info/rfc8032/
+NIST FIPS 204 Table 2（ML-DSA-44 2420 bytes）：
+https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf
+
+可复核数值和输入文件哈希另见：
+C:/Users/survivor/workspace/blockchain_review/review/revision-1/final-submission-verification-20261028.json
