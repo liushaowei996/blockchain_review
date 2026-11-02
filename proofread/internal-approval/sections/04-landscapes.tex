@@ -1,0 +1,41 @@
+\section{互补的研究领域}
+
+协同导航与编队研究建立了异构无人平台之间的交互\citep{wu2020cooperative,ke2022cooperative,xue2021distributed,liu2023formation}。这些研究中的\emph{一致性}涉及物理状态的协调。账本共识涉及在故障模型下对复制记录达成一致。OAL 通过明确的观测、转换、权限和预期用途，将它们的输出联系起来。
+
+\subsection{安全与证据评估}
+
+安全综述按目标和攻击机制组织欺骗、干扰、俘获、恶意路由、恶意软件和虚假数据注入\citep{yahuza2021internet,mekdad2023survey,jiang2019securing,adam2024state}。水下衰落、噪声、多普勒效应和拓扑变化，也可能造成丢失或不一致\citep{ali2020recent,jouhari2019underwater,mohsan2022towards}。因此，信任估计需要指明被评估的属性和不确定性状态：即使异常原因尚未查明，也可能有理由限制使用。
+
+决策树和隐马尔可夫方法展示了水下信任推断\citep{jiang2020dynamic,arifeen2020hidden}。前者以初始无攻击训练期为条件，评估仿真网络行为；后者包含一个使用十个生成观测值的数值示例。这些研究在各自明确的网络与观测模型范围内支持信任推断。基于声誉的对等节点选择\citep{kamvar2003eigentrust}同样提供一种评估机制，其含义取决于服务和所观测的行为。综述分类区分直接观测、推荐、情境，以及针对声誉的攻击\citep{ahmed2019trust,aaqib2023iot,junior2021survey,liu2023survey}。
+
+观测评估提供了另一条互补研究路径。针对 GNSS 欺骗，已有信号特征分类、网络辅助检测和记录数据验证研究\citep{shafique2021detecting,dang2022deep,semanjski2020use}。多视图意见聚合在明确假设下组合不确定观测\citep{liu2022trusted}。这些方法处理有关物理世界的证据。它们的输出成为依赖策略的输入，而该策略应明确后果和有效时间区间。
+
+\subsection{溯源、证明与访问}
+
+W3C PROV 对实体、活动和代理进行建模\citep{w3c2013provdm,w3c2013provo}。OAL 实体是执行行动的主体，通常映射为 PROV 代理；OAL 数据产品映射为 PROV 实体。决策溯源沿着通向组织决策或自动化决策的数据流扩展分析\citep{singh2019decision}。当事件捕获和留存记录覆盖相关转换过程时，它能够支持问责。
+
+证明提供测得的端点状态证据。架构方案讨论了账本参与方证明和自主物联网安全\citep{hardjono2021towards,figueiredo2022arcadian}；已实现的工作则评估经过证明的通道，以及对嵌入式设备和所部署机器学习制品的双重证明\citep{ott2023universal,baciu2025secure}。RATS 区分证据、验证方评估和依赖决策\citep{birkholz2023remote}。零信任与设备基线给出授权及端点能力要求\citep{rose2020zero,syed2022zero,fagan2020iot}。在断连期间，缓存结果与委托权限分别随时间老化，因此这些边界十分关键。
+
+\subsection{共享记录与治理}
+
+编码样本中的无人机研究将经过认证的身份或数据采集与账本状态结合\citep{han2022identity,tan2022blockchain,karmakar2024blockchain,islam2019bus}。Fabric 提供已实现的执行-排序-验证架构\citep{androulaki2018hyperledger}；物联网平台将其应用于感知记录完整性、链下溯源和访问策略\citep{hang2019design,honarpajooh2021iot,liu2020fabric}。食品、医疗和数字孪生研究将这些模式扩展到预测、联邦学习和生命周期协调\citep{khan2020iot,rahman2020secure,suhail2022trustworthy}。表~\ref{tab:reviews} 汇总其记录的机制与评估环境，第~\ref{sec:oal} 节进行映射。
+
+\begin{table}[H]\footnotesize
+\caption{39 项编码研究及其主要证据范围。证据类型对应限定范围的主张，同一研究中的类型可以重叠。}\label{tab:reviews}
+\begin{tabularx}{\textwidth}{@{}P{22mm}P{52mm}P{21mm}Y@{}}\toprule
+\textbf{标识符} & \textbf{机制重点} & \textbf{证据类型} & \textbf{评估范围}\\\midrule
+S01--S04 & UAV 身份/认证/采集\citep{han2022identity,tan2022blockchain,karmakar2024blockchain,islam2019bus} & L1、L2、L3 & 安全分析、仿真和已实现的组件；BUS 包含 UAV 与 IoT 硬件\\
+S05--S07 & 水下信任与 P2P 声誉\citep{jiang2020dynamic,arifeen2020hidden,kamvar2003eigentrust} & L1/L2 & 网络或数值评估，以及对等节点选择仿真\\
+S08--S10 & Fabric、感知记录、Hadoop 溯源\citep{androulaki2018hyperledger,hang2019design,honarpajooh2021iot} & L3 & 服务器和嵌入式设备原型；记录处理与检索\\
+S11--S14 & 证明与自主 IoT 安全\citep{hardjono2021towards,ott2023universal,figueiredo2022arcadian,baciu2025secure} & L0 或 L3 & 两项架构贡献；两项已实现的证明研究\\
+S15--S17 & 食品/医疗溯源与访问控制\citep{khan2020iot,rahman2020secure,liu2020fabric} & L2 和/或 L3 & 预测、联邦学习应用和受控访问策略请求\\
+S18--S19 & 决策溯源与数字孪生\citep{singh2019decision,suhail2022trustworthy} & L0 & 概念性数据流和生命周期架构\\
+S20--S23 & GNSS 与多视图观测评估\citep{shafique2021detecting,dang2022deep,semanjski2020use,liu2022trusted} & L1/L2 & 信号/学习实验、记录数据和聚合分析\\
+S24--S26 & 视觉佐证、UAV 报告、雾计算卸载\citep{varshosaz2019spoofing,garcamagario2019security,alkhafajiy2020comitment} & L0/L2 & 记录轨迹、代理仿真，以及伙伴/资源选择建模\\
+S27--S29 & 海事 AIS 溯源与消息保护\citep{maritime2022monitoring,kessler2020protected,goudossis2022secais} & L3 & 接收机/账本基准测试和两项软件保护演示\\
+S30--S31、S39 & UAV 声誉、治理与路由\citep{hierarchical2023trust,yang2023trusted,barka2022towards} & L0/L2/L3/L4 & 仿真信任更新；S31 包含实体 UAV 节点实验和独立容器试验台\\
+S32--S34 & 水下签密、路由与联邦学习\citep{zhang2026underwater,eetauv2025trust,tafl2026underwater} & L1/L2/L3 & 桌面密码运算、路由仿真和基于陆地数据的代理学习\\
+S35--S38 & 通用共识比较研究\citep{hotstuff2019,narwhal2022,raft2014,pbft1999} & L1/L3 & 协议推理与服务器/云原型；故障模型和已测试恢复路径各异\\\bottomrule
+\end{tabularx}\end{table}
+
+预言机问题在这些应用中始终存在：账本保留被接受的断言及其溯源，而外部有效性依赖数据源和评估\citep{caldarelli2020oracle,albreiki2020oracles}。透明日志是自然的替代方案。证书透明度规范定义包含证明和一致性证明，并需要外部监控或见证来处理不一致视图\citep{rfc6962,rfc9162}。Sigstore 将签名与软件制品透明度相结合\citep{sigstore2022}。见证日志也可以承载共同授权的状态转换。因此，应评估的是所需验证与治理服务及其实现成本，而不只是是否存在哈希链。

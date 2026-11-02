@@ -1,0 +1,25 @@
+{
+  "english_source": "output\\pdf\\blockchains-4630703-author-corrected.pdf",
+  "english_sha256": "27819af42e91c7c96e7fa5657205dedf53ce6ba92fb9487b999db9c57103cd37",
+  "source_tex_sha256": "ba6cd6dffe90204111ba0c04be5af993a011936b6357fa7a1ad2fe275d336fbe",
+  "english_pages": 31,
+  "chinese_pages": 34,
+  "total_pages": 65,
+  "structure": {
+    "sections": 11,
+    "subsections": 27,
+    "figures": 7,
+    "tables": 12,
+    "equations": 1
+  },
+  "reference_count": 123,
+  "english_page_streams_unchanged": true,
+  "citation_occurrences_match": true,
+  "cross_reference_labels_match": true,
+  "inline_math_expressions_match": true,
+  "figures": "Unmodified English originals, with Chinese captions",
+  "named_destination_pages_match": true,
+  "annotation_counts_preserved": true,
+  "typesetting_errors": [],
+  "output_sha256": "1dd7908583e1352f797f6e7dbbd433c20d498569b953ed1de183de6367f06263"
+}

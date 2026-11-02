@@ -1,0 +1,57 @@
+\documentclass[UTF8,a4paper,11pt,fontset=windows]{ctexart}
+\usepackage[margin=21mm,top=23mm,bottom=22mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,array,longtable,float,needspace}
+\graphicspath{{../}}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xcolor,fancyhdr,lastpage}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue!45!black,bookmarksnumbered=true]{hyperref}
+\renewcommand*{\HyperDestNameFilter}[1]{zh.#1}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\OAL}{对象-保障-生命周期（OAL）}
+\newcommand{\CDUTP}{跨域无人系统信任配置规范（CDUTP）}
+\newcommand{\hl}[1]{#1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\bibfield}[2]{#2}
+\providecommand{\href}[2]{#2}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{2em}
+\setlength{\emergencystretch}{2em}
+\linespread{1.20}
+\ctexset{section={format=\Large\bfseries,beforeskip=16pt,afterskip=8pt},
+subsection={format=\large\bfseries,beforeskip=12pt,afterskip=6pt}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 发表前内部审批}
+\fancyhead[R]{\small 中文全文译稿}
+\fancyfoot[C]{\small \thepage}
+\hypersetup{pdftitle={空中-水面-水下无人系统中的区块链辅助任务信任：综述与概念框架（中文全文译稿）},
+pdfauthor={Shaowei Liu; Jing Wu; Tanren Liu; Shengqiang He; Yakun Ren; Chengnian Long}}
+\begin{document}
+\setcounter{page}{32}
+\input{frontmatter}
+\input{sections/01-introduction}
+\input{sections/02-scope}
+\input{sections/03-context}
+\input{sections/04-landscapes}
+\input{sections/05-oal}
+\input{sections/06-dependencies}
+\input{sections/07-blockchain}
+\input{sections/08-evaluation}
+\input{sections/09-discussion}
+\input{sections/10-limitations}
+\input{sections/11-conclusions}
+\clearpage
+\input{backmatter}
+\clearpage
+\renewcommand{\refname}{参考文献}
+{\small\raggedright\setlength{\bibsep}{5pt}
+\input{references-zh}
+}
+\medskip
+\noindent\textbf{出版者声明：}所有出版物中的陈述、观点和数据均仅属于各自作者及贡献者，不代表 MDPI 或编辑。MDPI 及编辑对文中所述任何观点、方法、指示或产品造成的人身或财产损害不承担责任。
+\end{document}
