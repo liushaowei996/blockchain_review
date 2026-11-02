@@ -1,0 +1,571 @@
+--- production/blockchains-4630703.tex
++++ author-corrected/blockchains-4630703.tex
+@@ -43,16 +43,22 @@
+ 
+ 
+ \Title{Blockchain-Assisted Mission Trust in Air--Surface--Underwater Unmanned Systems: A Review and Conceptual Framework}
+-\Author{\hl{Shaowei Liu}%MDPI: 1. Please carefully check the accuracy of names and affiliations. 2. We added author names according to susy, please confirm.
+-, Jing Wu, Tanren Liu, Shengqiang He, Yakun Ren and Chengnian Long *}
++\Author{\hl{Shaowei Liu} \hl{\mbox{$^{1,2}$}}%MDPI: 1. Please carefully check the accuracy of names and affiliations. 2. We added author names according to susy, please confirm.
++% Author response Q01 [AUTHOR CONFIRMATION]: Author names and order agree with the existing submission cover letter: Shaowei Liu, Jing Wu, Tanren Liu, Shengqiang He, Yakun Ren, and Chengnian Long. Affiliation superscripts have been restored from that letter. Please confirm that these details remain current for publication.
++, Jing Wu \hl{\mbox{$^{1}$}}, Tanren Liu \hl{\mbox{$^{3}$}}, Shengqiang He \hl{\mbox{$^{3}$}}, Yakun Ren \hl{\mbox{$^{3}$}} and Chengnian Long \hl{\mbox{$^{1,}$}}*}
+ \AuthorNames{Shaowei Liu, Jing Wu, Tanren Liu, Shengqiang He, Yakun Ren and Chengnian Long}
+-\address[1]{
+-\hl{Affiliation}; %MDPI: Please provide affiliation of the authors, including institution (if it has department, please add it), city, zip code and country, if the author has one affiliation, please add one, but if the author has different affiliations, please add separately.
+-\hl{liusw1994@sjtu.edu.cn (S.L.); jingwu@sjtu.edu.cn (J.W.); tanrenliu@sf-express.com (T.L.); heshengqiang@sf-express.com (S.H.); yakunren@sf-express.com (Y.R.)} %MDPI: We added these email addresses here according to those submitted online at susy.mdpi.com. Please confirm.
++\address{
++\hl{\mbox{$^{1}$}} \quad \hl{School of Automation and Intelligent Sensing, Shanghai Jiao Tong University, 800 Dongchuan Road, Shanghai 200240, China}; %MDPI: Please provide affiliation of the authors, including institution (if it has department, please add it), city, zip code and country, if the author has one affiliation, please add one, but if the author has different affiliations, please add separately.
++% Author response Q02 [AUTHOR CONFIRMATION]: The three complete affiliations and their author assignments have been restored from the submission cover letter and highlighted: Shanghai Jiao Tong University (S.L., J.W., C.L.); Jiangsu Automation Research Institute (S.L.); and SF Technology Co., Ltd. (T.L., S.H., Y.R.). Department/institution, address, city, postal code, and country are included. Final author confirmation is pending.
++\hl{liusw1994@sjtu.edu.cn (S.L.); jingwu@sjtu.edu.cn (J.W.)}\\
++\hl{\mbox{$^{2}$}} \quad \hl{Jiangsu Automation Research Institute, 18 Shenghu Road, Lianyungang, Jiangsu 222061, China}\\
++\hl{\mbox{$^{3}$}} \quad \hl{SF Technology Co., Ltd., Block B, TK Chuangzhi Tiandi Building, Keji South 1st Road, Nanshan District, Shenzhen, Guangdong 518057, China};
++\hl{tanrenliu@sf-express.com (T.L.); heshengqiang@sf-express.com (S.H.); yakunren@sf-express.com (Y.R.)} %MDPI: We added these email addresses here according to those submitted online at susy.mdpi.com. Please confirm.
++% Author response Q03 [AUTHOR CONFIRMATION]: The email addresses supplied by production have been retained and grouped under the relevant affiliations. The corresponding-author address, longcn@sjtu.edu.cn, also agrees with the submission cover letter. Please confirm all six addresses; the other five addresses cannot be independently confirmed from the existing submission files.
+ }
+ \corres{\hangafter=1 \hangindent=1.05em \hspace{-0.82em}Correspondence: \hl{longcn@sjtu.edu.cn}}
+ 
+-\abstract{Air--surface--underwater missions combine heterogeneous vehicles, intermittent links, and administrative domains. A reliable decision must connect physical observations, protected records, shared authority, and fitness for use. This structured narrative review applies the Object--Assurance--Lifecycle (OAL) framework to 39 full-text mechanism studies through 89 scoped claim records. Comparative synthesis distinguishes sender authentication from observation validity, platform integrity from task suitability, and replicated-state recovery from mission-data invalidation. Domain-stratified and sensitivity analyses expose the effects of inclusion and coding choices on the coverage map. The dependency graph identifies products affected by changed inputs or authority, and the context--temporal--graph loop organizes their reassessment. A partition--revocation--reconciliation case specifies coalition roles, a fabric-oriented application pattern, constrained verification, and an acoustic-link payload budget. A synthetic event replay verifies signatures, inclusion proofs, and temporal and authorization rules. Under matched rules, a policy-validating witnessed log yields the same decisions. Ledger value is therefore conditional on joint-governance requirements and implementation cost. Mission fault and communication requirements guide consensus selection; proposed tests compare decision quality and recovery under matched conditions. The synthesis connects mechanism evidence to explicit composition requirements for cross-domain mission decisions.}
++\abstract{Air--surface--underwater missions combine heterogeneous vehicles, intermittent links, and administrative domains. A reliable decision must connect physical observations, protected records, shared authority, and fitness for use. This structured narrative review applies the Object--Assurance--Lifecycle (OAL) framework to 39 full-text mechanism studies through 89 scoped claim records. Comparative synthesis distinguishes sender authentication from observation validity, platform integrity from task suitability, and replicated-state recovery from mission-data invalidation. Domain-stratified and sensitivity analyses expose the effects of inclusion and coding choices on the coverage map. The dependency graph identifies products affected by changed inputs or authority, and the context--temporal--graph loop organizes their reassessment. A partition--revocation--reconciliation case specifies coalition roles, a \texorpdfstring{\protect\hl{Fabric}}{Fabric}-oriented application pattern, constrained verification, and an acoustic-link payload budget. A synthetic event replay verifies signatures, inclusion proofs, and temporal and authorization rules. Under matched rules, a policy-validating witnessed log yields the same decisions. Ledger value is therefore conditional on joint-governance requirements and implementation cost. Mission fault and communication requirements guide consensus selection; proposed tests compare decision quality and recovery under matched conditions. The synthesis connects mechanism evidence to explicit composition requirements for cross-domain mission decisions.}
+ \keyword{mission trust; unmanned systems; UAV--USV--UUV cooperation; blockchain; data provenance; remote attestation; zero trust; maritime autonomy}
+ 
+ \begin{document}
+@@ -76,6 +82,7 @@
+ Air--surface--underwater missions combine unmanned aerial vehicles (UAVs), unmanned surface vehicles (USVs), and unmanned underwater vehicles (UUVs) for observation, inspection, search, and environmental monitoring. Their complementary mobility and sensing capabilities create dependencies across radio and acoustic links, gateways, processing services, and administrative owners \citep{li2023survey,wei20233u,pang2026cooperative}. UAV and marine-system reviews identify mobility, limited energy, intermittent communication, localization uncertainty, and difficult recovery as operational constraints \citep{hayat2016survey,shakhatreh2019unmanned,bae2023survey,gonzlezgarca2020autonomous}. A mission decision must combine evidence generated under these different conditions.
+ 
+ This creates a \emph{\hl{mission-trust gap}%MDPI: Please confirm if the italics are necessary; if not, please remove them. The following highlights are the same.
++% Author response Q04 [RESOLVED]: Please retain the highlighted italics. They identify defined terms, scoped claims, relation names, and conceptual distinctions used in the framework. The corresponding uses have been checked throughout the manuscript and retained consistently.
+ }. Authentication establishes a principal's identity; a content hash binds bytes; replicated consensus establishes agreement under a fault model. A relying decision additionally requires evidence that the observation is physically credible, sufficiently current, and suitable for its intended consequence. A signed sonar report can be inaccurate, a genuine image can be stale, and a correctly ordered record can originate from a captured device. UAV and underwater-security research describes the corresponding spoofing, jamming, capture, routing, and data-manipulation threats \citep{mekdad2023survey,wang2025survey,hadi2023comprehensive,jiang2019securing,yisa2021security}. Connecting these controls to the eventual use of a product requires explicit claim semantics.
+ 
+ Blockchain proposals address swarm authentication, data acquisition, membership, provenance, and audit \citep{han2022identity,tan2022blockchain,karmakar2024blockchain,islam2019bus}. Reviews of UAV and maritime applications describe coordination and sharing opportunities \citep{hafeez2023blockchain,alladi2020applications,mehta2020blockchain,farah2024survey,li2021survey}. Their value depends on which parties must jointly govern the state, which faults must be tolerated, and whether an authenticated database or independently witnessed log already satisfies those requirements. The blockchain oracle literature names the external-input problem directly: agreement about recorded assertions does not establish their correspondence with physical events \citep{caldarelli2020oracle,albreiki2020oracles}.
+@@ -83,6 +90,7 @@
+ Adjacent mechanisms supply complementary evidence. Zero trust provides resource-specific authorization \citep{rose2020zero,syed2022zero}; remote attestation separates device evidence, appraisal, and relying decisions \citep{birkholz2023remote}; provenance records producers and transformations \citep{w3c2013provdm,w3c2013provo}; and trust inference models reputation, uncertainty, and changing behavior \citep{ahmed2019trust,aaqib2023iot,jsang2016subjective}. These mechanisms use different vocabularies and evaluate different claims. Their composition is the central subject of this review.
+ 
+ The \hl{proposed} %MDPI: Please confirm whether italic format of (OAL) is necessary, if not, please remove the italic format.
++% Author response Q05 [RESOLVED]: Please retain the italics for the full framework name, Object--Assurance--Lifecycle. The abbreviation OAL remains upright. No change to production formatting is needed.
+  \OAL{} framework relates entities, platforms/devices, links/paths, and data products to four assurance layers across six lifecycle stages. A typed dependency graph and context--temporal--graph (CTG) loop preserve shared causes, event time, and uncertainty when applying this structure to a decision. OAL supplies the claim organization; established inference, provenance, policy, and consensus mechanisms supply implementations.
+ 
+ The review makes three connected contributions. First, it applies OAL to 39 full-text mechanism studies, comparing the evidence supplied by complementary mechanisms and testing coverage sensitivity to inclusion and coding choices. Second, a partition--revocation--reconciliation case connects the framework to a specified permissioned-ledger pattern, an executable policy replay, and a communication budget. A policy-validating witnessed-log baseline exposes where the two architectures provide equivalent decisions. Third, requirement-based consensus selection and falsifiable research propositions translate the synthesis into an evaluation agenda.
+@@ -96,13 +104,14 @@
+ 
+ This structured narrative review examines unmanned cooperation, communication and security, trust inference, provenance, attestation, and distributed governance. OpenAlex was queried on 6 August 2026 using 32 English search strings, a publication-date filter starting on 1 January 2016, and the 25 highest-ranked results per query. Deduplication by DOI or OpenAlex identifier produced 571 candidate records. Queries included ``blockchain UAV swarm'', ``underwater wireless sensor network trust management'', ``UAV USV UUV cooperative systems'', ``remote attestation IoT survey RATS'', and ``blockchain network partition finality''. Citation following and targeted retrieval added earlier foundations and official specifications. Crossref metadata supported bibliographic checking; it was not a second independent screening database.
+ 
+-Selection favored English sources that described cross-domain operating constraints, specified a security or trust mechanism applicable to a mission boundary, or supplied a relevant standard, dataset, or simulator. Duplicate records and sources without a substantive connection to those questions were excluded from the synthesis. Reviews supplied context and citation leads; original mechanism studies supplied the analytical sample. Foundational work predating 2016 was retained for reputation, distributed consistency, provenance, and feedback architectures. Targeted publisher, author-repository, and official-source retrieval checked developments through 25 October 2026.
++Selection favored English sources that described cross-domain operating constraints, specified a security or trust mechanism applicable to a mission boundary, or supplied a relevant standard, dataset, or simulator. Duplicate records and sources without a substantive connection to those questions were excluded from the synthesis. Reviews supplied context and citation leads; original mechanism studies supplied the analytical sample. Foundational work predating 2016 was retained for reputation, distributed consistency, provenance, and feedback architectures. Targeted publisher, author-repository, and official-source retrieval checked developments through 25 October 2026. \hl{Table~{\ref{tab:scope}} summarizes the scope and evidence roles.}
+ 
+ \subsection{Full-Text Coding and Synthesis}\label{sec:coding}
+ 
+ The analytical sample comprises 39 original mechanism contributions with inspected full texts. Its direct-domain stratum contains 11 UAV, three maritime AIS, and five intended underwater studies. Twenty transferable studies address reputation, fog offloading, provenance, attestation, access control, shared state, or observation appraisal. Application domain and actual evaluation setting are recorded separately: a terrestrial-data experiment proposed for underwater use remains a proxy evaluation. The four generic consensus comparators form an identifiable, removable subset. These purposively selected mechanisms support comparison across assurance boundaries; selection does not estimate prevalence in the field.
+ 
+ The bibliography contains 123 references. The 39 coded studies are a subset; the remaining 84 support operational context, conceptual foundations, standards, related synthesis, or evaluation resources. \hl{Table}%MDPI: The citation of Table 2 appears before citation of Table 1, tables should appear in numerical order, so please revise the citations.
++% Author response Q06 [RESOLVED]: A highlighted first citation of Table 1 has been added at the end of Section 2.1, before the existing Table 2 citation in Section 2.2. Table citations now first occur in numerical order.
+ ~\ref{tab:reviews} identifies the coded study groups and their sources. For each study, extraction recorded the mechanism claim, supporting passage, source version, and evaluation scope.
+ 
+ The coding unit is an explicitly described mechanism claim. Each of the 89 records associates one object with one assurance layer and the supported lifecycle stages. A paper can contribute several claims, each coded only for the object--layer--stage associations supported by the cited passage. A heatmap cell counts each study once for that exact object--layer--stage combination. Counts describe coverage, not additive sample sizes or effect sizes. Layer co-occurrence within a paper identifies a possible interface; validated transfer between claims requires its own evidence.
+@@ -113,6 +122,7 @@
+ 
+ \begin{table}[H]
+ \caption{\hl{Scope} %MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
++% Author response Q07 [RESOLVED]: Table 1 is now explicitly cited in Section 2.1: "Table 1 summarizes the scope and evidence roles." The table remains in its production position.
+  and evidence roles in the synthesis.\label{tab:scope}}
+ \begin{tabularx}{\textwidth}{LLL}
+ \toprule
+@@ -148,6 +158,7 @@
+ \emph{\hl{Mission trust}} is a context-specific decision to rely on an object for a stated purpose, given available evidence and the consequences of error. \emph{\hl{Trustworthiness}} denotes the supporting properties: identity, measured endpoint state, link availability, provenance, freshness, observation quality, and accountable governance. The same image may support broad situational awareness while being unsuitable for collision avoidance.
+ 
+ For object $o$, time $t$, context $c$, and mission use $m$, appraisal and decision have distinct \hl{interfaces:} %MDPI: For all equations: 	1. Please recheck all equations and make sure there are no duplicated equations in the whole manuscript. 2. Please carefully check variable formatting (italic, bold, subscript, uppercase, etc.) throughout the manuscript to ensure the formatting is consistent and revise if needed.
++% Author response Q08 [RESOLVED]: The displayed equation and the inline mathematical expressions have been checked. Equation (1) contains two distinct relations, for appraisal T and relying decision D, and is not duplicated. Mathematical variables and indices retain their appropriate italic, calligraphic, and subscript forms; descriptive labels and units remain upright. No mathematical changes were required.
+ \begin{equation}
+ \begin{aligned}
+ T_o(t,c,m)&=\mathcal{A}(o,\mathcal{E}_{\leq t},c,m;\theta),\\
+@@ -155,6 +166,7 @@
+ \end{aligned}\label{eq:trust}
+ \end{equation}
+ \hl{Here} %MDPI: Please confirm whether the format without indentation should be retained, please check the full text.
++% Author response Q09 [RESOLVED]: Please retain the unindented explanatory text following Equation (1). It continues the preceding equation paragraph. Equation-following text and the surrounding paragraph structure have been checked; the production formatting is retained.
+  $\mathcal{E}_{\leq t}$ contains evidence received by decision time, including observation times and lineage. The appraisal $\mathcal{A}$ produces claim-specific outcomes and uncertainty under assumptions $\theta$. Relying party $r$ applies policy $\pi_r$ under authority, deadline, consequence, and resource constraints $\mathcal{C}_t$. The result may permit, restrict, defer, or reject use. Subjective opinions, intervals, ordinal states, and reputation values can implement this interface \citep{jsang2016subjective,mui2003computational,kamvar2003eigentrust}. A probabilistic interpretation requires a defined event and calibration evidence.
+ 
+ \vspace{-6pt}
+@@ -165,6 +177,7 @@
+ 
+ \end{adjustwidth}
+ \caption{\hl{Cross-domain} %MDPI: We moved Figure 1 into Sec. 3.2 to reduce blank, please confirm.
++% Author response Q10 [RESOLVED]: The placement of Figure 1 in Section 3.2 is appropriate and has been retained.
+  reference architecture. Shore organizations host peers and ordering nodes; the USV is a forwarding/cache dependency. Local sensing and safety continue within delegated authority during a gateway partition.\label{fig:architecture}}
+ \end{figure}
+ 
+@@ -251,10 +264,11 @@
+ 
+ \subsection{Objects, Assurance Layers, and Lifecycle}
+ 
+-An \emph{\hl{entity}} is an accountable principal: an organization, operator, service, or autonomous agent with delegated authority. A \emph{\hl{platform/device}} is the endpoint executing a function, including vehicles, gateways, sensors, and hosted compute instances. A vehicle can be considered an entity when exercising delegated authority and a platform when its firmware is measured. A \emph{\hl{link/path}} comprises physical media, intermediate nodes, security associations, and changing quality along an end-to-end route. A \emph{\hl{data product}} is an identified version of an observation, track, map, model, command, policy, or audit record. Corrections and transformations create new version identifiers.
++An \emph{\hl{entity}} is an accountable principal: an organization, operator, service, or autonomous agent with delegated authority. A \emph{\hl{platform/device}} is the endpoint executing a function, including vehicles, gateways, sensors, and hosted compute instances. A vehicle can be considered an entity when exercising delegated authority and a platform when its firmware is measured. A \emph{\hl{link/path}} comprises physical media, intermediate nodes, security associations, and changing quality along an end-to-end route. A \emph{\hl{data product}} is an identified version of an observation, track, map, model, command, policy, or audit record. Corrections and transformations create new version identifiers. \hl{Table~{\ref{tab:objects}} summarizes the object-specific evidence and relying questions.}
+ 
+ \begin{table}[!htb]
+ \caption{\hl{OAL} %MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
++% Author response Q11 [RESOLVED]: A highlighted citation of Table 3 has been added before the table in Section 5.1: "Table 3 summarizes the object-specific evidence and relying questions."
+  objects and claim-specific evidence.\label{tab:objects}}
+ \begin{tabularx}{\textwidth}{@{}P{28mm}YY@{}}
+ \toprule
+@@ -271,10 +285,11 @@
+ The assurance axis uses O (observation validity), C (commitment and provenance integrity), G (ledger and governance consistency), and M (mission-use suitability). O uses physical bounds, calibration, diagnostics, and corroboration. C binds producer, version, and transformation assertions through signatures and provenance. G addresses jointly authorized membership, order, policy, and recovery state. M applies purpose, freshness, consequence, uncertainty, and authority requirements. When a shared-state service is not needed, ledger-specific claims are inapplicable; equivalent governance claims may be met by another service.
+ 
+ 
+-Policies, models, and reference values are versioned data products; their deployed instances reside on platforms, and their approval belongs to entities. This treatment makes the assurance infrastructure subject to the same analysis as mission observations. A cell specification identifies the object/version and required property, then gives the supporting evidence and validity interval. It also names the acceptance rule, responsible party, and response to missing evidence.
++Policies, models, and reference values are versioned data products; their deployed instances reside on platforms, and their approval belongs to entities. This treatment makes the assurance infrastructure subject to the same analysis as mission observations. A cell specification identifies the object/version and required property, then gives the supporting evidence and validity interval. It also names the acceptance rule, responsible party, and response to missing evidence. \hl{Table~{\ref{tab:lifecycle}} summarizes the lifecycle stages and state transitions.}
+ 
+ \begin{table}[H]
+ \caption{\hl{Lifecycle} %MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
++% Author response Q12 [RESOLVED]: A highlighted citation of Table 4 has been added before the table in Section 5.1: "Table 4 summarizes the lifecycle stages and state transitions."
+  stages and relevant state transitions.\label{tab:lifecycle}}
+ \begin{tabularx}{\textwidth}{@{}P{35mm}YY@{}}
+ \toprule
+@@ -303,7 +318,7 @@
+ 
+ \subsection{What the Comparison Changes in a Design Review}\label{sec:comparative}
+ 
+-The OAL axes separate the evidence supplied by a mechanism from the requirements of its next consumer. Table~\ref{tab:interfaces} compares mechanisms that share an application label or trust vocabulary but support different relying decisions.
++The OAL axes separate the evidence supplied by a mechanism from the requirements of its next consumer. Table~\ref{tab:interfaces} compares mechanisms that share an application label or trust vocabulary but support different relying decisions. \hl{Table~{\ref{tab:sensitivity}} reports sensitivity to domain and coding choices.}
+ 
+ \begin{table}[H]
+ \caption{Claim boundaries exposed by the OAL comparison. The final column states the additional requirements for composing these mechanisms.\label{tab:interfaces}}
+@@ -331,12 +346,14 @@
+ 
+ \end{adjustwidth}
+ \caption{\hl{OAL} %MDPI: we moved Figure 3 into Sec. 5.3 to reduce blank, please confirm.
++% Author response Q13 [RESOLVED]: The placement of Figure 3 in Section 5.3 is appropriate and has been retained.
+  framework and mapping of 39 full-text mechanism studies. (\textbf{a}) The object, assurance, and lifecycle dimensions. (\textbf{b}) Distinct studies per exact cell, computed from 89 scoped claim records. Evidence-profile counts overlap. Zero denotes no coded claim, without establishing applicability or global research absence. Table~\ref{tab:sensitivity} separates domain and inclusion effects.\label{fig:oal}}
+ \end{figure}
+ 
+ 
+ \begin{table}[H]
+ \caption{\hl{Sensitivity} %MDPI: We moved the table below the first mention, please confirm.
++% Author response Q14 [RESOLVED]: The production placement of Table 6 has been retained. A highlighted prose citation has been added in Section 5.3 before the Figure 3 caption and Table 6: "Table 6 reports sensitivity to domain and coding choices."
+  of the coverage map. Occupied cells are descriptive counts, not a completeness score. D/G/F denotes data governance at fusion; E/G/A denotes entity governance at admission.\label{tab:sensitivity}}
+ \begin{tabularx}{\textwidth}{@{}YrrP{33mm}@{}}
+ \toprule
+@@ -375,7 +392,7 @@
+ 
+ \subsection{A Typed Object-Dependency Graph}
+ 
+-Let $G_t=(V_t,E_t)$ be a time-indexed directed multigraph over OAL objects and their versions or state intervals. Relations name their semantics: an entity \emph{\hl{controls}} a platform; a platform \emph{\hl{hosts}} a model or \emph{\hl{produces}} an observation; a path \emph{\hl{transmits}} a product; an entity \emph{\hl{endorses}} or \emph{\hl{consumes}} a product; and a record \emph{\hl{commits to}} another product. A transformation links its inputs, output, executing platform, responsible entity, code/model version, and event interval. In PROV, this transformation can be serialized as an activity \citep{w3c2013provdm}.
++Let $G_t=(V_t,E_t)$ be a time-indexed directed multigraph over OAL objects and their versions or state intervals. Relations name their semantics: an entity \emph{\hl{controls}} a platform; a platform \emph{\hl{hosts}} a model or \emph{\hl{produces}} an observation; a path \emph{\hl{transmits}} a product; an entity \emph{\hl{endorses}} or \emph{\hl{consumes}} a product; and a record \emph{\hl{commits to}} another product. A transformation links its inputs, output, executing platform, responsible entity, code/model version, and event interval. In PROV, this transformation can be serialized as an activity \citep{w3c2013provdm}. \hl{Figure~{\ref{fig:dependency}} shows these dependencies and their evidence states.}
+ 
+ \begin{figure}[!htb]
+ \begin{adjustwidth}{-\extralength}{0cm}
+@@ -384,6 +401,7 @@
+ 
+ \end{adjustwidth}
+ \caption{\hl{Typed} %MDPI: Please cite this figure in the text and ensure that the first citation of each figure appears in numerical order.
++% Author response Q15 [RESOLVED]: A highlighted citation of Figure 4 has been added before the figure in Section 6.1: "Figure 4 shows these dependencies and their evidence states." Figure citations first occur in numerical order.
+  dependencies and evidence states. Operational relations identify claims affected by a changed assumption. Benign degradation and adversarial intervention are causal hypotheses; unknown is an epistemic outcome.\label{fig:dependency}}
+ \end{figure}
+ 
+@@ -391,10 +409,11 @@
+ 
+ \subsection{Threats, Degradation, and Missing Evidence}
+ 
+-An analysis statement identifies the attacker or environmental cause and relevant capability, then traces the affected object and propagation relation to a mission consequence. It also records controls and residual uncertainty. For example, a compromised USV can withhold UUV batches, delaying the consumer's evidence and audit; independent contacts and protected local counters may expose gaps after reconnection. Acoustic fading can create the same delivery symptom with a different cause. The response can restrict freshness-sensitive use while attribution remains unknown.
++An analysis statement identifies the attacker or environmental cause and relevant capability, then traces the affected object and propagation relation to a mission consequence. It also records controls and residual uncertainty. For example, a compromised USV can withhold UUV batches, delaying the consumer's evidence and audit; independent contacts and protected local counters may expose gaps after reconnection. Acoustic fading can create the same delivery symptom with a different cause. The response can restrict freshness-sensitive use while attribution remains unknown. \hl{Table~{\ref{tab:threats}} summarizes selected cross-object failure paths.}
+ 
+ \begin{table}[H]
+ \caption{\hl{Cross-object} %MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
++% Author response Q16 [RESOLVED]: A highlighted citation of Table 7 has been added before the table: "Table 7 summarizes selected cross-object failure paths."
+  analysis of selected failure paths.\label{tab:threats}}
+ \begin{tabularx}{\textwidth}{LLL}
+ \toprule
+@@ -434,10 +453,11 @@
+ Three signed records have intervals $[114,126]$, $[234,246]$, and $[294,306]$ s. On reconnection, a verifier checks their source signatures, batch inclusion, policy epoch, and the revocation history. A record whose interval ends before 240 s can be eligible for the historical audit. One beginning at or after 240 s is revoked at event time. An interval crossing 240~s is quarantined for review. Historical eligibility does not authorize a new physical action or refresh the observation.
+ 
+ 
+-The illustrative mean averages signature validity, observation quality, lineage, cached policy match, and temporal authority, using $[1,0.95,1,1,a]$ with $a=1,0.5,0$ and threshold 0.75. Its compensating aggregation accepts all three records. A scalar policy with an explicit authority veto produces exactly the typed rule's decisions. The decision difference follows from whether the policy enforces temporal authority as a veto.
++The illustrative mean averages signature validity, observation quality, lineage, cached policy match, and temporal authority, using $[1,0.95,1,1,a]$ with $a=1,0.5,0$ and threshold 0.75. Its compensating aggregation accepts all three records. A scalar policy with an explicit authority veto produces exactly the typed rule's decisions. The decision difference follows from whether the policy enforces temporal authority as a veto. \hl{Table~{\ref{tab:trace}} reports the replay outcomes.}
+ 
+ \begin{table}[H]
+ \caption{\hl{Executable} %MDPI: Tables should appear in numerical order and below the first mention, so please revise the Table 8 citation.
++% Author response Q17 [RESOLVED]: A highlighted first citation of Table 8 has been added in Section 6.4, before the table: "Table 8 reports the replay outcomes." The later citation in Section 9.2 remains a valid cross-reference.
+  replay outcomes. Ledger and policy-validating witnessed-log paths use identical evidence and authorization rules. The scalar examples use the same input features.\label{tab:trace}}
+ \begin{tabularx}{\textwidth}{LLLL}
+ \toprule
+@@ -466,7 +486,7 @@
+ 
+ In the coalition example, A alone must not replace a sensor-acceptance policy, C must not remove a previously acknowledged batch after a gateway incident, and D must not declare its own data accepted by the coalition. Four independent organizations can jointly validate those transitions. A permissioned ledger is one implementation of this requirement.
+ 
+-The strongest alternative is a transparency service whose checkpoints and state transitions are independently witnessed and checked under the same authorization rules. Such a service can satisfy the same safety requirements. A consistency-only witness detects or exposes inconsistent histories but does not by that act establish that a policy change was authorized. Adding joint policy validation closes that gap. The replay in Section~\ref{sec:trace} consequently finds equivalent decisions for the ledger and policy-validating log. Architecture selection then turns on implementation complexity, privacy, availability, recovery, and measured cost.
++The strongest alternative is a transparency service whose checkpoints and state transitions are independently witnessed and checked under the same authorization rules. Such a service can satisfy the same safety requirements. A consistency-only witness detects or exposes inconsistent histories but does not by that act establish that a policy change was authorized. Adding joint policy validation closes that gap. The replay in Section~\ref{sec:trace} consequently finds equivalent decisions for the ledger and policy-validating log. Architecture selection then turns on implementation complexity, privacy, availability, recovery, and measured cost. \hl{Figure~{\ref{fig:blockchain-boundary}} summarizes this shared-state selection.}
+ 
+ Governance viability is also an adoption condition. Maersk and IBM discontinued TradeLens after it failed to achieve the required global industry collaboration and commercial viability, despite a technically viable platform \citep{maersk2022tradelens}. This maritime case motivates evaluating incentives, participation, exit, and operating responsibility.
+ 
+@@ -478,6 +498,7 @@
+ 
+ \end{adjustwidth}
+ \caption{\hl{Requirement}%MDPI: Please cite this figure in the text and ensure that the first citation of each figure appears in numerical order.
++% Author response Q18 [RESOLVED]: A highlighted citation of Figure 6 has been added in Section 7.1 before the figure: "Figure 6 summarizes this shared-state selection."
+ -based shared-state selection. A policy-validating witnessed log and a permissioned ledger are compared under matched governance guarantees. Physical appraisal and local safety remain application responsibilities.\label{fig:blockchain-boundary}}
+ \end{figure}
+ 
+@@ -538,7 +559,9 @@
+ \end{table}
+ 
+ \textbf{\hl{Placement and endorsement.} %MDPI: Please confirm if the bold formatting is necessary; if not, please remove it. The following highlights are the same.
++% Author response Q19 [RESOLVED]: Please retain the highlighted bold formatting. The phrases in Section 7.3 function as paragraph headings; P1--P6 in Section 9.2 identify the six testable propositions. Their formatting is consistent within each group.
+ } Each organization A--D hosts an endorsing peer and a separate ordering node on capable shore infrastructure. The illustrative BFT service has four orderers, tolerating one Byzantine node under its protocol assumptions. Administrative separation supplies the independent fault domains. The application endorsement rule is \texttt{\hl{AND(A, B, OR(C, D))}%MDPI: Please confirm whether the special font should be retained, same as below.
++% Author response Q20 [RESOLVED]: Please retain the monospace font for AND(A, B, OR(C, D)) and the function identifiers CommitBatch, JudgeRecord, UpdatePolicy, and RevokeKey. These are policy expressions and interface identifiers, so the font distinguishes them from ordinary prose.
+ }; channel configuration and chaincode-definition approval require the same coalition authority. A and B are mandatory, so application progress can stop even while three orderers remain responsive. The USV forwards and caches signed evidence, with no consensus vote. A partitioned gateway buffers batches and retries idempotently after reconnection. UUV safety control uses its local envelope throughout.
+ 
+ \textbf{\hl{State and encoding.}} The state keys are mission/policy/epoch, producer/key/history, delegation/identifier, batch/producer/sequence, and judgment/record/policy. The fixed-width source body contains one byte each for version and type, two 16-byte mission/producer identifiers, four-byte sequence and authority-epoch fields, two eight-byte event-time bounds, and three 32-byte hashes for policy, payload, and parent/root. These fields total 154 bytes. Integers use network byte order; time is signed seconds in the declared mission epoch. A 64-byte Ed25519 signature gives a 218-byte record. Domain-separated signing and hashing bind record type and version. A batch uses the same body layout with a Merkle root and previous-batch root, plus a two-byte record count: 156 bytes before signature and 220 bytes signed. Ten signed records are retained off chain. The gateway's canonical JSON application payload is 525 bytes.
+@@ -556,6 +579,7 @@
+ Ed25519 signatures contain 64 bytes \citep{rfc8032}; ML-DSA-44 signatures contain \linebreak  2420~bytes~\citep{fips204}. The budget compares these two compact application signature profiles. Fabric enrollment certificates, endorsements, proposal responses, read/write sets, and envelopes add deployment-dependent bytes. Only the gateway transports those full transactions on the shore network. Full transaction sizes and resource costs depend on the configured Fabric implementation; the 525-byte JSON value covers the gateway's application payload.
+ 
+ For a message of $B$ bytes and net payload rate $R$ bit/s, the serialization lower bound \hl{is} %MDPI: please confirm whether ``B/R'' is unit, if so, please remove italic for units.
++% Author response Q21 [RESOLVED]: B and R are variables, not unit symbols: B is the message size in bytes and R is the net payload rate in bit/s. The lower bound is 8B/R seconds. The variables remain italic, while the units bytes, bit/s, and seconds remain upright.
+  $8B/R$. Table~\ref{tab:budget} uses 100, 1000, and 5000 bit/s as scenario inputs. It excludes propagation, contact waiting, modem framing, BPSec overhead, loss, retries, and certificate/epoch updates. Those factors increase end-to-end delay and must be added for a specified modem and transport configuration.
+ 
+ \begin{table}[!htb]
+@@ -591,6 +615,7 @@
+ 
+ \end{adjustwidth}
+ \caption{\hl{Complementary} %MDPI: we moved it here to reduce blank, please confirm.
++% Author response Q22 [RESOLVED]: The production placement of Figure 7 in Section 8 has been retained.
+  evidence forms and their claim-specific support. Each panel relates inputs, reasoning or evaluation, and outputs; rigor, environmental fit, and scope are assessed separately.\label{fig:maturity}}
+ \end{figure}
+ 
+@@ -600,10 +625,11 @@
+ 
+ \subsection{Datasets, Simulators, and Testbeds}
+ 
+-Public resources support complementary evaluation tasks. CICIoT2023, TON\_IoT, and Edge-IIoTset supply attack and telemetry data for classification and robustness\linebreak   tests~\citep{neto2023ciciot2023,alsaedi2020ton,ferrag2022edge}. SeaDronesSee supplies maritime visual data \citep{varga2022seadronessee}. AirSim, UUV Simulator, and Aqua-Sim NG address vehicle/sensor simulation, underwater dynamics, and underwater communication, respectively \citep{shah2018airsim,manhaes2016uuv,martin2017aqua}. Their use in one experiment requires compatible clocks, geometry, mobility, and event interfaces, together with a separately validated mission-loss model.
++Public resources support complementary evaluation tasks. CICIoT2023, TON\_IoT, and Edge-IIoTset supply attack and telemetry data for classification and robustness\linebreak   tests~\citep{neto2023ciciot2023,alsaedi2020ton,ferrag2022edge}. SeaDronesSee supplies maritime visual data \citep{varga2022seadronessee}. AirSim, UUV Simulator, and Aqua-Sim NG address vehicle/sensor simulation, underwater dynamics, and underwater communication, respectively \citep{shah2018airsim,manhaes2016uuv,martin2017aqua}. Their use in one experiment requires compatible clocks, geometry, mobility, and event interfaces, together with a separately validated mission-loss model. \hl{Table~{\ref{tab:evaluation}} summarizes the resources and transfer checks.}
+ 
+ \begin{table}[H]
+ \caption{\hl{Evaluation} %MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
++% Author response Q23 [RESOLVED]: A highlighted citation of Table 12 has been added before the table: "Table 12 summarizes the resources and transfer checks." All table first citations have been checked in numerical order.
+  resources and required transfer checks.\label{tab:evaluation}}
+ \begin{tabularx}{\textwidth}{LLL}
+ \toprule
+@@ -653,6 +679,7 @@
+ The following propositions define future comparative tests. Each experiment prespecifies its mission distribution, minimum useful effect, primary outcome, and analysis rule. Null and adverse results identify conditions where the additional structure provides no benefit.
+ 
+ \textbf{\hl{P1 (claim organization).}} Test whether an assurance vector reduces held-out unsafe acceptance at matched false-isolation and latency budgets against a tuned scalar policy. Both receive complete evidence, identical actions, and equal tuning budgets; the scalar includes authorization/freshness gates and interactions. Equal or better comparator performance refutes the proposition, as the veto-aware scalar illustrates in \hl{Table}%MDPI: Tables should appear in numerical order and below the first mention, so please revise the Table 8 citation.
++% Author response Q24 [RESOLVED]: This is the same first-citation issue addressed under Q17. Table 8 is now first cited before its appearance in Section 6.4. Its later citation in proposition P1 in Section 9.2 is retained.
+ ~\ref{tab:trace}.
+ 
+ \textbf{\hl{P2 (dependency modeling).}} Under prespecified shared-source error and collusion rates, test whether a model with common-cause variables improves a proper scoring rule and mission loss relative to an equally tuned independence model. Include correct, incomplete, and erroneous lineage conditions. The proposition fails when model misspecification or acquisition cost offsets the gain, or when observations are sufficiently independent that no useful improvement remains.
+@@ -698,7 +725,7 @@
+ 
+ Mission trust connects evidence about physical observations, protected records, jointly governed state, and fitness for a particular use. OAL organizes these claims by object and lifecycle, while a typed dependency graph and CTG loop identify when changes require reassessment. Applying the framework to 39 full-text studies distinguishes complementary mechanisms, their evaluated settings, and the evidence needed at each handover. Stratified and sensitivity analyses make the dependence of coverage patterns on selection and coding visible.
+ 
+-The partition--revocation case specifies coalition roles, a fabric-oriented application pattern, constrained verification, and a reproducible communication budget. Its executable replay preserves the distinction between local authority, event-time revocation, and later audit. A policy-validating witnessed log produces the same decisions under matched rules. Ledger value is therefore conditional on shared-governance requirements and the measured cost of implementing them.
++The partition--revocation case specifies coalition roles, a \hl{Fabric}-oriented application pattern, constrained verification, and a reproducible communication budget. Its executable replay preserves the distinction between local authority, event-time revocation, and later audit. A policy-validating witnessed log produces the same decisions under matched rules. Ledger value is therefore conditional on shared-governance requirements and the measured cost of implementing them.
+ 
+ The resulting research agenda calls for independently reproducible coding, matched architecture and appraisal baselines, realistic partition and recovery tests, and integrated mission evidence. The framework provides a traceable basis for matching mechanism evidence to mission requirements and selecting the governance service that those requirements justify.
+ 
+@@ -706,9 +733,11 @@
+ 
+ 
+ \vspace{6pt}
+-\authorcontributions{\hl{~} %MDPI: We deleted ``Author contribution details are withheld for double-anonymous review and will be supplied after peer review using the CRediT taxonomy. All authors will confirm that they have read and agreed to the published version of the manuscript.'' For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.
++\authorcontributions{\hl{Conceptualization, S.L., J.W. and C.L.; methodology, S.L. and J.W.; investigation, S.L.; writing---original draft preparation, S.L.; writing---review and editing, S.L., J.W., T.L., S.H., Y.R. and C.L.; visualization, S.L.; supervision, C.L.} %MDPI: We deleted ``Author contribution details are withheld for double-anonymous review and will be supplied after peer review using the CRediT taxonomy. All authors will confirm that they have read and agreed to the published version of the manuscript.'' For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.
++% Author response Q25 [AUTHOR CONFIRMATION]: The CRediT roles in the existing submission cover letter have been inserted using the journal's author-initial format and highlighted. No additional roles have been inferred. Confirmation that the roles remain accurate and that all authors have read and agreed to the final published version is still required before adding the journal's requested final sentence.
+ }
+ \funding{\hl{~} %MDPI: we deleted ``Funding information is withheld for double-anonymous review and will be supplied after peer review.'' Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.
++% Author response Q26 [AUTHOR INFORMATION REQUIRED]: The available submission files contain no funding declaration or grant details. The production placeholder has been retained pending the authors' statement. Please supply either the funding agency and grant number(s), or an explicit confirmation that this research received no external funding.
+ }
+ \institutionalreview{Not applicable.}
+ \informedconsent{Not applicable.}
+@@ -835,6 +864,7 @@
+   literature review}.
+ \newblock {\em Trans. Emerg. Telecommun. Technol.} {\bf
+   2021}, {\em 32}, \hl{e4203.} %MDPI: Newly added information. Please confirm. The following highlights are the same.
++% Author response Q27 [RESOLVED]: All 49 highlighted reference entries, including the subsequent highlights covered by this comment, have been checked against publisher/issuer records and bibliographic metadata. Reference 12 correctly uses article number e4203. Twenty-eight entries have received factual corrections or identifying details; twenty-one retain their production text. The complete reference-by-reference findings and source URLs are supplied in reference-verification.txt. Corrections include article number 114 in reference 64, the publisher locations, full chapter/proceedings titles, page ranges, RFC identifiers/DOIs, and missing online links. Original access dates have been preserved.
+ \newblock {\url{https://doi.org/10.1002/ett.4203}}.
+ 
+ \bibitem[Han et~al.(2022)Han, Sui, and Wu]{han2022identity}
+@@ -927,7 +957,7 @@
+ \bibitem[Rose et~al.(2020)Rose, Borchert, Mitchell, and Connelly]{rose2020zero}
+ Rose, S.; Borchert, O.; Mitchell, S.; Connelly, S.
+ \newblock {\emph{Zero Trust Architecture}};
+-\newblock Technical Report; National Institute of Standards and Technology: \hl{Gaithersburg, MD, USA,}
++\newblock \hl{NIST SP 800-207}; National Institute of Standards and Technology: \hl{Gaithersburg, MD, USA,}
+   2020.
+ \newblock {\url{https://doi.org/10.6028/nist.sp.800-207}}.
+ 
+@@ -942,21 +972,25 @@
+   Pan]{birkholz2023remote}
+ Birkholz, H.; Thaler, D.; Richardson, M.; Smith, N.; Pan, W.
+ \newblock {\emph{Remote Attestation Procedures (RATS) Architecture}};
+-\newblock Technical Report; \hl{RFC Editor,} %MDPI: Please confirm whetehr this is publisher name, if so, please provide the location, if not, please add the publisher and its location.
++\newblock \hl{RFC 9334}; \hl{RFC Editor: Fremont, CA, USA,} %MDPI: Please confirm whetehr this is publisher name, if so, please provide the location, if not, please add the publisher and its location.
++% Author response Q28 [RESOLVED]: RFC Editor is the publisher of RFC 9334. The RFC number and publication location, Fremont, CA, USA, have been added. The RFC Editor record and IETF publication-service documentation support these details.
+   2023.
+ \newblock {\url{https://doi.org/10.17487/rfc9334}}.
+ 
+ \bibitem[{World Wide Web Consortium}(2013{\natexlab{a}})]{w3c2013provdm}
+ {World Wide Web Consortium}.
+ \newblock \emph{{PROV-DM}: The {PROV} Data Model};
+-\newblock W3C Recommendation;  \hl{World Wide Web Consortium: Wakefield, MA, USA,} \hl{2013.} %MDPI: We deleted the accessed date as there was no website here, if accessed date should be added, please add website, same as below.
++\newblock W3C Recommendation;  \hl{World Wide Web Consortium,} \hl{2013.} %MDPI: We deleted the accessed date as there was no website here, if accessed date should be added, please add website, same as below.
++% Author response Q29 [RESOLVED]: Official URLs and the recorded access dates have been supplied for PROV-DM and PROV-O and for the other online resources that lacked links (references 93, 95, 98, 99, 114, 122, and 123). These entries retain their institutional authors/issuers and are identified as online resources; unverified postal locations have been removed. Formal RFCs and standards retain document identifiers, with DOIs added where available, rather than standalone access dates without a URL.
++\newblock \hl{Available online:}\space \href{https://www.w3.org/TR/prov-dm/}{\hl{\mbox{\nolinkurl{https://www.w3.org/}}}}\allowbreak\href{https://www.w3.org/TR/prov-dm/}{\hl{\mbox{\nolinkurl{TR/}}}}\allowbreak\href{https://www.w3.org/TR/prov-dm/}{\hl{\mbox{\nolinkurl{prov-dm/}}}} \space\hl{(accessed on 6 August 2026).}
+ 
+ 
+ 
+ \bibitem[{World Wide Web Consortium}(2013{\natexlab{b}})]{w3c2013provo}
+ {World Wide Web Consortium}.
+ \newblock \emph{{PROV-O}: The {PROV} Ontology};
+-\newblock W3C Recommendation;  \hl{World Wide Web Consortium: Wakefield, MA, USA,} \hl{2013.}
++\newblock W3C Recommendation;  \hl{World Wide Web Consortium,} \hl{2013.}
++\newblock \hl{Available online:}\space \href{https://www.w3.org/TR/prov-o/}{\hl{\mbox{\nolinkurl{https://www.w3.org/}}}}\allowbreak\href{https://www.w3.org/TR/prov-o/}{\hl{\mbox{\nolinkurl{TR/}}}}\allowbreak\href{https://www.w3.org/TR/prov-o/}{\hl{\mbox{\nolinkurl{prov-o/}}}} \space\hl{(accessed on 6 August 2026).}
+ 
+ 
+ \bibitem[Ahmed et~al.(2019)Ahmed, Ab~Hamid, Gani, khan, and
+@@ -976,7 +1010,8 @@
+ 
+ \bibitem[Jøsang(2016)]{jsang2016subjective}
+ Jøsang, A.
+-\newblock {\em {Subjective Logic}}; Springer International Publishing: \hl{Berlin/Heidelberg, Germany,} %We added the location of publisher. Please confirm
++\newblock {\em {Subjective Logic}}; Springer International Publishing: \hl{Cham, Switzerland,} %We added the location of publisher. Please confirm
++% Author response Q30 [RESOLVED]: The publisher's record identifies Springer, Cham. Reference 31 has therefore been corrected from Berlin/Heidelberg, Germany, to Cham, Switzerland; the change is highlighted.
+   2016.
+ \newblock {\url{https://doi.org/10.1007/978-3-319-42337-1}}.
+ 
+@@ -1017,13 +1052,17 @@
+ 
+ \bibitem[Burleigh et~al.(2022)Burleigh, Fall, and Birrane]{rfc9171}
+ Burleigh, S.; Fall, K.; Birrane, E.J.
+-\newblock {\emph{Bundle Protocol Version 7}}; RFC 9171;  \hl{2022.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++\newblock {\emph{Bundle Protocol Version 7}}; RFC 9171; \hl{RFC Editor: Fremont, CA, USA,} \hl{2022.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++% Author response Q31 [RESOLVED]: Reference 36 now includes RFC Editor: Fremont, CA, USA, and the persistent DOI https://doi.org/10.17487/RFC9171.
++\newblock \href{https://doi.org/10.17487/RFC9171}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9171}{\hl{\mbox{\nolinkurl{10.17487/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9171}{\hl{\mbox{\nolinkurl{RFC9171}}}}.
+ 
+ %\newblock Accessed 22 October 2026.
+ 
+ \bibitem[Birrane and McKeever(2022)]{rfc9172}
+ Birrane, E.J.; McKeever, K.
+-\newblock {\emph{Bundle Protocol Security};} RFC 9172;  \hl{2022.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++\newblock {\emph{Bundle Protocol Security \hl{(BPSec)}};} RFC 9172; \hl{RFC Editor: Fremont, CA, USA,} \hl{2022.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++% Author response Q32 [RESOLVED]: Reference 37 now includes RFC Editor: Fremont, CA, USA, and the persistent DOI https://doi.org/10.17487/RFC9172. The title has also been completed with the official parenthetical abbreviation (BPSec).
++\newblock \href{https://doi.org/10.17487/RFC9172}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9172}{\hl{\mbox{\nolinkurl{10.17487/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9172}{\hl{\mbox{\nolinkurl{RFC9172}}}}.
+ 
+ 
+ %\newblock Accessed 22 October 2026.
+@@ -1034,6 +1073,7 @@
+ \newblock {A computational model of trust and reputation}.
+ \newblock In Proceedings of the 35th Annual Hawaii International Conference on
+   System Sciences, \hl{Big Island, HI, USA,  7–10 January} \hl{2002;} %MDPI: We deleted ``IEEE Comput. Soc'', please confirm.
++% Author response Q33 [RESOLVED]: The deletion of "IEEE Comput. Soc" is accepted as part of the production conference-reference format. The conference identity, location, dates, page range, and DOI remain present. No production formatting has been reverted.
+  pp. 2431--2439.
+ \newblock {\url{https://doi.org/10.1109/hicss.2002.994181}}.
+ 
+@@ -1042,7 +1082,7 @@
+ Kamvar, S.D.; Schlosser, M.T.; Garcia-Molina, H.
+ \newblock {The Eigentrust algorithm for reputation management in P2P networks}.
+ \newblock In \emph{Proceedings of the Twelfth International Conference on World Wide
+-  Web-WWW '03}; ACM Press:  \hl{New York, NY, USA,} 2003; p. 640.
++  Web-WWW '03}; ACM Press:  \hl{New York, NY, USA,} 2003; \hl{pp. 640--651.}
+ \newblock {\url{https://doi.org/10.1145/775152.775242}}.
+ 
+ \bibitem[Wu et~al.(2020)Wu, Low, and Lv]{wu2020cooperative}
+@@ -1183,14 +1223,15 @@
+ \newblock {\em World Wide Web} {\bf 2021}, {\em 24},~1587--1615.
+ \newblock {\url{https://doi.org/10.1007/s11280-021-00869-4}}.
+ 
+-\bibitem[Figueiredo et~al.(2023)Figueiredo, Silva, Iacovazzi, Holubenko, Casal,
++\bibitem[Figueiredo et~al.(2022)Figueiredo, Silva, Iacovazzi, Holubenko, Casal,
+   Calero, Wang, Colarejo, Armitt, Inches, and Raza]{figueiredo2022arcadian}
+ Figueiredo, S.; Silva, P.; Iacovazzi, A.; Holubenko, V.; Casal, J.; Calero,
+   J.M.A.; Wang, Q.; Colarejo, P.; Armitt, R.L.; Inches, G.;  et~al.
+ \newblock {ARCADIAN-IoT - Enabling Autonomous Trust, Security and Privacy
+-  Management for IoT}. In {\em Lecture Notes in Computer Science}; Springer
+-  International Publishing: \hl{Berlin/Heidelberg, Germany,} %We added the location of publisher. Please confirm
+-  2023; pp. 348--359.
++  Management for IoT}. In {\em \hl{Internet of Things}}; \hl{Lecture Notes in Computer Science}; Springer
++  International Publishing: \hl{Cham, Switzerland,} %We added the location of publisher. Please confirm
++% Author response Q34 [RESOLVED]: Reference 58 now gives Cham, Switzerland. The cited book title has been completed as Internet of Things, with Lecture Notes in Computer Science, volume 13533. The year is 2022, following Springer's recommended citation and Crossref publication metadata; the publisher separately reports an online release date of 1 January 2023. This distinguishes the citation year from the online date.
++  \hl{2022; Volume 13533}; pp. 348--359.
+ \newblock {\url{https://doi.org/10.1007/978-3-031-20936-9_28}}.
+ 
+ \bibitem[Ott et~al.(2023)Ott, Kamhuber, Pecholt, and Wessel]{ott2023universal}
+@@ -1210,7 +1251,7 @@
+ \bibitem[Fagan et~al.(2020)Fagan, Megas, Scarfone, and Smith]{fagan2020iot}
+ Fagan, M.; Megas, K.N.; Scarfone, K.; Smith, M.
+ \newblock {\emph{IoT Device Cybersecurity Capability Core Baseline}};
+-\newblock Technical Report; National Institute of Standards and Technology: \hl{Gaithersburg, MD, USA,}
++\newblock \hl{NISTIR 8259A}; National Institute of Standards and Technology: \hl{Gaithersburg, MD, USA,}
+   2020.
+ \newblock {\url{https://doi.org/10.6028/nist.ir.8259a}}.
+ 
+@@ -1238,7 +1279,7 @@
+ Honar~Pajooh, H.; Rashid, M.A.; Alam, F.; Demidenko, S.
+ \newblock {IoT Big Data provenance scheme using blockchain on Hadoop
+   ecosystem}.
+-\newblock {\em J. Big Data} {\bf 2021}, {\em 8}, \hl{1--26.}
++\newblock {\em J. Big Data} {\bf 2021}, {\em 8}, \hl{114.}
+ \newblock {\url{https://doi.org/10.1186/s40537-021-00505-y}}.
+ 
+ \bibitem[Liu et~al.(2020)Liu, Han, and Li]{liu2020fabric}
+@@ -1396,13 +1437,17 @@
+ 
+ \bibitem[Laurie et~al.(2013)Laurie, Langley, and Kasper]{rfc6962}
+ Laurie, B.; Langley, A.; Kasper, E.
+-\newblock {\emph{Certificate Transparency};} RFC 6962;  \hl{2013.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++\newblock {\emph{Certificate Transparency};} RFC 6962; \hl{RFC Editor: Fremont, CA, USA,} \hl{2013.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++% Author response Q35 [RESOLVED]: Reference 85 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC6962.
++\newblock \href{https://doi.org/10.17487/RFC6962}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.17487/RFC6962}{\hl{\mbox{\nolinkurl{10.17487/}}}}\allowbreak\href{https://doi.org/10.17487/RFC6962}{\hl{\mbox{\nolinkurl{RFC6962}}}}.
+ 
+ %\newblock Accessed 22 October 2026.
+ 
+ \bibitem[Laurie et~al.(2021)Laurie, Messeri, and Stradling]{rfc9162}
+ Laurie, B.; Messeri, E.; Stradling, R.
+-\newblock {\emph{Certificate Transparency Version 2.0}}; RFC 9162;  \hl{2021.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++\newblock {\emph{Certificate Transparency Version 2.0}}; RFC 9162; \hl{RFC Editor: Fremont, CA, USA,} \hl{2021.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++% Author response Q36 [RESOLVED]: Reference 86 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC9162.
++\newblock \href{https://doi.org/10.17487/RFC9162}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9162}{\hl{\mbox{\nolinkurl{10.17487/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9162}{\hl{\mbox{\nolinkurl{RFC9162}}}}.
+ 
+ %\newblock Accessed 22 October 2026.
+ 
+@@ -1421,14 +1466,14 @@
+ 
+ \bibitem[{IBM}(2005)]{ibm2005mapek}
+ {IBM}.
+-\newblock {\emph{An Architectural Blueprint for Autonomic Computing}}, 3rd ed.; \hl{IBM: Armonk, NY, USA, }
++\newblock {\emph{An Architectural Blueprint for Autonomic Computing}}, 3rd ed.; \hl{IBM: Hawthorne, NY, USA, }
+   2005.
+ %\newblock Accessed 22 October 2026.
+ 
+ \bibitem[Steinberg et~al.(1999)Steinberg, Bowman, and White]{steinberg1999jdl}
+ Steinberg, A.N.; Bowman, C.L.; White, F.E.
+ \newblock {Revisions to the JDL data fusion model}.
+-\newblock In Proceedings of the SPIE Proceedings, \hl{Orlando, FL, USA, 7--9 April 1999;} Volume 3719, p. 430.
++\newblock In Proceedings of \hl{Sensor Fusion: Architectures, Algorithms, and Applications III}, \hl{Orlando, FL, USA, 7--9 April 1999;} Volume 3719, \hl{pp. 430--441.}
+ \newblock {\url{https://doi.org/10.1117/12.341367}}.
+ 
+ \bibitem[Wust and Gervais(2018)]{wust2018need}
+@@ -1450,9 +1495,10 @@
+ \bibitem[Maersk(2022)]{maersk2022tradelens}
+ Maersk.
+ \newblock {\hl{Maersk} %MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
++% Author response Q37 [RESOLVED]: Reference 93 is an online Maersk press release dated 29 November 2022. Its official URL has been added and the original access date, 22 October 2026, has been retained.
+  and IBM to Discontinue TradeLens, a Blockchain-Enabled Global
+   Trade Platform},  2022.
+-\newblock accessed on 22 October 2026.
++\newblock \hl{Available online:}\space \href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{https://www.maersk.com/}}}}\allowbreak\href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{news/}}}}\allowbreak\href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{articles/}}}}\allowbreak\href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{2022/}}}}\allowbreak\href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{11/}}}}\allowbreak\href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{29/}}}}\allowbreak\href{https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens}{\hl{\mbox{\nolinkurl{maersk-and-ibm-to-discontinue-tradelens}}}} \space\hl{(accessed on 22 October 2026).}
+ 
+ \bibitem[\v{S}varcmajer et~al.(2026)\v{S}varcmajer, Kohler, Krpi\'{c}, and
+   Luki\'{c}]{svarcmajer2026consensus}
+@@ -1464,8 +1510,8 @@
+ 
+ \bibitem[{CometBFT Contributors}(2026)]{cometbft2026}
+ {CometBFT Contributors}.
+-\newblock {\emph{Consensus Specification}}; CometBFT Contributors: \hl{Zug, Switzerland,}  2026.
+-%\newblock Accessed 22 October 2026.
++\newblock {\emph{Consensus Specification}}; \hl{CometBFT Contributors,}  2026.
++\newblock \hl{Available online:}\space \href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{https://github.com/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{cometbft/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{cometbft/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{blob/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{main/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{spec/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{consensus/}}}}\allowbreak\href{https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md}{\hl{\mbox{\nolinkurl{consensus.md}}}} \space\hl{(accessed on 22 October 2026).}
+ 
+ \bibitem[Dorri et~al.(2017)Dorri, Kanhere, and Jurdak]{dorri2017towards}
+ Dorri, A.; Kanhere, S.S.; Jurdak, R.
+@@ -1483,23 +1529,25 @@
+ 
+ \bibitem[{Hyperledger Fabric Contributors}(2026)]{fabric2026bft}
+ {Hyperledger Fabric Contributors}.
+-\newblock {\emph{Configuring and Operating a BFT Ordering Service}}; \hl{Hyperledger Fabric Contributors: San Francisco, CA, USA, } 2026.
+-%\newblock Accessed 22 October 2026.
++\newblock {\emph{Configuring and Operating a BFT Ordering Service}}; \hl{Hyperledger Fabric Contributors,} 2026.
++\newblock \hl{Available online:}\space \href{https://hyperledger-fabric.readthedocs.io/en/latest/bft_configuration.html}{\hl{\mbox{\nolinkurl{https://hyperledger-fabric.readthedocs.io/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/bft_configuration.html}{\hl{\mbox{\nolinkurl{en/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/bft_configuration.html}{\hl{\mbox{\nolinkurl{latest/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/bft_configuration.html}{\hl{\mbox{\nolinkurl{bft_configuration.html}}}} \space\hl{(accessed on 22 October 2026).}
+ 
+ \bibitem[{Hyperledger Foundation}(2026)]{hyperledger2026fabric}
+ {Hyperledger Foundation}.
+-\newblock \emph{Hyperledger Fabric Documentation: Ordering Service}; \hl{Hyperledger Foundation: San Francisco, CA, USA,}  2026.
+-%\newblock Accessed 6 August 2026.
++\newblock \emph{Hyperledger Fabric Documentation: Ordering Service}; \hl{Hyperledger Foundation,}  2026.
++\newblock \hl{Available online:}\space \href{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}{\hl{\mbox{\nolinkurl{https://hyperledger-fabric.readthedocs.io/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}{\hl{\mbox{\nolinkurl{en/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}{\hl{\mbox{\nolinkurl{latest/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}{\hl{\mbox{\nolinkurl{orderer/}}}}\allowbreak\href{https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html}{\hl{\mbox{\nolinkurl{ordering_service.html}}}} \space\hl{(accessed on 6 August 2026).}
+ 
+ \bibitem[Josefsson and Liusvaara(2017)]{rfc8032}
+ Josefsson, S.; Liusvaara, I.
+-\newblock {\emph{Edwards-Curve Digital Signature Algorithm (EdDSA)};}  RFC 8032;  \hl{2017.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++\newblock {\emph{Edwards-Curve Digital Signature Algorithm (EdDSA)};}  RFC 8032; \hl{RFC Editor: Fremont, CA, USA,} \hl{2017.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++% Author response Q38 [RESOLVED]: Reference 100 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC8032.
++\newblock \href{https://doi.org/10.17487/RFC8032}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.17487/RFC8032}{\hl{\mbox{\nolinkurl{10.17487/}}}}\allowbreak\href{https://doi.org/10.17487/RFC8032}{\hl{\mbox{\nolinkurl{RFC8032}}}}.
+ 
+ %\newblock Accessed 22 October 2026.
+ 
+ \bibitem[{National Institute of Standards and Technology}(2024)]{fips204}
+ \newblock \emph{FIPS 204}; {Module-Lattice-Based Digital Signature Standard.} National Institute of Standards and Technology: G\hl{aithersburg, MD, USA,} 2024.
+-%\newblock Accessed 22 October 2026.
++\newblock \href{https://doi.org/10.6028/NIST.FIPS.204}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.6028/NIST.FIPS.204}{\hl{\mbox{\nolinkurl{10.6028/}}}}\allowbreak\href{https://doi.org/10.6028/NIST.FIPS.204}{\hl{\mbox{\nolinkurl{NIST.FIPS.204}}}}.
+ 
+ \bibitem[Neto et~al.(2023)Neto, Dadkhah, Ferreira, Zohourian, Lu, and
+   Ghorbani]{neto2023ciciot2023}
+@@ -1536,9 +1584,10 @@
+ \bibitem[Shah et~al.(2018)Shah, Dey, Lovett, and Kapoor]{shah2018airsim}
+ Shah, S.; Dey, D.; Lovett, C.; Kapoor, A.
+ \newblock {AirSim: High-Fidelity Visual and Physical Simulation for Autonomous
+-  Vehicles}. In {\em Springer Proceedings in Advanced Robotics}; Springer
+-  International Publishing: \hl{Berlin/Heidelberg, Germany,} %We added the location of publisher. Please confirm
+-  2018; pp. 621--635.
++  Vehicles}. In {\em \hl{Field and Service Robotics}}; \hl{Springer Proceedings in Advanced Robotics}; Springer
++  International Publishing: \hl{Cham, Switzerland,} %We added the location of publisher. Please confirm
++% Author response Q39 [RESOLVED]: Reference 106 now gives Cham, Switzerland. The book title is Field and Service Robotics, in Springer Proceedings in Advanced Robotics, volume 5. The existing year 2018 and pages 621--635 agree with the publisher's recommended citation and are retained.
++  2018; \hl{Volume 5}; pp. 621--635.
+ \newblock {\url{https://doi.org/10.1007/978-3-319-67361-5_40}}.
+ 
+ \bibitem[Manhaes et~al.(2016)Manhaes, Scherer, Voss, Douat, and
+@@ -1597,8 +1646,8 @@
+ 
+ \bibitem[{Safety-Critical Systems Club}(2021)]{gsn2021}
+ \emph{SCSC-141C}; 
+-\newblock {GSN Community Standard, Version 3.} {Safety-Critical Systems Club}: \hl{Winchester, UK,} 2021.
+-%\newblock Accessed 22 October 2026.
++\newblock {GSN Community Standard, Version 3.} \hl{Safety-Critical Systems Club,} 2021.
++\newblock \hl{Available online:}\space \href{https://scsc.uk/gsn-standard}{\hl{\mbox{\nolinkurl{https://scsc.uk/}}}}\allowbreak\href{https://scsc.uk/gsn-standard}{\hl{\mbox{\nolinkurl{gsn-standard}}}} \space\hl{(accessed on 22 October 2026).}
+ 
+ \bibitem[{Object Management Group}(2023)]{sacm2023}
+ {Object Management Group}.
+@@ -1607,7 +1656,7 @@
+ 
+ \bibitem[{UL Standards and Engagement}(2023)]{ul4600}
+ {UL Standards and Engagement}.
+-\newblock {\emph{UL 4600: Evaluation of Autonomous Products}, 3rd. ed.;}  \hl{UL Standards and Engagement: Ottawa, ON, Canada,} 2023.
++\newblock {\emph{UL 4600: Evaluation of Autonomous Products}, 3rd. ed.;}  \hl{UL Standards and Engagement: Northbrook, IL, USA,} 2023.
+ %\newblock Accessed 22 October 2026.
+ 
+ \bibitem[{International Maritime Organization}(2019)]{imo2019trials}
+@@ -1629,31 +1678,35 @@
+ 
+ \bibitem[{DNV}(2024)]{dnv2024autonomous}
+ \emph{DNV-CG-0264};
+-\newblock {{Autonomous and Remotely Operated Ships}}. \hl{DNV: Høvik, Norway,} 2024.
++\newblock {{Autonomous and Remotely Operated \hl{Vessels}}}. \hl{DNV: Høvik, Norway,} 2024.
+ %\newblock Accessed 22 October 2026.
+ 
+ \bibitem[Moran et~al.(2021)Moran, Tschofenig, Brown, and Meriac]{ietf2020suit}
+ Moran, B.; Tschofenig, H.; Brown, D.; Meriac, M.
+ \newblock \emph{A Firmware Update Architecture for Internet of Things};
+-\newblock RFC 9019;  \hl{2021.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++\newblock RFC 9019; \hl{RFC Editor: Fremont, CA, USA,} \hl{2021.} %MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
++% Author response Q40 [RESOLVED]: Reference 121 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC9019.
++\newblock \href{https://doi.org/10.17487/RFC9019}{\hl{\mbox{\nolinkurl{https://doi.org/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9019}{\hl{\mbox{\nolinkurl{10.17487/}}}}\allowbreak\href{https://doi.org/10.17487/RFC9019}{\hl{\mbox{\nolinkurl{RFC9019}}}}.
+ 
+ %\newblock {\url{https://doi.org/10.17487/RFC9019}}.
+ 
+ \bibitem[{3rd Generation Partnership
+   Project}(2026{\natexlab{a}})]{threegpp22125}
+ {\hl{3rd} %MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
++% Author response Q41 [RESOLVED]: Reference 122 is the online specification record for 3GPP TS 22.125, Unmanned Aerial System (UAS) support in 3GPP; Stage 1. The official specification-record URL has been added and the recorded access date, 6 August 2026, retained. This citation identifies the living specification record, not an unverified release/version of the specification.
+  Generation Partnership Project}.
+ \newblock Unmanned Aerial System ({UAS}) Support in {3GPP}; Stage 1.
+ \newblock 3GPP TS 22.125,  2026.
+-\newblock Specification record accessed 6 August 2026.
++\newblock \hl{Online specification record.}\space \hl{Available online:}\space \href{https://www.3gpp.org/dynareport/22125.htm}{\hl{\mbox{\nolinkurl{https://www.3gpp.org/}}}}\allowbreak\href{https://www.3gpp.org/dynareport/22125.htm}{\hl{\mbox{\nolinkurl{dynareport/}}}}\allowbreak\href{https://www.3gpp.org/dynareport/22125.htm}{\hl{\mbox{\nolinkurl{22125.htm}}}} \space\hl{(accessed on 6 August 2026).}
+ 
+ \bibitem[{3rd Generation Partnership
+   Project}(2026{\natexlab{b}})]{threegpp22119}
+ {\hl{3rd} %MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
++% Author response Q42 [RESOLVED]: Reference 123 is the online specification record for 3GPP TS 22.119, Maritime communication services over 3GPP system. The official specification-record URL has been added and the recorded access date, 6 August 2026, retained. This citation identifies the living specification record, not an unverified release/version of the specification.
+  Generation Partnership Project}.
+ \newblock Maritime Communication Services over {3GPP} System.
+ \newblock 3GPP TS 22.119,  2026.
+-\newblock Specification record accessed 6 August 2026.
++\newblock \hl{Online specification record.}\space \hl{Available online:}\space \href{https://www.3gpp.org/dynareport/22119.htm}{\hl{\mbox{\nolinkurl{https://www.3gpp.org/}}}}\allowbreak\href{https://www.3gpp.org/dynareport/22119.htm}{\hl{\mbox{\nolinkurl{dynareport/}}}}\allowbreak\href{https://www.3gpp.org/dynareport/22119.htm}{\hl{\mbox{\nolinkurl{22119.htm}}}} \space\hl{(accessed on 6 August 2026).}
+ 
+ \end{thebibliography}
+ 

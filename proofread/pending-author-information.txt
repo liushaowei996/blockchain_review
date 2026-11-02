@@ -1,0 +1,50 @@
+待作者补充与确认（2026-11-02）
+
+本轮已处理 37 条批注，另外 5 条已准备回复，但仍须作者确认或补充。
+当前 PDF 是供作者核对的高亮校样，基金和最终出版版本同意声明尚未补齐。
+
+1. Q01/Q02：确认姓名、顺序、单位和对应关系仍然准确。
+   已依据原投稿附信 manuscript/submission/cover-letter.txt 补入：
+   Shaowei Liu (1,2), Jing Wu (1), Tanren Liu (3), Shengqiang He (3),
+   Yakun Ren (3), Chengnian Long (1，通讯作者)。
+   1) School of Automation and Intelligent Sensing, Shanghai Jiao Tong University,
+      800 Dongchuan Road, Shanghai 200240, China.
+   2) Jiangsu Automation Research Institute, 18 Shenghu Road,
+      Lianyungang, Jiangsu 222061, China.
+   3) SF Technology Co., Ltd., Block B, TK Chuangzhi Tiandi Building,
+      Keji South 1st Road, Nanshan District, Shenzhen, Guangdong 518057, China.
+   请确认英文正式名称、邮编及作者归属是否有变化。
+
+2. Q03：确认六位作者邮箱。保留了编辑从 SuSy 填入的地址：
+   Shaowei Liu: liusw1994@sjtu.edu.cn
+   Jing Wu: jingwu@sjtu.edu.cn
+   Tanren Liu: tanrenliu@sf-express.com
+   Shengqiang He: heshengqiang@sf-express.com
+   Yakun Ren: yakunren@sf-express.com
+   Chengnian Long: longcn@sjtu.edu.cn（通讯邮箱，与投稿附信一致）
+
+3. Q25：确认 CRediT 分工，以及全体作者同意最终出版版本。
+   已按原附信补入：
+   Conceptualization: S.L., J.W., C.L.
+   Methodology: S.L., J.W.
+   Investigation: S.L.
+   Writing—original draft: S.L.
+   Writing—review and editing: S.L., J.W., T.L., S.H., Y.R., C.L.
+   Visualization: S.L.
+   Supervision: C.L.
+   缩写对应：S.L.=Shaowei Liu，J.W.=Jing Wu，T.L.=Tanren Liu，
+   S.H.=Shengqiang He，Y.R.=Yakun Ren，C.L.=Chengnian Long。
+   若上述分工仍然准确，请确认；若有修订阶段新增的实际分工，请补充。
+   原附信仅声明作者同意“投稿版本”，不能据此认定作者已同意最终出版版本。
+   待确认后加入编辑要求的句子：
+   All authors have read and agreed to the published version of the manuscript.
+
+4. Q26：补充基金声明（现有文件没有可用的基金信息）。
+   有基金：请提供资助机构正式英文名称和项目编号，可列多项。
+   无外部基金：请明确确认后采用：
+   This research received no external funding.
+   当前保留生产稿的空占位，未擅自填写“无基金”。
+
+其他说明：3GPP 两条引用当前明确标为在线规范目录记录，并保留原访问日期。
+它们不声称引用某个具体 Release/版本；正文没有据此引用具体条款。
+若原意是引用某个规范版本，请再提供对应 Release 和版本号。

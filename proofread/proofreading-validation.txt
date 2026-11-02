@@ -1,0 +1,44 @@
+PROOFREADING VALIDATION
+Date: 2 November 2026
+
+Result: PASS for the corrections in this round. Author confirmation/information
+remains required for Q01, Q02, Q03, Q25 and Q26; see pending-author-information.txt.
+
+Coverage
+- 42 production queries preserved verbatim, each followed by a numbered reply.
+- 37 queries resolved; 5 author queries explicitly marked pending.
+- All 49 highlighted reference entries have a finding and source URL(s).
+- 28 references corrected/completed; 21 retain their production text.
+- All 123 bibliography identities and their order are unchanged.
+- The rendered bibliography contains exactly references 1 through 123 in order.
+
+Cross-references and production formatting
+- All 7 figures and 12 tables are first cited before their corresponding float.
+- First figure and table citations each follow numerical order.
+- No duplicate labels, unresolved source references, or unknown citation keys.
+- Equation (1), including both aligned relations, is unchanged.
+- All figure/table environments match production after comment/whitespace removal.
+- All original vspace, hspace, linebreak, clearpage, newpage, and enlargethispage
+  commands are unchanged. Affiliation line breaks were added to supply real data.
+- All 16 supplied files in Definitions/ and 7 figure PDFs are byte-identical to
+  the production archive. No class or figure edits were made.
+
+Build and PDF
+- The final source compiled successfully with pdfLaTeX in two consecutive passes.
+- Final PDF: 31 pages; every page has extractable text.
+- No undefined references/citations, rerun requests, TeX errors, or overfull boxes.
+- All 16 added URL targets are present as clickable links in the PDF annotations.
+- Pages rendered at 85 dpi; all 31 pages inspected via contact sheets, with close
+  inspection of the title/affiliation page, author declarations, and references.
+- Highlighting, link wrapping, figures, tables, headers and footers inspected.
+- Remaining non-fatal local toolchain notices: a package requests a newer LaTeX
+  release; bold wasy fonts are substituted at two superscript sizes. Rendered
+  author indices and mathematical text were checked and remain legible.
+
+The original received PDF and archive remain in place. The separate corrected PDF
+is output/pdf/blockchains-4630703-author-corrected.pdf. Funding is still blank,
+and the final-publication agreement sentence awaits author confirmation.
+
+Hashes for the final source and PDF
+TeX SHA-256: 71f3d5116f1ca7c07e84af74c29391fc7629c6246d45e79ed29b9b7b0ef9e0a6
+PDF SHA-256: 249bdd6ca7f265cd141f21306c874d1198959123ec23cdaa70d863349cbf92ad

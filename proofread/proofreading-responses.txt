@@ -1,0 +1,206 @@
+PRODUCTION PROOF: POINT-BY-POINT AUTHOR RESPONSE DRAFT
+Manuscript: blockchains-4630703
+Prepared: 2 November 2026
+
+STATUS: 37 queries resolved; 5 queries require author information or confirmation
+(Q01, Q02, Q03, Q25, Q26). These pending replies must be finalized before return
+to the production editor. The corrected proof is an author-review draft.
+
+Yellow highlighting marks inserted or corrected manuscript text. Original
+production highlights are retained. Each original TeX comment is preserved and
+followed by its numbered reply. The production template, figure/table sequence
+and placement commands, manual line breaks, and spacing commands are preserved.
+Natural pagination may change as text and author details are completed.
+
+Line numbers below refer to the ORIGINAL production TeX, preserved in the
+received manuscript.v5.zip. The authoritative corrected source is the consolidated
+blockchains-4630703.tex, which embeds its bibliography. The original sections/
+and references.bib attachments are not build inputs for this corrected source.
+
+
+Q01 | Original TeX line 46 | AUTHOR CONFIRMATION
+Editor comment: MDPI: 1. Please carefully check the accuracy of names and affiliations. 2. We added author names according to susy, please confirm.
+Response: Author names and order agree with the existing submission cover letter: Shaowei Liu, Jing Wu, Tanren Liu, Shengqiang He, Yakun Ren, and Chengnian Long. Affiliation superscripts have been restored from that letter. Please confirm that these details remain current for publication.
+
+Q02 | Original TeX line 50 | AUTHOR CONFIRMATION
+Editor comment: MDPI: Please provide affiliation of the authors, including institution (if it has department, please add it), city, zip code and country, if the author has one affiliation, please add one, but if the author has different affiliations, please add separately.
+Response: The three complete affiliations and their author assignments have been restored from the submission cover letter and highlighted: Shanghai Jiao Tong University (S.L., J.W., C.L.); Jiangsu Automation Research Institute (S.L.); and SF Technology Co., Ltd. (T.L., S.H., Y.R.). Department/institution, address, city, postal code, and country are included. Final author confirmation is pending.
+
+Q03 | Original TeX line 51 | AUTHOR CONFIRMATION
+Editor comment: MDPI: We added these email addresses here according to those submitted online at susy.mdpi.com. Please confirm.
+Response: The email addresses supplied by production have been retained and grouped under the relevant affiliations. The corresponding-author address, longcn@sjtu.edu.cn, also agrees with the submission cover letter. Please confirm all six addresses; the other five addresses cannot be independently confirmed from the existing submission files.
+
+Q04 | Original TeX line 78 | RESOLVED
+Editor comment: MDPI: Please confirm if the italics are necessary; if not, please remove them. The following highlights are the same.
+Response: Please retain the highlighted italics. They identify defined terms, scoped claims, relation names, and conceptual distinctions used in the framework. The corresponding uses have been checked throughout the manuscript and retained consistently.
+
+Q05 | Original TeX line 85 | RESOLVED
+Editor comment: MDPI: Please confirm whether italic format of (OAL) is necessary, if not, please remove the italic format.
+Response: Please retain the italics for the full framework name, Object--Assurance--Lifecycle. The abbreviation OAL remains upright. No change to production formatting is needed.
+
+Q06 | Original TeX line 105 | RESOLVED
+Editor comment: MDPI: The citation of Table 2 appears before citation of Table 1, tables should appear in numerical order, so please revise the citations.
+Response: A highlighted first citation of Table 1 has been added at the end of Section 2.1, before the existing Table 2 citation in Section 2.2. Table citations now first occur in numerical order.
+
+Q07 | Original TeX line 115 | RESOLVED
+Editor comment: MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
+Response: Table 1 is now explicitly cited in Section 2.1: "Table 1 summarizes the scope and evidence roles." The table remains in its production position.
+
+Q08 | Original TeX line 150 | RESOLVED
+Editor comment: MDPI: For all equations: 	1. Please recheck all equations and make sure there are no duplicated equations in the whole manuscript. 2. Please carefully check variable formatting (italic, bold, subscript, uppercase, etc.) throughout the manuscript to ensure the formatting is consistent and revise if needed.
+Response: The displayed equation and the inline mathematical expressions have been checked. Equation (1) contains two distinct relations, for appraisal T and relying decision D, and is not duplicated. Mathematical variables and indices retain their appropriate italic, calligraphic, and subscript forms; descriptive labels and units remain upright. No mathematical changes were required.
+
+Q09 | Original TeX line 157 | RESOLVED
+Editor comment: MDPI: Please confirm whether the format without indentation should be retained, please check the full text.
+Response: Please retain the unindented explanatory text following Equation (1). It continues the preceding equation paragraph. Equation-following text and the surrounding paragraph structure have been checked; the production formatting is retained.
+
+Q10 | Original TeX line 167 | RESOLVED
+Editor comment: MDPI: We moved Figure 1 into Sec. 3.2 to reduce blank, please confirm.
+Response: The placement of Figure 1 in Section 3.2 is appropriate and has been retained.
+
+Q11 | Original TeX line 257 | RESOLVED
+Editor comment: MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
+Response: A highlighted citation of Table 3 has been added before the table in Section 5.1: "Table 3 summarizes the object-specific evidence and relying questions."
+
+Q12 | Original TeX line 277 | RESOLVED
+Editor comment: MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
+Response: A highlighted citation of Table 4 has been added before the table in Section 5.1: "Table 4 summarizes the lifecycle stages and state transitions."
+
+Q13 | Original TeX line 333 | RESOLVED
+Editor comment: MDPI: we moved Figure 3 into Sec. 5.3 to reduce blank, please confirm.
+Response: The placement of Figure 3 in Section 5.3 is appropriate and has been retained.
+
+Q14 | Original TeX line 339 | RESOLVED
+Editor comment: MDPI: We moved the table below the first mention, please confirm.
+Response: The production placement of Table 6 has been retained. A highlighted prose citation has been added in Section 5.3 before the Figure 3 caption and Table 6: "Table 6 reports sensitivity to domain and coding choices."
+
+Q15 | Original TeX line 386 | RESOLVED
+Editor comment: MDPI: Please cite this figure in the text and ensure that the first citation of each figure appears in numerical order.
+Response: A highlighted citation of Figure 4 has been added before the figure in Section 6.1: "Figure 4 shows these dependencies and their evidence states." Figure citations first occur in numerical order.
+
+Q16 | Original TeX line 397 | RESOLVED
+Editor comment: MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
+Response: A highlighted citation of Table 7 has been added before the table: "Table 7 summarizes selected cross-object failure paths."
+
+Q17 | Original TeX line 440 | RESOLVED
+Editor comment: MDPI: Tables should appear in numerical order and below the first mention, so please revise the Table 8 citation.
+Response: A highlighted first citation of Table 8 has been added in Section 6.4, before the table: "Table 8 reports the replay outcomes." The later citation in Section 9.2 remains a valid cross-reference.
+
+Q18 | Original TeX line 480 | RESOLVED
+Editor comment: MDPI: Please cite this figure in the text and ensure that the first citation of each figure appears in numerical order.
+Response: A highlighted citation of Figure 6 has been added in Section 7.1 before the figure: "Figure 6 summarizes this shared-state selection."
+
+Q19 | Original TeX line 540 | RESOLVED
+Editor comment: MDPI: Please confirm if the bold formatting is necessary; if not, please remove it. The following highlights are the same.
+Response: Please retain the highlighted bold formatting. The phrases in Section 7.3 function as paragraph headings; P1--P6 in Section 9.2 identify the six testable propositions. Their formatting is consistent within each group.
+
+Q20 | Original TeX line 541 | RESOLVED
+Editor comment: MDPI: Please confirm whether the special font should be retained, same as below.
+Response: Please retain the monospace font for AND(A, B, OR(C, D)) and the function identifiers CommitBatch, JudgeRecord, UpdatePolicy, and RevokeKey. These are policy expressions and interface identifiers, so the font distinguishes them from ordinary prose.
+
+Q21 | Original TeX line 558 | RESOLVED
+Editor comment: MDPI: please confirm whether ``B/R'' is unit, if so, please remove italic for units.
+Response: B and R are variables, not unit symbols: B is the message size in bytes and R is the net payload rate in bit/s. The lower bound is 8B/R seconds. The variables remain italic, while the units bytes, bit/s, and seconds remain upright.
+
+Q22 | Original TeX line 593 | RESOLVED
+Editor comment: MDPI: we moved it here to reduce blank, please confirm.
+Response: The production placement of Figure 7 in Section 8 has been retained.
+
+Q23 | Original TeX line 606 | RESOLVED
+Editor comment: MDPI: Please cite this table in the text and ensure that the first citation of each table appears in numerical order.
+Response: A highlighted citation of Table 12 has been added before the table: "Table 12 summarizes the resources and transfer checks." All table first citations have been checked in numerical order.
+
+Q24 | Original TeX line 655 | RESOLVED
+Editor comment: MDPI: Tables should appear in numerical order and below the first mention, so please revise the Table 8 citation.
+Response: This is the same first-citation issue addressed under Q17. Table 8 is now first cited before its appearance in Section 6.4. Its later citation in proposition P1 in Section 9.2 is retained.
+
+Q25 | Original TeX line 709 | AUTHOR CONFIRMATION
+Editor comment: MDPI: We deleted ``Author contribution details are withheld for double-anonymous review and will be supplied after peer review using the CRediT taxonomy. All authors will confirm that they have read and agreed to the published version of the manuscript.'' For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.
+Response: The CRediT roles in the existing submission cover letter have been inserted using the journal's author-initial format and highlighted. No additional roles have been inferred. Confirmation that the roles remain accurate and that all authors have read and agreed to the final published version is still required before adding the journal's requested final sentence.
+
+Q26 | Original TeX line 711 | AUTHOR INFORMATION REQUIRED
+Editor comment: MDPI: we deleted ``Funding information is withheld for double-anonymous review and will be supplied after peer review.'' Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.
+Response: The available submission files contain no funding declaration or grant details. The production placeholder has been retained pending the authors' statement. Please supply either the funding agency and grant number(s), or an explicit confirmation that this research received no external funding.
+
+Q27 | Original TeX line 837 | RESOLVED
+Editor comment: MDPI: Newly added information. Please confirm. The following highlights are the same.
+Response: All 49 highlighted reference entries, including the subsequent highlights covered by this comment, have been checked against publisher/issuer records and bibliographic metadata. Reference 12 correctly uses article number e4203. Twenty-eight entries have received factual corrections or identifying details; twenty-one retain their production text. The complete reference-by-reference findings and source URLs are supplied in reference-verification.txt. Corrections include article number 114 in reference 64, the publisher locations, full chapter/proceedings titles, page ranges, RFC identifiers/DOIs, and missing online links. Original access dates have been preserved.
+
+Q28 | Original TeX line 945 | RESOLVED
+Editor comment: MDPI: Please confirm whetehr this is publisher name, if so, please provide the location, if not, please add the publisher and its location.
+Response: RFC Editor is the publisher of RFC 9334. The RFC number and publication location, Fremont, CA, USA, have been added. The RFC Editor record and IETF publication-service documentation support these details.
+
+Q29 | Original TeX line 952 | RESOLVED
+Editor comment: MDPI: We deleted the accessed date as there was no website here, if accessed date should be added, please add website, same as below.
+Response: Official URLs and the recorded access dates have been supplied for PROV-DM and PROV-O and for the other online resources that lacked links (references 93, 95, 98, 99, 114, 122, and 123). These entries retain their institutional authors/issuers and are identified as online resources; unverified postal locations have been removed. Formal RFCs and standards retain document identifiers, with DOIs added where available, rather than standalone access dates without a URL.
+
+Q30 | Original TeX line 979 | RESOLVED
+Editor comment: We added the location of publisher. Please confirm
+Response: The publisher's record identifies Springer, Cham. Reference 31 has therefore been corrected from Berlin/Heidelberg, Germany, to Cham, Switzerland; the change is highlighted.
+
+Q31 | Original TeX line 1020 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+Response: Reference 36 now includes RFC Editor: Fremont, CA, USA, and the persistent DOI https://doi.org/10.17487/RFC9171.
+
+Q32 | Original TeX line 1026 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+Response: Reference 37 now includes RFC Editor: Fremont, CA, USA, and the persistent DOI https://doi.org/10.17487/RFC9172. The title has also been completed with the official parenthetical abbreviation (BPSec).
+
+Q33 | Original TeX line 1036 | RESOLVED
+Editor comment: MDPI: We deleted ``IEEE Comput. Soc'', please confirm.
+Response: The deletion of "IEEE Comput. Soc" is accepted as part of the production conference-reference format. The conference identity, location, dates, page range, and DOI remain present. No production formatting has been reverted.
+
+Q34 | Original TeX line 1192 | RESOLVED
+Editor comment: We added the location of publisher. Please confirm
+Response: Reference 58 now gives Cham, Switzerland. The cited book title has been completed as Internet of Things, with Lecture Notes in Computer Science, volume 13533. The year is 2022, following Springer's recommended citation and Crossref publication metadata; the publisher separately reports an online release date of 1 January 2023. This distinguishes the citation year from the online date.
+
+Q35 | Original TeX line 1399 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+Response: Reference 85 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC6962.
+
+Q36 | Original TeX line 1405 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+Response: Reference 86 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC9162.
+
+Q37 | Original TeX line 1452 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
+Response: Reference 93 is an online Maersk press release dated 29 November 2022. Its official URL has been added and the original access date, 22 October 2026, has been retained.
+
+Q38 | Original TeX line 1496 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+Response: Reference 100 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC8032.
+
+Q39 | Original TeX line 1540 | RESOLVED
+Editor comment: We added the location of publisher. Please confirm
+Response: Reference 106 now gives Cham, Switzerland. The book title is Field and Service Robotics, in Springer Proceedings in Advanced Robotics, volume 5. The existing year 2018 and pages 621--635 agree with the publisher's recommended citation and are retained.
+
+Q40 | Original TeX line 1638 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please add the name of the publisher and their location.
+Response: Reference 121 now includes RFC Editor: Fremont, CA, USA, and https://doi.org/10.17487/RFC9019.
+
+Q41 | Original TeX line 1644 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
+Response: Reference 122 is the online specification record for 3GPP TS 22.125, Unmanned Aerial System (UAS) support in 3GPP; Stage 1. The official specification-record URL has been added and the recorded access date, 6 August 2026, retained. This citation identifies the living specification record, not an unverified release/version of the specification.
+
+Q42 | Original TeX line 1652 | RESOLVED
+Editor comment: MDPI: We are sorry but we could not find the required information about this entry. Please provide more information about this article, whether it is a book (please provide the name and location of the publisher); online resource (please provide the URL of the website and the date it was accessed (Date Month Year)); or journal article (please provide the name of the journal, the year and volume in which it was published, and the page number). Please refer to https://www.mdpi.com/authors/references for full reference formatting guides.
+Response: Reference 123 is the online specification record for 3GPP TS 22.119, Maritime communication services over 3GPP system. The official specification-record URL has been added and the recorded access date, 6 August 2026, retained. This citation identifies the living specification record, not an unverified release/version of the specification.
+
+ADDITIONAL MINOR CORRECTIONS AND EXPLANATIONS
+
+A01. Abstract and Conclusions: "fabric-oriented" was changed to "Fabric-oriented"
+in both occurrences because Fabric is the proper name of the referenced platform.
+Both changes are highlighted; the scientific claim is unchanged.
+
+A02. Reference corrections: reference-verification.txt explains each of the
+49 checked highlighted entries, with sources and the 28 corrected entries marked.
+These include the bibliographic corrections covered by Q27, not a new set of
+scientific citations. All 123 reference identities and their order are retained.
+
+A03. Author details and affiliations: inserted from manuscript/submission/
+cover-letter.txt. The pending-author-information.txt file identifies the exact
+confirmations and missing statement needed before return to production.
+
+A04. Deletions and TeX-only changes cannot themselves appear as yellow text.
+changes-from-production.diff records them, including removal of unsupported
+locations from online-resource references and addition of affiliation numbering.

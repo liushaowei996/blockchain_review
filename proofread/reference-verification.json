@@ -1,0 +1,458 @@
+[
+  {
+    "reference": 12,
+    "key": "yisa2021security",
+    "status": "RETAINED",
+    "finding": "Retained article number e4203, volume 32 and citation year 2021; online publication in 2020 is distinct from the issue year.",
+    "sources": [
+      "https://doi.org/10.1002/ett.4203"
+    ]
+  },
+  {
+    "reference": 24,
+    "key": "rose2020zero",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Retained NIST, Gaithersburg, MD, USA, and 2020. Replaced generic Technical Report with NIST SP 800-207.",
+    "sources": [
+      "https://csrc.nist.gov/pubs/sp/800/207/final"
+    ]
+  },
+  {
+    "reference": 26,
+    "key": "birkholz2023remote",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed RFC Editor as publisher, added RFC 9334 and Fremont, CA, USA. RFC record confirms January 2023 and DOI.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc9334"
+    ]
+  },
+  {
+    "reference": 27,
+    "key": "w3c2013provdm",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed PROV-DM Recommendation, 30 April 2013. Added official URL with original 6 August 2026 access date. Removed the unverified Wakefield postal location and cited the online Recommendation.",
+    "sources": [
+      "https://www.w3.org/TR/2013/REC-prov-dm-20130430/"
+    ]
+  },
+  {
+    "reference": 28,
+    "key": "w3c2013provo",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed PROV-O Recommendation, 30 April 2013. Added official URL with original 6 August 2026 access date. Removed the unverified Wakefield postal location and cited the online Recommendation.",
+    "sources": [
+      "https://www.w3.org/TR/2013/REC-prov-o-20130430/"
+    ]
+  },
+  {
+    "reference": 30,
+    "key": "aaqib2023iot",
+    "status": "RETAINED",
+    "finding": "Confirmed article number 42, volume 12 and 2023; retained.",
+    "sources": [
+      "https://link.springer.com/article/10.1186/s13677-023-00416-8"
+    ]
+  },
+  {
+    "reference": 31,
+    "key": "jsang2016subjective",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Corrected Springer location from Berlin/Heidelberg, Germany, to Cham, Switzerland. Book identity, year 2016 and DOI agree.",
+    "sources": [
+      "https://link.springer.com/book/10.1007/978-3-319-42337-1"
+    ]
+  },
+  {
+    "reference": 36,
+    "key": "rfc9171",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Added RFC Editor: Fremont, CA, USA, and DOI. RFC 9171, Bundle Protocol Version 7, January 2022 confirmed.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc9171"
+    ]
+  },
+  {
+    "reference": 37,
+    "key": "rfc9172",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Added RFC Editor: Fremont, CA, USA, DOI, and official title abbreviation (BPSec). RFC 9172, January 2022 confirmed.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc9172"
+    ]
+  },
+  {
+    "reference": 38,
+    "key": "mui2003computational",
+    "status": "RETAINED",
+    "finding": "Retained Big Island, HI, USA, 7–10 January 2002 and pp. 2431–2439. Accepted production deletion of IEEE Comput. Soc as a formatting choice; Crossref still identifies IEEE Comput. Soc as publisher.",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/hicss.2002.994181",
+      "https://sigmod.org/publications/dblp/db/conf/hicss/hicss2002-9.html"
+    ]
+  },
+  {
+    "reference": 39,
+    "key": "kamvar2003eigentrust",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed ACM Press, New York, NY, USA, and 2003. Completed page range from p. 640 to pp. 640–651; Crossref supplies first page 640, with the full extent corroborated by the bibliographic record and the 12-page paper.",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/775152.775242",
+      "https://snap.stanford.edu/class/cs224w-readings/berkhin05pagerank.pdf"
+    ]
+  },
+  {
+    "reference": 49,
+    "key": "arifeen2020hidden",
+    "status": "RETAINED",
+    "finding": "Confirmed ACM, New York, NY, USA, 2020, pp. 1–5; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3377049.3377054"
+    ]
+  },
+  {
+    "reference": 58,
+    "key": "figueiredo2022arcadian",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Corrected location to Cham, Switzerland. Added book title Internet of Things and LNCS volume 13533. Changed citation year from 2023 to 2022 following the publisher’s recommended citation and print metadata; first-online date is separately 1 January 2023. Pages 348–359 retained.",
+    "sources": [
+      "https://link.springer.com/chapter/10.1007/978-3-031-20936-9_28"
+    ]
+  },
+  {
+    "reference": 59,
+    "key": "ott2023universal",
+    "status": "RETAINED",
+    "finding": "Confirmed ACM, New York, NY, USA, year 2023 and pp. 1–11; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3600160.3600171"
+    ]
+  },
+  {
+    "reference": 61,
+    "key": "fagan2020iot",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Retained NIST, Gaithersburg, MD, USA, and 2020. Replaced generic Technical Report with NISTIR 8259A.",
+    "sources": [
+      "https://csrc.nist.gov/pubs/ir/8259/a/final"
+    ]
+  },
+  {
+    "reference": 62,
+    "key": "androulaki2018hyperledger",
+    "status": "RETAINED",
+    "finding": "Confirmed ACM, New York, NY, USA, year 2018 and pp. 1–15; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3190508.3190538"
+    ]
+  },
+  {
+    "reference": 64,
+    "key": "honarpajooh2021iot",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Replaced 1–26 with article number 114; volume 8 and year 2021 retained.",
+    "sources": [
+      "https://link.springer.com/article/10.1186/s40537-021-00505-y"
+    ]
+  },
+  {
+    "reference": 81,
+    "key": "hotstuff2019",
+    "status": "RETAINED",
+    "finding": "Confirmed Toronto, ON, Canada, 29 July–2 August 2019; retained.",
+    "sources": [
+      "https://www.podc.org/podc2019/",
+      "https://api.crossref.org/works/10.1145/3293611.3331591"
+    ]
+  },
+  {
+    "reference": 82,
+    "key": "narwhal2022",
+    "status": "RETAINED",
+    "finding": "Confirmed Rennes, France, 5–8 April 2022; retained.",
+    "sources": [
+      "https://2022.eurosys.org/",
+      "https://api.crossref.org/works/10.1145/3492321.3519594"
+    ]
+  },
+  {
+    "reference": 83,
+    "key": "raft2014",
+    "status": "RETAINED",
+    "finding": "Confirmed Philadelphia, PA, USA, 19–20 June 2014. These are the ATC dates; the broader Federated Conferences Week ran 17–20 June. Retained ATC dates.",
+    "sources": [
+      "https://www.usenix.org/sites/default/files/atc14cfp_011614.pdf",
+      "https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro"
+    ]
+  },
+  {
+    "reference": 84,
+    "key": "pbft1999",
+    "status": "RETAINED",
+    "finding": "Confirmed New Orleans, LA, USA, 22–25 February 1999 from the original USENIX call; retained.",
+    "sources": [
+      "https://www.usenix.org/legacy/events/osdi99/cfp.html"
+    ]
+  },
+  {
+    "reference": 85,
+    "key": "rfc6962",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Added RFC Editor: Fremont, CA, USA, and DOI; RFC 6962, June 2013 confirmed.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc6962"
+    ]
+  },
+  {
+    "reference": 86,
+    "key": "rfc9162",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Added RFC Editor: Fremont, CA, USA, and DOI; RFC 9162, December 2021 confirmed.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc9162"
+    ]
+  },
+  {
+    "reference": 87,
+    "key": "sigstore2022",
+    "status": "RETAINED",
+    "finding": "Confirmed Los Angeles, CA, USA, 7–11 November 2022; retained.",
+    "sources": [
+      "https://www.sigsac.org/ccs/CCS2022/home.html",
+      "https://api.crossref.org/works/10.1145/3548606.3560596"
+    ]
+  },
+  {
+    "reference": 89,
+    "key": "ibm2005mapek",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Corrected Armonk, NY, USA, to Hawthorne, NY, USA, based on the IBM Corporation imprint on the document’s final copyright page (17 Skyline Drive, Hawthorne, NY 10532). Third edition, June 2005 confirmed.",
+    "sources": [
+      "https://users.cs.fiu.edu/~sadjadi/Teaching/Autonomic%20Grid%20Computing/CIS-6612-Summer-2006/AC-Blueprint-WhitePaper-V7.pdf"
+    ]
+  },
+  {
+    "reference": 90,
+    "key": "steinberg1999jdl",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Completed the proceedings title as Sensor Fusion: Architectures, Algorithms, and Applications III, volume 3719, and pp. 430–441. Retained Orlando, FL, USA, 7–9 April 1999. Crossref gives first page 430; the INIST-CNRS bibliographic record confirms full extent and event dates.",
+    "sources": [
+      "https://api.crossref.org/works/10.1117/12.341367",
+      "https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=1170299&lang=en"
+    ]
+  },
+  {
+    "reference": 91,
+    "key": "wust2018need",
+    "status": "RETAINED",
+    "finding": "Confirmed Zug, Switzerland, 20–22 June 2018 in publisher-deposited event metadata; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/CVCBT.2018.00011"
+    ]
+  },
+  {
+    "reference": 92,
+    "key": "locher2018when",
+    "status": "RETAINED",
+    "finding": "Confirmed Halifax, NS, Canada, 30 July–3 August 2018 in publisher-deposited event metadata; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/Cybermatics_2018.2018.00197"
+    ]
+  },
+  {
+    "reference": 93,
+    "key": "maersk2022tradelens",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Identified as a Maersk online press release, 29 November 2022. Added official URL; retained original 22 October 2026 access date.",
+    "sources": [
+      "https://www.maersk.com/news/articles/2022/11/29/maersk-and-ibm-to-discontinue-tradelens"
+    ]
+  },
+  {
+    "reference": 95,
+    "key": "cometbft2026",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed official CometBFT consensus-specification repository. Added URL and original 22 October 2026 access date. Removed unsupported Zug publisher location; retained institutional authorship and online-document identity.",
+    "sources": [
+      "https://github.com/cometbft/cometbft/blob/main/spec/consensus/consensus.md"
+    ]
+  },
+  {
+    "reference": 96,
+    "key": "dorri2017towards",
+    "status": "RETAINED",
+    "finding": "Confirmed ACM, New York, NY, USA, year 2017 and pp. 173–178; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3054977.3055003"
+    ]
+  },
+  {
+    "reference": 98,
+    "key": "fabric2026bft",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed official Fabric BFT ordering-service documentation. Added URL and original 22 October 2026 access date. Removed unverified San Francisco publisher location for this online document; retained issuer.",
+    "sources": [
+      "https://hyperledger-fabric.readthedocs.io/en/latest/bft_configuration.html"
+    ]
+  },
+  {
+    "reference": 99,
+    "key": "hyperledger2026fabric",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed official Fabric ordering-service documentation. Added URL and original 6 August 2026 access date. Removed unverified San Francisco publisher location for this online document; retained issuer.",
+    "sources": [
+      "https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html"
+    ]
+  },
+  {
+    "reference": 100,
+    "key": "rfc8032",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Added RFC Editor: Fremont, CA, USA, and DOI; RFC 8032, January 2017 confirmed.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc8032"
+    ]
+  },
+  {
+    "reference": 101,
+    "key": "fips204",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed NIST, Gaithersburg, MD, USA, FIPS 204 and 2024. Added persistent DOI; formal standard remains the cited item.",
+    "sources": [
+      "https://csrc.nist.gov/pubs/fips/204/final"
+    ]
+  },
+  {
+    "reference": 105,
+    "key": "varga2022seadronessee",
+    "status": "RETAINED",
+    "finding": "Confirmed SeaDronesSee paper in CVF’s WACV 2022 proceedings. Retained Waikoloa, HI, USA, 3–8 January 2022 according to proceedings-level catalog metadata. The conference health page separately gives 4–8 January for the meeting experience; the citation follows the proceedings record.",
+    "sources": [
+      "https://openaccess.thecvf.com/content/WACV2022/html/Varga_SeaDronesSee_A_Maritime_Benchmark_for_Detecting_Humans_in_Open_Water_WACV_2022_paper.html",
+      "https://dblp.org/rec/conf/wacv/2022.html"
+    ]
+  },
+  {
+    "reference": 106,
+    "key": "shah2018airsim",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Corrected Springer location to Cham, Switzerland. Added book title Field and Service Robotics and Springer Proceedings in Advanced Robotics, volume 5. Citation year 2018 and pp. 621–635 retained, following the publisher’s recommended citation.",
+    "sources": [
+      "https://link.springer.com/chapter/10.1007/978-3-319-67361-5_40"
+    ]
+  },
+  {
+    "reference": 107,
+    "key": "manhaes2016uuv",
+    "status": "RETAINED",
+    "finding": "Confirmed OCEANS 2016 MTS/IEEE Monterey, Monterey, CA, USA, 19–23 September 2016, publisher IEEE, and pp. 1–8. Retained publisher location New York, NY, USA.",
+    "sources": [
+      "https://api.crossref.org/works/10.1109/oceans.2016.7761080",
+      "https://amps2020.ieee-ims.org/node/106"
+    ]
+  },
+  {
+    "reference": 108,
+    "key": "martin2017aqua",
+    "status": "RETAINED",
+    "finding": "Confirmed ACM, New York, NY, USA, 2017 and pp. 1–8; retained.",
+    "sources": [
+      "https://api.crossref.org/works/10.1145/3148675.3148679"
+    ]
+  },
+  {
+    "reference": 114,
+    "key": "gsn2021",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed GSN Community Standard version 3 and SCSC-141C issuer record. Added official standard landing-page URL and original 22 October 2026 access date. Removed unverified Winchester location; retained the standard identifier and 2021 year.",
+    "sources": [
+      "https://scsc.uk/gsn-standard",
+      "https://eprints.whiterose.ac.uk/184111/1/SCSC_Newsletter_Volume_30_Nos_1_Feb_2022.pdf"
+    ]
+  },
+  {
+    "reference": 115,
+    "key": "sacm2023",
+    "status": "RETAINED",
+    "finding": "Confirmed SACM version 2.3, October 2023, and OMG contact location Milford, MA, USA; retained.",
+    "sources": [
+      "https://www.omg.org/spec/SACM/2.3"
+    ]
+  },
+  {
+    "reference": 116,
+    "key": "ul4600",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed UL 4600 third edition released 17 March 2023. Corrected Ottawa, ON, Canada, to Northbrook, IL, USA, the organization’s headquarters at that time. This publication-time location follows UL’s official release and relocation announcements; the move to Evanston occurred in November 2023.",
+    "sources": [
+      "https://www.ul.com/news/ul-4600-edition-3-updates-incorporate-autonomous-trucking",
+      "https://ulse.org/news/news-ul-research-institutes-ul-standards-engagement-relocate-evanston-illinois/",
+      "https://ulse.org/news/news-ul-research-institutes-ul-standards-engagement-open-new-headquarters-evanston-illinois/"
+    ]
+  },
+  {
+    "reference": 117,
+    "key": "imo2019trials",
+    "status": "RETAINED",
+    "finding": "Confirmed MSC.1/Circ.1604, title, year 2019, and IMO London, UK; retained.",
+    "sources": [
+      "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+    ]
+  },
+  {
+    "reference": 118,
+    "key": "imo2021scoping",
+    "status": "RETAINED",
+    "finding": "Confirmed MSC.1/Circ.1638, title, year 2021, and IMO London, UK; retained.",
+    "sources": [
+      "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+    ]
+  },
+  {
+    "reference": 119,
+    "key": "imo2026mass",
+    "status": "RETAINED",
+    "finding": "Confirmed MSC.595(111), MASS Code, adopted May 2026 with effect from 1 July 2026, and IMO London, UK; retained.",
+    "sources": [
+      "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx"
+    ]
+  },
+  {
+    "reference": 120,
+    "key": "dnv2024autonomous",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Confirmed DNV headquarters Høvik, Norway. The catalog entry for the cited December 2024 edition gives Autonomous and remotely operated vessels, so Ships was corrected to Vessels. The earlier September 2021 edition used Ships. Direct DNV PDF access redirected to an application shell; edition title was corroborated using the authorized standards catalog, not claimed as a full-text check.",
+    "sources": [
+      "https://www.dnv.com/contact/headquarters/",
+      "https://store.accuristech.com/standards/dnv-dnv-cg-0264?product_id=2925267"
+    ]
+  },
+  {
+    "reference": 121,
+    "key": "ietf2020suit",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Added RFC Editor: Fremont, CA, USA, and DOI; RFC 9019, April 2021 confirmed.",
+    "sources": [
+      "https://www.rfc-editor.org/info/rfc9019"
+    ]
+  },
+  {
+    "reference": 122,
+    "key": "threegpp22125",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Identified as the online 3GPP TS 22.125 specification record. Added official record URL and retained original 6 August 2026 access date. No exact Release/version is inferred. Direct dynareport access is automated-access restricted; specification identity was cross-checked in the 3GPP portal catalog.",
+    "sources": [
+      "https://www.3gpp.org/dynareport/22125.htm",
+      "https://portal.3gpp.org/Specifications.aspx"
+    ]
+  },
+  {
+    "reference": 123,
+    "key": "threegpp22119",
+    "status": "CORRECTED / COMPLETED",
+    "finding": "Identified as the online 3GPP TS 22.119 specification record. Added official record URL and retained original 6 August 2026 access date. No exact Release/version is inferred. Direct dynareport access is automated-access restricted; specification identity was cross-checked in the 3GPP portal catalog.",
+    "sources": [
+      "https://www.3gpp.org/dynareport/22119.htm",
+      "https://portal.3gpp.org/Specifications.aspx"
+    ]
+  }
+]
