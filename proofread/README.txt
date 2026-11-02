@@ -19,15 +19,16 @@ original attachments. The corrected consolidated TeX contains its bibliography;
 the received references.bib and sections/ are not build inputs and were not edited.
 
 Before returning the proof to production
-Resolve Q01, Q02, Q03, Q25 and Q26 using pending-author-information.txt, then update
+Resolve Q01, Q02, Q03 and Q25 using pending-author-information.txt, then update
 the corresponding TeX comments and response statuses and recompile. No email has
 been sent. The current source contains the affiliations and CRediT roles recorded
-in the original submission cover letter; funding and final-version agreement
-still require the authors' input.
+in the original submission cover letter. The funding statement supplied on
+2 November 2026 has been inserted and highlighted, resolving Q26. Author details,
+CRediT roles and final-version agreement still require confirmation.
 
 Build from this directory (with a working LaTeX installation), using a distinct
 jobname so that the original received PDF is never overwritten. Run twice:
   pdflatex -interaction=nonstopmode -halt-on-error -jobname=blockchains-4630703-author-corrected blockchains-4630703.tex
 An existing temporary directory can additionally be supplied with -output-directory.
-For this review, compilation outputs were directed to tmp/proofread-work/build,
-and only the final PDF was copied to output/pdf/.
+The initial review used tmp/proofread-work/build; the funding update used
+tmp/funding-update-20261102/build. Only the final PDF was copied to output/pdf/.

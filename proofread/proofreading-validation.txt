@@ -2,11 +2,14 @@ PROOFREADING VALIDATION
 Date: 2 November 2026
 
 Result: PASS for the corrections in this round. Author confirmation/information
-remains required for Q01, Q02, Q03, Q25 and Q26; see pending-author-information.txt.
+remains required for Q01, Q02, Q03 and Q25; see pending-author-information.txt.
 
 Coverage
 - 42 production queries preserved verbatim, each followed by a numbered reply.
-- 37 queries resolved; 5 author queries explicitly marked pending.
+- 38 queries resolved; 4 author queries explicitly marked pending.
+- Q26 is resolved using the authors' funding declaration supplied on 2 November.
+  All four funding sources and seven grant numbers are present in the source
+  and rendered PDF. The manuscript source changed only within the Funding block.
 - All 49 highlighted reference entries have a finding and source URL(s).
 - 28 references corrected/completed; 21 retain their production text.
 - All 123 bibliography identities and their order are unchanged.
@@ -28,17 +31,20 @@ Build and PDF
 - Final PDF: 31 pages; every page has extractable text.
 - No undefined references/citations, rerun requests, TeX errors, or overfull boxes.
 - All 16 added URL targets are present as clickable links in the PDF annotations.
-- Pages rendered at 85 dpi; all 31 pages inspected via contact sheets, with close
-  inspection of the title/affiliation page, author declarations, and references.
+- The initial proof review inspected all 31 pages at 85 dpi, with close inspection
+  of the title/affiliation page, author declarations, and references.
+- Following the funding addition, pages 26-31 were rendered at 150 dpi and
+  visually checked. Pages 1-25 retain identical extracted text. The declaration,
+  highlighting and reflowed references are legible, with no clipping or overlap.
 - Highlighting, link wrapping, figures, tables, headers and footers inspected.
 - Remaining non-fatal local toolchain notices: a package requests a newer LaTeX
   release; bold wasy fonts are substituted at two superscript sizes. Rendered
   author indices and mathematical text were checked and remain legible.
 
 The original received PDF and archive remain in place. The separate corrected PDF
-is output/pdf/blockchains-4630703-author-corrected.pdf. Funding is still blank,
-and the final-publication agreement sentence awaits author confirmation.
+is output/pdf/blockchains-4630703-author-corrected.pdf. Funding is complete;
+the final-publication agreement sentence awaits author confirmation.
 
 Hashes for the final source and PDF
-TeX SHA-256: 71f3d5116f1ca7c07e84af74c29391fc7629c6246d45e79ed29b9b7b0ef9e0a6
-PDF SHA-256: 249bdd6ca7f265cd141f21306c874d1198959123ec23cdaa70d863349cbf92ad
+TeX SHA-256: ba6cd6dffe90204111ba0c04be5af993a011936b6357fa7a1ad2fe275d336fbe
+PDF SHA-256: 27819af42e91c7c96e7fa5657205dedf53ce6ba92fb9487b999db9c57103cd37
