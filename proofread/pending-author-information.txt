@@ -1,45 +1,73 @@
-待作者补充与确认（2026-11-02）
+校样提交状态与作者确认记录（2026-11-05）
 
-本轮已处理 38 条批注，另外 4 条已准备回复，但仍须作者确认。
-当前 PDF 是供作者核对的高亮校样。Q26 基金声明已依据作者提供的信息补齐，
-作者信息、CRediT 分工和最终出版版本同意声明仍待确认。
+结论
+原始 42 条编辑批注已全部解决。Q01、Q02、Q03、Q25 的作者确认已收到；
+Q26 的首个基金编号已更正为 2026ZD1501701。
+目前仍不能认定完全满足全部提交要求：资助方作用声明尚未填写。
+本文件是内部检查记录，不属于提交给期刊的正文或逐条回复。
 
-1. Q01/Q02：确认姓名、顺序、单位和对应关系仍然准确。
-   已依据原投稿附信 manuscript/submission/cover-letter.txt 补入：
-   Shaowei Liu (1,2), Jing Wu (1), Tanren Liu (3), Shengqiang He (3),
-   Yakun Ren (3), Chengnian Long (1，通讯作者)。
-   1) School of Automation and Intelligent Sensing, Shanghai Jiao Tong University,
-      800 Dongchuan Road, Shanghai 200240, China.
-   2) Jiangsu Automation Research Institute, 18 Shenghu Road,
-      Lianyungang, Jiangsu 222061, China.
-   3) SF Technology Co., Ltd., Block B, TK Chuangzhi Tiandi Building,
-      Keji South 1st Road, Nanshan District, Shenzhen, Guangdong 518057, China.
-   请确认英文正式名称、邮编及作者归属是否有变化。
+一、保留的提交要求缺口
+MDPI 出版伦理要求说明资助方在研究设计、资料收集、分析/解释、论文写作
+及发表决定中的作用。有实际参与时，应说明参与情况。
+作者于 2026-11-05 确认资助方有参与，随后明确要求暂不说明具体参与情况。
+因此按作者指示保留现有 Funding 和 Conflicts of Interest 写法，未添加
+资助方作用声明，也未填写与已知事实不符的“资助方未参与”声明。
+这是一项通用投稿要求的未闭环事项，不属于原始 42 条编辑批注。
+依据：https://www.mdpi.com/ethics （Conflicts of Interest）
 
-2. Q03：确认六位作者邮箱。保留了编辑从 SuSy 填入的地址：
-   Shaowei Liu: liusw1994@sjtu.edu.cn
-   Jing Wu: jingwu@sjtu.edu.cn
-   Tanren Liu: tanrenliu@sf-express.com
-   Shengqiang He: heshengqiang@sf-express.com
-   Yakun Ren: yakunren@sf-express.com
-   Chengnian Long: longcn@sjtu.edu.cn（通讯邮箱，与投稿附信一致）
+二、已完成的作者确认
+以下内容已由作者于 2026-11-05 确认准确：
+- 六位作者姓名和顺序：Shaowei Liu、Jing Wu、Tanren Liu、Shengqiang He、
+  Yakun Ren、Chengnian Long。
+- 三个单位的正式名称、地址、邮编及作者归属：S.L. (1,2)、J.W. (1)、
+  T.L. (3)、S.H. (3)、Y.R. (3)、C.L. (1，通讯作者)。
+- 六个邮箱：liusw1994@sjtu.edu.cn、jingwu@sjtu.edu.cn、
+  tanrenliu@sf-express.com、heshengqiang@sf-express.com、
+  yakunren@sf-express.com、longcn@sjtu.edu.cn。
+- CRediT 分工：Conceptualization (S.L., J.W., C.L.); Methodology (S.L., J.W.);
+  Investigation (S.L.); Writing-original draft (S.L.); Writing-review and editing
+  (全体六位作者); Visualization (S.L.); Supervision (C.L.)。
+- 全体作者已阅读并同意最终出版稿。已加入并高亮：
+  All authors have read and agreed to the published version of the manuscript.
+以上确认已同步到合并 TeX 和 proofreading-responses.txt，四项状态均为 RESOLVED。
 
-3. Q25：确认 CRediT 分工，以及全体作者同意最终出版版本。
-   已按原附信补入：
-   Conceptualization: S.L., J.W., C.L.
-   Methodology: S.L., J.W.
-   Investigation: S.L.
-   Writing—original draft: S.L.
-   Writing—review and editing: S.L., J.W., T.L., S.H., Y.R., C.L.
-   Visualization: S.L.
-   Supervision: C.L.
-   缩写对应：S.L.=Shaowei Liu，J.W.=Jing Wu，T.L.=Tanren Liu，
-   S.H.=Shengqiang He，Y.R.=Yakun Ren，C.L.=Chengnian Long。
-   若上述分工仍然准确，请确认；若有修订阶段新增的实际分工，请补充。
-   原附信仅声明作者同意“投稿版本”，不能据此认定作者已同意最终出版版本。
-   待确认后加入编辑要求的句子：
-   All authors have read and agreed to the published version of the manuscript.
+三、本轮未修改的既有正文问题
+以下问题在此前返修检查中已记录。本轮遵照“不做实质修改”的要求保留正文。
 
-其他说明：3GPP 两条引用当前明确标为在线规范目录记录，并保留原访问日期。
-它们不声称引用某个具体 Release/版本；正文没有据此引用具体条款。
-若原意是引用某个规范版本，请再提供对应 Release 和版本号。
+1. 60 秒截止时间的起算点仍有表述差异。
+   Section 7.2 写的是事件可供岸端处理后 60 秒；Section 7.4 和 Section 9.2
+   的 P5 使用包含断连时长 D 的 D+L<=60 秒关系，给出 58/59 秒断连边界。
+   若前者指恢复联系之后，则不应再把断连时长计入同一个 60 秒窗口；若后者
+   是从事件发生或首次待处理时刻计时，则应统一起点说明。
+   算术结果本身未变，本轮未选择或替作者补写其科学含义。
+
+2. 反防御性写作复核仍有三处可选的局部措辞调整，均未实施：
+   a) Section 6.3：
+      原句：Re-estimating trust after a change requires a specified update rule,
+      rather than an arbitrary decrement along graph edges.
+      问题：“arbitrary decrement” 引入贬低式对照。
+      最小改法：Re-estimating trust after a change requires a specified update rule.
+      理由：保留对更新规则的要求，删去多余对照。
+   b) Table 9，CometBFT 的 Scenario Fit：
+      原文：Application-specific replicated state machine; not classified as
+      HotStuff merely because both use BFT
+      问题：“merely because” 呈现反驳式语气。
+      最小改法：Application-specific replicated state machine
+      理由：表中已有 Tendermint-style 描述，仍保留协议分类区别。
+   c) Table 9，DAG-based 的 Scenario Fit：
+      原文：High-throughput shore service with resource evidence; no
+      acoustic-partition shortcut
+      问题：“shortcut” 带有论辩色彩。
+      最小改法：High-throughput shore service with resource evidence;
+      acoustic-partition constraints remain
+      理由：中性保留声学链路断连约束。
+   正文中关于证据范围、局限、阴性结果及适用条件的必要否定均予保留，
+   没有因 only、not、limited 等词本身而判定为防御性写作。
+
+四、提交时的版本与范围
+正式英文校样：output/pdf/blockchains-4630703-author-corrected.pdf。
+可编辑校样：proofread/blockchains-4630703.tex，使用其 Definitions/ 和 figures/。
+编辑批注回复：proofread/proofreading-responses.txt，独立提供。
+内部中英文审批版、检查记录、原始附件及旧返修压缩包不属于本轮校样提交件。
+生产模板中的卷期、文章号、发布日期及占位 DOI 由期刊排版部最终填写，未代填。
+未登录 SuSy，未核验本次回传时限或在线表单状态，也未执行上传或发送。

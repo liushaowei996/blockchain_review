@@ -1,34 +1,37 @@
-PRODUCTION PROOF CORRECTIONS — AUTHOR REVIEW DRAFT
-Prepared: 2 November 2026
+PRODUCTION PROOF CORRECTIONS — AUTHOR-CORRECTED FILES
+Updated: 5 November 2026
 
-Files
-blockchains-4630703.tex       Corrected consolidated source; all changes highlighted.
-proofreading-responses.txt   English replies to all 42 production queries.
-pending-author-information.txt  Chinese checklist of remaining author confirmations.
-reference-verification.txt   Findings and source links for all 49 highlighted references.
-reference-verification.json  The same reference audit in structured form.
-changes-from-production.diff Complete textual difference from the received TeX.
-proofreading-validation.txt  Compilation, cross-reference and layout checks.
+Status
+All 42 original production queries are resolved. Author names, affiliations,
+emails, CRediT roles and final-publication agreement were confirmed by the authors
+on 5 November 2026. The first funding identifier is now 2026ZD1501701.
+The separate funder-role disclosure required by MDPI's general policy remains
+unfilled at the authors' instruction. Full submission readiness is not confirmed.
+See pending-author-information.txt for this gap and retained content observations.
+
+Files for the production-proof workflow
+blockchains-4630703.tex       Author-corrected consolidated source, highlighted.
 Definitions/ and figures/    Unmodified production dependencies.
+proofreading-responses.txt   Separate English replies to all 42 production queries.
+../output/pdf/blockchains-4630703-author-corrected.pdf   Corrected English proof.
 
-The corrected 31-page PDF is in:
-../output/pdf/blockchains-4630703-author-corrected.pdf
+Internal records (not submission attachments)
+pending-author-information.txt  Readiness gap, author confirmations and observations.
+proofreading-validation.txt     Source/PDF, response consistency and layout checks.
+reference-verification.txt/json Existing audit of all 49 highlighted references.
+changes-from-production.diff    Complete textual difference from the received TeX.
+internal-approval/              Chinese translation sources and internal verification.
+../output/pdf/blockchains-4630703-internal-approval-en-zh.pdf  Internal approval copy.
 
 The received PDF, manuscript.v5.zip, references.bib and sections/ are retained as
-original attachments. The corrected consolidated TeX contains its bibliography;
+original attachments. The corrected consolidated TeX embeds its bibliography;
 the received references.bib and sections/ are not build inputs and were not edited.
+Do not upload this entire working directory or an older revision-submission ZIP
+as the current proof. Keep the replies separate from any source package.
 
-Before returning the proof to production
-Resolve Q01, Q02, Q03 and Q25 using pending-author-information.txt, then update
-the corresponding TeX comments and response statuses and recompile. No email has
-been sent. The current source contains the affiliations and CRediT roles recorded
-in the original submission cover letter. The funding statement supplied on
-2 November 2026 has been inserted and highlighted, resolving Q26. Author details,
-CRediT roles and final-version agreement still require confirmation.
-
-Build from this directory (with a working LaTeX installation), using a distinct
-jobname so that the original received PDF is never overwritten. Run twice:
+Build from this directory with a working LaTeX installation. Run twice, using a
+distinct jobname so the original received PDF is not overwritten:
   pdflatex -interaction=nonstopmode -halt-on-error -jobname=blockchains-4630703-author-corrected blockchains-4630703.tex
-An existing temporary directory can additionally be supplied with -output-directory.
-The initial review used tmp/proofread-work/build; the funding update used
-tmp/funding-update-20261102/build. Only the final PDF was copied to output/pdf/.
+This round compiled an isolated copy in tmp/pdfs/proofread-check-20261105/build.
+The final PDF was copied to output/pdf/. Internal bilingual build instructions
+are in internal-approval/README.txt. No files have been uploaded or emailed.

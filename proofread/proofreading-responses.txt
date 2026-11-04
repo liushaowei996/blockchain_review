@@ -1,10 +1,10 @@
 PRODUCTION PROOF: POINT-BY-POINT AUTHOR RESPONSE DRAFT
 Manuscript: blockchains-4630703
-Prepared: 2 November 2026
+Prepared: 5 November 2026
 
-STATUS: 38 queries resolved; 4 queries require author information or confirmation
-(Q01, Q02, Q03, Q25). These pending replies must be finalized before return
-to the production editor. The corrected proof is an author-review draft.
+STATUS: All 42 original production queries are resolved. The authors confirmed
+author details, CRediT roles and final-publication agreement on 5 November 2026.
+The funding identifier has been corrected to 2026ZD1501701.
 
 Yellow highlighting marks inserted or corrected manuscript text. Original
 production highlights are retained. Each original TeX comment is preserved and
@@ -18,17 +18,17 @@ blockchains-4630703.tex, which embeds its bibliography. The original sections/
 and references.bib attachments are not build inputs for this corrected source.
 
 
-Q01 | Original TeX line 46 | AUTHOR CONFIRMATION
+Q01 | Original TeX line 46 | RESOLVED
 Editor comment: MDPI: 1. Please carefully check the accuracy of names and affiliations. 2. We added author names according to susy, please confirm.
-Response: Author names and order agree with the existing submission cover letter: Shaowei Liu, Jing Wu, Tanren Liu, Shengqiang He, Yakun Ren, and Chengnian Long. Affiliation superscripts have been restored from that letter. Please confirm that these details remain current for publication.
+Response: Confirmed. All six author names, their order, and the affiliation superscripts are correct.
 
-Q02 | Original TeX line 50 | AUTHOR CONFIRMATION
+Q02 | Original TeX line 50 | RESOLVED
 Editor comment: MDPI: Please provide affiliation of the authors, including institution (if it has department, please add it), city, zip code and country, if the author has one affiliation, please add one, but if the author has different affiliations, please add separately.
-Response: The three complete affiliations and their author assignments have been restored from the submission cover letter and highlighted: Shanghai Jiao Tong University (S.L., J.W., C.L.); Jiangsu Automation Research Institute (S.L.); and SF Technology Co., Ltd. (T.L., S.H., Y.R.). Department/institution, address, city, postal code, and country are included. Final author confirmation is pending.
+Response: Confirmed. The three affiliations, their addresses and postal codes, and the author assignments are correct.
 
-Q03 | Original TeX line 51 | AUTHOR CONFIRMATION
+Q03 | Original TeX line 51 | RESOLVED
 Editor comment: MDPI: We added these email addresses here according to those submitted online at susy.mdpi.com. Please confirm.
-Response: The email addresses supplied by production have been retained and grouped under the relevant affiliations. The corresponding-author address, longcn@sjtu.edu.cn, also agrees with the submission cover letter. Please confirm all six addresses; the other five addresses cannot be independently confirmed from the existing submission files.
+Response: Confirmed. All six email addresses, including the corresponding-author address longcn@sjtu.edu.cn, are correct.
 
 Q04 | Original TeX line 78 | RESOLVED
 Editor comment: MDPI: Please confirm if the italics are necessary; if not, please remove them. The following highlights are the same.
@@ -114,13 +114,13 @@ Q24 | Original TeX line 655 | RESOLVED
 Editor comment: MDPI: Tables should appear in numerical order and below the first mention, so please revise the Table 8 citation.
 Response: This is the same first-citation issue addressed under Q17. Table 8 is now first cited before its appearance in Section 6.4. Its later citation in proposition P1 in Section 9.2 is retained.
 
-Q25 | Original TeX line 709 | AUTHOR CONFIRMATION
+Q25 | Original TeX line 709 | RESOLVED
 Editor comment: MDPI: We deleted ``Author contribution details are withheld for double-anonymous review and will be supplied after peer review using the CRediT taxonomy. All authors will confirm that they have read and agreed to the published version of the manuscript.'' For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.
-Response: The CRediT roles in the existing submission cover letter have been inserted using the journal's author-initial format and highlighted. No additional roles have been inferred. Confirmation that the roles remain accurate and that all authors have read and agreed to the final published version is still required before adding the journal's requested final sentence.
+Response: Confirmed. The CRediT roles are accurate. All authors have read and agreed to the published version of the manuscript; this sentence has been added and highlighted.
 
 Q26 | Original TeX line 711 | RESOLVED
 Editor comment: MDPI: we deleted ``Funding information is withheld for double-anonymous review and will be supplied after peer review.'' Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.
-Response: The Funding statement now lists all four funding sources and seven grant numbers provided by the authors; the inserted text is highlighted.
+Response: The Funding statement lists the four funding sources and seven grant numbers supplied by the authors. The first grant number is 2026ZD1501701, as corrected by the authors on 5 November 2026. The statement is highlighted.
 
 Q27 | Original TeX line 837 | RESOLVED
 Editor comment: MDPI: Newly added information. Please confirm. The following highlights are the same.
@@ -198,8 +198,8 @@ These include the bibliographic corrections covered by Q27, not a new set of
 scientific citations. All 123 reference identities and their order are retained.
 
 A03. Author details and affiliations: inserted from manuscript/submission/
-cover-letter.txt. The pending-author-information.txt file identifies the exact
-confirmations and missing statement needed before return to production.
+cover-letter.txt and confirmed by the authors on 5 November 2026. The requested
+final-publication agreement sentence has been added and highlighted.
 
 A04. Deletions and TeX-only changes cannot themselves appear as yellow text.
 changes-from-production.diff records them, including removal of unsupported

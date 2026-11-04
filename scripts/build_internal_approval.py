@@ -105,7 +105,7 @@ def build():
     writer.append(chinese, outline_item="中文全文翻译 / Chinese translation", import_outline=True)
     writer.add_metadata({"/Title": "Blockchain-Assisted Mission Trust | 公司内部发表前审批（英文及中文全文）",
                          "/Author": "Shaowei Liu; Jing Wu; Tanren Liu; Shengqiang He; Yakun Ren; Chengnian Long",
-                         "/Subject": "English author-corrected proof dated 2026-11-02 followed by its complete Chinese translation"})
+                         "/Subject": "English author-corrected proof followed by its complete Chinese translation"})
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT.open("wb") as f:
         writer.write(f)
