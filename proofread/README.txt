@@ -15,6 +15,15 @@ Definitions/ and figures/    Unmodified production dependencies.
 proofreading-responses.txt   Separate English replies to all 42 production queries.
 ../output/pdf/blockchains-4630703-author-corrected.pdf   Corrected English proof.
 
+Current source upload package
+../output/blockchains-4630703-proofread-latex-20261105.zip
+Contains 17 files: the consolidated TeX, its required production template
+files and seven figure PDFs. The bibliography is embedded in the TeX.
+The separate replies, internal records and manuscript PDF are not in this ZIP.
+The extracted package passed two pdfLaTeX runs; all 31 pages have identical
+text and page content streams to the corrected English proof listed above.
+ZIP SHA-256: d97c2886e593c446f2c05d5097cf47bab60d14ea9d6194a2b84fde4f7c29ea8a
+
 Internal records (not submission attachments)
 pending-author-information.txt  Readiness gap, author confirmations and observations.
 proofreading-validation.txt     Source/PDF, response consistency and layout checks.
